@@ -111,3 +111,51 @@ function title()
     }
     return get_the_title();
 }
+
+// Check if post thumbnail exists using wp_get_attachment_url istead of has_post_thumbnail - by Daniel Semblano
+function featured_image_url($size) {
+    // Pega primeira imagem do body do post
+    global $post, $posts;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+    // Pega imagem destacada
+    $image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+
+    // Quando houver de fato uma imagem destacada ou quando o post tinha uma
+    // imagem destacada antes mas foi apagada via Wordpress, ficando vazia mas
+    // sendo substituída pelo plugin "Default featured image"
+    if ( ! empty( $image_url ) ) {
+        // var_dump($image_url);
+        // var_dump($first_img);
+        return the_post_thumbnail($size);
+    }
+    // Caso para os posts que tinham imagem destacada em outro banco mas as imagens
+    // não estão no servidor, ficando sem imagem destacada no wordpress mas no
+    // banco ainda aparece como tendo. Nesse caso, echoar a primeira imagem do
+    // body do texto, onde ela vai ser a destacada
+    elseif ( ! empty($first_img)) {
+      // var_dump($first_img);
+      global $_wp_additional_image_sizes;
+      $height =  $_wp_additional_image_sizes['thumb-mais']['height'];
+      // $width = $_wp_additional_image_sizes['thumb-mais']['width'];
+      echo '<img class="attachment-'.$size.' size-'.$size.' wp-post-image" height='.$height.' alt="imagem destacada" src="' . $first_img . '" />';
+          // $first_img = "/images/default.jpg";
+          // return $first_img;
+    }
+    // Quando nenhum dos casos se aplica (ex post sem imagem no body e como ex acima ),
+    // a imagem destacada será a default do plugin "Default featured image"
+    else {
+        $dfi= wp_get_attachment_image( get_option( 'dfi_image_id' ), $size, false, '' );
+        echo $dfi;
+    }
+  // else {
+  //   function dfi_posttype_wiki ( $dfi_id, $post_id ) {
+  //     $post = get_post($post_id);
+  //     return $dfi_id; // the image set in the media settings
+  //     }
+  //   add_filter( 'dfi_thumbnail_id', 'dfi_posttype_wiki', 10, 2 );
+  // }
+}

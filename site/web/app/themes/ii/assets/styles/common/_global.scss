@@ -1,0 +1,228 @@
+// CSS Geral
+a {
+  color: $titulos_cor;
+}
+body {
+  // background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+  // background: -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+  // background: linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
+  // background-position: 0 0, 40px 40px;
+  // -webkit-background-origin: padding-box;
+  // background-origin: padding-box;
+  // -webkit-background-clip: border-box;
+  // background-clip: border-box;
+  // -webkit-background-size: 80px 80px;
+  // background-size: 80px 80px;
+
+  header.banner {
+    .container {
+      background-color: white;
+      @extend %sombra;
+      nav.nav-primary {
+        border-bottom: 2px solid #000;
+        @include titulos($style: normal, $size: 1rem)
+        ul.nav {
+          width: -webkit-fit-content;
+           width: -moz-fit-content;
+                width: fit-content;
+          li {
+            list-style: none;
+            &.menu-item-has-children {
+              &:hover .sub-menu {
+                display: inline !important;
+              }
+              .sub-menu {
+                background-color: white;
+                display: none;
+                position: absolute;
+                z-index: 9999;
+                padding: 0;
+                @extend %sombra;
+                li {
+                  &:hover { background-color: #F2EEDD; }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    img {
+      // position: relative;
+      // top: 8px;
+      width: 14.4%;
+    }
+    .brand {
+      display: inline-flex;
+      font-family: "Javanese Text";
+      font-size: 5rem;
+      line-height: 1em;
+    }
+  }
+
+
+  background: rgba(0, 0, 0, 0) url("../images/ricepaper_v3.png") repeat scroll 0 0;
+  .content {
+    background-color: white;
+    padding-top: 20px;
+    @extend %sombra;
+    main {
+      overflow: hidden;
+      font: 14px "Noto Sans", sans-serif;
+      section {
+        overflow: hidden;
+      }
+    }
+  }
+  .sidebar {
+    // background-color: green;
+    .widget_tag_cloud {
+      .tagcloud a {
+        font: 12px "Noto Sans", sans-serif;
+      }
+    }
+  }
+}
+
+// CSS apenas home
+body.home {
+  // background-color: pink;
+  .content {
+  }
+  main {
+    // background-color: #D3D3D3;
+    section#carousel {
+      // height: 750px;
+      height: 435px;
+      margin-bottom: 35px;
+      // background-color: red;
+      .flickity-page-dots {
+        bottom: -20px !important;
+      }
+      .flickity-slider li {
+          width: 100%;
+          list-style: none;
+          h2 {
+            @include titulos($style: normal);
+          }
+          img {
+            max-width: 100%;
+            width: 100%;
+            min-height: 435px;
+          }
+          span{
+            // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
+            // background: rgba(54, 25, 25, .5);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            padding: 0 15px 10px;
+            h1 {
+              @include titulos($style: normal);
+              padding: 0;
+              margin: 0;
+            }
+            p {
+              @include titulos_chamadas;
+              // background-color: purple;
+              // padding: 5px 10px;
+            }
+          }
+        }
+    }
+    section#curiosidades {
+      // background-color: yellow;
+      h2 {
+        @include titulos;
+        @extend %titulo_hr;
+      }
+      article {
+        position: relative;
+        margin-bottom: 15px;
+        h3 {
+          @include titulos($style: normal);
+        }
+        h4 {
+          @include titulos($style: normal, $size: 0.9rem);
+          background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+          bottom: 0;
+          color: white;
+          left: 0;
+          margin: 0;
+          padding: 3px 0 3px 10px;
+          position: absolute;
+          width: 100%;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    section#mais {
+      h2 {
+        @include titulos;
+        @extend %titulo_hr;
+      }
+      article {
+        @include titulos_chamadas;
+        h3 {
+          @include titulos($style: normal, $size: 1rem);
+        }
+      }
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// CSS Páginas
+body.page {
+  .row {
+    // background-color: yellow;
+    // margin-bottom: 10px;
+    section {
+      // background-color: orange;
+    }
+  }
+}
+
+// Single posts
+.single-post {
+    blockquote {
+      &::before {
+        color: #999;
+        content: "“";
+        display: block;
+        font: italic 400%/1 Georgia,"Times New Roman",serif;
+        height: 0;
+        margin-left: 0.2em;
+      }
+      p {
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-left: 2.5em;
+        margin-top: 1em;
+        text-align: justify;
+      }
+    }
+}
+
+// Fonts
+@font-face {
+    font-family:'Javanese Text';
+    src: url('../fonts/Javanese_Text.eot');
+	src: url('../fonts/Javanese_Text.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Javanese_Text.woff2') format('woff2'),
+		url('../fonts/Javanese_Text.woff') format('woff'),
+		url('../fonts/Javanese_Text.ttf') format('truetype'),
+		url('../fonts/Javanese_Text.svg#Javanese Text') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-203A;
+}

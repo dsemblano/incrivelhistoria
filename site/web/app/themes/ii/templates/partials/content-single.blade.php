@@ -4,6 +4,9 @@
     @include('partials/entry-meta')
   </header>
   <div class="entry-content">
+    {{-- @php (App\featured_image_url('thumbnail')) --}}
+    {{-- @php (the_post_thumbnail('thumbnail')) --}}
+    {{-- {!! (App\featured_image_url('thumbnail')) !!} --}}
     @php(the_content())
   </div>
   <footer>

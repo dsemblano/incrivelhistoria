@@ -2,6 +2,9 @@
 import 'jquery';
 import 'bootstrap';
 
+/** import flickity */
+import 'flickity/dist/flickity.pkgd.min.js';
+
 /** import local dependencies */
 import Router from './util/Router';
 import common from './routes/common';

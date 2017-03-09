@@ -1,2 +1,36 @@
 // Colors
 $brand-primary:         #27ae60;
+$titulos_cor:           rgb(23, 31, 68);
+$hover_cor:             red;
+
+//Mixins
+@mixin titulos($style:italic, $weight: 700, $size: 2rem, $color: $titulos_cor ) {
+  font: $style $weight $size "Noto Serif", serif;
+  margin-top: 5px;
+}
+
+@mixin titulos_chamadas($size: 1rem, $color: $titulos_cor ) {
+  font: $size "Noto Sans", sans-serif;
+}
+
+%sombra {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+%titulo_hr {
+  display: inline-block;
+  padding-right: 15px;
+  position: relative;
+  text-align: left;
+  &::after {
+    background: #000 none repeat scroll 0 0;
+    top: 25px;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    left: 100%;
+    position: absolute;
+    width: 100vw;
+  }
+}

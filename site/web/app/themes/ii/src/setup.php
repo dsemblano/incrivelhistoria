@@ -14,6 +14,7 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Droid+Serif|Noto+Sans|Noto+Serif|Tinos', false, null );
 }, 100);
 
 /**
@@ -41,7 +42,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'secondary_navigation' => __('Secondary Navigation', 'sage')
     ]);
 
     /**
@@ -88,6 +90,43 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-footer'
     ] + $config);
 });
+
+// Mostrando sidebar - by Daniel Semblano
+add_filter('sage/display_sidebar', function ($display) {
+    static $display;
+
+    isset($display) || $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      is_single(),
+      is_404(),
+      is_front_page(),
+      is_page('categorias'),
+      is_page_template('template-custom.php')
+    ]);
+
+    return $display;
+});
+
+// Thumbnails images
+add_image_size( 'slideshow', 710, 455, true );
+add_image_size( 'thumb-mais', 9999, 150, true );
+
+// thumbnail_upscale
+function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
+    if ( !$crop ) return null; // let the wordpress default function handle this
+
+    $aspect_ratio = $orig_w / $orig_h;
+    $size_ratio = max($new_w / $orig_w, $new_h / $orig_h);
+
+    $crop_w = round($new_w / $size_ratio);
+    $crop_h = round($new_h / $size_ratio);
+
+    $s_x = floor( ($orig_w - $crop_w) / 2 );
+    $s_y = floor( ($orig_h - $crop_h) / 2 );
+
+    return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
+}
+add_filter( 'image_resize_dimensions', 'alx_thumbnail_upscale', 10, 6 );
 
 /**
  * Updates the `$post` variable on each iteration of the loop.
