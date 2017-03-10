@@ -1,12 +1,12 @@
 // Colors
 $brand-primary:         #27ae60;
-$titulos_cor:           rgb(23, 31, 68);
+// $titulos_cor:           rgb(23, 31, 68);
+$titulos_cor:           #171f44;
 $hover_cor:             red;
 
 //Mixins
-@mixin titulos($style:italic, $weight: 700, $size: 2rem, $color: $titulos_cor ) {
+@mixin titulos($style:italic, $weight: 700, $size: 2rem, $color: $titulos_cor, $margin-top: 5px) {
   font: $style $weight $size "Noto Serif", serif;
-  margin-top: 5px;
 }
 
 @mixin titulos_chamadas($size: 1rem, $color: $titulos_cor ) {

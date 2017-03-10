@@ -20,7 +20,7 @@ body {
       @extend %sombra;
       nav.nav-primary {
         border-bottom: 2px solid #000;
-        @include titulos($style: normal, $size: 1rem)
+        @include titulos($style: normal, $size: 1rem, $margin-top: 0)
         ul.nav {
           width: -webkit-fit-content;
            width: -moz-fit-content;
@@ -47,16 +47,17 @@ body {
         }
       }
     }
-    img {
-      // position: relative;
-      // top: 8px;
-      width: 14.4%;
-    }
-    .brand {
-      display: inline-flex;
-      font-family: "Javanese Text";
-      font-size: 5rem;
-      line-height: 1em;
+    #logo {
+      margin-top: 15px;
+      img { width: 80%; }
+      .brand {
+        display: inline-flex;
+        font-family: "Javanese Text";
+        font-size: 5.25rem;
+        line-height: 1em;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -74,9 +75,12 @@ body {
       }
     }
   }
+
+  // Sidebar
   .sidebar {
     // background-color: green;
     .widget_tag_cloud {
+      margin-top: 15px;
       .tagcloud a {
         font: 12px "Noto Sans", sans-serif;
       }
@@ -113,7 +117,7 @@ body.home {
           span{
             // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
             // background: rgba(54, 25, 25, .5);
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.5);
             color: white;
             bottom: 0;
             left: 0;
@@ -146,7 +150,7 @@ body.home {
         }
         h4 {
           @include titulos($style: normal, $size: 0.9rem);
-          background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+          background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
           bottom: 0;
           color: white;
           left: 0;
