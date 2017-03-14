@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc78901989c75888f09ea2b462f38e79",
+    "content-hash": "ecbd8bdee1d4b872b0d4f07da56fa51e",
     "packages": [
         {
             "name": "composer/installers",
@@ -386,6 +386,27 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/crop-thumbnails",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/crop-thumbnails/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/crop-thumbnails.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/crop-thumbnails/",
+            "time": "2016-12-23T12:17:38+00:00"
+        },
+        {
             "name": "wpackagist-plugin/default-featured-image",
             "version": "dev-trunk",
             "source": {
@@ -578,7 +599,8 @@
         "wpackagist-plugin/regenerate-thumbnails-advanced": 20,
         "wpackagist-plugin/php-code-widget": 20,
         "wpackagist-plugin/taghound-media-tagger": 20,
-        "wpackagist-plugin/wordpress-importer": 20
+        "wpackagist-plugin/wordpress-importer": 20,
+        "wpackagist-plugin/crop-thumbnails": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

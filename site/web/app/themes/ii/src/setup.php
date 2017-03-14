@@ -14,7 +14,7 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
-    wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Droid+Serif|Noto+Sans|Noto+Serif|Tinos', false, null );
+    wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto|Roboto+Slab', false, null );
 }, 100);
 
 /**

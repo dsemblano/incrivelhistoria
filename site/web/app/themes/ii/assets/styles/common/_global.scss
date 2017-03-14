@@ -1,6 +1,10 @@
 // CSS Geral
 a {
   color: $titulos_cor;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 body {
   // background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
@@ -49,13 +53,13 @@ body {
     }
     #logo {
       margin-top: 15px;
-      img { width: 80%; }
+      img { width: 90%; }
       .brand {
         display: inline-flex;
-        font-family: "Javanese";
-        font-size: 4.25rem;
+        font-family: "Roboto Slab";
+        font-size: 5rem;
         line-height: 1em;
-        margin-top: 8px;
+        margin-top: 0;
         margin-bottom: 0;
       }
     }
@@ -69,7 +73,7 @@ body {
     @extend %sombra;
     main {
       overflow: hidden;
-      font: 14px "Noto Sans", sans-serif;
+      font: 'Roboto', sans-serif;
       section {
         overflow: hidden;
       }
@@ -82,7 +86,10 @@ body {
     .widget_tag_cloud {
       margin-top: 15px;
       .tagcloud a {
-        font: 12px "Noto Sans", sans-serif;
+        font: 12px 'Roboto Slab', serif;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -196,22 +203,43 @@ body.page {
 }
 
 // Single posts
+main {
+
+}
 .single-post {
-    blockquote {
-      &::before {
-        color: #999;
-        content: "“";
-        display: block;
-        font: italic 400%/1 Georgia,"Times New Roman",serif;
-        height: 0;
-        margin-left: 0.2em;
+  main {
+    header {
+      h1 { @include titulos($style: normal); }
+    }
+    article {
+      h2, h3, h4, h5, h6 { font-size: 1.15rem }
+      p { text-align: justify; }
+      img {
+        margin-bottom: 0;
       }
-      p {
-        font-size: 1.1rem;
-        font-style: italic;
-        margin-left: 2.5em;
-        margin-top: 1em;
-        text-align: justify;
+      figcaption {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+      }
+      blockquote {
+        &::before {
+          color: #999;
+          content: "“";
+          display: block;
+          font: italic 400%/1 Georgia,"Times New Roman",serif;
+          height: 0;
+          margin-left: 0.2em;
+        }
+        p {
+          font-size: 1.1rem;
+          font-style: italic;
+          margin-left: 2.5em;
+          margin-top: 1em;
+          text-align: justify;
+        }
       }
     }
+  }
 }
