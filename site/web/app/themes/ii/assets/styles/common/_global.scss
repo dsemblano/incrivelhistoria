@@ -7,17 +7,6 @@ a {
   }
 }
 body {
-  // background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
-  // background: -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), -moz-linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
-  // background: linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), linear-gradient(45deg, rgba(0,0,0,0.0980392) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.0980392) 75%, rgba(0,0,0,0.0980392) 0), rgb(255, 255, 255);
-  // background-position: 0 0, 40px 40px;
-  // -webkit-background-origin: padding-box;
-  // background-origin: padding-box;
-  // -webkit-background-clip: border-box;
-  // background-clip: border-box;
-  // -webkit-background-size: 80px 80px;
-  // background-size: 80px 80px;
-
   header.banner {
     .container {
       background-color: white;
@@ -124,7 +113,7 @@ body.home {
           span{
             // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
             // background: rgba(54, 25, 25, .5);
-            background: rgba(0, 0, 0, 0.5);
+            @extend %titulo_bg;
             color: white;
             bottom: 0;
             left: 0;
@@ -157,7 +146,7 @@ body.home {
         }
         h4 {
           @include titulos($style: normal, $size: 0.9rem);
-          background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+          @extend %titulo_bg;
           bottom: 0;
           color: white;
           left: 0;
@@ -239,6 +228,10 @@ main {
           margin-top: 1em;
           text-align: justify;
         }
+      }
+      .crp_related {
+        h3 { @include titulos_chamadas($weight:bold, $size: 1.5rem); }
+        li { box-shadow: none; border: none; }
       }
     }
   }

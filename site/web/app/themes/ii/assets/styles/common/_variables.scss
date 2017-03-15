@@ -9,14 +9,15 @@ $hover_cor:             red;
   font: $style $weight $size 'Roboto Slab', serif;
 }
 
-@mixin titulos_chamadas($size: 1rem, $color: $titulos_cor ) {
-  font: $size 'Roboto Slab', serif;
+@mixin titulos_chamadas($weight:normal, $size: 1rem, $color: $titulos_cor ) {
+  font: $weight $size 'Roboto Slab', serif;
 }
 
 %sombra {
   box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
 }
 
+%titulo_bg { background: rgba(0, 0, 0, 0.5); }
 
 %titulo_hr {
   display: inline-block;

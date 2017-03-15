@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14278ab5291e6bd75229fa5b00b1611b",
+    "content-hash": "3a64824f904134975ddbe344365a7948",
     "packages": [
         {
             "name": "composer/installers",
@@ -386,6 +386,27 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/contextual-related-posts",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contextual-related-posts/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contextual-related-posts.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contextual-related-posts/",
+            "time": "2016-12-17T18:34:19+00:00"
+        },
+        {
             "name": "wpackagist-plugin/default-featured-image",
             "version": "dev-trunk",
             "source": {
@@ -600,7 +621,8 @@
         "wpackagist-plugin/php-code-widget": 20,
         "wpackagist-plugin/taghound-media-tagger": 20,
         "wpackagist-plugin/wordpress-importer": 20,
-        "wpackagist-plugin/wordpress-seo": 20
+        "wpackagist-plugin/wordpress-seo": 20,
+        "wpackagist-plugin/contextual-related-posts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
