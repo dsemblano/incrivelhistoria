@@ -185,6 +185,10 @@ body.home {
         text-align: center;
         &:after { background: none; }
       }
+      a.button {
+        margin: 0 auto;
+        @include titulos_chamadas($weight:bold, $size: 2rem);
+      }
     }
   }
 }
