@@ -231,7 +231,11 @@ main {
       }
       .crp_related {
         h3 { @include titulos_chamadas($weight:bold, $size: 1.5rem); }
-        li { box-shadow: none; border: none; }
+        li {
+          box-shadow: none;
+          border: none;
+          .crp_title { border-radius: 0; }
+        }
       }
     }
   }
