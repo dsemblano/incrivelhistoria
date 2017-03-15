@@ -47,7 +47,7 @@
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": "dev-trunk",
     "wpackagist-plugin/contextual-related-posts": "dev-trunk",
-    "wpackagist-plugin/ewww-image-optimizer": "dev-trunk"
+    "wpackagist-plugin/wp-smushit": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

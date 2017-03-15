@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fab90bd98ca68c6d65011d131164cbae",
+    "content-hash": "04e0f4daa68b62a7e92b976e729efcdd",
     "packages": [
         {
             "name": "composer/installers",
@@ -428,27 +428,6 @@
             "time": "2016-04-16T20:06:03+00:00"
         },
         {
-            "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/",
-            "time": "2017-03-13T23:20:26+00:00"
-        },
-        {
             "name": "wpackagist-plugin/php-code-widget",
             "version": "dev-trunk",
             "source": {
@@ -552,6 +531,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/",
             "time": "2017-03-14T15:50:06+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-smushit",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-smushit/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-smushit.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-smushit/",
+            "time": "2017-03-08T21:59:41+00:00"
         }
     ],
     "packages-dev": [
@@ -644,7 +644,7 @@
         "wpackagist-plugin/wordpress-importer": 20,
         "wpackagist-plugin/wordpress-seo": 20,
         "wpackagist-plugin/contextual-related-posts": 20,
-        "wpackagist-plugin/ewww-image-optimizer": 20
+        "wpackagist-plugin/wp-smushit": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
