@@ -177,6 +177,15 @@ body.home {
         width: 100%;
       }
     }
+    section#mais-extensao {
+      margin-top: 15px;
+      @extend section#mais;
+      h2 {
+        display: block;
+        text-align: center;
+        &:after { background: none; }
+      }
+    }
   }
 }
 

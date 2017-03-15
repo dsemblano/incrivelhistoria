@@ -2,68 +2,144 @@
   <h2>Mais</h2>
   <div class="row">
   <?php
-        $args = new WP_Query( array( 'category_name' => 'mais', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
-        if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
-    ?>
-        <article class="col-md-4">
-          <a href="<?php the_permalink(); ?>">
-              <?php echo (App\featured_image_url('thumb-mais')); ?>
-              <h3><?php the_title(); ?></h3>
-          </a>
-        </article>
-    <?php endwhile; ?>
-
+    $args = new WP_Query( array( 'category_name' => 'mais', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
+    if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+  ?>
+    <article class="col-md-4">
+      <a href="<?php the_permalink(); ?>">
+        <?php echo (App\featured_image_url('thumb-mais')); ?>
+        <h3><?php the_title(); ?></h3>
+      </a>
+    </article>
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
     <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
   </div>
-
-
 </section>
 
-<?php
-    $categories = get_categories();
-    $count = 0;
-    echo '<div class=row>';
-    foreach ( $categories as $category ) {
-      $args = array(
-        'cat' => $category->term_id,
-        'post_type' => 'post',
-        'posts_per_page' => '3',
-      );
+<section id="mais-extensao" class="row">
+  <div class="mais_esquerda col-md-6">
+    <section id="historia-do-brasil">
+      <h2>História do Brasil</h2>
+    <?php
+      $args = new WP_Query( array( 'category_name' => 'historia-do-brasil', 'orderby' => 'rand', 'posts_per_page'=>1 ) );
+      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+    ?>
+      <article>
+        <a href="<?php the_permalink(); ?>">
+          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <h3><?php the_title(); ?></h3>
+          <?php
+              if (!has_excerpt()) {
+              $content = apply_filters('get_the_content', get_the_content());
+              $content = strip_tags($content);
+              $content = mb_strimwidth($content, 0, 500, ' ...');
+              echo '<p>' . $content . '</p>';
+              } else {
+              echo '<p>' . substr(get_the_excerpt(), 0, 450) . '...' . '</p>';
+              }
+          ?>
+        </a>
+      </article>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+    </section>
 
-    $query = new WP_Query( $args );
+    <section id="batalhas-historicas">
+      <h2>Batalhas Históricas</h2>
+    <?php
+      $args = new WP_Query( array( 'category_name' => 'batalhas-historicas', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
+      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+    ?>
+      <article>
+        <a href="<?php the_permalink(); ?>">
+          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <h3><?php the_title(); ?></h3>
+          <?php
+              if (!has_excerpt()) {
+              $content = apply_filters('get_the_content', get_the_content());
+              $content = strip_tags($content);
+              $content = mb_strimwidth($content, 0, 500, ' ...');
+              echo '<p>' . $content . '</p>';
+              } else {
+              echo '<p>' . substr(get_the_excerpt(), 0, 450) . '...' . '</p>';
+              }
+          ?>
+        </a>
+      </article>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+    </section>
 
-    if ( $query->have_posts() ) { ?>
+  </div>
 
-      <section class="col-md-6 cat-<?php echo $category->slug; echo (++$count%2 ? " odd" : " even"); ?>">
-          <h2><?php echo $category->name; ?>:</h2>
+  <div class="mais_direita col-md-6">
+    <section id="direitos-humanos">
+      <h2>Direitos Humanos</h2>
+    <?php
+      $args = new WP_Query( array( 'category_name' => 'direitos-humanos', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
+      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+    ?>
+      <article>
+        <a href="<?php the_permalink(); ?>">
+          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <h3><?php the_title(); ?></h3>
+          <?php
+              if (!has_excerpt()) {
+              $content = apply_filters('get_the_content', get_the_content());
+              $content = strip_tags($content);
+              $content = mb_strimwidth($content, 0, 500, ' ...');
+              echo '<p>' . $content . '</p>';
+              } else {
+              echo '<p>' . substr(get_the_excerpt(), 0, 450) . '...' . '</p>';
+              }
+          ?>
+        </a>
+      </article>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+    </section>
 
-          <?php while ( $query->have_posts() ) {
+    <section id="crime-organizado">
+      <h2>Crime Organizado</h2>
+    <?php
+      $args = new WP_Query( array( 'category_name' => 'crime-organizado', 'orderby' => 'rand', 'posts_per_page'=>1 ) );
+      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+    ?>
+      <article>
+        <a href="<?php the_permalink(); ?>">
+          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <h3><?php the_title(); ?></h3>
+          <?php
+              if (!has_excerpt()) {
+              $content = apply_filters('get_the_content', get_the_content());
+              $content = strip_tags($content);
+              $content = mb_strimwidth($content, 0, 500, ' ...');
+              echo '<p>' . $content . '</p>';
+              } else {
+              echo '<p>' . substr(get_the_excerpt(), 0, 450) . '...' . '</p>';
+              }
+          ?>
+        </a>
+      </article>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+      <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+    </section>
 
-              $query->the_post();
-              ?>
+  </div>
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class( 'category-listing' ); ?>>
-                  <?php echo (App\featured_image_url('thumbnail')) ?>
-
-                  <h3 class="entry-title">
-                      <a href="<?php the_permalink(); ?>">
-                          <?php the_title(); ?>
-                      </a>
-                  </h3>
-
-                  <?php the_excerpt( __( 'Continue Reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) ); ?>
-
-              </article>
-
-          <?php } // end while ?>
-
-      </section>
-      <?php echo ($count%2 ? "" : "</div><div class=row>"); ?>
-
-      <?php } // end if
-      // Use reset to restore original query.
-      wp_reset_postdata();
-    }
- ?>
+</section>
