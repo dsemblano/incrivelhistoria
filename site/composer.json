@@ -45,7 +45,7 @@
     "wpackagist-plugin/taghound-media-tagger": "dev-trunk",
     "roots/soil": "3.7.1",
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
-    "wpackagist-plugin/crop-thumbnails": "dev-trunk"
+    "wpackagist-plugin/wordpress-seo": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
