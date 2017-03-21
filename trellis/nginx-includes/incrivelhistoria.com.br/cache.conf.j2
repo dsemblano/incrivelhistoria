@@ -1,3 +1,5 @@
 location ~*  \.(jpg|jpeg|png|gif|ico|css|js|svg)$ {
-  expires 365d;
+  expires 30d;
 }
+add_header Pragma public;
+add_header Cache-Control "public";
