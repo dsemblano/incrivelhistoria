@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fab90bd98ca68c6d65011d131164cbae",
+    "content-hash": "1b5ec929d40c5c58f7b51bf0cdb1469c",
     "packages": [
         {
             "name": "composer/installers",
@@ -470,25 +470,25 @@
             "time": "2016-04-15T21:32:26+00:00"
         },
         {
-            "name": "wpackagist-plugin/regenerate-thumbnails-advanced",
+            "name": "wpackagist-plugin/regenerate-thumbnails",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails-advanced/",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails-advanced.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails-advanced/",
-            "time": "2017-03-06T15:30:46+00:00"
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/",
+            "time": "2016-07-29T01:41:13+00:00"
         },
         {
             "name": "wpackagist-plugin/taghound-media-tagger",
@@ -637,8 +637,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "wpackagist-plugin/regenerate-thumbnails": 20,
         "wpackagist-plugin/default-featured-image": 20,
-        "wpackagist-plugin/regenerate-thumbnails-advanced": 20,
         "wpackagist-plugin/php-code-widget": 20,
         "wpackagist-plugin/taghound-media-tagger": 20,
         "wpackagist-plugin/wordpress-importer": 20,
