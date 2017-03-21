@@ -128,8 +128,6 @@ function featured_image_url($size) {
     // imagem destacada antes mas foi apagada via Wordpress, ficando vazia mas
     // sendo substituída pelo plugin "Default featured image"
     if ( ! empty( $image_url ) ) {
-        // var_dump($image_url);
-        // var_dump($first_img);
         return the_post_thumbnail($size);
     }
     // Caso para os posts que tinham imagem destacada em outro banco mas as imagens
@@ -137,11 +135,10 @@ function featured_image_url($size) {
     // banco ainda aparece como tendo. Nesse caso, echoar a primeira imagem do
     // body do texto, onde ela vai ser a destacada
     elseif ( ! empty($first_img)) {
-      // var_dump($first_img);
       global $_wp_additional_image_sizes;
-      $height =  $_wp_additional_image_sizes['thumb-mais']['height'];
-      // $width = $_wp_additional_image_sizes['thumb-mais']['width'];
-      echo '<img class="attachment-'.$size.' size-'.$size.' wp-post-image" height='.$height.' alt="imagem destacada" src="' . $first_img . '" />';
+      $height =  $_wp_additional_image_sizes[$size]['height'];
+      $width = $_wp_additional_image_sizes[$size]['width'];
+      echo '<img class="attachment-'.$size.' size-'.$size.' wp-post-image" width='.$width.' height='.$height.' src="' . $first_img . '" />';
           // $first_img = "/images/default.jpg";
           // return $first_img;
     }

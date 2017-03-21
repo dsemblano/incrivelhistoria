@@ -11,7 +11,7 @@
     <div class="col-md-8">
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php echo (App\featured_image_url('large')); ?>
+            <?php echo (App\featured_image_url('curiosidades_large')); ?>
             <h3><?php the_title(); ?></h3>
         </a>
           <?php
@@ -30,7 +30,7 @@
       <?php else : ?>
         <article>
             <a href="<?php the_permalink(); ?>">
-                <?php echo (App\featured_image_url('thumbnail_curiosidades')); ?>
+                <?php echo (App\featured_image_url('curiosidades_small')); ?>
                   <h4><?php the_title(); ?></h4>
             </a>
         </article>

@@ -7,7 +7,7 @@
   ?>
     <article class="col-md-4">
       <a href="<?php the_permalink(); ?>">
-        <?php echo (App\featured_image_url('thumb-mais')); ?>
+        <?php echo (App\featured_image_url('mais')); ?>
         <h3><?php the_title(); ?></h3>
       </a>
     </article>
@@ -31,7 +31,7 @@
       <article>
         <a class="<?=$row; ?>" href="<?php the_permalink(); ?>">
           <?php if ($row == 1): ?>
-            <?php echo (App\featured_image_url('thumb-mais')); ?>
+            <?php echo (App\featured_image_url('mais_extendida')); ?>
           <?php endif; ++$row; ?>
           <h3><?php the_title(); ?></h3>
         </a>
@@ -51,7 +51,7 @@
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <?php echo (App\featured_image_url('mais_extendida')); ?>
           <h3><?php the_title(); ?></h3>
         </a>
       </article>
@@ -73,7 +73,7 @@
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-          <?php echo (App\featured_image_url('thumb-mais')); ?>
+          <?php echo (App\featured_image_url('mais_extendida')); ?>
           <h3><?php the_title(); ?></h3>
         </a>
       </article>
@@ -94,7 +94,7 @@
       <article>
         <a class="<?=$row; ?>" href="<?php the_permalink(); ?>">
           <?php if ($row == 1): ?>
-            <?php echo (App\featured_image_url('thumb-mais')); ?>
+            <?php echo (App\featured_image_url('mais_extendida')); ?>
           <?php endif; ++$row; ?>
           <h3><?php the_title(); ?></h3>
         </a>

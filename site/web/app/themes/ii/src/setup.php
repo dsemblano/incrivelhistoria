@@ -108,25 +108,28 @@ add_filter('sage/display_sidebar', function ($display) {
 });
 
 // Thumbnails images
-add_image_size( 'slideshow', 710, 455, true );
-add_image_size( 'thumb-mais', 9999, 150, true );
+add_image_size( 'slideshow', 730, 435, true );
+add_image_size( 'curiosidades_large', 480, 370, true );
+add_image_size( 'curiosidades_small', 220, 155, true );
+add_image_size( 'mais', 225, 150, true );
+add_image_size( 'mais_extendida', 350, 155, true );
 
 // thumbnail_upscale
-function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
-    if ( !$crop ) return null; // let the wordpress default function handle this
-
-    $aspect_ratio = $orig_w / $orig_h;
-    $size_ratio = max($new_w / $orig_w, $new_h / $orig_h);
-
-    $crop_w = round($new_w / $size_ratio);
-    $crop_h = round($new_h / $size_ratio);
-
-    $s_x = floor( ($orig_w - $crop_w) / 2 );
-    $s_y = floor( ($orig_h - $crop_h) / 2 );
-
-    return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
-}
-add_filter( 'image_resize_dimensions', 'alx_thumbnail_upscale', 10, 6 );
+// function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
+//     if ( !$crop ) return null; // let the wordpress default function handle this
+//
+//     $aspect_ratio = $orig_w / $orig_h;
+//     $size_ratio = max($new_w / $orig_w, $new_h / $orig_h);
+//
+//     $crop_w = round($new_w / $size_ratio);
+//     $crop_h = round($new_h / $size_ratio);
+//
+//     $s_x = floor( ($orig_w - $crop_w) / 2 );
+//     $s_y = floor( ($orig_h - $crop_h) / 2 );
+//
+//     return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
+// }
+// add_filter( 'image_resize_dimensions', 'alx_thumbnail_upscale', 10, 6 );
 
 /**
  * Updates the `$post` variable on each iteration of the loop.
