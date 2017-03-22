@@ -43,10 +43,10 @@ body {
     }
     #logo {
       margin-top: 15px;
-      img { width: 90%; }
+      // img { width: 90%; }
       .brand {
         display: inline-flex;
-        @include titulos_chamadas_bold($size: 5rem);        
+        @include titulos_chamadas_bold($size: 5rem);
         line-height: 1em;
         margin-top: 0;
         margin-bottom: 0;
