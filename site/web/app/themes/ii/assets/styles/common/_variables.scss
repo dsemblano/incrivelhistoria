@@ -1,47 +1,48 @@
 // Colors
-$brand-primary:         #27ae60;
-// $titulos_cor:           rgb(23, 31, 68);
+$brand-primary:         #084a60;
+$cor-primary:           #188cb3; // azul
+$cor-complem:           #c27525; // laranja
+$cor-sidebar:           #c9dae1; // azul claro
 $titulos_cor:           #171f44;
-$hover_cor:             red;
 
 //Mixins
-@mixin titulos($size: 2rem, $margin-top: 5px) {
-  font: $size 'roboto_slabbold', serif;
+@mixin titulos($size: 2rem) {
+  font: $size 'roboto_slabregular', serif;
 }
 
 @mixin titulos_chamadas($size: 1rem) {
   font: $size 'roboto_slabregular', serif;
 }
 
-@mixin titulos_chamadas_bold($size: 1rem) {
+@mixin titulos_chamadas_bold($size: 2rem) {
   font: $size 'roboto_slabbold', serif;
 }
 
-%sombra {
-  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
-}
+// %sombra {
+//   box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+// }
 
 %titulo_bg {
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
   &:hover { background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0; }
 }
 
-%titulo_hr {
-  display: inline-block;
-  padding-right: 15px;
-  position: relative;
-  text-align: left;
-  &::after {
-    background: #000 none repeat scroll 0 0;
-    top: 25px;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    left: 100%;
-    position: absolute;
-    width: 100vw;
-  }
-}
+// %titulo_hr {
+//   display: inline-block;
+//   padding-right: 15px;
+//   position: relative;
+//   text-align: left;
+//   &::after {
+//     background: #000 none repeat scroll 0 0;
+//     top: 25px;
+//     content: "";
+//     display: inline-block;
+//     height: 1px;
+//     left: 100%;
+//     position: absolute;
+//     width: 100vw;
+//   }
+// }
 
 // Font-face
 @font-face {

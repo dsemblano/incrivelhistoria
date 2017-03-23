@@ -6,60 +6,75 @@ a {
     color: inherit;
   }
 }
+
+hr {
+  border-color: $cor-complem;
+  border-style: solid $cor-complem;
+  border-width: 5px 0;
+  // margin: 18px 0;
+}
+
 body {
   @include titulos_chamadas;
   header.banner {
-    .container {
-      background-color: white;
-      @extend %sombra;
-      nav.nav-primary {
-        border-bottom: 2px solid #000;
-        @include titulos($size: 1rem, $margin-top: 0)
-        ul.nav {
-          width: -webkit-fit-content;
-           width: -moz-fit-content;
-                width: fit-content;
-          li {
-            list-style: none;
-            &.menu-item-has-children {
-              &:hover .sub-menu {
-                display: inline !important;
-              }
-              .sub-menu {
-                background-color: white;
-                display: none;
-                position: absolute;
-                z-index: 9999;
-                padding: 0;
-                @extend %sombra;
-                li {
-                  &:hover { background-color: #F2EEDD; }
-                }
-              }
+    .nav-primary-main {
+      background-color: $cor-primary;
+      color: white;
+      .sub-menu li {
+        background-color: $cor-primary;
+        &:hover { background-color: #137c9f; }
+      }
+    }
+    nav.nav-primary {
+      @include titulos_chamadas($size: 1rem)
+      ul.nav {
+        li {
+          list-style: none;
+          a { color: inherit; }
+          &.menu-item-has-children {
+            &:hover .sub-menu {
+              display: inline !important;
+            }
+            .sub-menu {
+              display: none;
+              position: absolute;
+              z-index: 9999;
+              padding: 0;
             }
           }
         }
       }
     }
+  }
     #logo {
       margin-top: 15px;
-      // img { width: 90%; }
-      .brand {
-        display: inline-flex;
-        @include titulos_chamadas_bold($size: 5rem);
-        line-height: 1em;
-        margin-top: 0;
-        margin-bottom: 0;
+      color: $brand-primary;
+      background: url('../images/bg_header.jpg') no-repeat scroll center center / cover;
+      height: 500px;
+      padding-top: 15px;
+      svg {
+        // width: 145px;
+        // height: 165px;
+        // width: 8%;
+        path {
+          fill: $brand-primary;
+        }
       }
-    }
+      // img { width: 90%; }
+      h1 {
+        // display: inline-flex;
+        @include titulos_chamadas_bold($size: 3rem);
+        margin-left: 45px;
+        line-height: 1em;
+        a { color: inherit;; }
+      }
   }
 
 
-  background: rgba(0, 0, 0, 0) url("../images/ricepaper_v3.png") repeat scroll 0 0;
+  // background: rgba(0, 0, 0, 0) url("../images/ricepaper_v3.png") repeat scroll 0 0;
   .content {
     background-color: white;
     padding-top: 20px;
-    @extend %sombra;
     main {
       overflow: hidden;
       font: 'Roboto', sans-serif;
@@ -71,7 +86,9 @@ body {
 
   // Sidebar
   .sidebar {
-    // background-color: green;
+    background-color: $cor-sidebar;
+    height: 100%;
+    padding: 1em;
     .widget_tag_cloud {
       margin-top: 15px;
       .tagcloud a {
@@ -81,6 +98,15 @@ body {
         }
       }
     }
+  }
+  footer.content-info {
+    background-color: $cor-primary;
+    color: white;
+    text-align: center;
+    height: 200px;
+    margin-top: 5em;
+    @include titulos_chamadas($size: 2rem);
+    .container, .row { height: inherit; }
   }
 }
 
@@ -119,8 +145,8 @@ body.home {
             left: 0;
             position: absolute;
             padding: 0 15px 10px;
-            h1 {
-              @include titulos;
+            h2 {
+              @include titulos_chamadas_bold;
               padding: 0;
               margin: 0;
             }
@@ -136,16 +162,19 @@ body.home {
       // background-color: yellow;
       h2 {
         @include titulos;
-        @extend %titulo_hr;
+        background-color: $cor-complem;
+        color: white;
+        text-indent: 1em;
+        line-height: 2em;
       }
       article {
         position: relative;
         margin-bottom: 15px;
         h3 {
-          @include titulos;
+          @include titulos_chamadas_bold;
         }
         h4 {
-          @include titulos($size: 0.9rem);
+          @include titulos_chamadas_bold($size: 0.9rem);
           @extend %titulo_bg;
           bottom: 0;
           color: white;
@@ -165,31 +194,36 @@ body.home {
     section#mais {
       h2 {
         @include titulos;
-        @extend %titulo_hr;
+        background-color: $cor-complem;
+        color: white;
+        text-align: center;
+        line-height: 2em;
       }
       article {
         @include titulos_chamadas;
         h3 {
-          @include titulos($size: 1rem);
+          @include titulos_chamadas_bold($size: 1rem);
         }
       }
       img {
         max-width: 100%;
         // width: 100%;
       }
+      .mais-extensao {
+        margin-top: 15px;
+        h2 {
+          background-color: transparent;
+          color: black;
+          display: block;
+          text-align: center;
+          &:after { background: none; }
+        }
+      }
     }
-    section#mais-extensao {
-      margin-top: 15px;
-      @extend section#mais;
-      h2 {
-        display: block;
-        text-align: center;
-        &:after { background: none; }
-      }
-      a.button {
-        margin: 0 auto;
-        @include titulos_chamadas_bold($size: 2rem);
-      }
+    span.text-center {
+      display: block;
+      margin: 0 auto;
+      a.button { @include titulos_chamadas_bold($size: 2rem); }
     }
   }
 }

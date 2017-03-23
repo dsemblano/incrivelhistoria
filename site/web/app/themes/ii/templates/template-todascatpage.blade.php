@@ -33,7 +33,7 @@
               ?>
 
               <article id="post-<?php the_ID(); ?>" <?php post_class( 'category-listing' ); ?>>
-                  <?php echo (App\featured_image_url('thumbnail')) ?>
+                  <?php echo (App\featured_image_url('mais_extendida')) ?>
 
                   <h3 class="entry-title">
                       <a href="<?php the_permalink(); ?>">
