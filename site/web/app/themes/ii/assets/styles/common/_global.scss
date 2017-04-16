@@ -87,6 +87,11 @@ body {
   // Sidebar
   .sidebar {
     background-color: $cor-sidebar;
+    // @media (min-width: $screen-sm-min) {
+    //   background-color: red;
+    // }
+    // @include make-sm-column($main-sm-columns);
+
     height: 100%;
     padding: 1em;
     .widget_tag_cloud {
@@ -228,21 +233,20 @@ body.home {
   }
 }
 
-// CSS Páginas
-body.page {
-  .row {
-    // background-color: yellow;
-    // margin-bottom: 10px;
-    section {
-      // background-color: orange;
+// Paginas e Categorias
+.archive {
+  .page-header {
+  }
+  article {
+    header {
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 }
 
 // Single posts
-main {
-
-}
 .single-post {
   main {
     header {
