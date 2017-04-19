@@ -1,0 +1,20 @@
+// Sidebar
+.sidebar {
+  background-color: $cor-sidebar;
+  // @media (min-width: $screen-sm-min) {
+  //   background-color: red;
+  // }
+  // @include make-sm-column($main-sm-columns);
+
+  height: 100%;
+  padding: 1em;
+  .widget_tag_cloud {
+    margin-top: 15px;
+    .tagcloud a {
+      font: 12px 'Roboto Slab', serif;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
