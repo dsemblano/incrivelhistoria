@@ -1,0 +1,9 @@
+footer.content-info {
+  background-color: $cor-primary;
+  color: white;
+  text-align: center;
+  height: 200px;
+  margin-top: 5em;
+  @include titulos_chamadas($size: 2rem);
+  .container, .row { height: inherit; }
+}

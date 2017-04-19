@@ -1,0 +1,285 @@
+// CSS Geral
+a {
+  color: $titulos_cor;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+hr {
+  border-color: $cor-complem;
+  border-style: solid $cor-complem;
+  border-width: 5px 0;
+  // margin: 18px 0;
+}
+
+body {
+  @include titulos_chamadas;
+  header.banner {
+    .nav-primary-main {
+      background-color: $cor-primary;
+      color: white;
+      .sub-menu li {
+        background-color: $cor-primary;
+        &:hover { background-color: #137c9f; }
+      }
+    }
+    nav.nav-primary {
+      @include titulos_chamadas($size: 1rem)
+      ul.nav {
+        li {
+          list-style: none;
+          a { color: inherit; }
+          &.menu-item-has-children {
+            &:hover .sub-menu {
+              display: inline !important;
+            }
+            .sub-menu {
+              display: none;
+              position: absolute;
+              z-index: 9999;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+    #logo {
+      margin-top: 15px;
+      color: $brand-primary;
+      background: url('../images/bg_header.jpg') no-repeat scroll center center / cover;
+      height: 500px;
+      padding-top: 15px;
+      svg {
+        // width: 145px;
+        // height: 165px;
+        // width: 8%;
+        path {
+          fill: $brand-primary;
+        }
+      }
+      // img { width: 90%; }
+      h1 {
+        // display: inline-flex;
+        @include titulos_chamadas_bold($size: 3rem);
+        margin-left: 45px;
+        line-height: 1em;
+        a { color: inherit;; }
+      }
+  }
+
+
+  // background: rgba(0, 0, 0, 0) url("../images/ricepaper_v3.png") repeat scroll 0 0;
+  .content {
+    background-color: white;
+    padding-top: 20px;
+    main {
+      overflow: hidden;
+      font: 'Roboto', sans-serif;
+      section {
+        overflow: hidden;
+      }
+    }
+  }
+
+  // Sidebar
+  .sidebar {
+    background-color: $cor-sidebar;
+    // @media (min-width: $screen-sm-min) {
+    //   background-color: red;
+    // }
+    // @include make-sm-column($main-sm-columns);
+
+    height: 100%;
+    padding: 1em;
+    .widget_tag_cloud {
+      margin-top: 15px;
+      .tagcloud a {
+        font: 12px 'Roboto Slab', serif;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// CSS apenas home
+body.home {
+  // background-color: pink;
+  .content {
+  }
+  main {
+    // background-color: #D3D3D3;
+    section#carousel {
+      // height: 750px;
+      height: 435px;
+      margin-bottom: 35px;
+      // background-color: red;
+      .flickity-page-dots {
+        bottom: -20px !important;
+      }
+      .flickity-slider li {
+          width: 100%;
+          list-style: none;
+          h2 {
+            @include titulos;
+          }
+          img {
+            max-width: 100%;
+            width: 100%;
+            min-height: 435px;
+          }
+          span{
+            // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
+            // background: rgba(54, 25, 25, .5);
+            @extend %titulo_bg;
+            color: white;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            padding: 0 15px 10px;
+            h2 {
+              @include titulos_chamadas_bold;
+              padding: 0;
+              margin: 0;
+            }
+            p {
+              @include titulos_chamadas;
+              // background-color: purple;
+              // padding: 5px 10px;
+            }
+          }
+        }
+    }
+    section#curiosidades {
+      // background-color: yellow;
+      h2 {
+        @include titulos;
+        background-color: $cor-complem;
+        color: white;
+        text-indent: 1em;
+        line-height: 2em;
+      }
+      article {
+        position: relative;
+        margin-bottom: 15px;
+        h3 {
+          @include titulos_chamadas_bold;
+        }
+        h4 {
+          @include titulos_chamadas_bold($size: 0.9rem);
+          @extend %titulo_bg;
+          bottom: 0;
+          color: white;
+          left: 0;
+          margin: 0;
+          padding: 3px 0 3px 10px;
+          position: absolute;
+          width: 100%;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+      }
+    }
+    section#mais {
+      h2 {
+        @include titulos;
+        background-color: $cor-complem;
+        color: white;
+        text-align: center;
+        line-height: 2em;
+      }
+      article {
+        @include titulos_chamadas;
+        h3 {
+          @include titulos_chamadas_bold($size: 1rem);
+        }
+      }
+      img {
+        max-width: 100%;
+        // width: 100%;
+      }
+      .mais-extensao {
+        margin-top: 15px;
+        h2 {
+          background-color: transparent;
+          color: black;
+          display: block;
+          text-align: center;
+          &:after { background: none; }
+        }
+      }
+    }
+    span.text-center {
+      display: block;
+      margin: 0 auto;
+      a.button { @include titulos_chamadas_bold($size: 2rem); }
+    }
+  }
+}
+
+// Paginas e Categorias
+.archive {
+  .page-header {
+  }
+  article {
+    header {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// Single posts
+.single-post {
+  main {
+    header {
+      h1 { @include titulos; }
+    }
+    article {
+      h2, h3, h4, h5, h6 { font-size: 1.15rem }
+      p { text-align: justify; }
+      img {
+        margin-bottom: 0;
+      }
+      figcaption {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+      }
+      blockquote {
+        &::before {
+          color: #999;
+          content: "“";
+          display: block;
+          font: italic 400%/1 Georgia,"Times New Roman",serif;
+          height: 0;
+          margin-left: 0.2em;
+        }
+        p {
+          font-size: 1.1rem;
+          font-style: italic;
+          margin-left: 2.5em;
+          margin-top: 1em;
+          text-align: justify;
+        }
+      }
+      .crp_related {
+        h3 { @include titulos_chamadas_bold($size: 1.5rem); }
+        li {
+          box-shadow: none;
+          border: none;
+          .crp_title { border-radius: 0; }
+        }
+      }
+    }
+  }
+}

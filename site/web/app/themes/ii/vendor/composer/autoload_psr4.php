@@ -8,7 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
     'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
-    'Roots\\Sage\\' => array($baseDir . '/src/lib/Sage'),
+    'Roots\\Sage\\' => array($baseDir . '/app/lib/Sage'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Illuminate\\View\\' => array($vendorDir . '/illuminate/view'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
