@@ -20,13 +20,9 @@ body {
     .nav-primary-main {
       background-color: $cor-primary;
       color: white;
-      ul {
-        li {
+      ul.nav {
+        > li {
           position: relative;
-          .sub-menu li {
-            background-color: $cor-primary;
-            &:hover { background-color: #137c9f; }
-          }
           &::after {
             background-color: #73c7eb;
             content: "";
@@ -35,6 +31,17 @@ body {
             right: 0;
             top: 15%;
             width: 2px;
+          }
+          ul.sub-menu {
+            display: none;
+            position: absolute;
+            z-index: 9999;
+            padding: 0;
+            box-shadow: 5px 6px 5px 0 rgba(0, 0, 0, 0.25);
+            li {
+              background-color: $cor-primary;
+              &:hover { background-color: #137c9f; }
+            }
           }
         }
       }
@@ -48,12 +55,6 @@ body {
           &.menu-item-has-children {
             &:hover .sub-menu {
               display: inline !important;
-            }
-            .sub-menu {
-              display: none;
-              position: absolute;
-              z-index: 9999;
-              padding: 0;
             }
           }
         }
