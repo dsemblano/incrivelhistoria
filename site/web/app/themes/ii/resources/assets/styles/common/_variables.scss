@@ -4,6 +4,47 @@ $cor-primary:           #188cb3; // azul
 $cor-complem:           #c27525; // laranja
 $cor-sidebar:           #c9dae1; // azul claro
 $titulos_cor:           #171f44;
+//cor categorias historia brasil
+$cat_histbrasil:        #9BF046;
+$cat_colonia:           #96E078;
+$cat_imperio:            #7FB747;
+$cat_republica:          #4C8216;
+//cor categorias periodos
+$cat_periodos:          #ffd88d;
+$cat_idantiga:          #deb058;
+$cat_idmedia:           #b58a37;
+$cat_idmoderna:         #976115;
+$cat_idcontemp:         #5b3b0e;
+//cor categorias artes
+$cat_artes:              #FF210A;
+$cat_cinema:             #E7543C;
+$cat_musica:             #EB7A68;
+$cat_liter:              #F86D57;
+//cor biografias
+$cat_bio:                #6657F8;
+$cat_dirhum:             #0F2886;
+$cat_curios:             #083C17;
+// cor guerras
+$cor_guerras:            #000000;
+$cor_armas:              #37353a;
+$cor_batalhas:           #6e6e76;
+$cor_massacres:          #8e8e9a;
+$cor_1guerra:            #b2b3b8;
+$cor_2guerra:            #d0cfd5;
+//cor mais
+$cat_mais:               #9004CB;
+$cor_livros:             #ef23d0;
+$cor_papeis:             #c11aa8;
+$cor_crime:              #30014f;
+$cor_outras:             #9004CB;
+
+// @mixin hr($cor) {
+//   .page-header hr {
+//     border-color: $cor;
+//     border-style: solid $cor;
+//     border-width: 5px 0;
+//   }
+// }
 
 //Mixins
 @mixin titulos($size: 2rem) {
@@ -117,7 +158,7 @@ $titulos_cor:           #171f44;
 
 }
 
-// @media (min-width: $screen-sm-min) { 
+// @media (min-width: $screen-sm-min) {
 //   .sidebar {
 //       background-color: red;
 //   }

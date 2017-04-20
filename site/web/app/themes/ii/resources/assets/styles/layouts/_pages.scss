@@ -1,0 +1,51 @@
+$cores_hr: (periodos, $cat_periodos),
+           (idade-antiga, $cat_idantiga),
+           (idade-media, $cat_idmedia),
+           (idade-moderna, $cat_idmoderna),
+           (idade-contemporanea, $cat_idcontemp),
+           (historia-do-brasil, $cat_histbrasil),
+           (colonia, $cat_colonia),
+           (imperio, $cat_imperio),
+           ($cat_republica),
+           (republica, $cat_artes),
+           (direitos-humanos, $cat_cinema),
+           (musica, $cat_musica),
+           (literatura, $cat_liter),
+           (biografias, $cat_bio),
+           (direitos-humanos, $cat_dirhum),
+           (curiosidades, $cat_curios),
+           (guerras, $cor_guerras),
+           (armas-historicas, $cor_armas),
+           (batalhas-historicas, $cor_batalhas),
+           (massacres-e-genocidios, $cor_massacres),
+           (primeira-guerra-mundial, $cor_1guerra),
+           (segunda-guerra-mundial, $cor_2guerra),
+           (livros-indicados, $cor_livros),
+           (papeis-de-parede, $cor_papeis),
+           (crime-organizado, $cor_crime),
+           (mais, $cat_mais),
+           (outros, $cat_mais),
+           (arqueologia, $cat_mais),
+           (arquitetura, $cat_mais),
+           (atualidades, $cat_mais),
+           (esportes, $cat_mais),
+           (imagens, $cat_mais);
+
+
+@each $hr_category, $color in $cores_hr {
+  .category-#{$hr_category} .page-header {
+    hr {
+      border-color: $color;
+      border-style: solid $color;
+      border-width: 5px 0;
+    }
+  }
+}
+
+// .category-periodos {
+//   @include hr($cat_periodos);
+// }
+//
+// .category-idade-antiga {
+//   @include hr($cat_idantiga);
+// }

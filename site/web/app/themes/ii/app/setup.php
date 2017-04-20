@@ -100,6 +100,7 @@ add_filter('sage/display_sidebar', function ($display) {
       is_single(),
       is_404(),
       is_front_page(),
+      is_category(),
       is_page('categorias'),
       is_page_template('template-custom.php')
     ]);
