@@ -20,9 +20,23 @@ body {
     .nav-primary-main {
       background-color: $cor-primary;
       color: white;
-      .sub-menu li {
-        background-color: $cor-primary;
-        &:hover { background-color: #137c9f; }
+      ul {
+        li {
+          position: relative;
+          .sub-menu li {
+            background-color: $cor-primary;
+            &:hover { background-color: #137c9f; }
+          }
+          &::after {
+            background-color: #73c7eb;
+            content: "";
+            height: 65%;
+            position: absolute;
+            right: 0;
+            top: 15%;
+            width: 2px;
+          }
+        }
       }
     }
     nav.nav-primary {
@@ -30,7 +44,7 @@ body {
       ul.nav {
         li {
           list-style: none;
-          a { color: inherit; }
+          a { color: inherit; white-space: nowrap; }
           &.menu-item-has-children {
             &:hover .sub-menu {
               display: inline !important;
@@ -47,7 +61,7 @@ body {
     }
   }
     #logo {
-      margin-top: 15px;
+      // margin-top: 15px;
       color: $brand-primary;
       background: url('../images/bg_header.jpg') no-repeat scroll center center / cover;
       height: 500px;
