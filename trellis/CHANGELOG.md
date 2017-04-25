@@ -1,4 +1,16 @@
 ### HEAD
+* Add Vagrant config ([#828](https://github.com/roots/trellis/pull/828))
+* Ansible 2.3 compatibility ([#813](https://github.com/roots/trellis/pull/813))
+* Remove potentially dangerous `db_import` option ([#825](https://github.com/roots/trellis/pull/825))
+
+### 1.0.0-rc.1: April 7th, 2017
+* Add vault_wordpress_sites validation ([#823](https://github.com/roots/trellis/pull/823))
+* Use dynamic HostKeyAlgorithms SSH option for unknown hosts ([#798](https://github.com/roots/trellis/pull/798))
+* Accommodate deploy hook vars formatted as lists of includes ([#815](https://github.com/roots/trellis/pull/815))
+* Check Ansible version before Ansible validates task attributes ([#797](https://github.com/roots/trellis/pull/797))
+* Add additional Nginx sites configurations support ([#793](https://github.com/roots/trellis/pull/793))
+* Change `remote-user` role to `connection` role: tests host key, user ([#745](https://github.com/roots/trellis/pull/745))
+* Allow customization of PHP extensions ([#787](https://github.com/roots/trellis/pull/787))
 * Allow for per-project packagist.com authentication ([#762](https://github.com/roots/trellis/pull/762))
 * Set multisite constants false while checking `wp core is-installed` ([#766](https://github.com/roots/trellis/pull/766))
 * Forward extra bin/deploy.sh parameters to ansible-playbook ([#748](https://github.com/roots/trellis/pull/748))

@@ -38,14 +38,6 @@ $cor_papeis:             #c11aa8;
 $cor_crime:              #30014f;
 $cor_outras:             #9004CB;
 
-// @mixin hr($cor) {
-//   .page-header hr {
-//     border-color: $cor;
-//     border-style: solid $cor;
-//     border-width: 5px 0;
-//   }
-// }
-
 //Mixins
 @mixin titulos($size: 2rem) {
   font: $size 'roboto_slabregular', serif;
@@ -59,31 +51,10 @@ $cor_outras:             #9004CB;
   font: $size 'roboto_slabbold', serif;
 }
 
-// %sombra {
-//   box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
-// }
-
 %titulo_bg {
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
   &:hover { background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0; }
 }
-
-// %titulo_hr {
-//   display: inline-block;
-//   padding-right: 15px;
-//   position: relative;
-//   text-align: left;
-//   &::after {
-//     background: #000 none repeat scroll 0 0;
-//     top: 25px;
-//     content: "";
-//     display: inline-block;
-//     height: 1px;
-//     left: 100%;
-//     position: absolute;
-//     width: 100vw;
-//   }
-// }
 
 // Font-face
 @font-face {
@@ -158,13 +129,15 @@ $cor_outras:             #9004CB;
 
 }
 
-// @media (min-width: $screen-sm-min) {
-//   .sidebar {
-//       background-color: red;
+// @include media-breakpoint-up(xs) {  }
+// @include media-breakpoint-up(sm) {  }
+// @include media-breakpoint-up(md) {  }
+// @include media-breakpoint-up(lg) {  }
+// @include media-breakpoint-up(xl) {  }
+//
+// // Example usage:
+// @include media-breakpoint-up(sm) {
+//   .some-class {
+//     display: block;
 //   }
-// }
-
-// Media Queries teste
-// @include media-breakpoint-between(sm, md) {
-//     background-color: red;
 // }

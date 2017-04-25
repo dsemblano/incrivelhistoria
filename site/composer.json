@@ -34,10 +34,10 @@
   ],
   "require": {
     "php": ">=5.6",
-    "composer/installers": "~1.0.12",
+    "composer/installers": "~1.2.0",
     "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.7.4",
     "oscarotero/env": "^1.0",
-    "roots/soil": "3.7.1",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/regenerate-thumbnails": "dev-trunk",
     "wpackagist-plugin/default-featured-image": "dev-trunk",
@@ -46,8 +46,7 @@
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": "dev-trunk",
     "wpackagist-plugin/contextual-related-posts": "dev-trunk",
-    "wpackagist-plugin/ewww-image-optimizer": "dev-trunk",
-    "johnpbloch/wordpress": "4.7.3"
+    "wpackagist-plugin/ewww-image-optimizer": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

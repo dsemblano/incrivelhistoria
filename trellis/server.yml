@@ -3,11 +3,11 @@
   vars:
     playbook: server.yml
 
-- name: Determine Remote User
+- name: Test Connection and Determine Remote User
   hosts: web:&{{ env }}
   gather_facts: false
   roles:
-    - { role: remote-user, tags: [remote-user, always] }
+    - { role: connection, tags: [connection, always] }
 
 - name: Install prerequisites
   hosts: web:&{{ env }}
@@ -38,5 +38,5 @@
     - { role: logrotate, tags: [logrotate] }
     - { role: composer, tags: [composer] }
     - { role: wp-cli, tags: [wp-cli] }
-    - { role: letsencrypt, tags: [letsencrypt], when: letsencrypt_enabled }
+    - { role: letsencrypt, tags: [letsencrypt], when: sites_using_letsencrypt | count }
     - { role: wordpress-setup, tags: [wordpress, wordpress-setup, letsencrypt] }
