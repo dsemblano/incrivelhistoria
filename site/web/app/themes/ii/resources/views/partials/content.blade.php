@@ -1,6 +1,6 @@
 <article @php(post_class('row no-gutters'))>
   <figure class="col-sm">
-    <?php echo (App\featured_image_url('mais_extendida')); ?>
+    <a href="{{ get_permalink() }}"><?php echo (App\featured_image_url('mais_extendida')); ?></a>
   </figure>
   <header class="col-sm">
     @include('partials/entry-meta')
