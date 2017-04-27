@@ -1,0 +1,109 @@
+// Media Queries
+
+//Extra small devices (portrait phones, less than 576px)
+// @include media-breakpoint-down(xs) {
+//   body.home {
+//     // background-color: pink;
+//   }
+// }
+
+@include media-breakpoint-only(xs) {
+  body {
+    // background-color: yellow;
+    header.banner {
+      margin-bottom: 35px;
+      .bg-faded {
+        // height: 50px;
+      }
+      .nav-primary {
+        background-color: transparent !important;
+        .hidden-md-up {
+          .nav {
+            align-self: stretch;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            li {
+              flex-grow: 1;
+              a {
+                font-size: 0.7rem;
+                padding: 5px;
+              }
+            }
+          }
+        }
+
+        button {
+          background-color: #188cb3;
+        }
+          #menu-categorias-menu {
+            background-color: #188cb3;
+        }
+        .collapse.show, .collapsing {
+          display: block;
+          margin-top: 40px;
+        }
+      }
+
+      #logo {
+        h1 {
+          font-size: 2.5rem;
+          margin-left: 15px;
+          margin-top: 15px;
+        }
+      }
+    }
+    main {
+      section#carousel {
+        .flickity-prev-next-button {
+          height: 5%;
+          top: 30%;
+          width: 7%;
+        }
+        .flickity-slider li {
+          img {
+              min-height: 0;
+              height: 100%;
+          }
+          span {
+            position: relative;
+            background: transparent;
+            padding: 0;
+            h2,p { color: black; }
+            h2 { font-size: 1.5rem; margin-bottom: 5px;}
+          }
+        }
+      }
+      // end section carrousel
+      section#curiosidades, section#mais {
+        h2 { font-size: 1.5rem; }
+        article {
+          img {
+            width: 100%;
+          }
+          h3 { font-size: 1.2rem;}
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  body.home {
+    // background-color: green;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  body.home {
+    // background-color: blue;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  body.home {
+    // background-color: orange;
+  }
+}

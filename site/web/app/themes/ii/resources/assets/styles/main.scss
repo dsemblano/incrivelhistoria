@@ -2,7 +2,6 @@
 
 // Import npm dependencies
 @import "~bootstrap/scss/bootstrap";
-
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -16,4 +15,5 @@
 @import "layouts/tinymce";
 
 // Import flickity
-@import "~flickity/dist/flickity.min.css"
+@import "~flickity/dist/flickity.min.css";
+@import "common/mediaqueries";
