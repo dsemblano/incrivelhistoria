@@ -50,6 +50,7 @@
     }
     main {
       section#carousel {
+        height: 390px;        
         .flickity-prev-next-button {
           height: 5%;
           top: 30%;
@@ -93,7 +94,7 @@
 @include media-breakpoint-up(xs) {
   .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
+    margin-top: 0;
   }
 }
 
