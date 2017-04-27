@@ -115,10 +115,10 @@ if($depth === 0){
  $atts['class'] = 'nav-link';
  if ( $args->has_children ){
  $classes[] = ' dropdown';
- $atts['href'] = '#';
- $atts['data-toggle'] = 'dropdown';
+ // $atts['href'] = '#';
+ // $atts['data-toggle'] = 'dropdown';
  $atts['class'] = 'dropdown-toggle nav-link';
- $atts['role'] = 'button';
+ // $atts['role'] = 'button';
  $atts['aria-haspopup'] = 'true';
  }
  $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );

@@ -12,9 +12,7 @@
     // background-color: yellow;
     header.banner {
       margin-bottom: 35px;
-      .bg-faded {
-        // height: 50px;
-      }
+      .bg-faded { }
       .nav-primary {
         background-color: transparent !important;
         .hidden-md-up {
@@ -34,19 +32,14 @@
             }
           }
         }
-
-        button {
-          background-color: #188cb3;
-        }
-          #menu-categorias-menu {
-            background-color: #188cb3;
-        }
+        button { background-color: #188cb3; }
+        .dropdown-menu { display: block !important; }
+        #menu-categorias-menu { background-color: #188cb3; }
         .collapse.show, .collapsing {
           display: block;
           margin-top: 40px;
         }
       }
-
       #logo {
         h1 {
           font-size: 2.5rem;
@@ -94,6 +87,13 @@
 
     }
 
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
   }
 }
 
