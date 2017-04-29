@@ -5,6 +5,17 @@
   //   background-color: red;
   // }
   // @include make-sm-column($main-sm-columns);
+  .search-form {
+    label {
+      width: 55%;
+      .search-field {
+        width: 100%;
+      }
+    }
+    .search-submit {
+      margin-left: 10px;
+    }
+  }
 
   height: 100%;
   padding: 1em;

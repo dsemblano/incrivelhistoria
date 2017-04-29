@@ -10,6 +10,14 @@
   margin: 0 auto;
 }
 
+.dropdown-menu {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  border-right: 2px solid rgba(0, 0, 0, 0.15);
+  border-top: 0;
+}
+
 .navbar-collapse {background-color: #188cb3;}
 
 .navbar-nav { margin: 0 auto; }
