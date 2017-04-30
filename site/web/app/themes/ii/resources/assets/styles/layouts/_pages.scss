@@ -42,6 +42,19 @@ $cores_hr: (periodos, $cat_periodos),
   }
 }
 
+.category {
+  main {
+    article {
+      margin-bottom: 10px;
+      header {
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
 // .category-periodos {
 //   @include hr($cat_periodos);
 // }
