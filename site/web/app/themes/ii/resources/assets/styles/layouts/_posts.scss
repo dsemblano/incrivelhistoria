@@ -5,40 +5,45 @@
       h1 { @include titulos; }
     }
     article {
-      h2, h3, h4, h5, h6 { font-size: 1.15rem }
-      p { text-align: justify; }
-      img {
-        margin-bottom: 0;
-      }
-      figcaption {
-        background-color: black;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-      }
-      blockquote {
-        &::before {
-          color: #999;
-          content: "“";
-          display: block;
-          font: italic 400%/1 Georgia,"Times New Roman",serif;
-          height: 0;
-          margin-left: 0.2em;
+      .entry-content {
+        h2, h3, h4 { font-size: 1.15rem }
+        p { text-align: justify; }
+        img {
+          margin-bottom: 0;
         }
-        p {
-          font-size: 1.1rem;
-          font-style: italic;
-          margin-left: 2.5em;
-          margin-top: 1em;
-          text-align: justify;
+        figcaption {
+          background-color: #3b3b3b;
+          color: white;
+          text-align: center;
+          font-size: 1rem;
         }
-      }
-      .crp_related {
-        h3 { @include titulos_chamadas_bold($size: 1.5rem); }
-        li {
-          box-shadow: none;
-          border: none;
-          .crp_title { border-radius: 0; }
+        blockquote {
+          &::before {
+            color: #999;
+            content: "“";
+            display: block;
+            font: italic 400%/1 Georgia,"Times New Roman",serif;
+            height: 0;
+            margin-left: 0.2em;
+          }
+          p {
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-left: 2.5em;
+            margin-top: 1em;
+            text-align: justify;
+          }
+        }
+        h5, h6 {
+          font-size: 1rem;
+        }
+        .crp_related {
+          h3 { @include titulos_chamadas_bold($size: 1.5rem); }
+          li {
+            box-shadow: none;
+            border: none;
+            .crp_title { border-radius: 0; }
+          }
         }
       }
     }
