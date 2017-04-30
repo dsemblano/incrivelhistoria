@@ -102,6 +102,9 @@ add_filter('sage/display_sidebar', function ($display) {
       is_front_page(),
       is_category(),
       is_page('categorias'),
+      is_search(),
+      is_tag(),
+      is_page(),
       is_page_template('template-custom.php')
     ]);
 
