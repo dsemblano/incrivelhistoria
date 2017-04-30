@@ -42,18 +42,20 @@ $cores_hr: (periodos, $cat_periodos),
   }
 }
 
-.category {
+// Serve para todas as páginas: categorias, tags, busca
+.sidebar-primary {
   main {
     article {
       margin-bottom: 10px;
       header {
+        h2 { font-size: 1.5rem; }
         p {
           margin-bottom: 5px;
         }
       }
     }
     .navigation.pagination {
-      
+
     }
   }
 }
