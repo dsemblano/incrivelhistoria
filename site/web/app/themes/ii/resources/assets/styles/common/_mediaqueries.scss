@@ -11,8 +11,16 @@
   body {
     // background-color: yellow;
     header.banner {
-      margin-bottom: 35px;
-      .bg-faded { }
+      margin-bottom: 0;
+      .bg-faded {
+        button {
+          margin-top: -55px;
+        }
+        .collapse.show, .collapsing {
+          display: block;
+          margin-top: -15px;
+        }
+      }
       .nav-primary {
         background-color: transparent !important;
         .hidden-md-up {
@@ -35,22 +43,20 @@
         button { background-color: #188cb3; }
         .dropdown-menu { display: block !important; }
         #menu-categorias-menu { background-color: #188cb3; }
-        .collapse.show, .collapsing {
-          display: block;
-          margin-top: 40px;
-        }
       }
       #logo {
+        height: 180px;
+        padding-top: 10px;
         h1 {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
           margin-left: 15px;
-          margin-top: 15px;
+          // margin-top: 15px;
         }
       }
     }
     main {
       section#carousel {
-        height: 390px;        
+        height: 390px;
         .flickity-prev-next-button {
           height: 5%;
           top: 30%;
