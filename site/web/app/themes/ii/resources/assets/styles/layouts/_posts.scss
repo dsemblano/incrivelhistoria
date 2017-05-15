@@ -35,9 +35,10 @@
           }
         }
         h5, h6 {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
         .crp_related {
+          margin: 20px 0;
           h3 { @include titulos_chamadas_bold($size: 1.5rem); }
           li {
             box-shadow: none;
