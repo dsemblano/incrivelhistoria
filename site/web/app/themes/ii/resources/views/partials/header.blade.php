@@ -1,5 +1,5 @@
 <header class="banner">
-      <nav class="nav-primary container-fluid">
+      <nav id="nav-page" class="nav-primary container-fluid">
         <div class="container hidden-sm-down">
           @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!}

@@ -17,6 +17,9 @@ hr {
 body {
   font-family: 'Open Sans', sans-serif;
   header.banner {
+    #nav-page {
+      font-weight: bold;
+    }
     .nav-primary-main {
       background-color: $cor-primary;
       color: white;

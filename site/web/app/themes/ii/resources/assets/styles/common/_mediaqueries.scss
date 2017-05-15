@@ -13,12 +13,9 @@
     header.banner {
       margin-bottom: 0;
       .bg-faded {
-        button {
-          margin-top: -55px;
-        }
         .collapse.show, .collapsing {
           display: block;
-          margin-top: -15px;
+          margin-top: -125px;
         }
       }
       .nav-primary {
@@ -40,9 +37,14 @@
             }
           }
         }
-        button { background-color: #188cb3; }
+        button {
+          // background-color: #188cb3;
+          border: 0 none;
+          font-size: 1.7rem;
+          margin-top: -180px;
+        }
         .dropdown-menu { display: block !important; }
-        #menu-categorias-menu { background-color: #188cb3; }
+        #menu-categorias-menu { background-color: $cor-primary; }
       }
       #logo {
         height: 180px;
