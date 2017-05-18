@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e5590e12643d9ec154dcd4b48fd901a",
+    "content-hash": "08f6dc6e75c756a9a25f699908c48e4e",
     "packages": [
         {
             "name": "composer/installers",
@@ -432,6 +432,27 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1494285120",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/",
+            "time": "2017-05-09T00:12:00+00:00"
+        },
+        {
             "name": "wpackagist-plugin/contextual-related-posts",
             "version": "dev-trunk",
             "source": {
@@ -493,6 +514,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/",
             "time": "2017-03-13T23:20:26+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/google-sitemap-generator",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/google-sitemap-generator/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.zip?timestamp=1484139337",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-sitemap-generator/",
+            "time": "2017-01-11T12:55:37+00:00"
         },
         {
             "name": "wpackagist-plugin/php-code-widget",
@@ -603,16 +645,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.8.1",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
                 "shasum": ""
             },
             "require": {
@@ -677,7 +719,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-03-01T22:17:45+00:00"
+            "time": "2017-05-03T23:30:39+00:00"
         }
     ],
     "aliases": [],
@@ -690,7 +732,9 @@
         "wpackagist-plugin/wordpress-importer": 20,
         "wpackagist-plugin/wordpress-seo": 20,
         "wpackagist-plugin/contextual-related-posts": 20,
-        "wpackagist-plugin/ewww-image-optimizer": 20
+        "wpackagist-plugin/ewww-image-optimizer": 20,
+        "wpackagist-plugin/autodescription": 20,
+        "wpackagist-plugin/google-sitemap-generator": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
