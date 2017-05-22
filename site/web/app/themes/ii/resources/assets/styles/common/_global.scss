@@ -199,6 +199,11 @@ body {
           text-align: center;
           &:after { background: none; }
         }
+        article {
+          h3 {
+            height: 45px;
+          }
+        }
       }
     }
     span.text-center {
