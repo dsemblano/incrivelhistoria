@@ -26,9 +26,8 @@
         min-width: 25%;
       }
     }
-    .widget_tag_cloud {
-      margin-top: 15px;
-      .tagcloud a {
+    .tagcloud {      
+      a {
         font: 12px 'Roboto Slab', serif;
         &:hover {
           text-decoration: underline;
