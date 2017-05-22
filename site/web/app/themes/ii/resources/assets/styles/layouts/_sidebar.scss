@@ -5,26 +5,34 @@
   //   background-color: red;
   // }
   // @include make-sm-column($main-sm-columns);
-  .search-form {
-    label {
-      width: 55%;
-      .search-field {
-        width: 100%;
-      }
-    }
-    .search-submit {
-      margin-left: 10px;
-    }
-  }
 
   height: 100%;
   padding: 1em;
-  .widget_tag_cloud {
-    margin-top: 15px;
-    .tagcloud a {
-      font: 12px 'Roboto Slab', serif;
-      &:hover {
-        text-decoration: underline;
+  section {
+    // background-color: red;
+    margin-bottom: 15px;
+    form.search-form {
+      label {
+        flex-grow: 1;
+        min-width: 25%;
+        width: 60%;
+        .search-field {
+          width: 100%;
+        }
+      }
+      input.search-submit {
+        margin-left: 10px;
+        flex-grow: 1;
+        min-width: 25%;
+      }
+    }
+    .widget_tag_cloud {
+      margin-top: 15px;
+      .tagcloud a {
+        font: 12px 'Roboto Slab', serif;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
