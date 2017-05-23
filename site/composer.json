@@ -49,6 +49,7 @@
     "wpackagist-plugin/ewww-image-optimizer": "dev-trunk",
     "wpackagist-plugin/autodescription": "dev-trunk",
     "wpackagist-plugin/google-sitemap-generator": "dev-trunk",
+    "wpackagist-plugin/database-browser": "dev-trunk",
     "roots/soil": "3.7.1"
   },
   "require-dev": {

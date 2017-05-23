@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "08f6dc6e75c756a9a25f699908c48e4e",
+    "content-hash": "51adf2b4fdfdeb5d5b2611a144590b7e",
     "packages": [
         {
             "name": "composer/installers",
@@ -474,6 +474,27 @@
             "time": "2016-12-17T18:34:19+00:00"
         },
         {
+            "name": "wpackagist-plugin/database-browser",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/database-browser/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/database-browser.zip?timestamp=1485727892",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/database-browser/",
+            "time": "2017-01-29T22:11:32+00:00"
+        },
+        {
             "name": "wpackagist-plugin/default-featured-image",
             "version": "dev-trunk",
             "source": {
@@ -645,16 +666,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
+                "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
-                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dcbed1074f8244661eecddfc2a675430d8d33f62",
+                "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62",
                 "shasum": ""
             },
             "require": {
@@ -719,7 +740,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-05-03T23:30:39+00:00"
+            "time": "2017-05-22T02:43:20+00:00"
         }
     ],
     "aliases": [],
@@ -734,7 +755,8 @@
         "wpackagist-plugin/contextual-related-posts": 20,
         "wpackagist-plugin/ewww-image-optimizer": 20,
         "wpackagist-plugin/autodescription": 20,
-        "wpackagist-plugin/google-sitemap-generator": 20
+        "wpackagist-plugin/google-sitemap-generator": 20,
+        "wpackagist-plugin/database-browser": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
