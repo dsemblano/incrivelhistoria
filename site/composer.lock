@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "51adf2b4fdfdeb5d5b2611a144590b7e",
+    "content-hash": "b53b5dceb1c952d4ce91f7158c4cb390",
     "packages": [
         {
             "name": "composer/installers",
@@ -600,6 +600,27 @@
             "time": "2016-07-29T01:41:13+00:00"
         },
         {
+            "name": "wpackagist-plugin/reveal-ids-for-wp-admin-25",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/reveal-ids-for-wp-admin-25/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/reveal-ids-for-wp-admin-25.zip?timestamp=1486468134",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/reveal-ids-for-wp-admin-25/",
+            "time": "2017-02-07T11:48:54+00:00"
+        },
+        {
             "name": "wpackagist-plugin/taghound-media-tagger",
             "version": "dev-trunk",
             "source": {
@@ -756,7 +777,8 @@
         "wpackagist-plugin/ewww-image-optimizer": 20,
         "wpackagist-plugin/autodescription": 20,
         "wpackagist-plugin/google-sitemap-generator": 20,
-        "wpackagist-plugin/database-browser": 20
+        "wpackagist-plugin/database-browser": 20,
+        "wpackagist-plugin/reveal-ids-for-wp-admin-25": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -50,6 +50,7 @@
     "wpackagist-plugin/autodescription": "dev-trunk",
     "wpackagist-plugin/google-sitemap-generator": "dev-trunk",
     "wpackagist-plugin/database-browser": "dev-trunk",
+    "wpackagist-plugin/reveal-ids-for-wp-admin-25": "dev-trunk",
     "roots/soil": "3.7.1"
   },
   "require-dev": {
