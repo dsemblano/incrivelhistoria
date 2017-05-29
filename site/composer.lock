@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b53b5dceb1c952d4ce91f7158c4cb390",
+    "content-hash": "e49c17c29bf45363cb6678f12f11ec2c",
     "packages": [
         {
             "name": "composer/installers",
@@ -115,20 +115,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7.4",
+            "version": "4.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "373c6caed518228364a8bc004ae05e877d74364a"
+                "reference": "381ef55a27e1dcc1c4bbe8b0c6a7ba2d45623819"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/373c6caed518228364a8bc004ae05e877d74364a",
-                "reference": "373c6caed518228364a8bc004ae05e877d74364a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/381ef55a27e1dcc1c4bbe8b0c6a7ba2d45623819",
+                "reference": "381ef55a27e1dcc1c4bbe8b0c6a7ba2d45623819",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.7.4",
+                "johnpbloch/wordpress-core": "4.7.5",
                 "johnpbloch/wordpress-core-installer": "~0.2",
                 "php": ">=5.3.2"
             },
@@ -150,20 +150,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-04-20T20:49:27+00:00"
+            "time": "2017-05-16T22:48:14+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.7.4",
+            "version": "4.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "46c55710c3f7aa99c6377151e626c98d7fb4b959"
+                "reference": "9a88a4b4c65f689d78789ef6ff77a7ca0239ec02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/46c55710c3f7aa99c6377151e626c98d7fb4b959",
-                "reference": "46c55710c3f7aa99c6377151e626c98d7fb4b959",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a88a4b4c65f689d78789ef6ff77a7ca0239ec02",
+                "reference": "9a88a4b4c65f689d78789ef6ff77a7ca0239ec02",
                 "shasum": ""
             },
             "require": {
@@ -187,7 +187,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-04-20T19:59:59+00:00"
+            "time": "2017-05-16T22:48:08+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
