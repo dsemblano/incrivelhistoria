@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e49c17c29bf45363cb6678f12f11ec2c",
+    "content-hash": "78e7638b31ce175500771324cab2f921",
     "packages": [
         {
             "name": "composer/installers",
@@ -664,24 +664,23 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "dev-trunk",
+            "version": "4.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "trunk"
+                "reference": "tags/4.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.8.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/",
-            "time": "2017-03-14T15:50:06+00:00"
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [
@@ -772,7 +771,6 @@
         "wpackagist-plugin/php-code-widget": 20,
         "wpackagist-plugin/taghound-media-tagger": 20,
         "wpackagist-plugin/wordpress-importer": 20,
-        "wpackagist-plugin/wordpress-seo": 20,
         "wpackagist-plugin/contextual-related-posts": 20,
         "wpackagist-plugin/ewww-image-optimizer": 20,
         "wpackagist-plugin/autodescription": 20,

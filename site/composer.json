@@ -44,7 +44,7 @@
     "wpackagist-plugin/php-code-widget": "dev-trunk",
     "wpackagist-plugin/taghound-media-tagger": "dev-trunk",    
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
-    "wpackagist-plugin/wordpress-seo": "dev-trunk",
+    "wpackagist-plugin/wordpress-seo": "4.8",
     "wpackagist-plugin/contextual-related-posts": "dev-trunk",
     "wpackagist-plugin/ewww-image-optimizer": "dev-trunk",
     "wpackagist-plugin/autodescription": "dev-trunk",
