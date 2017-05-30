@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "78e7638b31ce175500771324cab2f921",
+    "content-hash": "5a8d93d7a7198a4b9560bd581ed1ffb4",
     "packages": [
         {
             "name": "composer/installers",
@@ -453,6 +453,27 @@
             "time": "2017-05-09T00:12:00+00:00"
         },
         {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.zip?timestamp=1496138618",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/",
+            "time": "2017-05-30T11:03:38+00:00"
+        },
+        {
             "name": "wpackagist-plugin/contextual-related-posts",
             "version": "dev-trunk",
             "source": {
@@ -517,24 +538,23 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "dev-trunk",
+            "version": "3.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "trunk"
+                "reference": "tags/3.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.3.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/",
-            "time": "2017-03-13T23:20:26+00:00"
+            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
             "name": "wpackagist-plugin/google-sitemap-generator",
@@ -622,24 +642,23 @@
         },
         {
             "name": "wpackagist-plugin/taghound-media-tagger",
-            "version": "dev-trunk",
+            "version": "1.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/taghound-media-tagger/",
-                "reference": "trunk"
+                "reference": "tags/1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/taghound-media-tagger.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/taghound-media-tagger.1.2.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/taghound-media-tagger/",
-            "time": "2017-02-26T16:35:33+00:00"
+            "homepage": "https://wordpress.org/plugins/taghound-media-tagger/"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -769,14 +788,13 @@
         "wpackagist-plugin/regenerate-thumbnails": 20,
         "wpackagist-plugin/default-featured-image": 20,
         "wpackagist-plugin/php-code-widget": 20,
-        "wpackagist-plugin/taghound-media-tagger": 20,
         "wpackagist-plugin/wordpress-importer": 20,
         "wpackagist-plugin/contextual-related-posts": 20,
-        "wpackagist-plugin/ewww-image-optimizer": 20,
         "wpackagist-plugin/autodescription": 20,
         "wpackagist-plugin/google-sitemap-generator": 20,
         "wpackagist-plugin/database-browser": 20,
-        "wpackagist-plugin/reveal-ids-for-wp-admin-25": 20
+        "wpackagist-plugin/reveal-ids-for-wp-admin-25": 20,
+        "wpackagist-plugin/contact-form-7": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

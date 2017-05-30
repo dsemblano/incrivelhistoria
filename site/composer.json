@@ -42,15 +42,16 @@
     "wpackagist-plugin/regenerate-thumbnails": "dev-trunk",
     "wpackagist-plugin/default-featured-image": "dev-trunk",
     "wpackagist-plugin/php-code-widget": "dev-trunk",
-    "wpackagist-plugin/taghound-media-tagger": "dev-trunk",    
+    "wpackagist-plugin/taghound-media-tagger": "1.2.0",
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": "4.8",
     "wpackagist-plugin/contextual-related-posts": "dev-trunk",
-    "wpackagist-plugin/ewww-image-optimizer": "dev-trunk",
+    "wpackagist-plugin/ewww-image-optimizer":  "3.3.1",
     "wpackagist-plugin/autodescription": "dev-trunk",
     "wpackagist-plugin/google-sitemap-generator": "dev-trunk",
     "wpackagist-plugin/database-browser": "dev-trunk",
     "wpackagist-plugin/reveal-ids-for-wp-admin-25": "dev-trunk",
+    "wpackagist-plugin/contact-form-7": "dev-trunk",
     "roots/soil": "3.7.1"
   },
   "require-dev": {
