@@ -121,7 +121,9 @@ function featured_image_url($size) {
     ob_start();
     ob_end_clean();
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches [1] [0];
+    if (!empty($output)) {
+      $first_img = $matches [1] [0];
+    }
     // Pega imagem destacada
     $image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
 

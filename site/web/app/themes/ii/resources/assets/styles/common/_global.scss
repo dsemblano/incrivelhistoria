@@ -125,6 +125,7 @@ body {
             bottom: 0;
             left: 0;
             position: absolute;
+            width: 100%;
             padding: 0 15px 10px;
             h2 {
               @include titulos_chamadas_bold;
