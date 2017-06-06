@@ -2,6 +2,10 @@
 .single-post {
   main {
     header {
+      #breadcrumbs {
+        @include titulos ($size: 0.85rem);
+        a:hover { text-decoration: underline; color: $cor-primary; }
+      }
       h1 { @include titulos; }
     }
     article {
