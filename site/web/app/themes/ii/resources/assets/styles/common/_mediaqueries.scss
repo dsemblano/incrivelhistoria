@@ -20,6 +20,7 @@
       }
       .nav-primary {
         background-color: transparent !important;
+        padding-bottom: 0;
         .hidden-md-up {
           .nav {
             align-self: stretch;
@@ -58,41 +59,44 @@
         }
       }
     }
-    main {
-      section#carousel {
-        height: 330px;
-        .flickity-prev-next-button {
-          height: 5%;
-          top: 30%;
-          width: 7%;
-        }
-        .flickity-slider li {
-          img {
-              min-height: 0;
-              height: 200px;
+    .content {
+      padding-top: 0;
+      main {
+        section#carousel {
+          height: 320px;
+          .flickity-prev-next-button {
+            height: 5%;
+            top: 30%;
+            width: 7%;
           }
-          span {
-            position: relative;
-            background: transparent;
-            padding: 0;
-            h2,p { color: black; }
-            p { font-size: small; }
-            h2 { font-size: 1.2rem; margin-bottom: 5px;}
+          .flickity-slider li {
+            img {
+                min-height: 0;
+                height: 200px;
+            }
+            span {
+              position: relative;
+              background: transparent;
+              padding: 0;
+              h2,p { color: black; }
+              p { font-size: small; }
+              h2 { font-size: 1.2rem; margin-bottom: 5px;}
+            }
           }
         }
-      }
-      // end section carrousel
-      section#curiosidades, section#mais {
-        h2 { font-size: 1.5rem; }
-        article {
-          img {
-            width: 100%;
+        // end section carrousel
+        section#curiosidades, section#mais {
+          h2 { font-size: 1.5rem; }
+          article {
+            img {
+              width: 100%;
+            }
+            h3 { font-size: 1.2rem;}
           }
-          h3 { font-size: 1.2rem;}
         }
-      }
-      figure.aligncenter {
-        display: inline;
+        figure.aligncenter {
+          display: inline;
+        }
       }
     }
     aside.sidebar {
