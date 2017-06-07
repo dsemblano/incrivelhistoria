@@ -60,7 +60,7 @@
     }
     main {
       section#carousel {
-        height: 390px;
+        height: 330px;
         .flickity-prev-next-button {
           height: 5%;
           top: 30%;
@@ -69,14 +69,15 @@
         .flickity-slider li {
           img {
               min-height: 0;
-              height: 100%;
+              height: 200px;
           }
           span {
             position: relative;
             background: transparent;
             padding: 0;
             h2,p { color: black; }
-            h2 { font-size: 1.5rem; margin-bottom: 5px;}
+            p { font-size: small; }
+            h2 { font-size: 1.2rem; margin-bottom: 5px;}
           }
         }
       }
