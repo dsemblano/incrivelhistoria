@@ -26,7 +26,13 @@
         min-width: 25%;
       }
     }
-    .tagcloud {      
+    //livros indicados
+    &.widget_text {
+      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
+      @include titulos;
+      color: white;
+    }
+    .tagcloud {
       a {
         font: 12px 'Roboto Slab', serif;
         &:hover {
