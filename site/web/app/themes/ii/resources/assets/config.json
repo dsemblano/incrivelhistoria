@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/ii",
+  "publicPath": "/app/themes/sage",
   "devUrl": "http://incrhist.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

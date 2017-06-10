@@ -29,8 +29,23 @@
     //livros indicados
     &.widget_text {
       background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
-      @include titulos;
+      @include titulos($size: 2.5rem);
       color: white;
+      height: 200px;
+      .textwidget {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        text-align: center;
+        text-shadow: 1px 1px 5px black;
+        top: 50%;
+        text-transform: uppercase;
+        transform: translateY(-50%);
+        width: 7em;
+        span:first-child {
+          font-weight: bold;
+        }
+      }
     }
     .tagcloud {
       a {
