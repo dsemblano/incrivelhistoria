@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dadbd480a29be616504bfc36ebf21eca",
+    "content-hash": "492c1f4a77f1ce417a71f07bf11193bd",
     "packages": [
         {
             "name": "composer/installers",
@@ -474,6 +474,26 @@
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
+            "name": "wpackagist-plugin/contextual-related-posts",
+            "version": "2.4.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contextual-related-posts/",
+                "reference": "tags/2.4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contextual-related-posts.2.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contextual-related-posts/"
+        },
+        {
             "name": "wpackagist-plugin/database-browser",
             "version": "dev-trunk",
             "source": {
@@ -597,26 +617,6 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/",
             "time": "2016-07-29T01:41:13+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/related-posts-for-wp",
-            "version": "2.0.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/related-posts-for-wp/",
-                "reference": "tags/2.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/related-posts-for-wp.2.0.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/related-posts-for-wp/"
         },
         {
             "name": "wpackagist-plugin/reveal-ids-for-wp-admin-25",

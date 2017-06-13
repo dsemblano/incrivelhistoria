@@ -64,38 +64,20 @@
     h6 {
       font-size: 0.8rem;
     }
-  }
 
-  footer {
-    .rp4wp-related-posts {
-      @include titulos-chamadas;
+    .crp_related {
+      margin: 20px 0;
 
-      margin-top: 25px;
+      h3 {
+        @include titulos-chamadas-bold($size: 1.5rem);
+      }
 
-      ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        width: 100%;
+      li {
+        border: 0;
+        box-shadow: none;
 
-        li {
-          display: inline-block;
-          margin: 0 5px 15px 0;
-          padding: 0;
-          vertical-align: top;
-          width: 33.333%;
-
-          .rp4wp-related-post-image {
-            float: none;
-            padding: 0;
-            width: 100%;
-
-            img {
-              height: 135px;
-              max-width: 100%;
-              width: 100%;
-            }
-          }
+        .crp_title {
+          border-radius: 0;
         }
       }
     }
