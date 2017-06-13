@@ -111,6 +111,9 @@ add_filter('sage/display_sidebar', function ($display) {
     return $display;
 });
 
+// Related posts
+add_filter( 'rp4wp_append_content', '__return_false' );
+
 // Thumbnails images
 add_image_size( 'slideshow', 730, 435, true );
 add_image_size( 'curiosidades_large', 480, 370, true );

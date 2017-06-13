@@ -144,6 +144,21 @@
       background-color: $white;
     }
   }
+
+  body.single-post {
+    footer {
+      .rp4wp-related-posts {
+        ul {
+          display: block;
+
+          li {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(xs) {

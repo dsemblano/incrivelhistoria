@@ -1,21 +1,19 @@
 // Footer
 
-footer {
-  .content-info {
-    @include titulos-chamadas($size: 2rem);
+footer.content-info {
+  @include titulos-chamadas($size: 2rem);
 
-    background-color: $cor-primary;
-    color: $white;
-    height: 200px;
-    margin-top: 5em;
-    text-align: center;
+  background-color: $cor-primary;
+  color: $white;
+  height: 200px;
+  margin-top: 5em;
+  text-align: center;
 
-    .container {
-      height: inherit;
-    }
+  .container {
+    height: inherit;
+  }
 
-    .row {
-      height: inherit;
-    }
+  .row {
+    height: inherit;
   }
 }
