@@ -1,8 +1,10 @@
-// CSS Geral
+// Base styles
+
 a {
-  color: $titulos_cor;
+  color: $titulos-cor;
   -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
   -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+
   &:hover {
     text-decoration: none;
     color: inherit;
@@ -18,25 +20,32 @@ hr {
 
 body {
   font-family: 'Open Sans', sans-serif;
+
   header.banner {
     #nav-page {
       font-weight: bold;
     }
+
     .nav-primary-main {
       background-color: $cor-primary;
       color: white;
+
       ul.nav {
         // menu dropdown responsivo
         li {
           .dropdown-menu {
             background-color: $cor-primary;
             color: inherit;
-            a:hover { background-color: #137c9f; }
+
+            a:hover {
+              background-color: #137c9f;
+            }
           }
         }
         // menu abaixo antigo, remover depois
         > li {
           position: relative;
+
           &::after {
             background-color: #73c7eb;
             content: "";
@@ -46,27 +55,40 @@ body {
             top: 15%;
             width: 2px;
           }
-          &:last-child::after { background-color: transparent; }
+
+          &:last-child::after {
+            background-color: transparent;
+          }
+
           ul.sub-menu {
             display: none;
             position: absolute;
             z-index: 9999;
             padding: 0;
             box-shadow: 5px 6px 5px 0 rgba(0, 0, 0, 0.25);
+
             li {
               background-color: $cor-primary;
-              &:hover { background-color: #137c9f; }
+
+              &:hover {
+                background-color: #137c9f;
+              }
             }
           }
         }
       }
     }
+
     nav.nav-primary {
-      @include titulos_chamadas($size: 1rem)
-      ul.nav {
+      @include titulos-chamadas($size: 1rem) ul.nav {
         li {
           list-style: none;
-          a { color: inherit; white-space: nowrap; }
+
+          a {
+            color: inherit;
+            white-space: nowrap;
+          }
+
           &.menu-item-has-children {
             &:hover .sub-menu {
               display: inline !important;
@@ -77,13 +99,15 @@ body {
     }
   }
 
-  // background: rgba(0, 0, 0, 0) url("../images/ricepaper_v3.png") repeat scroll 0 0;
+  // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
   .content {
     background-color: white;
     padding-top: 20px;
+
     main {
       overflow: hidden;
       font: 'Roboto', sans-serif;
+
       section {
         overflow: hidden;
       }
@@ -94,8 +118,7 @@ body {
 // CSS apenas home
 body {
   // background-color: pink;
-  .content {
-  }
+
   main {
     // background-color: #D3D3D3;
     section#carousel {
@@ -106,58 +129,73 @@ body {
       .flickity-page-dots {
         bottom: -20px !important;
       }
+
       .flickity-slider li {
+        width: 100%;
+        list-style: none;
+
+        h2 {
+          @include titulos;
+        }
+
+        img {
+          max-width: 100%;
           width: 100%;
-          list-style: none;
+          min-height: 435px;
+        }
+
+        span {
+          // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
+          // background: rgba(54, 25, 25, .5);
+          @extend %titulo-bg;
+
+          color: white;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          padding: 0 15px 10px;
+
           h2 {
-            @include titulos;
+            @include titulos-chamadas-bold;
+
+            padding: 0;
+            margin: 0;
           }
-          img {
-            max-width: 100%;
-            width: 100%;
-            min-height: 435px;
-          }
-          span{
-            // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
-            // background: rgba(54, 25, 25, .5);
-            @extend %titulo_bg;
-            color: white;
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            width: 100%;
-            padding: 0 15px 10px;
-            h2 {
-              @include titulos_chamadas_bold;
-              padding: 0;
-              margin: 0;
-            }
-            p {
-              @include titulos_chamadas;
-              // background-color: purple;
-              // padding: 5px 10px;
-            }
+
+          p {
+            @include titulos-chamadas;
+            // background-color: purple;
+            // padding: 5px 10px;
           }
         }
+      }
     }
+
     section#curiosidades {
       // background-color: yellow;
       h2 {
         @include titulos;
+
         background-color: $cor-complem;
         color: white;
         text-indent: 1em;
         line-height: 2em;
       }
+
       article {
         position: relative;
         margin-bottom: 15px;
+
         h3 {
-          @include titulos_chamadas_bold;
+          @include titulos-chamadas-bold;
         }
+
         h4 {
-          @include titulos_chamadas_bold($size: 0.9rem);
-          @extend %titulo_bg;
+          @include titulos-chamadas-bold($size: 0.9rem);
+
+          @extend %titulo-bg;
+
           bottom: 0;
           color: white;
           left: 0;
@@ -167,39 +205,51 @@ body {
           width: 100%;
         }
       }
+
       img {
         max-width: 100%;
         height: auto;
         width: 100%;
       }
     }
+
     section#mais {
       h2 {
         @include titulos;
+
         background-color: $cor-complem;
         color: white;
         text-align: center;
         line-height: 2em;
       }
+
       article {
-        @include titulos_chamadas;
+        @include titulos-chamadas;
+
         h3 {
-          @include titulos_chamadas_bold($size: 1rem);
+          @include titulos-chamadas-bold($size: 1rem);
         }
       }
+
       img {
         max-width: 100%;
         // width: 100%;
       }
+
       .mais-extensao {
         margin-top: 15px;
+
         h2 {
           background-color: transparent;
           color: black;
           display: block;
           text-align: center;
-          &:after { background: none; }
+
+          &::after {
+            background: none;
+          }
         }
+
         article {
           h3 {
             height: 45px;
@@ -207,71 +257,52 @@ body {
         }
       }
     }
+
     span.text-center {
       display: block;
       margin: 0 auto;
-      a.button { @include titulos_chamadas_bold($size: 2rem); }
+
+      a.button {
+        @include titulos-chamadas-bold($size: 2rem);
+      }
     }
   }
 }
 
 // Lupa Busca
-.search-submit:before { content: '\f50d'; } /* '' */
+.search-submit::before {
+  content: '\f50d';
+} /* '' */
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello/fontello.eot?52214021');
-  src: url('../fonts/fontello/fontello.eot?52214021#iefix') format('embedded-opentype'),
-       url('../fonts/fontello/fontello.woff2?52214021') format('woff2'),
-       url('../fonts/fontello/fontello.woff?52214021') format('woff'),
-       url('../fonts/fontello/fontello.ttf?52214021') format('truetype'),
-       url('../fonts/fontello/fontello.svg?52214021#fontello') format('svg');
+  src: url('../fonts/fontello/fontello.eot?52214021#iefix') format('embedded-opentype'), url('../fonts/fontello/fontello.woff2?52214021') format('woff2'), url('../fonts/fontello/fontello.woff?52214021') format('woff'), url('../fonts/fontello/fontello.ttf?52214021') format('truetype'), url('../fonts/fontello/fontello.svg?52214021#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?52214021#fontello') format('svg');
-  }
-}
-*/
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
-
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
-  /* opacity: .8; */
-
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
+  margin-left: 0.2em;
 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-
-  /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
 }
 
-.icon-search:before { content: '\f50d'; } /* '' */
+.icon-search::before {
+  content: '\f50d';
+} //''

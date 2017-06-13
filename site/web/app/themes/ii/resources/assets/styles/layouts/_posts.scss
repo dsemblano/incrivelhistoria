@@ -1,57 +1,83 @@
-// Single posts
+// Posts
+
 .single-post {
-  main {
-    header {
-      #breadcrumbs {
-        @include titulos ($size: 0.85rem);
-        a:hover { text-decoration: underline; color: $cor-primary; }
+  #breadcrumbs {
+    @include titulos($size: 0.85rem);
+
+    a {
+      &:hover {
+        color: $cor-primary;
+        text-decoration: underline;
       }
-      h1 { @include titulos; }
     }
-    article {
-      .entry-content {
-        h2, h3, h4 { font-size: 1.15rem }
-        p { text-align: justify; }
-        img {
-          margin-bottom: 0;
-        }
-        figcaption {
-          background-color: #3b3b3b;
-          color: white;
-          text-align: center;
-          font-size: 1rem;
-        }
-        blockquote {
-          &::before {
-            color: #999;
-            content: "“";
-            display: block;
-            font: italic 400%/1 Georgia,"Times New Roman",serif;
-            height: 0;
-            // margin-left: 0.2em;
-            margin-left: 0;
-          }
-          p {
-            font-size: 1.1rem;
-            font-style: italic;
-            // margin-left: 2.5em;
-            margin-left: 1.5em;
-            // margin-top: 1em;
-            margin-top: 1.5em;
-            text-align: justify;
-          }
-        }
-        h5, h6 {
-          font-size: 0.8rem;
-        }
-        .crp_related {
-          margin: 20px 0;
-          h3 { @include titulos_chamadas_bold($size: 1.5rem); }
-          li {
-            box-shadow: none;
-            border: none;
-            .crp_title { border-radius: 0; }
-          }
+  }
+
+  h1 {
+    @include titulos;
+  }
+
+  .entry-content {
+    h2,
+    h3,
+    h4 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    img {
+      margin-bottom: 0;
+    }
+
+    figcaption {
+      background-color: $figcaption;
+      color: $white;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    blockquote {
+      &::before {
+        color: $quote;
+        content: '“';
+        display: block;
+        font: italic 400% / 1 Georgia, 'Times New Roman', serif;
+        height: 0;
+        // margin-left: 0.2em;
+        margin-left: 0;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-style: italic;
+        // margin-left: 2.5em;
+        margin-left: 1.5em;
+        // margin-top: 1em;
+        margin-top: 1.5em;
+        text-align: justify;
+      }
+    }
+
+    h5,
+    h6 {
+      font-size: 0.8rem;
+    }
+
+    .crp_related {
+      margin: 20px 0;
+
+      h3 {
+        @include titulos-chamadas-bold($size: 1.5rem);
+      }
+
+      li {
+        border: 0;
+        box-shadow: none;
+
+        .crp_title {
+          border-radius: 0;
         }
       }
     }

@@ -1,26 +1,30 @@
 // Sidebar
+
 .sidebar {
   background-color: $cor-sidebar;
   // @media (min-width: $screen-sm-min) {
   //   background-color: red;
   // }
   // @include make-sm-column($main-sm-columns);
-
   height: 100%;
   padding: 1em;
+
   section {
     // background-color: red;
     margin-bottom: 15px;
-    form.search-form {
+
+    .search-form {
       label {
         flex-grow: 1;
         min-width: 25%;
         width: 60%;
+
         .search-field {
           width: 100%;
         }
       }
-      input.search-submit {
+
+      .search-submit {
         margin-left: 10px;
         flex-grow: 1;
         min-width: 25%;
@@ -28,31 +32,34 @@
     }
     //livros indicados
     &.widget_text {
-      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
       @include titulos($size: 2.5rem);
-      color: white;
+
+      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
+      color: $white;
       height: 200px;
+
       .textwidget {
         margin-left: auto;
         margin-right: auto;
         position: relative;
         text-align: center;
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px $black;
         top: 50%;
         text-transform: uppercase;
         transform: translateY(-50%);
         width: 7em;
+
         span:first-child {
           font-weight: bold;
         }
       }
     }
-    .tagcloud {
-      a {
-        font: 12px 'Roboto Slab', serif;
-        &:hover {
-          text-decoration: underline;
-        }
+
+    .tagcloud a {
+      font: 12px 'Roboto Slab', serif;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

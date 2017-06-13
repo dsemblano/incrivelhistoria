@@ -1,58 +1,70 @@
+// Variables
+
 // Colors
-$brand-primary:         #084a60;
-$logo:                  #fff;
-$cor-primary:           #188cb3; // azul
-$cor-complem:           #c27525; // laranja
-$cor-sidebar:           #c9dae1; // azul claro
-$titulos_cor:           #171f44;
+$brand-primary: #084a60;
+$logo: #fff;
+$cor-primary: #188cb3; // azul
+$cor-complem: #c27525; // laranja
+$cor-sidebar: #c9dae1; // azul claro
+$titulos-cor: #171f44;
+$white: #fff;
+$black: #000;
+$quote: #999;
+$titulo-bg: rgba(0, 0, 0, 0.5);
+$titulo-bg-hover: rgba(0, 0, 0, 0.8);
+// figcaption
+$figcaption: #3b3b3b;
 //cor categorias historia brasil
-$cat_histbrasil:        #9BF046;
-$cat_colonia:           #96E078;
-$cat_imperio:            #7FB747;
-$cat_republica:          #4C8216;
+$cat-histbrasil: #9bf046;
+$cat-colonia: #96e078;
+$cat-imperio: #7fb747;
+$cat-republica: #4c8216;
 //cor categorias periodos
-$cat_periodos:          #ffd88d;
-$cat_idantiga:          #deb058;
-$cat_idmedia:           #b58a37;
-$cat_idmoderna:         #976115;
-$cat_idcontemp:         #5b3b0e;
+$cat-periodos: #ffd88d;
+$cat-idantiga: #deb058;
+$cat-idmedia: #b58a37;
+$cat-idmoderna: #976115;
+$cat-idcontemp: #5b3b0e;
 //cor categorias artes
-$cat_artes:              #FF210A;
-$cat_cinema:             #E7543C;
-$cat_musica:             #EB7A68;
-$cat_liter:              #F86D57;
+$cat-artes: #ff210a;
+$cat-cinema: #e7543c;
+$cat-musica: #eb7a68;
+$cat-liter: #f86d57;
 //cor biografias
-$cat_bio:                #6657F8;
-$cat_dirhum:             #0F2886;
-$cat_curios:             #083C17;
+$cat-bio: #6657f8;
+$cat-dirhum: #0f2886;
+$cat-curios: #083c17;
 // cor guerras
-$cor_guerras:            #000000;
-$cor_armas:              #37353a;
-$cor_batalhas:           #6e6e76;
-$cor_massacres:          #8e8e9a;
-$cor_1guerra:            #b2b3b8;
-$cor_2guerra:            #d0cfd5;
+$cor-guerras: #000;
+$cor-armas: #37353a;
+$cor-batalhas: #6e6e76;
+$cor-massacres: #8e8e9a;
+$cor-1guerra: #b2b3b8;
+$cor-2guerra: #d0cfd5;
 //cor mais
-$cat_mais:               #9004CB;
-$cor_livros:             #ef23d0;
-$cor_papeis:             #c11aa8;
-$cor_crime:              #30014f;
-$cor_outras:             #9004CB;
+$cat-mais: #9004cb;
+$cor-livros: #ef23d0;
+$cor-papeis: #c11aa8;
+$cor-crime: #30014f;
+$cor-outras: #9004cb;
 
 //Mixins
 @mixin titulos($size: 2rem) {
   font: $size 'Muli', sans-serif;
 }
 
-@mixin titulos_chamadas($size: 1rem) {
+@mixin titulos-chamadas($size: 1rem) {
   font: $size 'Muli', sans-serif;
 }
 
-@mixin titulos_chamadas_bold($size: 2rem) {
+@mixin titulos-chamadas-bold($size: 2rem) {
   font: bold $size 'Muli', sans-serif;
 }
 
-%titulo_bg {
-  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-  &:hover { background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0; }
+%titulo-bg {
+  background: $titulo-bg none repeat scroll 0 0;
+
+  &:hover {
+    background: $titulo-bg-hover none repeat scroll 0 0;
+  }
 }

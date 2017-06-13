@@ -12,15 +12,19 @@
     // background-color: yellow;
     header.banner {
       margin-bottom: 0;
+
       .bg-faded {
-        .collapse.show, .collapsing {
+        .collapse.show,
+        .collapsing {
           display: block;
           margin-top: -125px;
         }
       }
+
       .nav-primary {
         background-color: transparent !important;
         padding-bottom: 0;
+
         .hidden-md-up {
           .nav {
             align-self: stretch;
@@ -29,8 +33,10 @@
             justify-content: space-around;
             margin: 0;
             padding: 0;
+
             li {
               flex-grow: 1;
+
               a {
                 font-size: 0.7rem;
                 padding: 5px;
@@ -38,19 +44,29 @@
             }
           }
         }
+
         button {
           // background-color: #188cb3;
           border: 0 none;
           font-size: 1.7rem;
           margin-top: -190px;
         }
-        .dropdown-menu { display: block !important; }
-        #menu-categorias-menu { background-color: $cor-primary; }
+
+        .dropdown-menu {
+          display: block !important;
+        }
+
+        #menu-categorias-menu {
+          background-color: $cor-primary;
+        }
       }
+
       #logo {
         height: 180px;
+
         .logo-titulo {
           padding-top: 5px;
+
           h1 {
             font-size: 1.5rem;
             margin-left: 15px;
@@ -59,50 +75,74 @@
         }
       }
     }
+
     .content {
       padding-top: 0;
+
       main {
         section#carousel {
           height: 320px;
+
           .flickity-prev-next-button {
             height: 20px;
             top: 30%;
             width: 20px;
           }
+
           .flickity-slider li {
             img {
-                min-height: 0;
-                height: 200px;
+              min-height: 0;
+              height: 200px;
             }
+
             span {
               position: relative;
               background: transparent;
               padding: 0;
-              h2,p { color: black; }
-              p { font-size: small; }
-              h2 { font-size: 1.2rem; margin-bottom: 5px;}
+
+              h2,
+              p {
+                color: black;
+              }
+
+              p {
+                font-size: small;
+              }
+
+              h2 {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+              }
             }
           }
         }
         // end section carrousel
-        section#curiosidades, section#mais {
-          h2 { font-size: 1.5rem; }
+        section#curiosidades,
+        section#mais {
+          h2 {
+            font-size: 1.5rem;
+          }
+
           article {
             img {
               width: 100%;
             }
-            h3 { font-size: 1.2rem;}
+
+            h3 {
+              font-size: 1.2rem;
+            }
           }
         }
+
         figure.aligncenter {
           display: inline;
         }
       }
     }
+
     aside.sidebar {
-
+      background-color: $white;
     }
-
   }
 }
 

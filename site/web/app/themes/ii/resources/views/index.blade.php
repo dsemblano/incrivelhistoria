@@ -11,9 +11,8 @@
   @endif
 
   @while (have_posts()) @php(the_post())
-    @include ('partials.content-'.(get_post_type() !== 'post' ? get_post_type() : get_post_format()))
+    @include ('partials.content-'.(get_post_type() === 'post' ?: get_post_type()))
   @endwhile
 
-  {{-- {!! get_the_posts_navigation() !!} --}}
   {!! get_the_posts_pagination() !!}
 @endsection

@@ -1,43 +1,14 @@
-$cores_hr: (periodos, $cat_periodos),
-           (idade-antiga, $cat_idantiga),
-           (idade-media, $cat_idmedia),
-           (idade-moderna, $cat_idmoderna),
-           (idade-contemporanea, $cat_idcontemp),
-           (historia-do-brasil, $cat_histbrasil),
-           (colonia, $cat_colonia),
-           (imperio, $cat_imperio),
-           ($cat_republica),
-           (republica, $cat_artes),
-           (direitos-humanos, $cat_cinema),
-           (musica, $cat_musica),
-           (literatura, $cat_liter),
-           (biografias, $cat_bio),
-           (direitos-humanos, $cat_dirhum),
-           (curiosidades, $cat_curios),
-           (guerras, $cor_guerras),
-           (armas-historicas, $cor_armas),
-           (batalhas-historicas, $cor_batalhas),
-           (massacres-e-genocidios, $cor_massacres),
-           (primeira-guerra-mundial, $cor_1guerra),
-           (segunda-guerra-mundial, $cor_2guerra),
-           (livros-indicados, $cor_livros),
-           (papeis-de-parede, $cor_papeis),
-           (crime-organizado, $cor_crime),
-           (mais, $cat_mais),
-           (outros, $cat_mais),
-           (arqueologia, $cat_mais),
-           (arquitetura, $cat_mais),
-           (atualidades, $cat_mais),
-           (esportes, $cat_mais),
-           (imagens, $cat_mais);
+// Pages
+$cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-media, $cat-idmedia), (idade-moderna, $cat-idmoderna), (idade-contemporanea, $cat-idcontemp), (historia-do-brasil, $cat-histbrasil), (colonia, $cat-colonia), (imperio, $cat-imperio), ($cat-republica), (republica, $cat-artes), (direitos-humanos, $cat-cinema), (musica, $cat-musica), (literatura, $cat-liter), (biografias, $cat-bio), (direitos-humanos, $cat-dirhum), (curiosidades, $cat-curios), (guerras, $cor-guerras), (armas-historicas, $cor-armas), (batalhas-historicas, $cor-batalhas), (massacres-e-genocidios, $cor-massacres), (primeira-guerra-mundial, $cor-1guerra), (segunda-guerra-mundial, $cor-2guerra), (livros-indicados, $cor-livros), (papeis-de-parede, $cor-papeis), (crime-organizado, $cor-crime), (mais, $cat-mais), (outros, $cat-mais), (arqueologia, $cat-mais), (arquitetura, $cat-mais), (atualidades, $cat-mais), (esportes, $cat-mais), (imagens, $cat-mais);
 
-
-@each $hr_category, $color in $cores_hr {
-  .category-#{$hr_category} .page-header {
-    hr {
-      border-color: $color;
-      border-style: solid $color;
-      border-width: 5px 0;
+@each $hr-category, $color in $cores-hr {
+  .category-#{$hr-category} {
+    .page-header {
+      hr {
+        border-color: $color;
+        border-style: solid $color;
+        border-width: 5px 0;
+      }
     }
   }
 }
@@ -47,23 +18,16 @@ $cores_hr: (periodos, $cat_periodos),
   main {
     article {
       margin-bottom: 10px;
+
       header {
-        h2 { font-size: 1.5rem; }
+        h2 {
+          font-size: 1.5rem;
+        }
+
         p {
           margin-bottom: 5px;
         }
       }
     }
-    .navigation.pagination {
-
-    }
   }
 }
-
-// .category-periodos {
-//   @include hr($cat_periodos);
-// }
-//
-// .category-idade-antiga {
-//   @include hr($cat_idantiga);
-// }
