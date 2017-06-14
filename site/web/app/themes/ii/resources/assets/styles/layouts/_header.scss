@@ -40,6 +40,9 @@
       // width: 145px;
       // height: 165px;
       // width: 8%;
+      -webkit-filter: drop-shadow(-5px -5px 5px #000);
+      filter: drop-shadow(-5px -5px 5px #000); /* Same syntax as box-shadow, except  for the spread property */
+
       path {
         fill: $logo;
       }
@@ -49,6 +52,7 @@
       // display: inline-flex;
       @include titulos-chamadas-bold($size: 3.2rem);
 
+      text-shadow: 5px 5px 5px #000;
       margin-left: 15px;
       line-height: 1em;
 
