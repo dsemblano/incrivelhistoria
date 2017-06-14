@@ -62,13 +62,17 @@
       }
 
       #logo {
-        height: 180px;
+        height: 70px;
 
         .logo-titulo {
-          padding-top: 5px;
+          padding-top: 10px;
+
+          svg {
+            height: 85%;
+          }
 
           h1 {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-left: 15px;
             // margin-top: 15px;
           }
