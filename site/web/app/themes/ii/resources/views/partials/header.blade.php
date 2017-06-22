@@ -29,7 +29,7 @@
     {{-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a> --}}
 
 
-<nav class="nav-primary nav-primary-main container-fluid navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="nav-primary nav-primary-main container-fluid navbar navbar-toggleable-md navbar-inverse bg-inverse">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
    aria-label="Toggle navigation">

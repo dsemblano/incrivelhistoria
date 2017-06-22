@@ -50,15 +50,19 @@ $cor-outras: #9004cb;
 
 //Mixins
 @mixin titulos($size: 2rem) {
-  font: $size 'Muli', sans-serif;
+  font: $size 'muliregular', sans-serif;
 }
 
 @mixin titulos-chamadas($size: 1rem) {
-  font: $size 'Muli', sans-serif;
+  font: $size 'muliregular', sans-serif;
 }
 
 @mixin titulos-chamadas-bold($size: 2rem) {
-  font: bold $size 'Muli', sans-serif;
+  font: bold $size 'mulibold', sans-serif;
+}
+
+@mixin titulos-chamadas-black($size: 2rem) {
+  font: bold $size 'muliblack', sans-serif;
 }
 
 %titulo-bg {

@@ -8,56 +8,83 @@
   @extend .nav-link;
 }
 
-.menu-categorias-menu-container {
-  margin: 0 auto;
-}
+header.banner {
+  #nav-page {
+    font-weight: bold;
+  }
 
-.dropdown-menu {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-  border-left: 2px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0;
-  border-right: 2px solid rgba(0, 0, 0, 0.15);
-  border-top: 0;
-}
+  #logo {
+    color: $logo;
+    background: url('../images/bg.jpg') no-repeat scroll center center / cover;
+    height: 400px;
 
-.navbar-collapse {
-  background-color: $cor-primary;
-}
+    .logo-titulo {
+      padding-top: 25px;
 
-.navbar-nav {
-  margin: 0 auto;
-}
+      svg {
+        -webkit-filter: drop-shadow(-5px -5px 5px #000);
+        filter: drop-shadow(-5px -5px 5px #000); /* Same syntax as box-shadow, except  for the spread property */
 
-#logo {
-  color: $logo;
-  background: url('../images/bg.jpg') no-repeat scroll center center / cover;
-  height: 400px;
+        path {
+          fill: $logo;
+        }
+      }
 
-  .logo-titulo {
-    padding-top: 25px;
+      h1 {
+        @include titulos-chamadas-bold($size: 3.2rem);
 
-    svg {
-      // width: 145px;
-      // height: 165px;
-      // width: 8%;
-      -webkit-filter: drop-shadow(-5px -5px 5px #000);
-      filter: drop-shadow(-5px -5px 5px #000); /* Same syntax as box-shadow, except  for the spread property */
+        text-shadow: 5px 5px 5px #000;
+        margin-left: 15px;
+        line-height: 1em;
 
-      path {
-        fill: $logo;
+        a {
+          color: inherit;
+        }
       }
     }
-    // img { width: 90%; }
-    h1 {
-      // display: inline-flex;
-      @include titulos-chamadas-bold($size: 3.2rem);
+  }
 
-      text-shadow: 5px 5px 5px #000;
-      margin-left: 15px;
-      line-height: 1em;
+  .nav-primary {
+    @include titulos-chamadas($size: 1rem) ul.nav {
+      li {
+        list-style: none;
 
-      a {
-        color: inherit;
+        a {
+          color: inherit;
+          white-space: nowrap;
+        }
+
+        &.menu-item-has-children {
+          &:hover .sub-menu {
+            display: inline !important;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-primary-main {
+    background-color: $cor-primary !important;
+    color: white;
+
+    ul.nav {
+      // menu dropdown responsivo
+      margin: 0 auto;
+
+      li {
+        .dropdown-menu {
+          background-color: $cor-primary;
+          color: inherit;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+          border-left: 2px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0;
+          border-right: 2px solid rgba(0, 0, 0, 0.15);
+          border-top: 0;
+
+          a:hover {
+            background-color: #137c9f;
+          }
+        }
       }
     }
   }

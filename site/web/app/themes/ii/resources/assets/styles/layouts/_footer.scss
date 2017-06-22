@@ -4,16 +4,78 @@ footer.content-info {
   @include titulos-chamadas($size: 2rem);
 
   background-color: $cor-primary;
-  color: $white;
-  height: 200px;
-  margin-top: 5em;
-  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
 
-  .container {
-    height: inherit;
+  .sitemap-footer {
+    @include titulos-chamadas;
+
+    li {
+      list-style: none;
+      margin: 10px 0;
+      white-space: nowrap;
+      // width: 15%;
+      .sub-menu {
+        padding-left: 1em;
+
+        li a {
+          color: $white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
 
-  .row {
-    height: inherit;
+  .sitemap-footer > li {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: top;
+    line-height: 20px;
+    // width: 22%;
+  }
+
+  .sitemap-footer > li > a {
+    @include titulos-chamadas-bold($size: 1rem);
+  }
+
+  .footer-right {
+    .search-form {
+      display: inline;
+      width: 100%;
+
+      label {
+        display: inline;
+        width: 60%;
+
+        input {
+          width: inherit;
+        }
+      }
+    }
+
+    p {
+      @include titulos-chamadas-bold($size: 1.5rem);
+
+      color: $white;
+    }
+
+    .facebook-footer {
+      margin-top: 25px;
+
+      a {
+        color: inherit;
+      }
+
+      .fa {
+        font-size: 3rem;
+
+        &:hover {
+          color: #316182;
+        }
+      }
+    }
   }
 }
