@@ -195,7 +195,8 @@ body.home {
 
     span.text-center {
       display: block;
-      margin: 0 auto;
+      margin-bottom: 3em;
+      margin-top: 3em;
 
       a.button {
         @include titulos-chamadas-bold($size: 2rem);
