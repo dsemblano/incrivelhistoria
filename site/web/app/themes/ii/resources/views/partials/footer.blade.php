@@ -30,4 +30,7 @@
     </div>
 
   </div>
+  <div class="container-fluid copyright">
+    Todos os direitos reservados
+  </div>
 </footer>

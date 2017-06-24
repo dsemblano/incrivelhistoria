@@ -9,8 +9,11 @@
 }
 
 header.banner {
+  border-bottom: $border-bg;
+
   #nav-page {
     font-weight: bold;
+    background-color: $white;
   }
 
   #logo {
@@ -38,7 +41,7 @@ header.banner {
         line-height: 1em;
 
         a {
-          color: inherit;
+          color: $white;
         }
       }
     }

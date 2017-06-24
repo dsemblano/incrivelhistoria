@@ -1,4 +1,16 @@
 // Pages
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+article,
+a {
+  color: $white;
+}
+
 $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-media, $cat-idmedia), (idade-moderna, $cat-idmoderna), (idade-contemporanea, $cat-idcontemp), (historia-do-brasil, $cat-histbrasil), (colonia, $cat-colonia), (imperio, $cat-imperio), ($cat-republica), (republica, $cat-artes), (direitos-humanos, $cat-cinema), (musica, $cat-musica), (literatura, $cat-liter), (biografias, $cat-bio), (direitos-humanos, $cat-dirhum), (curiosidades, $cat-curios), (guerras, $cor-guerras), (armas-historicas, $cor-armas), (batalhas-historicas, $cor-batalhas), (massacres-e-genocidios, $cor-massacres), (primeira-guerra-mundial, $cor-1guerra), (segunda-guerra-mundial, $cor-2guerra), (livros-indicados, $cor-livros), (papeis-de-parede, $cor-papeis), (crime-organizado, $cor-crime), (mais, $cat-mais), (outros, $cat-mais), (arqueologia, $cat-mais), (arquitetura, $cat-mais), (atualidades, $cat-mais), (esportes, $cat-mais), (imagens, $cat-mais);
 
 @each $hr-category, $color in $cores-hr {

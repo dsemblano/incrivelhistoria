@@ -9,6 +9,10 @@
   height: 100%;
   padding: 1em;
 
+  h3 {
+    color: $black;
+  }
+
   section {
     // background-color: red;
     margin-bottom: 15px;
@@ -56,6 +60,7 @@
     }
 
     .tagcloud a {
+      color: $black;
       font: 12px 'Roboto Slab', serif;
 
       &:hover {

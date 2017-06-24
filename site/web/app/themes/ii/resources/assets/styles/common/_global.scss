@@ -1,7 +1,7 @@
 // Base styles
 
 a {
-  color: $titulos-cor;
+  // color: $titulos-cor;
   -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
   -moz-tap-highlight-color: rgba(234, 21, 21, 0);
 
@@ -19,11 +19,18 @@ hr {
 }
 
 body {
+  background: rgba(5, 52, 82, 1);
+  background: -moz-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5, 52, 82, 1)), color-stop(37%, rgba(5, 45, 70, 1)), color-stop(60%, rgba(4, 33, 51, 1)), color-stop(78%, rgba(0, 22, 36, 1)), color-stop(92%, rgba(0, 22, 36, 1)), color-stop(100%, rgba(0, 22, 36, 1)));
+  background: -webkit-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  background: -o-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  background: linear-gradient(to bottom, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#053452', endColorstr='#001624', GradientType=0);
   font-family: 'Open Sans', sans-serif;
 
   // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
   .content {
-    background-color: white;
     padding-top: 20px;
 
     main {
@@ -38,10 +45,21 @@ body {
 }
 
 // CSS apenas home
-body {
+body.home {
   // background-color: pink;
 
   main {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    article,
+    a {
+      color: $white;
+    }
+
     // background-color: #D3D3D3;
     section#carousel {
       // height: 750px;
@@ -71,7 +89,6 @@ body {
           // background: rgba(54, 25, 25, .5);
           @extend %titulo-bg;
 
-          color: white;
           bottom: 0;
           left: 0;
           position: absolute;
@@ -100,7 +117,6 @@ body {
         @include titulos;
 
         background-color: $cor-complem;
-        color: white;
         text-indent: 1em;
         line-height: 2em;
       }
@@ -119,7 +135,6 @@ body {
           @extend %titulo-bg;
 
           bottom: 0;
-          color: white;
           left: 0;
           margin: 0;
           padding: 3px 0 3px 10px;
@@ -140,7 +155,6 @@ body {
         @include titulos;
 
         background-color: $cor-complem;
-        color: white;
         text-align: center;
         line-height: 2em;
       }
@@ -163,7 +177,6 @@ body {
 
         h2 {
           background-color: transparent;
-          color: black;
           display: block;
           text-align: center;
 

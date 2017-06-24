@@ -4,8 +4,9 @@ footer.content-info {
   @include titulos-chamadas($size: 2rem);
 
   background-color: $cor-primary;
-  margin-top: 2em;
-  padding-top: 1em;
+  border-top: $border-bg;
+  // margin-top: 2em;
+  padding-top: 1.5em;
 
   .sitemap-footer {
     @include titulos-chamadas;
@@ -39,6 +40,8 @@ footer.content-info {
 
   .sitemap-footer > li > a {
     @include titulos-chamadas-bold($size: 1rem);
+
+    color: $black;
   }
 
   .footer-right {
@@ -77,5 +80,13 @@ footer.content-info {
         }
       }
     }
+  }
+
+  .container-fluid.copyright {
+    @include titulos-chamadas-bold($size: 1.2rem);
+
+    background-color: $white;
+    line-height: 3em;
+    text-align: center;
   }
 }
