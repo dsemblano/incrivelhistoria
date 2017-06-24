@@ -14,6 +14,7 @@
 
   .content {
     background-color: $white;
+    padding-bottom: 5em;
 
     #breadcrumbs {
       @include titulos($size: 0.85rem);
