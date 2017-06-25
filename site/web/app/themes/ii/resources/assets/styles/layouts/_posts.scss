@@ -53,6 +53,10 @@
         text-align: center;
       }
 
+      strong {
+        color: $black;
+      }
+
       blockquote {
         &::before {
           color: $quote;
