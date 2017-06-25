@@ -55,6 +55,10 @@
 
       strong {
         color: $black;
+
+        span {
+          color: $black !important;
+        }
       }
 
       blockquote {
