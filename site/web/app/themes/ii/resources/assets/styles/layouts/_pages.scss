@@ -27,6 +27,10 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 // Serve para todas as páginas: categorias, tags, busca
 .sidebar-primary {
   main {
+    strong {
+      color: $white;
+    }
+
     article {
       margin-bottom: 30px;
 
