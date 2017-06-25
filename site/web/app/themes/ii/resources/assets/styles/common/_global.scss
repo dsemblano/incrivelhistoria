@@ -19,6 +19,7 @@ hr {
 }
 
 body {
+  color: $white;
   background: rgba(5, 52, 82, 1);
   background: -moz-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5, 52, 82, 1)), color-stop(37%, rgba(5, 45, 70, 1)), color-stop(60%, rgba(4, 33, 51, 1)), color-stop(78%, rgba(0, 22, 36, 1)), color-stop(92%, rgba(0, 22, 36, 1)), color-stop(100%, rgba(0, 22, 36, 1)));
