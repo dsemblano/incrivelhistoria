@@ -95,12 +95,33 @@
           @include titulos-chamadas-bold($size: 1.5rem);
         }
 
-        li {
-          border: 0;
-          box-shadow: none;
+        ul {
+          display: inline-block;
+          list-style: outside none none;
+          padding: 0;
+          width: 100%;
 
-          .crp_title {
-            border-radius: 0;
+          li {
+            display: inline-block;
+            margin: 0 35px 10px 0;
+            padding: 0;
+            vertical-align: top;
+            width: 30%;
+
+            a {
+              &:hover {
+                text-decoration: underline;
+              }
+
+              img {
+                max-width: 100%;
+                width: 100%;
+              }
+            }
+
+            &:nth-child(3n+3) {
+              margin-right: 0;
+            }
           }
         }
       }
