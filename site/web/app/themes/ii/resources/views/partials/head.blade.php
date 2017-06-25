@@ -2,8 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Somos dedicados à propagação de conteúdo histórico de maneira séria, didática e imparcial. Curiosidades, listas, biografias, guerras e muito mais!.">
-  <meta name="keywords" content="história, guerra, guerras, brasil, nobel, mundial, listas, biografias">
+  <meta name="keywords" content="história, guerra, brasil, nobel, mundial, listas, biografias">
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/apple-icon-57x57.png')">
   <link rel="apple-touch-icon" sizes="60x60" href="@asset('images/apple-icon-60x60.png')">
   <link rel="apple-touch-icon" sizes="72x72" href="@asset('images/apple-icon-72x72.png')">
