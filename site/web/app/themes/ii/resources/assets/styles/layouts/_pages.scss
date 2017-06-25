@@ -29,6 +29,10 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   main {
     strong {
       color: $white;
+
+      span {
+        color: $white !important;
+      }
     }
 
     article {
