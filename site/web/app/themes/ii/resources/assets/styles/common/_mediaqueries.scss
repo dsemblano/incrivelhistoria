@@ -9,7 +9,7 @@
 
 @include media-breakpoint-only(xs) {
   body {
-    // background-color: yellow;
+    // background-x: yellow;
     header.banner {
       margin-bottom: 0;
 
@@ -22,7 +22,6 @@
       }
 
       .nav-primary {
-        background-color: transparent !important;
         padding-bottom: 0;
 
         .hidden-md-up {
