@@ -13,12 +13,10 @@
     header.banner {
       margin-bottom: 0;
 
-      .bg-faded {
-        .collapse.show,
-        .collapsing {
-          display: block;
-          margin-top: -125px;
-        }
+      .collapse.show,
+      .collapsing {
+        display: block;
+        margin-top: -125px;
       }
 
       .nav-primary {
