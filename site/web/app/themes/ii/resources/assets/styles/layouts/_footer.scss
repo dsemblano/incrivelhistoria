@@ -66,7 +66,7 @@ footer.content-info {
     }
 
     .facebook-footer {
-      margin-top: 25px;
+      margin: 1em 0px;
 
       a {
         color: inherit;
@@ -74,6 +74,7 @@ footer.content-info {
 
       .fa {
         font-size: 3rem;
+        color: $black;
 
         &:hover {
           color: #316182;
