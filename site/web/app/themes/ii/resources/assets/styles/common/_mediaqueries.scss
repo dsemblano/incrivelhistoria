@@ -16,7 +16,7 @@
       .collapse.show,
       .collapsing {
         display: block;
-        margin-top: -8em;
+        margin-top: -7em;
       }
 
       .navbar-toggleable-md {
@@ -51,6 +51,10 @@
           border: 0 none;
           font-size: 1.7rem;
           margin-top: -6em;
+
+          .fa {
+            font-size: 2.5rem;
+          }
         }
 
         .dropdown-menu {
@@ -59,6 +63,7 @@
 
         #menu-categorias-menu {
           background-color: $cor-primary;
+          width: 100%;
         }
       }
 
@@ -73,8 +78,8 @@
           }
 
           h1 {
-            font-size: 1rem;
-            margin-left: 15px;
+            font-size: 1.5rem;
+            margin-left: 1em;
             // margin-top: 15px;
           }
         }
