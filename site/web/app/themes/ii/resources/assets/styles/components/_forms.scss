@@ -14,6 +14,16 @@
   // @extend .form-control;
   padding: 5px 0 5px 5px;
   width: 100%;
+  background-clip: padding-box;
+  background-image: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  color: #464a4c;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25;
+  // padding: 0.5rem 0.75rem;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 
 .search-form .search-submit {

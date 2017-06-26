@@ -154,8 +154,6 @@
     }
 
     aside.sidebar {
-      background-color: $white;
-
       .search-form .search-submit {
         font-size: 1.5rem;
         right: 1em;
@@ -173,9 +171,12 @@
   }
 
   footer.content-info {
+    .sitemap-footer > li {
+      width: 100%;
+    }
+
     .search-form .search-submit {
       font-size: 1.5rem;
-      right: 0;
       top: 0.5em;
     }
   }
