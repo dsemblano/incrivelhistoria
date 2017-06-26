@@ -111,7 +111,7 @@ add_filter('sage/display_sidebar', function ($display) {
 });
 
 // Thumbnails images
-add_image_size( 'slideshow', 730, 435, true );
+add_image_size( 'slideshow', 730, 371, true );
 add_image_size( 'curiosidades_large', 480, 370, true );
 add_image_size( 'curiosidades_small', 220, 155, true );
 add_image_size( 'mais', 225, 150, true );
