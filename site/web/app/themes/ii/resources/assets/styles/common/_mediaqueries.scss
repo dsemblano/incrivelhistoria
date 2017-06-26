@@ -12,6 +12,7 @@
     // background-x: yellow;
     header.banner {
       margin-bottom: 0;
+      border-bottom: none;
 
       .collapse.show,
       .collapsing {
@@ -50,7 +51,8 @@
           // background-color: #188cb3;
           border: 0 none;
           font-size: 1.7rem;
-          margin-top: -6em;
+          position: absolute;
+          top: -3.3em;
 
           .fa {
             font-size: 2.5rem;
@@ -68,7 +70,8 @@
       }
 
       #logo {
-        height: 180px;
+        height: 110px;
+        border-bottom: 2px solid #fff;
 
         .logo-titulo {
           padding-top: 1.5em;
@@ -91,7 +94,7 @@
 
       main {
         section#carousel {
-          height: 320px;
+          height: 260px;
 
           .flickity-prev-next-button {
             height: 20px;
@@ -102,7 +105,7 @@
           .flickity-slider li {
             img {
               min-height: 0;
-              height: 200px;
+              height: 145px;
             }
 
             span {
