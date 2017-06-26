@@ -162,10 +162,18 @@
     }
   }
 
-  body.single-post {
-    main {
-      article {
-        margin-top: 10px;
+  .single-post {
+    .content {
+      main {
+        article {
+          margin-top: 10px;
+        }
+
+        .crp_related {
+          ul li {
+            width: 100%;
+          }
+        }
       }
     }
   }

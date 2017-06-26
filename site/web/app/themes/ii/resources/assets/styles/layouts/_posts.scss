@@ -87,41 +87,41 @@
       h6 {
         font-size: 0.8rem;
       }
+    }
 
-      .crp_related {
-        margin: 20px 0;
+    .crp_related {
+      margin: 20px 0;
 
-        h3 {
-          @include titulos-chamadas-bold($size: 1.5rem);
-        }
+      h3 {
+        @include titulos-chamadas-bold($size: 1.5rem);
+      }
 
-        ul {
+      ul {
+        display: inline-block;
+        list-style: outside none none;
+        padding: 0;
+        width: 100%;
+
+        li {
           display: inline-block;
-          list-style: outside none none;
+          margin: 0 35px 10px 0;
           padding: 0;
-          width: 100%;
+          vertical-align: top;
+          width: 30%;
 
-          li {
-            display: inline-block;
-            margin: 0 35px 10px 0;
-            padding: 0;
-            vertical-align: top;
-            width: 30%;
-
-            a {
-              &:hover {
-                text-decoration: underline;
-              }
-
-              img {
-                max-width: 100%;
-                width: 100%;
-              }
+          a {
+            &:hover {
+              text-decoration: underline;
             }
 
-            &:nth-child(3n+3) {
-              margin-right: 0;
+            img {
+              max-width: 100%;
+              width: 100%;
             }
+          }
+
+          &:nth-child(3n+3) {
+            margin-right: 0;
           }
         }
       }
