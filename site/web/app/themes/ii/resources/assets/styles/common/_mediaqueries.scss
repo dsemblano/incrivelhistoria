@@ -10,6 +10,11 @@
 @include media-breakpoint-only(xs) {
   body {
     // background-x: yellow;
+    .search-form .search-field {
+      padding: 1em 0 1em 1em;
+      width: 100%;
+    }
+
     header.banner {
       margin-bottom: 0;
       border-bottom: none;
@@ -150,6 +155,12 @@
 
     aside.sidebar {
       background-color: $white;
+
+      .search-form .search-submit {
+        font-size: 1.5rem;
+        right: 1em;
+        top: 1em;
+      }
     }
   }
 
@@ -159,18 +170,13 @@
         margin-top: 10px;
       }
     }
+  }
 
-    footer {
-      .rp4wp-related-posts {
-        ul {
-          display: block;
-
-          li {
-            display: block;
-            width: 100%;
-          }
-        }
-      }
+  footer.content-info {
+    .search-form .search-submit {
+      font-size: 1.5rem;
+      right: 0;
+      top: 0.5em;
     }
   }
 }

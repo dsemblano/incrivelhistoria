@@ -17,23 +17,15 @@
     // background-color: red;
     margin-bottom: 15px;
 
-    .search-form {
-      label {
-        flex-grow: 1;
-        min-width: 25%;
-        width: 60%;
-
-        .search-field {
-          width: 100%;
-        }
-      }
-
-      .search-submit {
-        margin-left: 10px;
-        flex-grow: 1;
-        min-width: 25%;
-      }
-    }
+    // .search-form {
+    //   label {
+    //     .search-field {
+    //     }
+    //   }
+    //
+    //   .search-submit {
+    //   }
+    // }
     //livros indicados
     &.widget_text {
       @include titulos($size: 2.5rem);

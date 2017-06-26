@@ -1,8 +1,6 @@
 // Footer
 
 footer.content-info {
-  @include titulos-chamadas($size: 2rem);
-
   background-color: $cor-primary;
   border-top: $border-bg;
   // margin-top: 2em;
@@ -45,20 +43,6 @@ footer.content-info {
   }
 
   .footer-right {
-    .search-form {
-      display: inline;
-      width: 100%;
-
-      label {
-        display: inline;
-        width: 60%;
-
-        input {
-          width: inherit;
-        }
-      }
-    }
-
     p {
       @include titulos-chamadas-bold($size: 1.5rem);
 

@@ -43,7 +43,7 @@ add_action('after_setup_theme', function () {
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
         'secondary_navigation' => __('Secondary Navigation', 'sage'),
-        'tertiary_navigation' => __('Tertiary Navigation', 'sage') 
+        'tertiary_navigation' => __('Tertiary Navigation', 'sage')
     ]);
 
     /**

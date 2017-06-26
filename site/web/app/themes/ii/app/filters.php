@@ -68,3 +68,11 @@ add_filter('template_include', function ($template) {
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
 add_filter('comments_template', 'App\\template_path');
+
+
+// Custom search form
+add_filter('get_search_form', function(){
+  $form = '';
+  echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
+  return $form;
+});

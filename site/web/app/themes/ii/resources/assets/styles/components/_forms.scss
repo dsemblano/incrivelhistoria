@@ -7,13 +7,24 @@
   @extend .form-group;
 
   font-weight: normal;
+  width: 100%;
 }
 
 .search-form .search-field {
-  @extend .form-control;
+  // @extend .form-control;
+  padding: 5px 0 5px 5px;
+  width: 100%;
 }
 
 .search-form .search-submit {
-  @extend .btn;
-  @extend .btn-secondary;
+  // @extend .btn;
+  // @extend .btn-secondary;
+  background-color: transparent;
+  border: medium none;
+  position: absolute;
+  right: 1em;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
