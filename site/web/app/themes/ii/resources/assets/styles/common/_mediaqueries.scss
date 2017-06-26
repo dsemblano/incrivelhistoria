@@ -16,7 +16,11 @@
       .collapse.show,
       .collapsing {
         display: block;
-        margin-top: -125px;
+        margin-top: -8em;
+      }
+
+      .navbar-toggleable-md {
+        background-color: transparent !important;
       }
 
       .nav-primary {
@@ -46,7 +50,7 @@
           // background-color: #188cb3;
           border: 0 none;
           font-size: 1.7rem;
-          margin-top: -190px;
+          margin-top: -6em;
         }
 
         .dropdown-menu {
@@ -62,7 +66,7 @@
         height: 180px;
 
         .logo-titulo {
-          padding-top: 15px;
+          padding-top: 1.5em;
 
           svg {
             height: 85%;
