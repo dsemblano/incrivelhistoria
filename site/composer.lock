@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "492c1f4a77f1ce417a71f07bf11193bd",
+    "content-hash": "c6ea3ece1846ba351633efcab123b676",
     "packages": [
         {
             "name": "composer/installers",
@@ -433,27 +433,6 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
-            "name": "wpackagist-plugin/autodescription",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.zip?timestamp=1494285120",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/autodescription/",
-            "time": "2017-05-09T00:12:00+00:00"
-        },
-        {
             "name": "wpackagist-plugin/contact-form-7",
             "version": "4.8",
             "source": {
@@ -640,6 +619,26 @@
             "time": "2017-02-07T11:48:54+00:00"
         },
         {
+            "name": "wpackagist-plugin/sassy-social-share",
+            "version": "3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1498296032",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/sassy-social-share/"
+        },
+        {
             "name": "wpackagist-plugin/taghound-media-tagger",
             "version": "1.2.0",
             "source": {
@@ -788,7 +787,6 @@
         "wpackagist-plugin/default-featured-image": 20,
         "wpackagist-plugin/php-code-widget": 20,
         "wpackagist-plugin/wordpress-importer": 20,
-        "wpackagist-plugin/autodescription": 20,
         "wpackagist-plugin/google-sitemap-generator": 20,
         "wpackagist-plugin/database-browser": 20,
         "wpackagist-plugin/reveal-ids-for-wp-admin-25": 20

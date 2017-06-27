@@ -46,12 +46,12 @@
     "wpackagist-plugin/wordpress-importer": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": ">=4.9",
     "wpackagist-plugin/ewww-image-optimizer":  ">=3.4.1",
-    "wpackagist-plugin/autodescription": "dev-trunk",
     "wpackagist-plugin/google-sitemap-generator": "dev-trunk",
     "wpackagist-plugin/database-browser": "dev-trunk",
     "wpackagist-plugin/reveal-ids-for-wp-admin-25": "dev-trunk",
     "wpackagist-plugin/contact-form-7": ">=4.8",
-    "wpackagist-plugin/contextual-related-posts": ">=2.4.1",    
+    "wpackagist-plugin/contextual-related-posts": ">=2.4.1",
+    "wpackagist-plugin/sassy-social-share": ">=3.1",
     "roots/soil": "3.7.1"
   },
   "require-dev": {
