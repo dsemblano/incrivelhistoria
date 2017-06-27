@@ -22,8 +22,8 @@ hr {
   // margin: 18px 0;
 }
 
-body {
-  color: $white;
+.home,
+.sidebar-primary {
   background: rgba(5, 52, 82, 1);
   background: -moz-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5, 52, 82, 1)), color-stop(37%, rgba(5, 45, 70, 1)), color-stop(60%, rgba(4, 33, 51, 1)), color-stop(78%, rgba(0, 22, 36, 1)), color-stop(92%, rgba(0, 22, 36, 1)), color-stop(100%, rgba(0, 22, 36, 1)));
@@ -32,6 +32,9 @@ body {
   background: -ms-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
   background: linear-gradient(to bottom, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#053452', endColorstr='#001624', GradientType=0);
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
 
   // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
