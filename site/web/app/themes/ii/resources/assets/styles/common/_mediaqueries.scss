@@ -163,10 +163,6 @@
   }
 
   .single-post {
-    .heateorSssWhatsappBackground {
-      display: none !important;
-    }
-
     .content {
       main {
         article {
@@ -216,5 +212,9 @@
 @include media-breakpoint-up(lg) {
   body.home {
     // background-color: orange;
+  }
+
+  .heateorSssWhatsappBackground {
+    display: none !important;
   }
 }
