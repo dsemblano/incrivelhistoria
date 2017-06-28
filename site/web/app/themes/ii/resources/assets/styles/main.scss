@@ -9,7 +9,6 @@ $fa-font-path: "~font-awesome/fonts";
 
 // Import theme styles
 @import "common/global";
-@import "common/mediaqueries";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
@@ -19,6 +18,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
+@import "common/mediaqueries";
 @import "layouts/tinymce";
 
 // Import flickity

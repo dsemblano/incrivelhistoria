@@ -1,182 +1,228 @@
 // Media Queries
+// Resoluções abaixo de desktop
+@include media-breakpoint-down(lg) {
+  .wrap.container {
+    width: inherit;
+  }
 
-//Extra small devices (portrait phones, less than 576px)
-// @include media-breakpoint-down(xs) {
-//   body.home {
-//     // background-color: pink;
-//   }
-// }
+  %titulo-materia {
+    font-size: 1rem;
+  }
 
-@include media-breakpoint-only(xs) {
-  body {
-    // background-x: yellow;
-    .search-form .search-field {
-      padding: 1em 0 1em 1em;
-      width: 100%;
+  %titulo-excerpt {
+    font-size: 0.8rem;
+  }
+
+  .search-form .search-field {
+    padding: 1em 0 1em 1em;
+    width: 100%;
+  }
+
+  header.banner {
+    margin-bottom: 0;
+    border-bottom: none;
+
+    .collapse.show,
+    .collapsing {
+      display: block;
+      margin-top: -2.5em;
     }
 
-    header.banner {
-      margin-bottom: 0;
-      border-bottom: none;
+    .navbar-toggleable-md {
+      background-color: transparent !important;
+    }
 
-      .collapse.show,
-      .collapsing {
+    .nav-primary {
+      padding-bottom: 0;
+
+      .hidden-md-up {
+        .nav {
+          align-self: stretch;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          margin: 0;
+          padding: 0;
+
+          li {
+            flex-grow: 1;
+
+            a {
+              font-size: 0.7rem;
+              padding: 5px;
+            }
+          }
+        }
+      }
+
+      button {
+        // background-color: #188cb3;
+        border: 0 none;
+        font-size: 1.7rem;
+        position: absolute;
+        top: -3.3em;
+
+        .fa {
+          font-size: 2.5rem;
+        }
+      }
+
+      .dropdown-menu {
         display: block;
-        margin-top: -2.5em;
       }
 
-      .navbar-toggleable-md {
-        background-color: transparent !important;
+      #menu-categorias-menu {
+        background-color: $cor-primary;
+        width: 100%;
       }
+    }
 
-      .nav-primary {
-        padding-bottom: 0;
+    #logo {
+      height: 110px;
+      border-bottom: 2px solid #fff;
 
-        .hidden-md-up {
-          .nav {
-            align-self: stretch;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            margin: 0;
+      .logo-titulo {
+        padding-top: 1.5em;
+
+        svg {
+          height: 85%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          margin-left: 1em;
+          // margin-top: 15px;
+        }
+      }
+    }
+  }
+
+  body.home {
+    main {
+      .main-carousel {
+        height: 260px;
+
+        .flickity-prev-next-button {
+          height: 20px;
+          top: 30%;
+          width: 20px;
+        }
+
+        .flickity-slider li {
+          img {
+            min-height: 0;
+            height: auto;
+          }
+
+          span {
+            position: relative;
+            background: transparent;
             padding: 0;
 
-            li {
-              flex-grow: 1;
+            p {
+              @extend %titulo-excerpt;
+            }
 
-              a {
-                font-size: 0.7rem;
-                padding: 5px;
-              }
+            h2 {
+              @extend %titulo-materia;
             }
           }
         }
+      }
+      // end section carrousel
+      section#curiosidades,
+      section#mais {
+        h2 {
+          font-size: 1.5rem;
+        }
 
-        button {
-          // background-color: #188cb3;
-          border: 0 none;
-          font-size: 1.7rem;
-          position: absolute;
-          top: -3.3em;
-
-          .fa {
-            font-size: 2.5rem;
+        article {
+          img {
+            width: 100%;
           }
-        }
 
-        .dropdown-menu {
-          display: block !important;
-        }
+          h3,
+          h4 {
+            @extend %titulo-materia;
+          }
 
-        #menu-categorias-menu {
-          background-color: $cor-primary;
-          width: 100%;
+          p {
+            @extend %titulo-excerpt;
+          }
         }
       }
 
-      #logo {
-        height: 110px;
-        border-bottom: 2px solid #fff;
-
-        .logo-titulo {
-          padding-top: 1.5em;
-
-          svg {
-            height: 85%;
-          }
-
-          h1 {
-            font-size: 1.5rem;
-            margin-left: 1em;
-            // margin-top: 15px;
-          }
-        }
+      figure.aligncenter {
+        display: inline;
       }
     }
+  }
 
+  body {
     .content {
       padding-top: 0;
-
-      main {
-        section#carousel {
-          height: 260px;
-
-          .flickity-prev-next-button {
-            height: 20px;
-            top: 30%;
-            width: 20px;
-          }
-
-          .flickity-slider li {
-            img {
-              min-height: 0;
-              height: 145px;
-            }
-
-            span {
-              position: relative;
-              background: transparent;
-              padding: 0;
-
-              p {
-                font-size: small;
-              }
-
-              h2 {
-                font-size: 1.2rem;
-                margin-bottom: 5px;
-              }
-            }
-          }
-        }
-        // end section carrousel
-        section#curiosidades,
-        section#mais {
-          h2 {
-            font-size: 1.5rem;
-          }
-
-          article {
-            img {
-              width: 100%;
-            }
-
-            h3 {
-              font-size: 1.2rem;
-            }
-          }
-        }
-
-        figure.aligncenter {
-          display: inline;
-        }
-      }
     }
+  }
 
-    aside.sidebar {
-      .search-form .search-submit {
-        font-size: 1.5rem;
-        right: 1em;
-        top: 1em;
-      }
+  aside.sidebar {
+    .search-form .search-submit {
+      font-size: 1.5rem;
+      right: 1em;
+      top: 1em;
     }
   }
 
   .single-post {
     .content {
       main {
-        article {
-          margin-top: 10px;
+        .crp_related {
+          ul {
+            li {
+              width: 100%;
+
+              a img {
+                height: 200px;
+              }
+            }
+          }
         }
 
-        .crp_related {
-          ul li {
-            width: 100%;
-          }
+        article {
+          margin-top: 10px;
         }
       }
     }
   }
+}
+
+//Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+  body.home {
+    .wrap.container {
+      // background-color: pink;
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  body.home {
+    // background-x: yellow;
+  }
+
+  // single
+  .single-post .content main h1 {
+    font-size: 1.5rem;
+  }
+
+  ul.heateor_sss_sharing_ul li {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-primary main article header p {
+    font-size: small;
+  }
+  // end single
 
   footer.content-info {
     .sitemap-footer > li {
@@ -190,31 +236,84 @@
   }
 }
 
-@include media-breakpoint-up(xs) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
+@include media-breakpoint-only(xs) {
+  body.home {
+    .wrap.container {
+      // background-color: yellowgreen;
+    }
   }
 }
 
-@include media-breakpoint-up(sm) {
+// landscape cellphone
+@include media-breakpoint-only(sm) {
   body.home {
-    // background-color: green;
+    .main-carousel {
+      height: 200px;
+    }
+
+    .wrap.container {
+      // background-color: green;
+    }
   }
 }
 
-@include media-breakpoint-up(md) {
+// portrait tablet 1024x768
+@include media-breakpoint-only(md) {
   body.home {
-    // background-color: blue;
+    .wrap.container {
+      // background-color: blue;
+    }
+
+    #logo {
+      height: 300px;
+    }
+
+    header.banner .nav-primary button {
+      font-size: 3rem;
+      right: 0.5em;
+      top: -5.2em;
+    }
+
+    header.banner .collapse.show,
+    header.banner .collapsing {
+      margin-top: -12.5em;
+    }
+
+    main {
+      .main-carousel {
+        height: 500px;
+      }
+    }
   }
 }
 
-@include media-breakpoint-up(lg) {
-  body.home {
-    // background-color: orange;
+//desktop and landscape tablet
+@include media-breakpoint-only(lg) {
+  header.banner .nav-primary-main {
+    padding: 0;
+    font-size: 0.9rem;
+
+    .dropdown-menu {
+      display: none;
+      font-size: 0.8rem;
+    }
   }
 
+  body.home {
+    .wrap.container {
+      // background-color: purple;
+    }
+  }
+}
+
+@include media-breakpoint-only(xl) {
   .heateorSssWhatsappBackground {
     display: none !important;
+  }
+
+  body.home {
+    .wrap.container {
+      // background-color: orange;
+    }
   }
 }

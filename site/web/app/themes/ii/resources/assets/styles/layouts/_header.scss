@@ -76,6 +76,11 @@ header.banner {
       margin: 0 auto;
 
       li {
+        &:hover .dropdown-menu {
+          display: block;
+          margin-top: 0;
+        }
+
         .dropdown-menu {
           background-color: $cor-primary;
           color: inherit;
