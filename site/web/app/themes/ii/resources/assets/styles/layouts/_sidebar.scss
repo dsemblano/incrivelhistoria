@@ -51,12 +51,18 @@
       }
     }
 
-    .tagcloud a {
-      color: $black;
-      font: 12px 'Roboto Slab', serif;
+    .tagcloud {
+      h3 {
+        color: $black;
+      }
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: $black;
+        font: 12px 'Roboto Slab', serif;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

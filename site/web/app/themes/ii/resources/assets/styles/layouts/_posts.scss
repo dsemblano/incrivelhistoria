@@ -1,128 +1,130 @@
 // Posts
 
 .single-post {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  article,
-  a {
-    color: $black;
-  }
-
   .content {
     background-color: $white;
     padding-bottom: 5em;
 
-    #breadcrumbs {
-      @include titulos($size: 0.85rem);
-
-      a {
-        &:hover {
-          color: $cor-primary;
-          text-decoration: underline;
-        }
-      }
-    }
-
-    h1 {
-      @include titulos;
-    }
-
-    .entry-content {
+    main {
+      h1,
       h2,
       h3,
-      h4 {
-        font-size: 1.15rem;
-      }
-
-      p {
-        text-align: justify;
-      }
-
-      img {
-        margin-bottom: 0;
-      }
-
-      figcaption {
-        background-color: $figcaption;
-        color: $white;
-        font-size: small;
-        text-align: center;
-      }
-
-      strong {
+      h4,
+      h5,
+      h6,
+      article,
+      a {
         color: $black;
+      }
 
-        span {
-          color: $black !important;
+      #breadcrumbs {
+        @include titulos($size: 0.85rem);
+
+        a {
+          &:hover {
+            color: $cor-primary;
+            text-decoration: underline;
+          }
         }
       }
 
-      blockquote {
-        &::before {
-          color: $quote;
-          content: '“';
-          display: block;
-          font: italic 400% / 1 Georgia, 'Times New Roman', serif;
-          height: 0;
-          // margin-left: 0.2em;
-          margin-left: 0;
+      h1 {
+        @include titulos;
+      }
+
+      .entry-content {
+        h2,
+        h3,
+        h4 {
+          font-size: 1.15rem;
         }
 
         p {
-          font-size: 1.1rem;
-          font-style: italic;
-          // margin-left: 2.5em;
-          margin-left: 1.5em;
-          // margin-top: 1em;
-          margin-top: 1.5em;
           text-align: justify;
+        }
+
+        img {
+          margin-bottom: 0;
+        }
+
+        figcaption {
+          background-color: $figcaption;
+          color: $white;
+          font-size: small;
+          text-align: center;
+        }
+
+        strong {
+          color: $black;
+
+          span {
+            color: $black !important;
+          }
+        }
+
+        blockquote {
+          &::before {
+            color: $quote;
+            content: '“';
+            display: block;
+            font: italic 400% / 1 Georgia, 'Times New Roman', serif;
+            height: 0;
+            // margin-left: 0.2em;
+            margin-left: 0;
+          }
+
+          p {
+            font-size: 1.1rem;
+            font-style: italic;
+            // margin-left: 2.5em;
+            margin-left: 1.5em;
+            // margin-top: 1em;
+            margin-top: 1.5em;
+            text-align: justify;
+          }
+        }
+
+        h5,
+        h6 {
+          font-size: 0.8rem;
         }
       }
 
-      h5,
-      h6 {
-        font-size: 0.8rem;
-      }
-    }
+      .crp_related {
+        margin: 20px 0;
 
-    .crp_related {
-      margin: 20px 0;
+        h3 {
+          @include titulos-chamadas-bold($size: 1.5rem);
+        }
 
-      h3 {
-        @include titulos-chamadas-bold($size: 1.5rem);
-      }
-
-      ul {
-        display: inline-block;
-        list-style: outside none none;
-        padding: 0;
-        width: 100%;
-
-        li {
+        ul {
           display: inline-block;
-          margin: 0 35px 10px 0;
+          list-style: outside none none;
           padding: 0;
-          vertical-align: top;
-          width: 30%;
+          width: 100%;
 
-          a {
-            &:hover {
-              text-decoration: underline;
+          li {
+            display: inline-block;
+            margin: 0 35px 10px 0;
+            padding: 0;
+            vertical-align: top;
+            width: 30%;
+
+            a {
+              &:hover {
+                text-decoration: underline;
+              }
+
+              img {
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+              }
             }
 
-            img {
-              max-width: 100%;
-              width: 100%;
-              height: 100%;
+            &:nth-child(3n+3) {
+              margin-right: 0;
             }
-          }
-
-          &:nth-child(3n+3) {
-            margin-right: 0;
           }
         }
       }
