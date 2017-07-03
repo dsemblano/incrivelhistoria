@@ -9,29 +9,13 @@
   height: 100%;
   padding: 1em;
 
-  h3 {
-    color: $black;
-  }
-
   section {
-    // background-color: red;
     margin-bottom: 15px;
 
-    // .search-form {
-    //   label {
-    //     .search-field {
-    //     }
-    //   }
-    //
-    //   .search-submit {
-    //   }
-    // }
-    //livros indicados
     &.widget_text {
-      @include titulos($size: 2.5rem);
+      @include titulos($color: $white, $size: 2.5rem);
 
       background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
-      color: $white;
       height: 200px;
 
       .textwidget {
@@ -51,22 +35,21 @@
       }
     }
 
-    .tagcloud {
+    &.widget_tag_cloud {
       h3 {
-        color: $black;
+        @include titulos($color: $black);
       }
 
-      a {
-        color: $black;
-        font: 12px 'Roboto Slab', serif;
+      .tagcloud {
+        @include texto-fonte;
 
-        &:hover {
+        a:hover {
           text-decoration: underline;
         }
       }
     }
 
-    .execphpwidget {
+    &.widget_execphp {
       .fb-page,
       .fb-page span,
       .fb-page span iframe[style] {

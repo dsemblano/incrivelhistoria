@@ -52,22 +52,29 @@ body {
   }
 }
 
+// Serve para todas as páginas: categorias, tags, busca
+.sidebar-primary {
+  .content {
+    background-color: $white;
+    padding-bottom: 5em;
+
+    main {
+      h1 {
+        @include titulos($black, $size: 2.5rem);
+      }
+
+      strong {
+        color: $black;
+      }
+    }
+  }
+}
+
 // CSS apenas home
 body.home {
   // background-color: pink;
 
   main {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    article,
-    a {
-      color: $white;
-    }
-
     // background-color: #D3D3D3;
     .main-carousel {
       // height: 750px;
@@ -82,10 +89,6 @@ body.home {
         width: 100%;
         list-style: none;
 
-        h2 {
-          @include titulos;
-        }
-
         img {
           max-width: 100%;
           width: 100%;
@@ -95,6 +98,8 @@ body.home {
         span {
           // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
           // background: rgba(54, 25, 25, .5);
+          @include titulos($color: $white);
+
           @extend %titulo-bg;
 
           bottom: 0;
@@ -121,7 +126,7 @@ body.home {
 
     section#curiosidades {
       h2 {
-        @include titulos;
+        @include titulos($color: $white);
 
         background-color: $cor-complem;
         text-indent: 1em;
@@ -147,6 +152,7 @@ body.home {
           padding: 3px 0 3px 10px;
           position: absolute;
           width: 100%;
+          color: $white;
         }
       }
 
@@ -159,7 +165,7 @@ body.home {
 
     section#mais {
       h2 {
-        @include titulos;
+        @include titulos($color: $white);
 
         background-color: $cor-complem;
         text-align: center;
@@ -183,6 +189,8 @@ body.home {
         margin-top: 15px;
 
         h2 {
+          @include titulos($color: $black);
+
           background-color: transparent;
           display: block;
           text-align: center;

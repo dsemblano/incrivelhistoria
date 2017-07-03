@@ -18,7 +18,7 @@
       }
 
       #breadcrumbs {
-        @include titulos($size: 0.85rem);
+        @include titulos($color: $black, $size: 0.85rem);
 
         a {
           &:hover {
@@ -29,14 +29,16 @@
       }
 
       h1 {
-        @include titulos;
+        @include titulos($color: $black);
       }
 
       .entry-content {
+        @include texto-fonte;
+
         h2,
         h3,
         h4 {
-          font-size: 1.15rem;
+          font-size: medium;
         }
 
         p {
@@ -52,6 +54,7 @@
           color: $white;
           font-size: small;
           text-align: center;
+          padding: 5px;
         }
 
         strong {
@@ -104,6 +107,8 @@
           width: 100%;
 
           li {
+            @include titulos-chamadas;
+
             display: inline-block;
             margin: 0 35px 10px 0;
             padding: 0;

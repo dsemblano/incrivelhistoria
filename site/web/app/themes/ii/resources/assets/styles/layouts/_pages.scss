@@ -13,60 +13,49 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
-// Serve para todas as páginas: categorias, tags, busca
 .sidebar-primary {
-  main {
-    h1,
+  article {
+    margin-bottom: 30px;
+
     h2,
     h3,
     h4,
     h5,
     h6,
-    article,
     a {
-      color: $white;
+      color: $black;
     }
 
-    strong {
-      color: $white;
-
-      span {
-        color: $white !important;
-      }
-    }
-
-    article {
-      margin-bottom: 30px;
-
-      header {
-        h2 {
-          font-size: 1.5rem;
-        }
-
-        p {
-          margin-bottom: 5px;
-        }
-      }
-    }
-
-    .pagination {
-      color: #188cb3;
-      margin: 2em 0 3em;
-
+    header {
       h2 {
+        @include titulos($black, $size: 1.5rem);
+      }
+
+      p {
+        @include titulos($black, $size: 0.95rem);
+
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .pagination {
+    color: #188cb3;
+    margin: 2em 0 3em;
+
+    h2 {
+      color: inherit;
+    }
+
+    .nav-links {
+      color: inherit;
+
+      a {
         color: inherit;
       }
 
-      .nav-links {
-        color: inherit;
-
-        a {
-          color: inherit;
-        }
-
-        .current {
-          font-weight: bold;
-        }
+      .current {
+        font-weight: bold;
       }
     }
   }
@@ -75,7 +64,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 .page {
   main {
     p {
-      color: $white;
+      @include texto-fonte;
     }
   }
 }

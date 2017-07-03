@@ -52,7 +52,8 @@ $cor-outras: #9004cb;
 $border-bg: 2px solid #fff;
 
 //Mixins
-@mixin titulos($size: 2rem) {
+@mixin titulos($color, $size: 2rem) {
+  color: $color;
   font: $size 'muliregular', sans-serif;
 }
 
@@ -66,6 +67,10 @@ $border-bg: 2px solid #fff;
 
 @mixin titulos-chamadas-black($size: 2rem) {
   font: bold $size 'muliblack', sans-serif;
+}
+
+@mixin texto-fonte($size: 1rem) {
+  font: $size 'open_sansregular', sans-serif;
 }
 
 %titulo-bg {
