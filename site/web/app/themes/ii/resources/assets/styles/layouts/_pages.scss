@@ -15,8 +15,6 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
 .sidebar-primary {
   article {
-    margin-bottom: 30px;
-
     h2,
     h3,
     h4,
@@ -63,6 +61,14 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
 .page {
   main {
+    section {
+      @include titulos($black);
+
+      article * {
+        margin-top: 10px;
+      }
+    }
+
     p {
       @include texto-fonte;
     }
