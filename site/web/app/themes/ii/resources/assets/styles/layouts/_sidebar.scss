@@ -37,14 +37,18 @@
 
     &.widget_tag_cloud {
       h3 {
-        @include titulos($color: $black);
+        @include titulos($color: $sidebar-cor);
       }
 
       .tagcloud {
         @include texto-fonte;
 
-        a:hover {
-          text-decoration: underline;
+        a {
+          color: $sidebar-cor;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

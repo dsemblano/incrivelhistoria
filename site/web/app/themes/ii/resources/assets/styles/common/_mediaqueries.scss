@@ -116,8 +116,8 @@
 
           span {
             position: relative;
-            background: transparent;
             padding: 0;
+            color: $black;
 
             p {
               @extend %titulo-excerpt;
@@ -198,7 +198,7 @@
 //Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
   body.home {
-    .wrap.container {
+    .content {
       // background-color: pink;
     }
   }
@@ -238,7 +238,7 @@
 
 @include media-breakpoint-only(xs) {
   body.home {
-    .wrap.container {
+    .content {
       // background-color: yellowgreen;
     }
   }
@@ -251,7 +251,7 @@
       height: 200px;
     }
 
-    .wrap.container {
+    .content {
       // background-color: green;
     }
   }
@@ -266,7 +266,7 @@
 // portrait tablet 1024x768
 @include media-breakpoint-only(md) {
   body.home {
-    .wrap.container {
+    .content {
       // background-color: blue;
     }
 
@@ -306,7 +306,7 @@
   }
 
   body.home {
-    .wrap.container {
+    .content {
       // background-color: purple;
     }
   }
@@ -318,7 +318,7 @@
   }
 
   body.home {
-    .wrap.container {
+    .content {
       // background-color: orange;
     }
   }
