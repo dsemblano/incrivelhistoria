@@ -68,9 +68,5 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
         margin-top: 10px;
       }
     }
-
-    p {
-      @include texto-fonte;
-    }
   }
 }

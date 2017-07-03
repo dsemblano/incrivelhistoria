@@ -11,6 +11,10 @@ a {
   }
 }
 
+p {
+  @include texto-fonte;
+}
+
 input[type="submit"] {
   font-family: 'FontAwesome';
 }
@@ -19,7 +23,6 @@ hr {
   border-color: $cor-complem;
   border-style: solid $cor-complem;
   border-width: 5px 0;
-  // margin: 18px 0;
 }
 
 .home,
@@ -35,7 +38,7 @@ hr {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  @include texto-fonte;
 
   // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
   .content {

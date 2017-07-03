@@ -12,7 +12,9 @@
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar col-md-12 col-sm-4 col-lg-4">
-            @include('partials.sidebar')
+            <div>
+              @include('partials.sidebar')
+            </div>
           </aside>
         @endif
       </div>

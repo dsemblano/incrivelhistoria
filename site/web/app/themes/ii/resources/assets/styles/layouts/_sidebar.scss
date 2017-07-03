@@ -1,63 +1,58 @@
 // Sidebar
 
 .sidebar {
-  background-color: $cor-sidebar;
-  // @media (min-width: $screen-sm-min) {
-  //   background-color: red;
-  // }
-  // @include make-sm-column($main-sm-columns);
-  height: 100%;
-  padding: 1em;
+  > div {
+    background-color: $cor-sidebar;
+    padding: 1em;
 
-  section {
-    margin-bottom: 15px;
+    section {
+      margin-bottom: 15px;
 
-    &.widget_text {
-      @include titulos($color: $white, $size: 2.5rem);
+      &.widget_text {
+        @include titulos($color: $white, $size: 2.5rem);
 
-      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
-      height: 200px;
+        background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
+        height: 200px;
 
-      .textwidget {
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        text-align: center;
-        text-shadow: 1px 1px 5px $black;
-        top: 50%;
-        text-transform: uppercase;
-        transform: translateY(-50%);
-        width: 7em;
+        .textwidget {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          text-align: center;
+          text-shadow: 1px 1px 5px $black;
+          top: 50%;
+          text-transform: uppercase;
+          transform: translateY(-50%);
+          width: 7em;
 
-        span:first-child {
-          font-weight: bold;
-        }
-      }
-    }
-
-    &.widget_tag_cloud {
-      h3 {
-        @include titulos($color: $sidebar-cor);
-      }
-
-      .tagcloud {
-        @include texto-fonte;
-
-        a {
-          color: $sidebar-cor;
-
-          &:hover {
-            text-decoration: underline;
+          span:first-child {
+            font-weight: bold;
           }
         }
       }
-    }
 
-    &.widget_execphp {
-      .fb-page,
-      .fb-page span,
-      .fb-page span iframe[style] {
-        width: 100% !important;
+      &.widget_tag_cloud {
+        h3 {
+          @include titulos($color: $sidebar-cor);
+        }
+
+        .tagcloud {
+          a {
+            color: $sidebar-cor;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &.widget_execphp {
+        .fb-page,
+        .fb-page span,
+        .fb-page span iframe[style] {
+          width: 100% !important;
+        }
       }
     }
   }
