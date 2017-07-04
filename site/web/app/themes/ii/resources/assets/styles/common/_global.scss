@@ -188,7 +188,7 @@ body.home {
       }
 
       .mais-extensao {
-        margin-top: 15px;
+        margin: 15px 0 30px;
 
         h2 {
           @include titulos($color: $black);
