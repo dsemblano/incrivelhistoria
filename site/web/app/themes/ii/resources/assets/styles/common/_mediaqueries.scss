@@ -175,6 +175,14 @@
   .single-post {
     .content {
       main {
+        .aligncenter {
+          width: 100% !important;
+
+          img {
+            width: 100%;
+          }
+        }
+
         .crp_related {
           ul {
             li {
