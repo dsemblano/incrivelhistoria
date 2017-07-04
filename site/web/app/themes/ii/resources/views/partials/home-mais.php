@@ -82,7 +82,6 @@
     <?php endif; ?>
   </section>
 </div>
-
 <h2>Mais</h2>
 <div class="row">
 <?php
