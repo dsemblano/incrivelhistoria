@@ -120,6 +120,9 @@
 
             p {
               @extend %titulo-excerpt;
+
+              margin-bottom: 10px;
+              margin-top: 2px;
             }
 
             h2 {
