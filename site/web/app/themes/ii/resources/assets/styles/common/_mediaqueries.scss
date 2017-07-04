@@ -166,9 +166,7 @@
 
   aside.sidebar {
     .search-form .search-submit {
-      font-size: 1.5rem;
-      right: 1em;
-      top: 1em;
+      font-size: 1rem;
     }
   }
 
@@ -206,7 +204,9 @@
 
 @include media-breakpoint-only(xs) {
   body.home {
-    // background-x: yellow;
+    .content {
+      // background-color: yellowgreen;
+    }
   }
 
   // single
@@ -230,16 +230,7 @@
     }
 
     .search-form .search-submit {
-      font-size: 1.5rem;
-      top: 0.5em;
-    }
-  }
-}
-
-@include media-breakpoint-only(xs) {
-  body.home {
-    .content {
-      // background-color: yellowgreen;
+      font-size: 1rem;
     }
   }
 }
@@ -247,12 +238,34 @@
 // landscape cellphone
 @include media-breakpoint-only(sm) {
   body.home {
-    .main-carousel {
-      height: 200px;
-    }
-
     .content {
       // background-color: green;
+    }
+
+    main {
+      .main-carousel {
+        height: 140px;
+
+        .flickity-prev-next-button {
+          height: 20px;
+          top: 30%;
+          width: 20px;
+        }
+
+        .flickity-slider li {
+          img {
+            min-height: 0;
+            height: auto;
+          }
+
+          span {
+            position: absolute;
+            bottom: 1.5em;
+            padding: 5px 5px 10px;
+            color: $white;
+          }
+        }
+      }
     }
   }
 
@@ -270,24 +283,34 @@
       // background-color: blue;
     }
 
-    #logo {
-      height: 300px;
-    }
-
-    header.banner .nav-primary button {
-      font-size: 3rem;
-      right: 0.5em;
-      top: -5.2em;
-    }
-
-    header.banner .collapse.show,
-    header.banner .collapsing {
-      margin-top: -12.5em;
-    }
-
     main {
       .main-carousel {
         height: 500px;
+      }
+    }
+  }
+
+  header.banner {
+    .collapse.show,
+    .collapsing {
+      margin-top: -4em;
+    }
+
+    #logo {
+      height: 200px;
+
+      .logo-titulo h1 {
+        font-size: 3.5rem;
+        margin-left: 10px;
+      }
+    }
+
+    .nav-primary button {
+      right: 0.5em;
+      top: -5em;
+
+      .fa {
+        font-size: 4rem;
       }
     }
   }
@@ -295,19 +318,70 @@
 
 //desktop and landscape tablet
 @include media-breakpoint-only(lg) {
-  header.banner .nav-primary-main {
-    padding: 0;
-    font-size: 0.9rem;
+  header.banner {
+    .collapse.show,
+    .collapsing {
+      margin-top: -4em;
+    }
 
-    .dropdown-menu {
-      display: none;
-      font-size: 0.8rem;
+    #logo {
+      height: 200px;
+
+      .logo-titulo h1 {
+        font-size: 2.4rem;
+        margin-left: 0.5em;
+      }
+    }
+
+    .nav-primary-main {
+      padding: 0;
+      font-size: 0.9rem;
+
+      .dropdown-menu {
+        display: none;
+        font-size: 0.8rem;
+      }
+    }
+
+    .nav-primary button {
+      right: 0.5em;
+      top: -5em;
+
+      .fa {
+        font-size: 4rem;
+      }
     }
   }
 
   body.home {
     .content {
       // background-color: purple;
+
+      main {
+        .main-carousel {
+          height: 340px;
+
+          .flickity-prev-next-button {
+            height: 20px;
+            top: 30%;
+            width: 20px;
+          }
+
+          .flickity-slider li {
+            img {
+              min-height: 0;
+              height: auto;
+            }
+
+            span {
+              position: absolute;
+              bottom: 0;
+              padding: 5px 5px 10px;
+              color: $white;
+            }
+          }
+        }
+      }
     }
   }
 }
