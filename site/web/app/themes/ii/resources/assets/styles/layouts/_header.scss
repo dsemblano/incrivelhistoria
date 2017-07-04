@@ -9,11 +9,11 @@
 }
 
 header.banner {
-  border-bottom: $border-bg;
+  // border-bottom: $border-bg;
 
   #nav-page {
     font-weight: bold;
-    background-color: $white;
+    background-color: $bg-content;
     color: $black;
   }
 

@@ -14,6 +14,8 @@ $quote: #999;
 $titulo-bg: rgba(0, 0, 0, 0.5);
 $titulo-bg-hover: rgba(0, 0, 0, 0.8);
 $gradient-bg: rgba(10, 47, 73, 1);
+$bg-content: #f7f7f7;
+$bg-body: #ececec;
 // figcaption
 $figcaption: #3b3b3b;
 //cor categorias historia brasil
@@ -50,7 +52,7 @@ $cor-papeis: #c11aa8;
 $cor-crime: #30014f;
 $cor-outras: #9004cb;
 //borda background
-$border-bg: 2px solid #fff;
+// $border-bg: 2px solid #fff;
 
 //Mixins
 @mixin titulos($color, $size: 2rem) {
