@@ -2,8 +2,14 @@
 
 a {
   // color: $titulos-cor;
-  -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
-  -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+  // -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
+  // -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+  -webkit-touch-callout: $touch;
+  -webkit-user-select: $touch;
+  -khtml-user-select: $touch;
+  -moz-user-select: $touch;
+  -ms-user-select: $touch;
+  user-select: $touch;
 
   &:hover {
     text-decoration: none;
