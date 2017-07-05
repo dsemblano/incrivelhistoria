@@ -39,7 +39,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
   .pagination {
     color: #188cb3;
-    margin: 2em 0 3em;
+    margin: 5em 0 0;
 
     h2 {
       color: inherit;
@@ -47,13 +47,20 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
     .nav-links {
       color: inherit;
+      margin: 0 auto;
 
       a {
         color: inherit;
       }
 
+      .page-numbers:not(.prev):not(.next) {
+        border-right: 1px solid #188cb3;
+        padding: 0 10px 0 5px;
+      }
+
       .current {
-        font-weight: bold;
+        font-size: large;
+        font-weight: bolder;
       }
     }
   }
