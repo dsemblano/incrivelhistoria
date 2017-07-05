@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="x-ua-compatible" content="ie=edge #188CB3">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="história, guerra, brasil, nobel, mundial, listas, biografias">
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/apple-icon-57x57.png')">
