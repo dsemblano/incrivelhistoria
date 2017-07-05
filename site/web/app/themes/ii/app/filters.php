@@ -76,3 +76,23 @@ add_filter('get_search_form', function(){
   echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
   return $form;
 });
+
+// Mostrando sidebar - by Daniel Semblano
+add_filter('sage/display_sidebar', function ($display) {
+    static $display;
+
+    isset($display) || $display = in_array(true, [
+      // The sidebar will be displayed if any of the following return true
+      is_single(),
+      is_404(),
+      is_front_page(),
+      is_category(),
+      is_page('categorias'),
+      is_search(),
+      is_tag(),
+      is_page(),
+      is_page_template('template-custom.php')
+    ]);
+
+    return $display;
+});

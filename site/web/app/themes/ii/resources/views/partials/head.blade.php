@@ -19,6 +19,5 @@
   <link rel="manifest" href="@asset('images/manifest.json')">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="@asset('images/ms-icon-144x144.png')">
-  <meta name="theme-color" content="#c27525">
   @php(wp_head())
 </head>

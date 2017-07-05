@@ -91,32 +91,30 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-// Mostrando sidebar - by Daniel Semblano
-add_filter('sage/display_sidebar', function ($display) {
-    static $display;
-
-    isset($display) || $display = in_array(true, [
-      // The sidebar will be displayed if any of the following return true
-      is_single(),
-      is_404(),
-      is_front_page(),
-      is_category(),
-      is_page('categorias'),
-      is_search(),
-      is_tag(),
-      is_page(),
-      is_page_template('template-custom.php')
-    ]);
-
-    return $display;
-});
-
 // Thumbnails images
 add_image_size( 'slideshow', 730, 371, true );
 add_image_size( 'curiosidades_large', 480, 370, true );
 add_image_size( 'curiosidades_small', 220, 155, true );
 add_image_size( 'mais', 225, 150, true );
 add_image_size( 'mais_extendida', 350, 155, true );
+
+// Cores para mobile browsers
+function address_mobile_address_bar() {
+  // Escolher cor
+  $color = "#c27525";
+  $meta_content = <<<HTML
+<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+<meta name="theme-color" content="$color">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="$color">
+<!--  iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+HTML;
+  echo $meta_content;
+}
+add_action('wp_head',  __NAMESPACE__ . '\\address_mobile_address_bar');
+
 
 // thumbnail_upscale
 // function alx_thumbnail_upscale( $default, $orig_w, $orig_h, $new_w, $new_h, $crop ){
