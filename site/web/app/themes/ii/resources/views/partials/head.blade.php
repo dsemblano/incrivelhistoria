@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge #188CB3">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="história, guerra, brasil, nobel, mundial, listas, biografias">
   <link rel="apple-touch-icon" sizes="57x57" href="@asset('images/apple-icon-57x57.png')">
@@ -19,6 +19,6 @@
   <link rel="manifest" href="@asset('images/manifest.json')">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="@asset('images/ms-icon-144x144.png')">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#188CB3">
   @php(wp_head())
 </head>
