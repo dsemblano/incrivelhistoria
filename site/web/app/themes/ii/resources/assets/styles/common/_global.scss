@@ -4,22 +4,21 @@ a {
   // color: $titulos-cor;
   // -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
   // -moz-tap-highlight-color: rgba(234, 21, 21, 0);
-  -webkit-touch-callout: $touch;
-  -webkit-user-select: $touch;
-  -khtml-user-select: $touch;
-  -moz-user-select: $touch;
-  -ms-user-select: $touch;
-  user-select: $touch;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
+  }
+
+  &:active {
+    color: $touch;
     -webkit-touch-callout: $touch;
     -webkit-user-select: $touch;
     -khtml-user-select: $touch;
     -moz-user-select: $touch;
     -ms-user-select: $touch;
     user-select: $touch;
+    background-color: $touch;
   }
 }
 
@@ -103,11 +102,13 @@ body.home {
 
       .flickity-slider li {
         width: 100%;
+        height: 100%;
         list-style: none;
 
         img {
           max-width: 100%;
           width: 100%;
+          height: 100%;
           // min-height: 370px;
         }
 

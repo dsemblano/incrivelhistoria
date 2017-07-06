@@ -105,7 +105,7 @@
   body.home {
     main {
       .main-carousel {
-        height: 280px;
+        height: 255px;
 
         .flickity-prev-next-button {
           height: 20px;
@@ -115,19 +115,19 @@
 
         .flickity-slider li {
           img {
-            height: auto;
+            // height: auto;
           }
 
           span {
-            position: relative;
-            padding: 0;
-            color: $black;
+            // position: relative;
+            padding: 0 10px;
+            // color: $black;
 
             p {
               @extend %titulo-excerpt;
 
-              margin-bottom: 10px;
-              margin-top: 2px;
+              // margin-bottom: 10px;
+              // margin-top: 2px;
             }
 
             h2 {
