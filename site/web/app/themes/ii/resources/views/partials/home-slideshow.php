@@ -1,4 +1,4 @@
-<section id="carousel" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "lazyLoad": true, "setGallerySize": false, "autoPlay": true }'>
+<section id="carousel" class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "lazyLoad": true, "setGallerySize": false, "autoPlay": true, "dragThreshold": 10 }'>
     <?php $wpb_all_query = new WP_Query(array('category__not_in' => array( 24, 52 ), 'post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>4)); ?>
     <?php if ( $wpb_all_query->have_posts() ) : ?>
         <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
