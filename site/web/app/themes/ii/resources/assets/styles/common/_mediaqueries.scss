@@ -24,48 +24,52 @@
   }
 
   header.banner {
-    margin-bottom: 0;
-    border-bottom: none;
+    height: 100px;
 
-    .collapse.show,
-    .collapsing {
-      display: block;
-      margin-top: -2.5em;
-    }
+    .container-brand {
+      height: 55px;
+      // padding: 10px 0 0;
 
-    .navbar-toggleable-md {
-      background-color: transparent !important;
-    }
+      .brand {
+        margin-top: 10px;
+        margin-bottom: 0;
 
-    .nav-primary {
-      padding-bottom: 0;
-
-      .hidden-md-up {
-        .nav {
-          align-self: stretch;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-around;
-          margin: 0;
-          padding: 0;
-
-          li {
-            flex-grow: 1;
-
-            a {
-              font-size: 0.7rem;
-              padding: 5px;
-            }
-          }
+        img {
+          width: 40%;
         }
       }
+    }
 
+    #nav-menu {
+      background-color: transparent;
+      height: 20px;
+
+      .collapse.show,
+      .collapsing {
+        margin-top: 11px;
+        z-index: 999;
+      }
+
+      .navbar-toggleable-md {
+        background-color: transparent !important;
+      }
+    }
+
+    #nav-page {
+      padding: 0 0 0 10px;
+
+      .hidden-md-up {
+        font-size: 0.7rem;
+      }
+    }
+
+    #nav-menu {
       button {
         // background-color: #188cb3;
         border: 0 none;
         font-size: 1.7rem;
         position: absolute;
-        top: -3.3em;
+        bottom: 10px;
 
         .fa {
           font-size: 2.5rem;
@@ -81,31 +85,13 @@
         width: 100%;
       }
     }
-
-    #logo {
-      height: 110px;
-      border-bottom: 2px solid #fff;
-
-      .logo-titulo {
-        padding-top: 1.5em;
-
-        svg {
-          height: 85%;
-        }
-
-        h1 {
-          font-size: 1.5rem;
-          margin-left: 1em;
-          // margin-top: 15px;
-        }
-      }
-    }
   }
 
   body.home {
     main {
       .main-carousel {
         height: 220px;
+        margin-bottom: 10px;
 
         .flickity-prev-next-button {
           height: 20px;
@@ -141,6 +127,7 @@
       section#mais {
         h2 {
           font-size: 1.5rem;
+          margin-bottom: 0;
         }
 
         article {
@@ -167,7 +154,7 @@
 
   body {
     .content {
-      padding-top: 0;
+      padding-top: 5px;
     }
   }
 
@@ -210,6 +197,10 @@
 
 //Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
+  .container-brand {
+    width: 100%;
+  }
+
   body.home {
     .content {
       // background-color: pink;
@@ -219,6 +210,10 @@
 
 @include media-breakpoint-only(xs) {
   body.home {
+    .wrap.container {
+      padding: 0;
+    }
+
     .content {
       // background-color: yellowgreen;
     }
@@ -252,6 +247,31 @@
 
 // landscape cellphone
 @include media-breakpoint-only(sm) {
+  header.banner {
+    height: 100px;
+    background-position: right;
+
+    .container-brand {
+      width: 100%;
+      height: 55px;
+      // padding: 10px 0 0;
+
+      .brand {
+        margin-top: 8px;
+
+        img {
+          width: 45%;
+        }
+      }
+    }
+
+    #nav-menu {
+      button {
+        bottom: 20px;
+      }
+    }
+  }
+
   body.home {
     .content {
       // background-color: green;
@@ -259,7 +279,7 @@
 
     main {
       .main-carousel {
-        height: 140px;
+        height: 245px;
 
         .flickity-prev-next-button {
           height: 20px;
@@ -274,7 +294,7 @@
 
           span {
             position: absolute;
-            bottom: 1.5em;
+            bottom: 0;
             padding: 5px 5px 10px;
             color: $white;
           }
@@ -292,6 +312,47 @@
 
 // portrait tablet 1024x768
 @include media-breakpoint-only(md) {
+  header.banner {
+    height: 250px;
+
+    .container-brand {
+      height: auto;
+      padding: 10px 0 0;
+
+      .brand {
+        // margin-bottom: 5em;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    #nav-menu {
+      button {
+        bottom: 50px;
+
+        .fa {
+          font-size: 3.5rem;
+        }
+      }
+
+      .collapsing,
+      .collapse {
+        position: absolute;
+        right: 0;
+        top: -25px;
+        width: 100%;
+      }
+    }
+  }
+
+  body {
+    .content {
+      // padding-top: 15px;
+    }
+  }
+
   body.home {
     .content {
       // background-color: blue;
@@ -303,67 +364,63 @@
       }
     }
   }
-
-  header.banner {
-    .collapse.show,
-    .collapsing {
-      margin-top: -4em;
-    }
-
-    #logo {
-      height: 200px;
-
-      .logo-titulo h1 {
-        font-size: 3.5rem;
-        margin-left: 10px;
-      }
-    }
-
-    .nav-primary button {
-      right: 0.5em;
-      top: -5em;
-
-      .fa {
-        font-size: 4rem;
-      }
-    }
-  }
 }
 
 //desktop and landscape tablet
 @include media-breakpoint-only(lg) {
   header.banner {
-    .collapse.show,
-    .collapsing {
-      margin-top: -4em;
-    }
+    height: 250px;
 
-    #logo {
-      height: 200px;
+    .container-brand {
+      height: auto;
+      padding: 10px 0 0;
 
-      .logo-titulo h1 {
-        font-size: 2.4rem;
-        margin-left: 0.5em;
+      .brand {
+        margin-top: 0;
+
+        img {
+          width: 80%;
+        }
       }
     }
 
-    .nav-primary-main {
-      padding: 0;
-      font-size: 0.9rem;
+    #nav-menu {
+      background-color: $cor-primary;
+      height: auto;
+      font-size: small;
 
-      .dropdown-menu {
-        display: none;
-        font-size: 0.8rem;
+      button {
+        bottom: 20px;
+
+        .fa {
+          font-size: 3.5rem;
+        }
+      }
+
+      .collapsing,
+      .collapse {
+        // position: absolute;
+        // right: 0;
+        // top: -50px;
+        // width: 40%;
+        .nav-item {
+          &:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+          }
+        }
+
+        .dropdown-menu {
+          display: none;
+          font-size: 0.8rem;
+        }
       }
     }
+  }
 
-    .nav-primary button {
-      right: 0.5em;
-      top: -5em;
-
-      .fa {
-        font-size: 4rem;
-      }
+  body {
+    .content {
+      padding-top: 20px;
     }
   }
 

@@ -9,7 +9,13 @@
 }
 
 header.banner {
-  // border-bottom: $border-bg;
+  color: $logo;
+  background: url('../images/bg.jpg') no-repeat scroll right top / cover;
+  height: 400px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
 
   #nav-page {
     font-weight: bold;
@@ -17,35 +23,21 @@ header.banner {
     color: $black;
   }
 
-  #logo {
-    color: $logo;
-    background: url('../images/bg.jpg') no-repeat scroll top center / cover;
-    height: 250px;
+  .container-brand {
+    // padding: 0 0 5em;
 
-    .logo-titulo {
-      padding-top: 25px;
+    .brand {
+      display: inline-block;
+      margin-bottom: 90px;
 
-      svg {
-        -webkit-filter: drop-shadow(-5px -5px 5px #000);
-        filter: drop-shadow(-5px -5px 5px #000); /* Same syntax as box-shadow, except  for the spread property */
-
-        path {
-          fill: $logo;
-        }
-      }
-
-      h1 {
-        @include titulos-chamadas-bold($size: 3.2rem);
-
-        text-shadow: 5px 5px 5px #000;
-        margin-left: 15px;
-        line-height: 1em;
-
-        a {
-          color: $white;
-        }
+      img {
+        // width: 100%;
       }
     }
+  }
+
+  #nav-menu {
+    background-color: red;
   }
 
   .nav-primary {
@@ -67,8 +59,8 @@ header.banner {
     }
   }
 
-  .nav-primary-main {
-    background-color: $cor-primary !important;
+  #nav-menu {
+    background-color: $cor-primary;
     color: white;
 
     ul.nav {
