@@ -7,7 +7,7 @@
     </div>
     <div class="hidden-md-up">
       @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row']) !!}
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row no-gutters']) !!}
       @endif
     </div>
   </nav>
