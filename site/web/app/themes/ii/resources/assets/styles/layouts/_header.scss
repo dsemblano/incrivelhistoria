@@ -11,7 +11,7 @@
 header.banner {
   color: $logo;
   background: url('../images/bg.jpg') no-repeat scroll center top / cover;
-  height: 335px;
+  height: 300px;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -19,6 +19,7 @@ header.banner {
 
   #nav-page {
     font-weight: bold;
+    font-size: small;
     background-color: $bg-content;
     color: $black;
   }
@@ -35,10 +36,6 @@ header.banner {
         height: auto;
       }
     }
-  }
-
-  #nav-menu {
-    background-color: red;
   }
 
   .nav-primary {
