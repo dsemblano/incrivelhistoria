@@ -30,8 +30,9 @@ header.banner {
       display: inline-block;
       margin-bottom: 90px;
 
-      img {
-        // width: 100%;
+      svg {
+        filter: drop-shadow(-2px -2px 5px #000);
+        height: auto;
       }
     }
   }
