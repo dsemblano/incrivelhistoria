@@ -1,17 +1,17 @@
 <header class="banner">
-  <nav id="nav-page" class="nav-primary">
+  <nav id="nav-page" class="nav-primary flex-item">
     <div class="container hidden-sm-down">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!}
       @endif
     </div>
-    <div class="hidden-md-up">
+    <div class="hidden-md-up flex-item">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row no-gutters']) !!}
       @endif
     </div>
   </nav>
-  <div class="container container-brand">
+  <div class="container container-brand flex-item">
       <a class="brand" href="{{ home_url('/') }}">
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}
         <svg
@@ -215,7 +215,7 @@
          style="fill:#fbffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" /></g></g></svg>
       </a>
   </div>
-  <nav id="nav-menu" class="nav-primary nav-primary-main navbar navbar-toggleable-md navbar-inverse">
+  <nav id="nav-menu" class="nav-primary nav-primary-main navbar navbar-toggleable-md navbar-inverse flex-item">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
      aria-label="Toggle navigation">

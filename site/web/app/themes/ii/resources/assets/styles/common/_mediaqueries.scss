@@ -31,8 +31,9 @@
       // padding: 10px 0 0;
 
       .brand {
-        margin-top: 10px;
-        margin-bottom: 0;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
 
         svg {
           width: 40%;
@@ -257,7 +258,7 @@
       // padding: 10px 0 0;
 
       .brand {
-        margin-top: 8px;
+        // margin-top: 8px;
 
         svg {
           width: 45%;
@@ -376,7 +377,7 @@
       padding: 10px 0 0;
 
       .brand {
-        margin-top: 0;
+        // margin-top: 0;
 
         svg {
           width: 80%;
