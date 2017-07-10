@@ -10,8 +10,8 @@
 
 header.banner {
   color: $logo;
-  background: url('../images/bg.jpg') no-repeat scroll right top / cover;
-  height: 400px;
+  background: url('../images/bg.jpg') no-repeat scroll center top / cover;
+  height: 335px;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -28,7 +28,7 @@ header.banner {
 
     .brand {
       display: inline-block;
-      margin-bottom: 90px;
+      margin-bottom: 25px;
 
       svg {
         filter: drop-shadow(-2px -2px 5px #000);
