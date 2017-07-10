@@ -10,16 +10,16 @@ a {
     color: inherit;
   }
 
-  &:active {
-    color: $touch;
-    -webkit-touch-callout: $touch;
-    -webkit-user-select: $touch;
-    -khtml-user-select: $touch;
-    -moz-user-select: $touch;
-    -ms-user-select: $touch;
-    user-select: $touch;
-    background-color: $touch;
-  }
+  // &:active {
+  //   color: $touch;
+  //   -webkit-touch-callout: $touch;
+  //   -webkit-user-select: $touch;
+  //   -khtml-user-select: $touch;
+  //   -moz-user-select: $touch;
+  //   -ms-user-select: $touch;
+  //   user-select: $touch;
+  //   background-color: $touch;
+  // }
 }
 
 p {
