@@ -27,7 +27,7 @@
     height: 130px;
 
     .flex-item:nth-child(2) {
-      height: 40px;
+      // height: 40px;
       // background-color: yellow;
     }
 
@@ -40,10 +40,10 @@
         position: relative;
 
         svg {
+          height: 65px;
           position: absolute;
           top: 0;
-          width: 40%;
-          height: 50px;
+          width: 55%;
           // background-color: red;
         }
       }
@@ -68,7 +68,7 @@
     }
 
     #nav-page {
-      height: 20px;
+      // height: 20px;
       padding: 0 0 0 10px;
 
       // .hidden-md-up {
