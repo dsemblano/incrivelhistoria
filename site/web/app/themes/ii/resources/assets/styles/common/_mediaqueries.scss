@@ -58,8 +58,9 @@
       .collapsing {
         z-index: 999;
         position: absolute;
-        top: 0;
         width: 100%;
+        left: 0;
+        top: 15px;
       }
 
       .navbar-toggleable-md {
@@ -82,7 +83,7 @@
         border: 0 none;
         font-size: 1.7rem;
         position: absolute;
-        bottom: 35px;
+        bottom: 25px;
 
         .fa {
           font-size: 2.5rem;
@@ -288,7 +289,7 @@
 
     #nav-menu {
       button {
-        bottom: 20px;
+        bottom: 10px;
       }
     }
   }
@@ -346,13 +347,14 @@
         svg {
           height: 90px;
           width: 30%;
+          top: 0;
         }
       }
     }
 
     #nav-menu {
       button {
-        bottom: 50px;
+        bottom: 30px;
 
         .fa {
           font-size: 3.5rem;
