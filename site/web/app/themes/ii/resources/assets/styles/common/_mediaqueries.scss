@@ -26,6 +26,10 @@
   header.banner {
     height: 100px;
 
+    .flex-item:nth-child(2) {
+      height: 40px;
+    }
+
     .container-brand {
       height: 55px;
       // padding: 10px 0 0;
@@ -57,6 +61,7 @@
     }
 
     #nav-page {
+      height: 20px;
       padding: 0 0 0 10px;
 
       .hidden-md-up {
