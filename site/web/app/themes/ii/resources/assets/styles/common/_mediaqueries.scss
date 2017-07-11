@@ -43,7 +43,7 @@
           height: 65px;
           position: absolute;
           top: 0;
-          width: 55%;
+          width: 45%;
           // background-color: red;
         }
       }
@@ -107,9 +107,11 @@
         margin-bottom: 10px;
 
         .flickity-prev-next-button {
-          height: 20px;
-          top: 35%;
-          width: 20px;
+          // height: 20px;
+          // width: 20px;
+          height: 15%;
+          width: 10%;
+          // top: 35%;
         }
 
         .flickity-slider li {
@@ -278,7 +280,8 @@
         // margin-top: 8px;
 
         svg {
-          width: 45%;
+          height: 55px;
+          width: 20%;
         }
       }
     }
@@ -301,7 +304,7 @@
 
         .flickity-prev-next-button {
           height: 20px;
-          top: 30%;
+          // top: 30%;
           width: 20px;
         }
 
@@ -341,7 +344,8 @@
         // margin-bottom: 5em;
 
         svg {
-          width: 70%;
+          height: 90px;
+          width: 30%;
         }
       }
     }
@@ -359,7 +363,6 @@
       .collapse {
         position: absolute;
         right: 0;
-        top: -25px;
         width: 100%;
       }
     }
@@ -397,7 +400,8 @@
         // margin-top: 0;
 
         svg {
-          width: 80%;
+          height: 80px;
+          width: 20%;
         }
       }
     }
@@ -451,7 +455,7 @@
 
           .flickity-prev-next-button {
             height: 20px;
-            top: 30%;
+            // top: 30%;
             width: 20px;
           }
 
