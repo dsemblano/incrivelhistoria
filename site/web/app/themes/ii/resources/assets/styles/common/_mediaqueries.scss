@@ -294,6 +294,10 @@
     }
   }
 
+  aside.sidebar {
+    padding-left: 0;
+  }
+
   body.home {
     .content {
       // background-color: green;
@@ -447,6 +451,10 @@
     }
   }
 
+  aside.sidebar {
+    padding-left: 0;
+  }
+
   body.home {
     .content {
       // background-color: purple;
@@ -482,6 +490,10 @@
 @include media-breakpoint-only(xl) {
   .heateorSssWhatsappBackground {
     display: none !important;
+  }
+
+  aside.sidebar {
+    padding-left: 0;
   }
 
   body.home {
