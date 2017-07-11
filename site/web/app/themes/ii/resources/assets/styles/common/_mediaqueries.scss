@@ -330,6 +330,42 @@
     }
   }
 
+  .main-carousel {
+    height: 205px;
+
+    .flickity-viewport {
+      .flickity-slider li {
+        a {
+          span {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            padding: 5px 15px 35px;
+
+            h2 {
+              // @include titulos-chamadas-bold;
+              //
+              // padding: 0;
+              // margin: 0;
+            }
+
+            p {
+              display: none;
+              // background-color: purple;
+              // padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .flickity-prev-next-button {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   aside.sidebar {
     padding-left: 0;
   }
@@ -337,31 +373,6 @@
   body.home {
     .content {
       // background-color: green;
-    }
-
-    main {
-      .main-carousel {
-        height: 245px;
-
-        // .flickity-prev-next-button {
-        //   height: 20px;
-        //   // top: 30%;
-        //   width: 20px;
-        // }
-
-        .flickity-slider li {
-          img {
-            height: auto;
-          }
-
-          span {
-            position: absolute;
-            bottom: 0;
-            padding: 5px 5px 10px;
-            color: $white;
-          }
-        }
-      }
     }
   }
 
@@ -419,11 +430,25 @@
   body.home {
     .content {
       // background-color: blue;
-    }
-
-    main {
       .main-carousel {
         height: 500px;
+
+        .flickity-viewport {
+          .flickity-slider li {
+            a {
+              span {
+                padding: 5px 15px 35px;
+
+                h2 {
+                  // @include titulos-chamadas-bold;
+                  //
+                  // padding: 0;
+                  // margin: 0;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -498,25 +523,6 @@
       main {
         .main-carousel {
           height: 340px;
-
-          // .flickity-prev-next-button {
-          //   height: 20px;
-          //   // top: 30%;
-          //   width: 20px;
-          // }
-
-          .flickity-slider li {
-            img {
-              height: auto;
-            }
-
-            span {
-              position: absolute;
-              bottom: 0;
-              padding: 5px 5px 10px;
-              color: $white;
-            }
-          }
         }
       }
     }
