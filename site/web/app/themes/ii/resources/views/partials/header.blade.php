@@ -1,5 +1,11 @@
 <header class="banner">
-  
+  <nav id="nav-page" class="nav-primary flex-item">
+    <div class="container">
+      @if (has_nav_menu('primary_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!}
+      @endif
+    </div>
+  </nav>
   <div class="container container-brand flex-item">
       <a class="brand" href="{{ home_url('/') }}">
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}
