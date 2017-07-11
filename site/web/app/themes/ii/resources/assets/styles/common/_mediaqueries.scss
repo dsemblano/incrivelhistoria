@@ -107,13 +107,13 @@
         height: 220px;
         margin-bottom: 10px;
 
-        .flickity-prev-next-button {
-          // height: 20px;
-          // width: 20px;
-          height: 15%;
-          width: 10%;
-          // top: 35%;
-        }
+        // .flickity-prev-next-button {
+        //   // height: 20px;
+        //   // width: 20px;
+        //   height: 15%;
+        //   width: 10%;
+        //   // top: 35%;
+        // }
 
         .flickity-slider li {
           img {
@@ -122,7 +122,7 @@
 
           span {
             // position: relative;
-            padding: 0 10px;
+            // padding: 0 10px;
             // color: $black;
 
             p {
@@ -207,6 +207,42 @@
           margin-top: 10px;
         }
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .main-carousel {
+    .flickity-viewport {
+      .flickity-slider li {
+        a {
+          span {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            padding: 5px 15px 35px;
+
+            h2 {
+              // @include titulos-chamadas-bold;
+              //
+              // padding: 0;
+              // margin: 0;
+            }
+
+            p {
+              display: none;
+              // background-color: purple;
+              // padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .flickity-prev-next-button {
+      width: 24px;
+      height: 24px;
     }
   }
 }
@@ -307,11 +343,11 @@
       .main-carousel {
         height: 245px;
 
-        .flickity-prev-next-button {
-          height: 20px;
-          // top: 30%;
-          width: 20px;
-        }
+        // .flickity-prev-next-button {
+        //   height: 20px;
+        //   // top: 30%;
+        //   width: 20px;
+        // }
 
         .flickity-slider li {
           img {
@@ -463,11 +499,11 @@
         .main-carousel {
           height: 340px;
 
-          .flickity-prev-next-button {
-            height: 20px;
-            // top: 30%;
-            width: 20px;
-          }
+          // .flickity-prev-next-button {
+          //   height: 20px;
+          //   // top: 30%;
+          //   width: 20px;
+          // }
 
           .flickity-slider li {
             img {

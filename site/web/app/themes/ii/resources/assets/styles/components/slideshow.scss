@@ -1,0 +1,70 @@
+.main-carousel {
+  height: 370px;
+  margin-bottom: 1em;
+
+  .flickity-viewport {
+    cursor: grab;
+
+    .flickity-slider li {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+
+      a {
+        cursor: grab;
+
+        img {
+          max-width: 100%;
+          width: 100%;
+          height: 100%;
+          // min-height: 370px;
+        }
+
+        span {
+          // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
+          // background: rgba(54, 25, 25, .5);
+          @include titulos($color: $white);
+
+          @extend %titulo-bg;
+
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          padding: 5px 10px 15px 15px;
+
+          h2 {
+            @include titulos-chamadas-bold;
+
+            padding: 0;
+            margin: 0;
+          }
+
+          p {
+            @include titulos-chamadas;
+            // background-color: purple;
+            // padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .flickity-viewport {
+    &.is-pointer-down li a {
+      cursor: grabbing;
+    }
+  }
+
+  .flickity-page-dots {
+    bottom: 5px;
+
+    .dot {
+      background-color: $white;
+    }
+
+    .dot-is-selected {
+      background-color: $white;
+    }
+  }
+}
