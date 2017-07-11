@@ -66,6 +66,13 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
+.sidebar-primary:not(.home) {
+  article {
+    border-bottom: 1px solid $cor-sidebar;
+    margin-bottom: 15px;
+  }
+}
+
 .page {
   main {
     section {
