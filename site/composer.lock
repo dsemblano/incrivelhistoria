@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6ea3ece1846ba351633efcab123b676",
+    "content-hash": "5c3adcd561a04ef626f41759f19a5154",
     "packages": [
         {
             "name": "composer/installers",
@@ -282,16 +282,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.7.1",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c"
+                "reference": "09368d6db8c40daa9cc94054b0d1a16e6113e3e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
-                "reference": "5b9b9d8a878b295f44b35cba826c462b20cc1d9c",
+                "url": "https://api.github.com/repos/roots/soil/zipball/09368d6db8c40daa9cc94054b0d1a16e6113e3e5",
+                "reference": "09368d6db8c40daa9cc94054b0d1a16e6113e3e5",
                 "shasum": ""
             },
             "require": {
@@ -323,7 +323,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-08-30T18:15:45+00:00"
+            "time": "2017-06-12T01:25:19+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -474,7 +474,7 @@
         },
         {
             "name": "wpackagist-plugin/database-browser",
-            "version": "dev-trunk",
+            "version": "1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/database-browser/",
@@ -490,41 +490,39 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/database-browser/",
-            "time": "2017-01-29T22:11:32+00:00"
+            "homepage": "https://wordpress.org/plugins/database-browser/"
         },
         {
             "name": "wpackagist-plugin/default-featured-image",
-            "version": "dev-trunk",
+            "version": "1.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/default-featured-image/",
-                "reference": "trunk"
+                "reference": "tags/1.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/default-featured-image.zip",
-                "reference": "trunk",
+                "url": "https://downloads.wordpress.org/plugin/default-featured-image.1.6.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/default-featured-image/",
-            "time": "2016-04-16T20:06:03+00:00"
+            "homepage": "https://wordpress.org/plugins/default-featured-image/"
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "3.4.1",
+            "version": "3.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/3.4.1"
+                "reference": "tags/3.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.4.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.5.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -535,79 +533,16 @@
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
-            "name": "wpackagist-plugin/google-sitemap-generator",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/google-sitemap-generator/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.zip?timestamp=1484139337",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-sitemap-generator/",
-            "time": "2017-01-11T12:55:37+00:00"
-        },
-        {
             "name": "wpackagist-plugin/php-code-widget",
-            "version": "dev-trunk",
+            "version": "2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/php-code-widget/",
-                "reference": "trunk"
+                "reference": "tags/2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/php-code-widget.zip",
-                "reference": "trunk",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/php-code-widget/",
-            "time": "2016-04-15T21:32:26+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/regenerate-thumbnails",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip",
-                "reference": "trunk",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/",
-            "time": "2016-07-29T01:41:13+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/reveal-ids-for-wp-admin-25",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/reveal-ids-for-wp-admin-25/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/reveal-ids-for-wp-admin-25.zip?timestamp=1486468134",
+                "url": "https://downloads.wordpress.org/plugin/php-code-widget.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -615,8 +550,47 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/reveal-ids-for-wp-admin-25/",
-            "time": "2017-02-07T11:48:54+00:00"
+            "homepage": "https://wordpress.org/plugins/php-code-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/postman-smtp",
+            "version": "1.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/postman-smtp/",
+                "reference": "tags/1.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/postman-smtp.1.7.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/postman-smtp/"
+        },
+        {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "2.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/2.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
@@ -659,37 +633,16 @@
             "homepage": "https://wordpress.org/plugins/taghound-media-tagger/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-importer",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.zip",
-                "reference": "trunk",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-importer/",
-            "time": "2016-12-08T20:04:42+00:00"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.0.1"
+                "reference": "tags/5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -782,15 +735,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "wpackagist-plugin/regenerate-thumbnails": 20,
-        "wpackagist-plugin/default-featured-image": 20,
-        "wpackagist-plugin/php-code-widget": 20,
-        "wpackagist-plugin/wordpress-importer": 20,
-        "wpackagist-plugin/google-sitemap-generator": 20,
-        "wpackagist-plugin/database-browser": 20,
-        "wpackagist-plugin/reveal-ids-for-wp-admin-25": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
