@@ -51,3 +51,22 @@
     }
   }
 }
+
+// Página Contato
+.contato {
+  main {
+    .wpcf7 {
+      .wpcf7-form {
+        .wpcf7-submit {
+          @include titulos($color: $white, $size: 1.5rem);
+
+          background-color: #c27525;
+          border-color: transparent;
+          border-radius: 5px;
+          padding: 10px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
