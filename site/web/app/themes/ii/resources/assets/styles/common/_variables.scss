@@ -18,6 +18,7 @@ $gradient-bg: rgba(10, 47, 73, 1);
 $bg-content: #f7f7f7;
 $bg-body: #ececec;
 $bg-mais: #d4ddda;
+$border-content: #dadada;
 // figcaption
 $figcaption: #3b3b3b;
 //cor categorias historia brasil
@@ -84,6 +85,11 @@ $cor-outras: #9004cb;
   &:hover {
     background: $titulo-bg-hover none repeat scroll 0 0;
   }
+}
+
+%border-content {
+  border-left: 1px solid $border-content;
+  border-right: 1px solid $border-content;
 }
 
 %flex-header {

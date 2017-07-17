@@ -54,7 +54,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
       }
 
       .page-numbers:not(.prev):not(.next) {
-        border-right: 1px solid #188cb3;
+        border-right: 1px solid $cor-primary;
         padding: 0 10px 0 5px;
       }
 
@@ -68,7 +68,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
 .sidebar-primary:not(.home) {
   article {
-    border-bottom: 1px solid $cor-sidebar;
+    border-bottom: 1px solid $border-content;
     margin-bottom: 15px;
   }
 }
