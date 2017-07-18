@@ -115,7 +115,7 @@
         //   // top: 35%;
         // }
 
-        .flickity-slider li {
+        .flickity-slider .carousel-cell {
           img {
             // height: auto;
           }
@@ -214,7 +214,7 @@
 @include media-breakpoint-down(sm) {
   .main-carousel {
     .flickity-viewport {
-      .flickity-slider li {
+      .flickity-slider .carousel-cell {
         a {
           span {
             bottom: 0;
@@ -334,7 +334,7 @@
     height: 205px;
 
     .flickity-viewport {
-      .flickity-slider li {
+      .flickity-slider .carousel-cell {
         a {
           span {
             bottom: 0;
@@ -434,7 +434,7 @@
         height: 500px;
 
         .flickity-viewport {
-          .flickity-slider li {
+          .flickity-slider .carousel-cell {
             a {
               span {
                 padding: 5px 15px 35px;

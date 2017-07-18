@@ -2,7 +2,7 @@
     <?php $wpb_all_query = new WP_Query(array('category__not_in' => array( 24, 52 ), 'post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>4)); ?>
     <?php if ( $wpb_all_query->have_posts() ) : ?>
         <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-            <li>
+            <div class="carousel-cell">
                 <a href="<?php the_permalink(); ?>">
                     <?php //the_post_thumbnail('slideshow2'); ?>
                     <?php echo (App\featured_image_url('slideshow')); ?>
@@ -20,7 +20,7 @@
                       ?>
                     </span>
                 </a>
-            </li>
+            </div>
         <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
 
