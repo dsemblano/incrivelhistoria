@@ -24,6 +24,14 @@ header.banner {
     font-size: small;
     background-color: $bg-content;
     color: $black;
+
+    .hidden-md-up {
+      font-size: smaller;
+
+      ul.nav li a {
+        // padding: 3px 5px 3px 0;
+      }
+    }
   }
 
   .container-brand {

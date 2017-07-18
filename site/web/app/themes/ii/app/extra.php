@@ -35,4 +35,14 @@ function deregister_cf7_styles() {
     }
 }
 
+// Classe para menu page
+add_filter( 'nav_menu_css_class', 'special_nav_class', 10, 3 );
+function special_nav_class( $classes, $item, $args ) {
+    if ( ('primary_navigation' === $args->theme_location) && ('nav row nav-xs' === $args->menu_class) ) {
+        $classes[] = 'col-3';
+    }
+
+    return $classes;
+}
+
  ?>

@@ -1,10 +1,19 @@
 <header class="banner">
   <nav id="nav-page" class="nav-primary flex-item">
-    <div class="container">
+
+    <div class="container hidden-sm-down">
       @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!}
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu' => 'nav-page','container'=> '','items_wrap'=>'<ul class="nav row justify-content-end">%3$s</ul>']) !!}
+        {{-- {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!} --}}
       @endif
     </div>
+
+    <div class="container-fluid hidden-md-up">
+      @if (has_nav_menu('primary_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row nav-xs']) !!}
+      @endif
+    </div>
+
   </nav>
   <div class="container container-brand flex-item">
       <a class="brand" href="{{ home_url('/') }}">
