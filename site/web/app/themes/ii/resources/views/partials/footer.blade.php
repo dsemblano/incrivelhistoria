@@ -4,7 +4,7 @@
     <div class="row">
         @if (has_nav_menu('tertiary_navigation'))
 
-        {!! wp_nav_menu(['theme_location' => 'tertiary_navigation', 'menu_class' => 'sitemap-footer col-xs-12 col-md-8']) !!}
+        {!! wp_nav_menu(['theme_location' => 'tertiary_navigation', 'menu_class' => 'sitemap-footer col-12 col-md-8']) !!}
         @endif
         <?php
           // wp_list_categories( array(
@@ -14,7 +14,7 @@
           //
           // ) );
           ?>
-          <div class="col-xs-12 col-md-4 footer-right">
+          <div class="col-12 col-md-4 footer-right">
             {!! get_search_form(false) !!}
             <div class="facebook-footer">
               <p>
