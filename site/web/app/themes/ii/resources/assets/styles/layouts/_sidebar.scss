@@ -59,8 +59,7 @@
 
   // Mais acessadas
   .tptn_posts {
-    border-top: 1px solid $border-sidebar;
-    margin-top: 30px;
+    margin-top: 15px;
 
     h3 {
       @include titulos($color: $sidebar-cor, $size: 1.5rem);
@@ -74,7 +73,8 @@
 
       li {
         // background-color: green;
-        margin: 10px 0 0;
+        border-bottom: 1px solid $border-sidebar;
+        padding: 10px 0;
 
         img {
           // background-color: blue;
