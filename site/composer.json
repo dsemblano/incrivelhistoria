@@ -50,6 +50,7 @@
     "wpackagist-plugin/contextual-related-posts": ">=2.4.1",
     "wpackagist-plugin/sassy-social-share": ">=3.1",
     "wpackagist-plugin/postman-smtp": ">=1.7.2",
+    "wpackagist-plugin/top-10": ">=2.4.4",
     "roots/soil": ">=3.7.1"
   },
   "require-dev": {
