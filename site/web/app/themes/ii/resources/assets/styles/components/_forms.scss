@@ -57,10 +57,19 @@
   main {
     .wpcf7 {
       .wpcf7-form {
+        label {
+          width: 100%;
+
+          input,
+          textarea {
+            width: 100%;
+          }
+        }
+
         .wpcf7-submit {
           @include titulos($color: $white, $size: 1.5rem);
 
-          background-color: #c27525;
+          background-color: $cor-complem;
           border-color: transparent;
           border-radius: 5px;
           padding: 10px 0;
