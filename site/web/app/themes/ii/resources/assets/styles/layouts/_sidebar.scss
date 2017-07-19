@@ -59,10 +59,13 @@
 
   // Mais acessadas
   .tptn_posts {
-    // background-color: red;
+    border-top: 1px solid $border-sidebar;
+    margin-top: 30px;
 
     h3 {
-      @include titulos-chamadas($size: 1.5rem);
+      @include titulos($color: $sidebar-cor, $size: 1.5rem);
+
+      margin-top: 15px;
     }
 
     ul {
