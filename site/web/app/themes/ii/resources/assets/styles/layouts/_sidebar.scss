@@ -73,6 +73,8 @@
 
       li {
         // background-color: green;
+        @include titulos($color: $sidebar-cor, $size: 1rem);
+
         border-bottom: 1px solid $border-sidebar;
         padding: 10px 0;
 
