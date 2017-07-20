@@ -67,13 +67,9 @@
   #mais-acessadas {
     h3 {
       @include titulos($color: $sidebar-cor, $size: 1.5rem);
-
-      margin-top: 15px;
     }
 
     .tptn_posts {
-      margin-top: 15px;
-
       ul {
         list-style: none;
         padding: 0;
