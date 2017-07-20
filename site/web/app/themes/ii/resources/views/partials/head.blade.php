@@ -12,6 +12,6 @@
   <meta name="application-name" content="Incr&iacute;vel Hist&oacute;ria">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="@asset('images/favicon/mstile-144x144.png')">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#c27525">
   @php(wp_head())
 </head>
