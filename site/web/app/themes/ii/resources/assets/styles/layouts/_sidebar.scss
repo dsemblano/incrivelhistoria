@@ -64,37 +64,39 @@
   }
 
   // Mais acessadas
-  .tptn_posts {
-    margin-top: 15px;
-
+  #mais-acessadas {
     h3 {
       @include titulos($color: $sidebar-cor, $size: 1.5rem);
 
       margin-top: 15px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .tptn_posts {
+      margin-top: 15px;
 
-      li {
-        // background-color: green;
-        @include titulos($color: $sidebar-cor, $size: 1rem);
+      ul {
+        list-style: none;
+        padding: 0;
 
-        border-bottom: 1px solid $border-sidebar;
-        padding: 10px 0;
+        li {
+          // background-color: green;
+          @include titulos($color: $sidebar-cor, $size: 1rem);
 
-        img {
-          // background-color: blue;
-          height: 100%;
-          vertical-align: top;
-          width: 35%;
-        }
+          border-bottom: 1px solid $border-sidebar;
+          padding: 10px 0;
 
-        .tptn_after_thumb {
-          display: inline-block;
-          margin-left: 10px;
-          width: 60%;
+          img {
+            // background-color: blue;
+            height: 100%;
+            vertical-align: top;
+            width: 35%;
+          }
+
+          .tptn_after_thumb {
+            display: inline-block;
+            margin-left: 10px;
+            width: 60%;
+          }
         }
       }
     }
