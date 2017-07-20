@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f130add1c768eec8d37139efb5961dcc",
+    "content-hash": "c080578c55b579b6ded61147739765ef",
     "packages": [
         {
             "name": "composer/installers",
@@ -651,6 +651,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/top-10/"
+        },
+        {
+            "name": "wpackagist-plugin/widget-css-classes",
+            "version": "1.5.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/widget-css-classes/",
+                "reference": "tags/1.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/widget-css-classes.1.5.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/widget-css-classes/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
