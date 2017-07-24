@@ -11,19 +11,22 @@
     <div class="col-md-8">
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php echo (App\featured_image_url('curiosidades_large')); ?>
-            <h3><?php the_title(); ?></h3>
+          <?php echo (App\featured_image_url('curiosidades_large')); ?>
+          <h3><?php the_title(); ?></h3>
+          <p>
+            <?php
+              if (!has_excerpt()) {
+              $content = apply_filters('get_the_content', get_the_content());
+              $content = strip_tags($content);
+              $content = mb_strimwidth($content, 0, 500, ' ...');
+              
+              echo '$content';
+              } else {
+              echo substr(get_the_excerpt(), 0, 450) . '...';
+              }
+            ?>
+          </p>
         </a>
-          <?php
-            if (!has_excerpt()) {
-            $content = apply_filters('get_the_content', get_the_content());
-            $content = strip_tags($content);
-            $content = mb_strimwidth($content, 0, 500, ' ...');
-            echo '<p>' . $content . '</p>';
-            } else {
-            echo '<p>' . substr(get_the_excerpt(), 0, 450) . '...' . '</p>';
-            }
-          ?>
       </article>
     </div>
       <div class="col-md-4">
