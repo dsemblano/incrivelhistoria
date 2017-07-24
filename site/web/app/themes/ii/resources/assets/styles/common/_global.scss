@@ -105,6 +105,7 @@ body.home {
 
         h3 {
           @include titulos-chamadas-bold;
+          @include hover-cor($cor: $cor-complem);
         }
 
         h4 {
@@ -141,6 +142,7 @@ body.home {
       article {
         h3 {
           @include titulos($black, $size: 1.2rem);
+          @include hover-cor($cor: $cor-complem);
         }
       }
 
@@ -167,6 +169,8 @@ body.home {
         article {
           h3 {
             height: 45px;
+
+            @include hover-cor($cor: $cor-complem);
           }
         }
       }
@@ -183,51 +187,3 @@ body.home {
     }
   }
 }
-
-// @font-face {
-//   font-family: 'open_sansbold';
-//   src: url('../fonts/opensans-bold-webfont.eot');
-//   src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.woff') format('woff'), url('../fonts/opensans-bold-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'open_sansitalic';
-//   src: url('../fonts/opensans-italic-webfont.eot');
-//   src: url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-italic-webfont.woff2') format('woff2'), url('../fonts/opensans-italic-webfont.woff') format('woff'), url('../fonts/opensans-italic-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'open_sansregular';
-//   src: url('../fonts/opensans-regular-webfont.eot');
-//   src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'muliregular';
-//   src: url('../fonts/muli-regular-webfont.eot');
-//   src: url('../fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli-regular-webfont.woff2') format('woff2'), url('../fonts/muli-regular-webfont.woff') format('woff'), url('../fonts/muli-regular-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'mulibold';
-//   src: url('../fonts/muli-bold-webfont.eot');
-//   src: url('../fonts/muli-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli-bold-webfont.woff2') format('woff2'), url('../fonts/muli-bold-webfont.woff') format('woff'), url('../fonts/muli-bold-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: 'muliitalic';
-//   src: url('../fonts/muli-italic-webfont.eot');
-//   src: url('../fonts/muli-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli-italic-webfont.woff2') format('woff2'), url('../fonts/muli-italic-webfont.woff') format('woff'), url('../fonts/muli-italic-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }

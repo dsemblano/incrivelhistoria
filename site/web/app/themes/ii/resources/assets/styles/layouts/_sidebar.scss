@@ -42,6 +42,8 @@
         a {
           color: $sidebar-cor;
 
+          @include hover-cor($cor: $tag-a);
+
           &:hover {
             text-decoration: underline;
           }
@@ -92,6 +94,8 @@
             display: inline-block;
             margin-left: 10px;
             width: 60%;
+
+            @include hover-cor($cor: $tag-a);
           }
         }
       }

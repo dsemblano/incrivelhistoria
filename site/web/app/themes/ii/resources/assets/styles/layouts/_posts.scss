@@ -129,9 +129,7 @@
             }
 
             a {
-              &:hover {
-                text-decoration: underline;
-              }
+              @include hover-cor($cor: $cor-complem);
 
               img {
                 height: auto;

@@ -8,6 +8,7 @@ $cor-complem: #c27525; // laranja marrom
 $cor-sidebar: #c9dae1; // azul claro
 $titulos-cor: #171f44;
 $sidebar-cor: #345d63;
+$tag-a: #084a60;
 $white: #fff;
 $black: #000;
 $quote: #999;
@@ -59,6 +60,7 @@ $cor-crime: #30014f;
 $cor-outras: #9004cb;
 //borda background
 // $border-bg: 2px solid #fff;
+$transition: color 0.35s ease 0s;
 
 //Mixins
 @mixin titulos($color, $size: 2rem) {
@@ -89,6 +91,14 @@ $cor-outras: #9004cb;
   font: $size 'Open Sans', sans-serif;
   line-height: $line-height;
   // 1.0625rem/1.8 "Open Sans",sans-serif
+}
+
+@mixin hover-cor($cor) {
+  transition: $transition;
+
+  &:hover {
+    color: darken($cor, 20%);
+  }
 }
 
 %titulo-bg {

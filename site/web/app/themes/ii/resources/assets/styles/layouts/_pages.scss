@@ -24,6 +24,10 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
       color: $black;
     }
 
+    a {
+      @include hover-cor($cor: $cor-complem);
+    }
+
     header {
       h2 {
         @include titulos($black, $size: 1.5rem);
