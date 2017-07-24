@@ -61,23 +61,30 @@ $cor-outras: #9004cb;
 //Mixins
 @mixin titulos($color, $size: 2rem) {
   color: $color;
-  font: $size 'muliregular', sans-serif;
+  // font: $size 'muliregular', sans-serif;
+  font: $size 'Muli', sans-serif;
 }
 
 @mixin titulos-chamadas($size: 1rem) {
-  font: $size 'muliregular', sans-serif;
+  // font: $size 'muliregular', sans-serif;
+  font: $size 'Muli', sans-serif;
 }
 
 @mixin titulos-chamadas-bold($size: 2rem) {
-  font: bold $size 'mulibold', sans-serif;
+  // font: bold $size 'mulibold', sans-serif;
+  font: bold $size 'Muli', sans-serif;
 }
 
-@mixin titulos-chamadas-black($size: 2rem) {
-  font: bold $size 'muliblack', sans-serif;
-}
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Muli', sans-serif;
+
+// @mixin titulos-chamadas-black($size: 2rem) {
+//   font: bold $size 'muliblack', sans-serif;
+// }
 
 @mixin texto-fonte($size: 1rem) {
-  font: $size 'open_sansregular', sans-serif;
+  // font: $size 'open_sansregular', sans-serif;
+  font: $size 'Open Sans', sans-serif;
 }
 
 %titulo-bg {
