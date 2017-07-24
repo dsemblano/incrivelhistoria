@@ -86,7 +86,6 @@ $cor-outras: #9004cb;
 
 @mixin texto-fonte($size: 1.0625rem, $line-height: 1.8) {
   // font: $size 'open_sansregular', sans-serif;
-  color: $cor-texto;
   font: $size 'Open Sans', sans-serif;
   line-height: $line-height;
   // 1.0625rem/1.8 "Open Sans",sans-serif
