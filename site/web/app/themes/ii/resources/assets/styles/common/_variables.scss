@@ -20,6 +20,8 @@ $bg-body: #ececec;
 $bg-mais: #d4ddda;
 $border-content: #dadada;
 $border-sidebar: #a3bac1;
+$cor-texto: #263238;
+$cor-blockquote: #757575;
 // figcaption
 $figcaption: #3b3b3b;
 //cor categorias historia brasil
@@ -82,9 +84,12 @@ $cor-outras: #9004cb;
 //   font: bold $size 'muliblack', sans-serif;
 // }
 
-@mixin texto-fonte($size: 1rem) {
+@mixin texto-fonte($size: 1.0625rem, $line-height: 1.8) {
   // font: $size 'open_sansregular', sans-serif;
+  color: $cor-texto;
   font: $size 'Open Sans', sans-serif;
+  line-height: $line-height;
+  // 1.0625rem/1.8 "Open Sans",sans-serif
 }
 
 %titulo-bg {
