@@ -79,10 +79,6 @@ body {
       h1 {
         @include titulos($black, $size: 2.5rem);
       }
-
-      strong {
-        color: $black;
-      }
     }
   }
 }
