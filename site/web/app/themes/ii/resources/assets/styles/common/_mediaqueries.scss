@@ -6,7 +6,11 @@
   }
 
   %titulo-materia {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+  %titulo-submateria {
+    font-size: 1.25rem;
   }
 
   %titulo-excerpt {
@@ -153,7 +157,7 @@
 
           h3,
           h4 {
-            @extend %titulo-materia;
+            @extend %titulo-submateria;
           }
 
           p {
@@ -286,6 +290,10 @@
             @extend %margin-left;
           }
         }
+      }
+
+      section#mais .mais-extensao section:last-child {
+        margin-top: 20px;
       }
     }
   }
