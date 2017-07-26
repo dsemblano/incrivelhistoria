@@ -229,7 +229,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      @if (has_nav_menu('secondary_navigation'))
-     {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
+     {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right container']) !!}
      @endif
      </div>
      <!-- <form class="form-inline collapse navbar-collapse pull-right">

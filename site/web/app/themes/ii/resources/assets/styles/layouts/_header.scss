@@ -49,7 +49,9 @@ header.banner {
   }
 
   .nav-primary {
-    @include titulos-chamadas($size: 1rem) ul.nav {
+    @include titulos-chamadas($size: 1rem);
+
+    ul.nav {
       li {
         list-style: none;
 
@@ -77,6 +79,14 @@ header.banner {
       margin: 0 auto;
 
       li {
+        &:first-child {
+          margin-left: 15px;
+
+          > a {
+            padding-left: 0;
+          }
+        }
+
         &:hover .dropdown-menu {
           display: block;
           top: 30px;
