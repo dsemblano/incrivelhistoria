@@ -266,6 +266,30 @@
 }
 
 @include media-breakpoint-only(xs) {
+  %margin-left {
+    margin-left: 10px;
+  }
+
+  body.home .content {
+    main,
+    aside#sidebar {
+      padding: 0;
+    }
+
+    main {
+      section {
+        padding: 0;
+
+        article {
+          h3,
+          p {
+            @extend %margin-left;
+          }
+        }
+      }
+    }
+  }
+
   body.home {
     .wrap.container {
       // padding: 0;
