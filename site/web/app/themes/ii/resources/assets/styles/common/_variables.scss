@@ -63,10 +63,10 @@ $cor-outras: #9004cb;
 $transition: color 0.35s ease 0s;
 
 //Mixins
-@mixin titulos($color, $size: 2rem) {
+@mixin titulos($color, $size: 2rem, $weight: 400) {
   color: $color;
   // font: $size 'muliregular', sans-serif;
-  font: $size 'Muli', sans-serif;
+  font: $weight $size 'Muli', sans-serif;
 }
 
 @mixin titulos-chamadas($size: 1rem) {

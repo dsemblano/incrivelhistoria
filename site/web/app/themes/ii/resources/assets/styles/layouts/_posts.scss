@@ -29,7 +29,7 @@
       }
 
       h1 {
-        @include titulos($color: $black);
+        @include titulos($color: $black, $size: 2.5rem, $weight: 700);
       }
 
       .entry-content {
