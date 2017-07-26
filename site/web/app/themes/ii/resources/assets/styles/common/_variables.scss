@@ -114,6 +114,12 @@ $transition: color 0.35s ease 0s;
   border-right: 1px solid $border-content;
 }
 
+%sidebar-titulos {
+  border-top: 5px solid $cor-primary;
+  // color: $cor-primary;
+  padding-top: 10px;
+}
+
 %flex-header {
   display: -webkit-box;
   display: -moz-box;

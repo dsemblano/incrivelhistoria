@@ -35,7 +35,9 @@
 
     &.widget_tag_cloud {
       h3 {
-        @include titulos($color: $sidebar-cor);
+        @include titulos($color: $cor-primary);
+
+        @extend %sidebar-titulos;
       }
 
       .tagcloud {
@@ -61,14 +63,16 @@
   }
 
   > section {
-    background-color: $cor-sidebar;
-    padding: 1em;
+    // background-color: $cor-sidebar;
+    padding: 0 1em 1em;
   }
 
   // Mais acessadas
   #mais-acessadas {
     h3 {
-      @include titulos($color: $sidebar-cor, $size: 1.5rem);
+      @include titulos($color: $cor-primary, $size: 1.5rem);
+
+      @extend %sidebar-titulos;
     }
 
     .tptn_posts {
@@ -80,7 +84,7 @@
           // background-color: green;
           @include titulos($color: $sidebar-cor, $size: 1rem);
 
-          border-bottom: 1px solid $border-sidebar;
+          // border-bottom: 1px solid $border-sidebar;
           padding: 10px 0;
 
           img {
