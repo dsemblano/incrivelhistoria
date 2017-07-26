@@ -77,7 +77,7 @@ body {
 
     main {
       h1 {
-        @include titulos($black, $size: 2.5rem);
+        @include titulos($titulos-cor, $size: 2.5rem);
       }
     }
   }
@@ -106,10 +106,12 @@ body.home {
         h3 {
           @include titulos-chamadas-bold;
           @include hover-cor($cor: $cor-complem);
+
+          color: $titulos-cor;
         }
 
         h4 {
-          @include titulos($black, $size: 0.9rem);
+          @include titulos($titulos-cor, $size: 0.9rem);
 
           @extend %titulo-bg;
 
@@ -141,7 +143,7 @@ body.home {
 
       article {
         h3 {
-          @include titulos($black, $size: 1.2rem);
+          @include titulos($titulos-cor, $size: 1.2rem);
           @include hover-cor($cor: $cor-complem);
         }
       }
@@ -156,7 +158,7 @@ body.home {
         // margin: 30px 0;
 
         h2 {
-          @include titulos($color: $black);
+          @include titulos($color: $titulos-cor);
 
           background-color: transparent;
           display: block;

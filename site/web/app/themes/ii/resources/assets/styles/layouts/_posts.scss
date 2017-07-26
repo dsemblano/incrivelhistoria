@@ -14,11 +14,11 @@
       h6,
       article,
       a {
-        color: $black;
+        color: $titulos-cor;
       }
 
       #breadcrumbs {
-        @include titulos($color: $black, $size: 0.85rem);
+        @include titulos($color: $titulos-cor, $size: 0.85rem);
 
         a {
           &:hover {
@@ -29,7 +29,7 @@
       }
 
       h1 {
-        @include titulos($color: $black, $size: 2.5rem, $weight: 700);
+        @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
       }
 
       .entry-content {
