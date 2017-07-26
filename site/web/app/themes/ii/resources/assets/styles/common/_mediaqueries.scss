@@ -14,7 +14,7 @@
   }
 
   %titulo-excerpt {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .search-form .search-field {
@@ -163,6 +163,10 @@
           p {
             @extend %titulo-excerpt;
           }
+        }
+
+        article:first-child h3 {
+          @extend %titulo-materia;
         }
       }
 

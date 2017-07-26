@@ -42,6 +42,8 @@
 
           p {
             @include titulos-chamadas;
+
+            margin-top: 5px;
             // background-color: purple;
             // padding: 5px 10px;
           }
@@ -57,7 +59,8 @@
   }
 
   .flickity-page-dots {
-    bottom: 5px;
+    // bottom: 5px;
+    bottom: 0;
 
     .dot {
       background-color: $white;
