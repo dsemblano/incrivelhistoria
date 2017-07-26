@@ -13,5 +13,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="@asset('images/favicon/mstile-144x144.png')">
   <meta name="theme-color" content="#c27525">
+  <meta property="fb:pages" content="184365508715047" />
   @php(wp_head())
 </head>
