@@ -36,13 +36,63 @@ function deregister_cf7_styles() {
 }
 
 // Classe para menu page
-add_filter( 'nav_menu_css_class', 'special_nav_class', 10, 3 );
-function special_nav_class( $classes, $item, $args ) {
-    if ( ('primary_navigation' === $args->theme_location) && ('nav row nav-xs' === $args->menu_class) ) {
-        $classes[] = 'col-3';
-    }
+// add_filter( 'nav_menu_css_class', 'special_nav_class', 10, 3 );
+// function special_nav_class( $classes, $item, $args ) {
+//     if ( ('primary_navigation' === $args->theme_location) && ('nav row nav-xs' === $args->menu_class) ) {
+//         $classes[] = 'col-3';
+//     }
+//
+//     return $classes;
+// }
 
-    return $classes;
-}
+// Menu responsivo
+// function prefix_scripts() {
+//
+// 	// Enqueue responsive navigation.
+// 	// wp_enqueue_script( 'prefix-navigation', get_template_directory_uri() . '/js/responsive-nav.js', array(), '1.38', true );
+// 	wp_enqueue_script('prefix-navigation', asset_path('scripts/responsive-nav.js'), array(), '1.38', true);
+//
+// 	// Enqueue JS functions.
+// 	wp_enqueue_script( 'prefix-script', get_template_directory_uri() . '/js/functions.js', array( 'prefix-navigation' ), '1.38', true );
+// 	wp_localize_script( 'prefix-script', 'navSettings', array(
+// 		'expand'    => '<span class="screen-reader-text">' . esc_html__( 'Expand child menu', 'textdomain' ) . '</span>',
+// 		'collapse'  => '<span class="screen-reader-text">' . esc_html__( 'Collapse child menu', 'textdomain' ) . '</span>',
+// 		'closeMenu' => esc_html__( 'Close menu', 'textdomain' ),
+// 		'openMenu'  => esc_html__( 'Open menu', 'textdomain' ),
+// 	) );
+//
+// }
+// add_action( 'wp_enqueue_scripts', 'prefix_scripts' );
+//
+// /* == Navigation section == */
+//
+// 	// Add the navigation section.
+// 	$wp_customize->add_section(
+// 		'prefix-navigation',
+// 		array(
+// 			'title'    => esc_html__( 'Navigation settings', 'textdomain' ),
+// 			'priority' => 10,
+// 			'panel'    => 'theme'
+// 		)
+// 	);
+//
+// 	$wp_customize->add_setting(
+// 		'disable_dropdown',
+// 		array(
+// 			'default'           => '',
+// 			'sanitize_callback' => 'prefix_sanitize_checkbox'
+// 		)
+// 	);
+//
+// 	$wp_customize->add_control(
+// 		'disable_dropdown',
+// 		array(
+// 			'label'       => esc_html__( 'Disable multi-level menu', 'textdomain' ),
+// 			'description' => esc_html__( 'Check this if you want to disable multi-level dropdown in Primary menu.', 'textdomain' ),
+// 			'section'     => 'prefix-navigation',
+// 			'priority'    => 10,
+// 			'type'        => 'checkbox'
+// 		)
+// 	);
 
  ?>

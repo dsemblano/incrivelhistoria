@@ -21,7 +21,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
     h5,
     h6,
     a {
-      color: $black;
+      color: $titulos-cor;
     }
 
     a {
@@ -30,7 +30,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
     header {
       h2 {
-        @include titulos($black, $size: 1.5rem);
+        @include titulos($titulos-cor, $size: 1.5rem);
       }
 
       p {

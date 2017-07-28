@@ -10,7 +10,7 @@
 
     <div class="container-fluid hidden-md-up">
       @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row nav-xs']) !!}
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row nav-xs d-flex flex-wrap']) !!}
       @endif
     </div>
 

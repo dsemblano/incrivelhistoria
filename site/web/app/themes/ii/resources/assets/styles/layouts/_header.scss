@@ -21,12 +21,12 @@ header.banner {
 
   #nav-page {
     font-weight: bold;
-    font-size: small;
+    // font-size: small;
     background-color: $bg-content;
     color: $black;
 
     .hidden-md-up {
-      font-size: smaller;
+      // font-size: smaller;
 
       ul.nav li a {
         // padding: 3px 5px 3px 0;
@@ -54,6 +54,7 @@ header.banner {
     ul.nav {
       li {
         list-style: none;
+        // display: inline-flex;
 
         a {
           color: inherit;
