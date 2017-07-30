@@ -73,7 +73,7 @@ body {
 .sidebar-primary {
   .content {
     background-color: $bg-content;
-    padding-bottom: 5em;
+    // padding-bottom: 5em;
 
     main {
       h1 {
@@ -101,7 +101,7 @@ body.home {
 
       article {
         position: relative;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
 
         h3 {
           @include titulos-chamadas-bold;
