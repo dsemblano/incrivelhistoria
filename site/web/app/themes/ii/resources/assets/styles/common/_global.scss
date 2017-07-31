@@ -90,6 +90,12 @@ body.home {
   main {
     // background-color: #D3D3D3;
 
+    section {
+      article {
+        margin: 10px 0;
+      }
+    }
+
     section#curiosidades {
       h2 {
         @include titulos($color: $white);

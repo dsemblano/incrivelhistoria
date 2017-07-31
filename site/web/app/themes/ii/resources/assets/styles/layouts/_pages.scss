@@ -82,9 +82,9 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
     section {
       @include titulos($black);
 
-      article * {
-        margin-top: 10px;
-      }
+      // article * {
+      //   margin-top: 10px;
+      // }
     }
   }
 }
