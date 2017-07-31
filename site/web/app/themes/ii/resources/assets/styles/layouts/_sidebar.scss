@@ -87,11 +87,15 @@
           // border-bottom: 1px solid $border-sidebar;
           padding: 10px 0;
 
-          img {
-            // background-color: blue;
-            height: 100%;
-            vertical-align: top;
-            width: 35%;
+          .tptn_link {
+            color: $tag-a;
+
+            img {
+              // background-color: blue;
+              height: 100%;
+              vertical-align: top;
+              width: 35%;
+            }
           }
 
           .tptn_after_thumb {
