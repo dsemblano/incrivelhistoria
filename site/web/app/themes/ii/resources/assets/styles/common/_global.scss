@@ -114,6 +114,7 @@ body.home {
           @include hover-cor($cor: $cor-complem);
 
           color: $titulos-cor;
+          margin-top: 10px;
         }
 
         h4 {
@@ -151,6 +152,8 @@ body.home {
         h3 {
           @include titulos($titulos-cor, $size: 1.2rem, $weight: 700);
           @include hover-cor($cor: $cor-complem);
+
+          margin-top: 10px;
         }
       }
 
