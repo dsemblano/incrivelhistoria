@@ -149,7 +149,7 @@ body.home {
 
       article {
         h3 {
-          @include titulos($titulos-cor, $size: 1.2rem);
+          @include titulos($titulos-cor, $size: 1.2rem, $weight: 700);
           @include hover-cor($cor: $cor-complem);
         }
       }
