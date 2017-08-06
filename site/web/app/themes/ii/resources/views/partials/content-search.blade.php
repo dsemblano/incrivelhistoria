@@ -3,7 +3,9 @@
     <a href="{{ get_permalink() }}"><?php echo (App\featured_image_url('mais_extendida')); ?></a>
   </figure>
   <header class="col-sm">
-    @include('partials/entry-meta')
+    @if (get_post_type() === 'post')
+      @include('partials/entry-meta')
+    @endif
     <h2 class="entry-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
   </header>
 </article>

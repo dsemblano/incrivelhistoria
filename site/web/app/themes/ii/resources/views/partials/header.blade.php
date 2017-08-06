@@ -17,6 +17,7 @@
   </nav>
   <div class="container container-brand flex-item">
       <a class="brand" href="{{ home_url('/') }}">
+        {{-- {{ get_bloginfo('name', 'display') }} --}}
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}
         <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"

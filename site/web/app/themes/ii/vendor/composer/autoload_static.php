@@ -4,26 +4,40 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
+class ComposerStaticInit5c12c0476956b58a0c38412c20045d0d
 {
     public static $files = array (
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'b50336562d531777993d90ca775abd88' => __DIR__ . '/..' . '/soberwp/controller/controller.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
+            'Sober\\Controller\\Module\\' => 24,
+            'Sober\\Controller\\' => 17,
         ),
         'R' => 
         array (
+            'Roots\\Sage\\Installer\\' => 21,
             'Roots\\Sage\\' => 11,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+        ),
+        'N' => 
+        array (
+            'Noodlehaus\\' => 11,
         ),
         'I' => 
         array (
@@ -33,15 +47,41 @@ class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
             'Illuminate\\Events\\' => 18,
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
+            'Illuminate\\Console\\' => 19,
             'Illuminate\\Config\\' => 18,
         ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
+            'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Brain\\Hierarchy\\' => 16,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -50,13 +90,33 @@ class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Sober\\Controller\\Module\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/soberwp/controller/src/Module',
+        ),
+        'Sober\\Controller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/soberwp/controller/src',
+        ),
+        'Roots\\Sage\\Installer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/roots/sage-installer/src',
+        ),
         'Roots\\Sage\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/lib/Sage',
+            0 => __DIR__ . '/..' . '/roots/sage-lib',
         ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Noodlehaus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hassankhan/config/src',
         ),
         'Illuminate\\View\\' => 
         array (
@@ -82,6 +142,10 @@ class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
         ),
+        'Illuminate\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/console',
+        ),
         'Illuminate\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/config',
@@ -89,6 +153,18 @@ class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Brain\\Hierarchy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brain/hierarchy/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
@@ -360,10 +436,10 @@ class ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit4cff4fc3ea0a312853fcb87e782d63f3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5c12c0476956b58a0c38412c20045d0d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5c12c0476956b58a0c38412c20045d0d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit5c12c0476956b58a0c38412c20045d0d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit5c12c0476956b58a0c38412c20045d0d::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,26 +1,35 @@
 @import "common/variables";
 
-// Import npm dependencies
-@import "~bootstrap/scss/bootstrap";
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
 // Import Font Awesome from node_modules
 $fa-font-path: "~font-awesome/fonts";
 
-@import "~font-awesome/scss/font-awesome";
+@import "~font-awesome/scss/font-awesome.scss";
 
-// Import theme styles
+/** Import theme styles */
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
-@import "components/slideshow";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
 @import "layouts/posts";
-@import "common/mediaqueries";
 @import "layouts/tinymce";
+@import "components/slideshow";
+@import "common/mediaqueries";
 
 // Import flickity
 @import "~flickity/dist/flickity.min.css";

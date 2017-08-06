@@ -1,4 +1,5 @@
 <?php
+
 // Retirar css e js da home do pĺugin sassy-social-share
 function heateor_sss_dequeue_scripts_and_styles() {
 	if ( ! is_single() ) {

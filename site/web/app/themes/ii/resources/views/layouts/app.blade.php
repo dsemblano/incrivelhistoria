@@ -13,7 +13,6 @@
         @if (App\display_sidebar())
           <aside id="sidebar" class="sidebar col-12 col-sm-4 col-md-12 col-lg-4">
             @include('partials.sidebar')
-            {{-- {!! do_shortcode( '[tptn_list limit=5 disp_list_count=0]' ) !!} --}}
           </aside>
         @endif
       </div>

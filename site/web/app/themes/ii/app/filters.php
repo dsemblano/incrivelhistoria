@@ -40,16 +40,7 @@ collect([
     'index', '404', 'archive', 'author', 'category', 'tag', 'taxonomy', 'date', 'home',
     'frontpage', 'page', 'paged', 'search', 'single', 'singular', 'attachment'
 ])->map(function ($type) {
-    add_filter("{$type}_template_hierarchy", function ($templates) {
-        return collect($templates)->flatMap(function ($template) {
-            $transforms = [
-                '%^/?(resources[\\/]views)?[\\/]?%' => '',
-                '%(\.blade)?(\.php)?$%' => ''
-            ];
-            $normalizedTemplate = preg_replace(array_keys($transforms), array_values($transforms), $template);
-            return ["{$normalizedTemplate}.blade.php", "{$normalizedTemplate}.php"];
-        })->toArray();
-    });
+    add_filter("{$type}_template_hierarchy", __NAMESPACE__.'\\filter_templates');
 });
 
 /**
@@ -59,22 +50,23 @@ add_filter('template_include', function ($template) {
     $data = collect(get_body_class())->reduce(function ($data, $class) use ($template) {
         return apply_filters("sage/template/{$class}/data", $data, $template);
     }, []);
-    echo template($template, $data);
-    // Return a blank file to make WordPress happy
-    return get_theme_file_path('index.php');
+    if ($template) {
+        echo template($template, $data);
+        return get_stylesheet_directory().'/index.php';
+    }
+    return $template;
 }, PHP_INT_MAX);
 
 /**
  * Tell WordPress how to find the compiled path of comments.blade.php
  */
-add_filter('comments_template', 'App\\template_path');
-
-
-// Custom search form
-add_filter('get_search_form', function(){
-  $form = '';
-  echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
-  return $form;
+add_filter('comments_template', function ($comments_template) {
+    $comments_template = str_replace(
+        [get_stylesheet_directory(), get_template_directory()],
+        '',
+        $comments_template
+    );
+    return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 });
 
 // Mostrando sidebar - by Daniel Semblano
