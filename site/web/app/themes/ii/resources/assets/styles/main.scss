@@ -11,11 +11,6 @@
  */
 // @import "~some-node-module";
 
-// Import Font Awesome from node_modules
-$fa-font-path: "~font-awesome/fonts";
-
-@import "~font-awesome/scss/font-awesome.scss";
-
 /** Import theme styles */
 @import "common/global";
 @import "components/buttons";

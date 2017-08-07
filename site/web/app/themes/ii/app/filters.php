@@ -88,3 +88,12 @@ add_filter('sage/display_sidebar', function ($display) {
 
     return $display;
 });
+
+// Custom search form
+add_filter('get_search_form', function(){
+  $form = '';
+  // echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
+  $path = get_template_directory(). '/views/partials/searchform.blade.php';
+  echo template(realpath($path), []);
+  return $form;
+});
