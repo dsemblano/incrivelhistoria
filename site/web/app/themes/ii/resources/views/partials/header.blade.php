@@ -16,11 +16,12 @@
 
   </nav>
   <div class="container container-brand flex-item">
-    <span class="brand visible-print-inline-block">
+    <div class="brand visible-print-inline-block">
+      <img src="@asset('images/brand_print.png')" alt="Incrível História logo impressão" />
       {{ get_bloginfo('name', 'display') }}
       <br />
-      <span>https://incrivelhistoria.com.br</span>
-    </span>
+      <span>https://incrivelhistoria.com.br - Todos os direitos reservados </span>
+    </div>
       <a class="brand" href="{{ home_url('/') }}">
         {{-- {{ get_bloginfo('name', 'display') }} --}}
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}

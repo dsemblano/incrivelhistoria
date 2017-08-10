@@ -604,6 +604,19 @@
     padding: 0 !important;
     color: #000;
 
+    header.banner .container-brand .brand.visible-print-inline-block {
+      span {
+        margin-top: 15px;
+        display: inline-block;
+      }
+    }
+
+    .content main .entry-content blockquote {
+      border-right: 0 none;
+      border-top: 0 none;
+      border-bottom: 0 none;
+    }
+
     &:last-child {
       page-break-after: auto;
     }
@@ -648,6 +661,19 @@
   @page {
     size: A4 portrait;
     margin: 1.5cm;
+
+    p {
+      widows: 3;
+      orphans: 3;
+    }
+
+    @bottom-center {
+      content: "Copyright Incrível História - https://incrivelhistoria.com.br";
+    }
+
+    @top-right {
+      content: counter(page);
+    }
 
     h1,
     h2,
