@@ -671,6 +671,11 @@
       content: "Copyright Incrível História - https://incrivelhistoria.com.br";
     }
 
+    // @footnote {
+    //   border-top: 1pt solid black;
+    //   content: "Copyright Incrível História - https://incrivelhistoria.com.br";
+    // }
+
     @top-right {
       content: counter(page);
     }

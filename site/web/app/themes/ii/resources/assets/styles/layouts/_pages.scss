@@ -70,7 +70,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
-.sidebar-primary:not(.home) {
+.sidebar-primary:not(.home, .single-post) {
   article {
     border-bottom: 1px solid $border-content;
     margin-bottom: 15px;
