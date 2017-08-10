@@ -572,6 +572,11 @@
 
 // CSS print
 @media print {
+  html,
+  body {
+    height: 99%;
+  }
+
   nav,
   .crp_related,
   .heateorSssClear,
@@ -599,19 +604,41 @@
     padding: 0 !important;
     color: #000;
 
+    &:last-child {
+      page-break-after: auto;
+    }
+
     .container {
       margin: 0 !important;
       padding: 0 !important;
+
+      &:last-child {
+        page-break-after: auto;
+      }
 
       .content {
         border: none;
         margin: 0 !important;
         padding: 0 !important;
 
+        &:last-child {
+          page-break-after: auto;
+        }
+
         main {
           .entry-content .aligncenter img {
             max-height: 400px;
             width: 100%;
+          }
+
+          article {
+            &:last-child {
+              page-break-after: auto;
+            }
+          }
+
+          &:last-child {
+            page-break-after: auto;
           }
         }
       }
@@ -632,6 +659,10 @@
 
     body {
       counter-reset: chapternum;
+
+      &:last-child {
+        page-break-after: auto;
+      }
     }
   }
 
