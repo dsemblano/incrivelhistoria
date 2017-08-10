@@ -569,3 +569,89 @@
     }
   }
 }
+
+// CSS print
+@media print {
+  nav,
+  .crp_related,
+  .heateorSssClear,
+  .heateor_sss_sharing_container.heateor_sss_horizontal_sharing,
+  aside,
+  video,
+  audio,
+  object,
+  footer,
+  embed {
+    display: none !important;
+  }
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  body {
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #000;
+
+    .container {
+      margin: 0 !important;
+      padding: 0 !important;
+
+      .content {
+        border: none;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        main {
+          .entry-content .aligncenter img {
+            max-height: 400px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      page-break-after: avoid;
+    }
+
+    body {
+      counter-reset: chapternum;
+    }
+  }
+
+  // @page:right {
+  //   @bottom-left {
+  //     margin: 10pt 0 30pt;
+  //     border-top: 0.25pt solid #666;
+  //     content: "Paginacao";
+  //     font-size: 9pt;
+  //     color: #333;
+  //   }
+  //
+  //   @bottom-right {
+  //     content: counter(page);
+  //   }
+  // }
+  //
+  // @page:left {
+  //   @bottom-left {
+  //     content: "Página " counter(page) " of " counter(pages);
+  //   }
+  // }
+}

@@ -16,6 +16,11 @@
 
   </nav>
   <div class="container container-brand flex-item">
+    <span class="brand visible-print-inline-block">
+      {{ get_bloginfo('name', 'display') }}
+      <br />
+      <span>https://incrivelhistoria.com.br</span>
+    </span>
       <a class="brand" href="{{ home_url('/') }}">
         {{-- {{ get_bloginfo('name', 'display') }} --}}
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}
