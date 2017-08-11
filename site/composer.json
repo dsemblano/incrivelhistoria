@@ -52,7 +52,6 @@
     "wpackagist-plugin/postman-smtp": ">=1.7.2",
     "wpackagist-plugin/top-10": ">=2.4.4",
     "wpackagist-plugin/widget-css-classes": ">=1.5.0",
-    "wpackagist-plugin/complete-open-graph": ">=2.1.4",
     "roots/soil": ">=3.7.1"
   },
   "require-dev": {
