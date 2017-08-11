@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e13f6ad71e55549b5648e88a3e6a970",
+    "content-hash": "cea188c7b1c910740ff8ff216a86471e",
     "packages": [
         {
             "name": "composer/installers",
@@ -433,6 +433,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/complete-open-graph",
+            "version": "2.1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/complete-open-graph/",
+                "reference": "tags/2.1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/complete-open-graph.2.1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/complete-open-graph/"
+        },
+        {
             "name": "wpackagist-plugin/contact-form-7",
             "version": "4.8.1",
             "source": {
@@ -514,15 +534,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "3.6.0",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/3.6.0"
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.6.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -674,15 +694,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.1",
+            "version": "5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.1"
+                "reference": "tags/5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
