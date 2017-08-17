@@ -14,5 +14,8 @@
   <meta name="msapplication-TileImage" content="@asset('images/favicon/mstile-144x144.png')">
   <meta name="theme-color" content="#c27525">
   <meta property="fb:pages" content="184365508715047" />
+  <style>
+  body.home main section#curiosidades article h4{background:rgba(0,0,0,.5)}body .content{border-left:1px solid #dadada;border-right:1px solid #dadada}.sidebar #mais-acessadas h3{border-top:5px solid #188cb3;padding-top:10px}header.banner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-direction:normal;-webkit-box-orient:vertical;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}header.banner .flex-item:first-child{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch}header.banner .flex-item:nth-child(2){-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start}header.banner .flex-item:nth-child(3){-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch}
+  </style>
   @php(wp_head())
 </head>

@@ -3,7 +3,7 @@
 
     <div class="container hidden-sm-down">
       @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu' => 'nav-page','container'=> '','items_wrap'=>'<ul class="nav row justify-content-end">%3$s</ul>']) !!}
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu' => 'nav-page','container'=> '', 'items_wrap'=>'<ul class="nav row justify-content-end">%3$s</ul>']) !!}
         {{-- {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!} --}}
       @endif
     </div>

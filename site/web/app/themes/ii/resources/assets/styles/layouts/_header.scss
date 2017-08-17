@@ -9,15 +9,15 @@
 }
 
 header.banner {
-  @extend %flex-header;
+  // @extend %flex-header;
 
   color: $logo;
   background: url('../images/bg.jpg') no-repeat scroll 0 0 / cover;
   height: 270px;
 
-  @extend %flex-header-child1;
-  @extend %flex-header-child2;
-  @extend %flex-header-child3;
+  // @extend %flex-header-child1;
+  // @extend %flex-header-child2;
+  // @extend %flex-header-child3;
 
   #nav-page {
     font-weight: bold;

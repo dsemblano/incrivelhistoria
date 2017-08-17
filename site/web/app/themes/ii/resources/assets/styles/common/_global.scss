@@ -54,13 +54,12 @@ body {
   background-color: $bg-body;
   // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
   .content {
-    @extend %border-content;
+    // @extend %border-content;
 
     padding-top: 15px;
 
     main {
       overflow: hidden;
-      font: 'Roboto', sans-serif;
 
       section {
         overflow: hidden;
@@ -120,7 +119,7 @@ body.home {
         h4 {
           @include titulos($titulos-cor, $size: 0.9rem);
 
-          @extend %titulo-bg;
+          // @extend %titulo-bg;
 
           bottom: 0;
           left: 0;

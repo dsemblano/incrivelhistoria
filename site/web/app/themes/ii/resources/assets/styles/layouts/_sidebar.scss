@@ -72,7 +72,7 @@
     h3 {
       @include titulos($color: $cor-primary, $size: 1.5rem);
 
-      @extend %sidebar-titulos;
+      // @extend %sidebar-titulos;
     }
 
     .tptn_posts {
