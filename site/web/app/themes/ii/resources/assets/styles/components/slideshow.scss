@@ -20,7 +20,7 @@
           // min-height: 370px;
         }
 
-        span {
+        header {
           // background: rgb(54, 25, 25); /* Fall-back para browsers antigos */
           // background: rgba(54, 25, 25, .5);
           @include titulos($color: $white);

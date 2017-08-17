@@ -6,7 +6,7 @@
                 <a href="<?php the_permalink(); ?>">
                     <?php //the_post_thumbnail('slideshow2'); ?>
                     <?php echo (App\featured_image_url('slideshow')); ?>
-                    <span>
+                    <header>
                       <h2><?php the_title(); ?></h2>
                       <?php
                           if (!has_excerpt()) {
@@ -18,7 +18,7 @@
                               echo '<p>' . substr(get_the_excerpt(), 0,450) . '...' . '</p>';
                           }
                       ?>
-                    </span>
+                    </header>
                 </a>
             </div>
         <?php endwhile; ?>
