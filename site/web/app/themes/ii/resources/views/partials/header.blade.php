@@ -172,7 +172,7 @@
       </label>
       <input type="checkbox" id="toggle-1">
     @if (has_nav_menu('secondary_navigation'))
-        {!! wp_nav_menu(['menu' => 'secondary', 'theme_location' => 'secondary_navigation', 'menu_class' => 'menu first container']) !!}
-      @endif
+      {!! wp_nav_menu(['menu' => 'secondary', 'theme_location' => 'secondary_navigation', 'menu_class' => 'menu first container']) !!}
+    @endif
     </nav>
 </header>
