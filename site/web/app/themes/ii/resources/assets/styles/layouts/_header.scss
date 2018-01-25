@@ -23,12 +23,14 @@ header.banner {
   }
 
   .container-brand {
-    // padding: 0 0 5em;
+    // padding: 0 0 5em; 
     .brand {
-      display: inline-block; // margin-bottom: 25px;
+      display: block; // margin-bottom: 25px;
       svg {
         filter: drop-shadow((-2px) -2px 5px #000);
-        height: auto;
+        height: 205px;
+        position: relative;
+        top: 0;
       }
     }
   }
