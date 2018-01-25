@@ -8,12 +8,12 @@ use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
 
 /**
- * Theme assets
+ * Theme assets 
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
-    wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Muli:400,700|Open+Sans:400,400i', false, null );
+    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css?family=Muli:400,700|Open+Sans:400,400i', false, null);
 }, 100);
 
 /**
@@ -92,11 +92,11 @@ add_action('widgets_init', function () {
 });
 
 // Thumbnails images
-add_image_size( 'slideshow', 730, 371, true );
-add_image_size( 'curiosidades_large', 480, 370, true );
-add_image_size( 'curiosidades_small', 220, 155, true );
-add_image_size( 'mais', 225, 150, true );
-add_image_size( 'mais_extendida', 350, 155, true );
+add_image_size('slideshow', 730, 371, true);
+add_image_size('curiosidades_large', 480, 370, true);
+add_image_size('curiosidades_small', 220, 155, true);
+add_image_size('mais', 225, 150, true);
+add_image_size('mais_extendida', 350, 155, true);
 
 // Cores para mobile browsers
 function address_mobile_address_bar() {

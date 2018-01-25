@@ -1,3 +1,6 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
 // Variables
 
 // Colors
@@ -136,9 +139,9 @@ $transition: color 0.35s ease 0s;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  // -webkit-flex-wrap: nowrap;
+  // -ms-flex-wrap: nowrap;
+  // flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -207,3 +210,7 @@ $transition: color 0.35s ease 0s;
     align-self: stretch;
   }
 }
+
+$theme-colors: (
+  primary: #27ae60
+);

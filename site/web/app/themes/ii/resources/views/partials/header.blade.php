@@ -1,14 +1,14 @@
 <header class="banner">
   <nav id="nav-page" class="nav-primary flex-item">
 
-    <div class="container hidden-sm-down">
+    <div class="container d-none d-md-block">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu' => 'nav-page','container'=> '', 'items_wrap'=>'<ul class="nav row justify-content-end">%3$s</ul>']) !!}
         {{-- {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav row justify-content-end']) !!} --}}
       @endif
     </div>
 
-    <div class="container-fluid hidden-md-up">
+    <div class="container-fluid d-md-none">
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_id' => 'menu-page', 'menu_class' => 'nav row']) !!}
       @endif
@@ -16,7 +16,7 @@
 
   </nav>
   <div class="container container-brand flex-item">
-    <div class="brand visible-print-inline-block">
+    <div class="brand d-print-inline-block">
       <img src="@asset('images/brand_print.png')" alt="Incrível História logo impressão" />
       {{ get_bloginfo('name', 'display') }}
       <br />
@@ -166,22 +166,14 @@
        </svg>
       </a>
   </div>
-  <nav id="nav-menu" class="nav-primary nav-primary-main navbar navbar-toggleable-md navbar-inverse flex-item">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-     aria-label="Toggle navigation">
-       {{-- <span class="navbar-toggler-icon"></span> --}}
-       <i class="fa fa-bars hidden-lg-up" aria-hidden="true"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     @if (has_nav_menu('secondary_navigation'))
-     {!! wp_nav_menu(['theme_location' => 'secondary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right container']) !!}
-     @endif
-     </div>
-     <!-- <form class="form-inline collapse navbar-collapse pull-right">
-     <button class="btn btn-outline-success" type="button">Main button</button>
-     </form> -->
-   </nav>
-    {{-- <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a> --}}
+    <nav id="nav-menu" class="flex-item">
+      <label for="toggle-1" class="toggle-menu">
+<i class="fa fa-bars hidden-lg-up" aria-hidden="true"></i>
+      </label>
+      <input type="checkbox" id="toggle-1">
+    @if (has_nav_menu('secondary_navigation'))
+        {{-- {!! wp_nav_menu(['menu' => 'secondary', 'theme_location' => 'secondary_navigation', 'menu_class' => 'menu container', 'walker' => new wp_bootstrap4_navwalker()]) !!} --}}
+        {!! wp_nav_menu(['menu' => 'secondary', 'theme_location' => 'secondary_navigation', 'menu_class' => 'menu first container']) !!}
+      @endif
+    </nav>
 </header>

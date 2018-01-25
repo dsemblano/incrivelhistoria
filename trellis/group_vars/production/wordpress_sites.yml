@@ -3,19 +3,19 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  incrivelhistoria.com.br:
+  example.com:
     site_hosts:
-      - canonical: incrivelhistoria.com.br
+      - canonical: example.com
         redirects:
-          - www.incrivelhistoria.com.br
+          - www.example.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:dsemblano/incrivelhistoria.git # replace with your Git repo URL
+    repo: git@github.com:example/example.com.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
     branch: master
     multisite:
       enabled: false
     ssl:
-      enabled: true
+      enabled: false
       provider: letsencrypt
     cache:
       enabled: false

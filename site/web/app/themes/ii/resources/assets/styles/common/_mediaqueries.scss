@@ -1,6 +1,12 @@
 // Media Queries
 // Resoluções abaixo de desktop
 @include media-breakpoint-down(lg) {
+  body.home {
+    .content {
+      // background-color: pink;
+    }
+  }
+
   .wrap.container {
     width: inherit;
   }
@@ -28,16 +34,17 @@
   }
 
   header.banner {
-    height: 130px;
+    height: 130;
 
-    .flex-item:nth-child(2) {
-      // height: 40px;
-      // background-color: yellow;
-    }
+    // .flex-item:nth-child(2) {
+    //   // height: 40;
+    //   // background-color: yellow;
+    // }
 
     .container-brand {
       height: 55px;
-      // padding: 10px 0 0;
+
+      // padding: 10 0 0;
 
       .brand {
         display: block;
@@ -46,9 +53,8 @@
         svg {
           height: 65px;
           position: absolute;
-          top: 10px;
+          top: 10;
           width: 45%;
-          // background-color: red;
         }
       }
     }
@@ -56,7 +62,8 @@
     #nav-menu {
       background-color: transparent;
       position: relative;
-      // height: 20px;
+
+      // height: 20;
 
       .collapse.show,
       .collapsing {
@@ -72,15 +79,14 @@
       }
     }
 
-    #nav-page {
-      // height: 20px;
-      // padding: 0 0 0 10px;
+    // #nav-page {
+    //   // height: 20;
+    //   // padding: 0 0 0 10;
 
-      // .hidden-md-up {
-      //   font-size: 0.65rem;
-      // }
-    }
-
+    //   // .hidden-md-up {
+    //   //   font-size: 0.65rem;
+    //   // }
+    // }
     #nav-menu {
       button {
         // background-color: #188cb3;
@@ -108,33 +114,27 @@
   body.home {
     main {
       .main-carousel {
-        height: 220px;
-        // margin: 5px 0 10px;
-        // margin-bottom: 10px;
+        height: 220;
+
+        // margin: 5px 0 10;
+        // margin-bottom: 10;
 
         // .flickity-prev-next-button {
-        //   // height: 20px;
-        //   // width: 20px;
+        //   // height: 20;
+        //   // width: 20;
         //   height: 15%;
         //   width: 10%;
         //   // top: 35%;
         // }
 
         .flickity-slider .carousel-cell {
-          img {
-            // height: auto;
-          }
+          // img {
+          //   // height: auto;
+          // }
 
           header {
-            // position: relative;
-            // padding: 0 10px;
-            // color: $black;
-
             p {
               @extend %titulo-excerpt;
-
-              // margin-bottom: 10px;
-              // margin-top: 2px;
             }
 
             h2 {
@@ -143,6 +143,7 @@
           }
         }
       }
+
       // end section carrousel
       section#curiosidades,
       section#mais {
@@ -193,22 +194,6 @@
             width: 100%;
           }
         }
-
-        .crp_related {
-          ul {
-            li {
-              // width: 100%;
-
-              a img {
-                // height: 200px;
-              }
-            }
-          }
-        }
-
-        // article {
-        //   margin-top: 5px;
-        // }
       }
     }
   }
@@ -226,17 +211,15 @@
             width: 100%;
             padding: 5px 15px 35px;
 
-            h2 {
-              // @include titulos-chamadas-bold;
-              //
-              // padding: 0;
-              // margin: 0;
-            }
+            // h2 {
+            //   // @include titulos-chamadas-bold;
+            //   //
+            //   // padding: 0;
+            //   // margin: 0;
+            // }
 
             p {
               display: none;
-              // background-color: purple;
-              // padding: 5px 10px;
             }
           }
         }
@@ -270,7 +253,7 @@
 
 @include media-breakpoint-only(xs) {
   %margin-left {
-    margin: 10px 20px 0;
+    margin: 10 20 0;
   }
 
   body.home .content main,
@@ -292,24 +275,14 @@
       }
 
       section#mais .mais-extensao section:last-child {
-        margin-top: 20px;
+        margin-top: 20;
       }
 
       section#mais .mais-extensao article h3 {
-        margin-bottom: 40px;
+        margin-bottom: 40;
         margin-left: 35px;
         margin-top: 5px;
       }
-    }
-  }
-
-  body.home {
-    .wrap.container {
-      // padding: 0;
-    }
-
-    .content {
-      // background-color: yellowgreen;
     }
   }
 
@@ -326,6 +299,7 @@
   .sidebar-primary main article header p {
     font-size: small;
   }
+
   // end single
 
   footer.content-info {
@@ -342,13 +316,14 @@
 // landscape cellphone
 @include media-breakpoint-only(sm) {
   header.banner {
-    height: 100px;
+    height: 100;
     background-position: right;
 
     .container-brand {
       width: 100%;
       height: 55px;
-      // padding: 10px 0 0;
+
+      // padding: 10 0 0;
 
       .brand {
         // margin-top: 8px;
@@ -362,7 +337,7 @@
 
     #nav-menu {
       button {
-        bottom: 10px;
+        bottom: 10;
       }
     }
   }
@@ -380,17 +355,8 @@
             width: 100%;
             padding: 5px 15px 35px;
 
-            h2 {
-              // @include titulos-chamadas-bold;
-              //
-              // padding: 0;
-              // margin: 0;
-            }
-
             p {
               display: none;
-              // background-color: purple;
-              // padding: 5px 10px;
             }
           }
         }
@@ -407,12 +373,6 @@
     padding-left: 0;
   }
 
-  body.home {
-    .content {
-      // background-color: green;
-    }
-  }
-
   .sidebar {
     .textwidget {
       font-size: 1.5rem;
@@ -420,20 +380,131 @@
   }
 }
 
+//menu mobile responsivo
+@include media-breakpoint-down(md) {
+  body {
+    .content {
+      // background-color: yellowgreen;
+    }
+
+    .banner {
+      #nav-menu {
+        input[type=checkbox] {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+          background: none;
+        }
+
+        input[type=checkbox]:focus {
+          background: none;
+        }
+
+        label {
+          float: right;
+          padding: 8px 0;
+          display: inline-block;
+          cursor: pointer;
+
+          .fa {
+            font-size: 3rem;
+            position: relative;
+            bottom: 0.8em;
+            right: 0.5em;
+          }
+        }
+
+        input[type=checkbox]:checked ~ .menu {
+          display: block;
+        }
+
+        .menu {
+          display: none;
+          position: absolute;
+          right: 0;
+          top: 35px;
+          margin-top: 0;
+          z-index: 99;
+
+          .menu-item-has-children {
+            // background-color: orange;
+
+            &::after {
+              position: absolute;
+              // bottom: 10px;
+              top: 0;
+              right: 20px;
+              left: unset;
+            }
+
+            .sub-menu {
+              position: relative;
+              display: block;
+            }
+          }
+
+          li {
+            float: none;
+            padding: 0;
+            width: 100%;
+            display: table;
+            border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+
+            a {
+              color: #fff;
+              font-size: 15px;
+              padding: 10 20;
+              display: block;
+            }
+          }
+        }
+
+        // nav ul {
+        //   width: auto;
+        // }
+
+        // nav ul li {
+        //   float: none;
+        //   padding: 0;
+        //   width: 100%;
+        //   display: table;
+        // }
+
+        // nav ul li a {
+        //   color: #fff;
+        //   font-size: 15px;
+        //   padding: 10 20;
+        //   display: block;
+        //   border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+        // }
+
+        nav ul li a i {
+          color: #fde428;
+          padding-right: 13px;
+        }
+      }
+    }
+  }
+}
+
 // portrait tablet 1024x768
 @include media-breakpoint-only(md) {
   header.banner {
-    height: 220px;
+    height: 220;
 
     .container-brand {
       // height: auto;
-      padding: 10px 0 0;
+      padding: 10 0 0;
 
       .brand {
         // margin-bottom: 5em;
 
         svg {
-          height: 90px;
+          height: 90;
           width: 30%;
           top: 0;
         }
@@ -442,7 +513,7 @@
 
     #nav-menu {
       button {
-        bottom: 30px;
+        bottom: 30;
 
         .fa {
           font-size: 3.5rem;
@@ -461,8 +532,9 @@
   body.home {
     .content {
       // background-color: blue;
+
       .main-carousel {
-        height: 500px;
+        height: 500;
 
         .flickity-viewport {
           .flickity-slider .carousel-cell {
@@ -470,12 +542,12 @@
               header {
                 padding: 5px 15px 35px;
 
-                h2 {
-                  // @include titulos-chamadas-bold;
-                  //
-                  // padding: 0;
-                  // margin: 0;
-                }
+                // h2 {
+                //   // @include titulos-chamadas-bold;
+                //   //
+                //   // padding: 0;
+                //   // margin: 0;
+                // }    
               }
             }
           }
@@ -488,17 +560,17 @@
 //desktop and landscape tablet
 @include media-breakpoint-only(lg) {
   header.banner {
-    height: 250px;
+    height: 250;
 
     .container-brand {
       // height: auto;
-      padding: 10px 0 0;
+      padding: 10 0 0;
 
       .brand {
         // margin-top: 0;
 
         svg {
-          height: 80px;
+          height: 80;
           width: 20%;
         }
       }
@@ -509,7 +581,7 @@
       font-size: small;
 
       button {
-        bottom: 20px;
+        bottom: 20;
 
         .fa {
           font-size: 3.5rem;
@@ -520,7 +592,7 @@
       .collapse {
         // position: absolute;
         // right: 0;
-        // top: -50px;
+        // top: -50;
         // width: 40%;
         .nav-item {
           &:hover .dropdown-menu {
@@ -547,7 +619,7 @@
 
       main {
         .main-carousel {
-          height: 340px;
+          height: 340;
         }
       }
     }
@@ -640,7 +712,7 @@
 
         main {
           .entry-content .aligncenter img {
-            max-height: 400px;
+            max-height: 400;
             width: 100%;
           }
 
@@ -667,18 +739,18 @@
       orphans: 3;
     }
 
-    @bottom-center {
-      content: "Copyright Incrível História - https://incrivelhistoria.com.br";
-    }
+    // @bottom-center {
+    //   content: "Copyright Incrível História - https://incrivelhistoria.com.br";
+    // }
 
     // @footnote {
     //   border-top: 1pt solid black;
     //   content: "Copyright Incrível História - https://incrivelhistoria.com.br";
     // }
 
-    @top-right {
-      content: counter(page);
-    }
+    // @top-right {
+    //   content: counter(page);
+    // }
 
     h1,
     h2,

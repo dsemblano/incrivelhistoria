@@ -9,13 +9,12 @@
     ]
   },
   "publicPath": "/app/themes/ii",
-  "devUrl": "http://incrhist.dev",
+  "devUrl": "http://incrhist.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
     "config/**/*.php",
-    "resources/controllers/**/*.php",
     "resources/views/**/*.php"
   ]
 }

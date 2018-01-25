@@ -5,9 +5,9 @@
 wordpress_sites:
   incrivelhistoria.com.br:
     site_hosts:
-      - canonical: incrhist.dev
+      - canonical: incrhist.test
         redirects:
-          - www.incrhist.dev
+          - www.incrhist.test
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: dsemblano@gmail.com
     multisite:

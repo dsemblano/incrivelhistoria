@@ -527,15 +527,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.0.3"
+                "reference": "tags/4.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.0.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.0.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -607,15 +607,15 @@
         },
         {
             "name": "wpackagist-plugin/taghound-media-tagger",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/taghound-media-tagger/",
-                "reference": "tags/2.0.1"
+                "reference": "tags/2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/taghound-media-tagger.2.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/taghound-media-tagger.2.0.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -667,15 +667,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.8",
+            "version": "5.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.8"
+                "reference": "tags/5.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
