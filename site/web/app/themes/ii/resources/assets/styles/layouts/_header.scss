@@ -39,22 +39,6 @@ header.banner {
 
   .nav-primary {
     @include titulos-chamadas($size: 1rem);
-
-    // ul.nav {
-    //   li {
-    //     list-style: none;
-    //     // display: inline-flex;
-    //     a {
-    //       color: inherit;
-    //       white-space: nowrap;
-    //     }
-    //     &.menu-item-has-children {
-    //       &:hover .sub-menu {
-    //         display: inline !important;
-    //       }
-    //     }
-    //   }
-    // }
   }
 
   // Menu categorias
