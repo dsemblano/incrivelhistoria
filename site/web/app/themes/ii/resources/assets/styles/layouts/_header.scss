@@ -13,7 +13,8 @@ header.banner {
   // @extend %flex-header;
   color: $logo;
   background: url("../images/bg.jpg") no-repeat scroll 0 (0 / cover);
-  height: 270; // @extend %flex-header-child1;
+  height: 270px;
+  // @extend %flex-header-child1;
   // @extend %flex-header-child2;
   // @extend %flex-header-child3;
   #nav-page {
@@ -25,12 +26,13 @@ header.banner {
   .container-brand {
     // padding: 0 0 5em; 
     .brand {
-      display: block; // margin-bottom: 25px;
+      display: inline-block;
+
       svg {
         filter: drop-shadow((-2px) -2px 5px #000);
-        height: 205px;
-        position: relative;
-        top: 0;
+        height: auto;
+        // width: 100%;
+        // display: block;
       }
     }
   }

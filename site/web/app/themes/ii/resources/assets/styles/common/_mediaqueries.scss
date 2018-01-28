@@ -34,30 +34,10 @@
   }
 
   header.banner {
-    height: 130;
-
     // .flex-item:nth-child(2) {
     //   // height: 40;
     //   // background-color: yellow;
     // }
-
-    .container-brand {
-      height: 55px;
-
-      // padding: 10 0 0;
-
-      .brand {
-        display: block;
-        position: relative;
-
-        svg {
-          height: 65px;
-          position: absolute;
-          width: 45%;
-          top: 5px;
-        }
-      }
-    }
 
     #nav-menu {
       background-color: transparent;
@@ -114,7 +94,7 @@
   body.home {
     main {
       .main-carousel {
-        height: 220;
+        height: 220px;
 
         // margin: 5px 0 10;
         // margin-bottom: 10;
@@ -253,7 +233,7 @@
 
 @include media-breakpoint-only(xs) {
   %margin-left {
-    margin: 10 20 0;
+    margin: 10px 20px 0;
   }
 
   body.home .content main,
@@ -275,11 +255,11 @@
       }
 
       section#mais .mais-extensao section:last-child {
-        margin-top: 20;
+        margin-top: 20px;
       }
 
       section#mais .mais-extensao article h3 {
-        margin-bottom: 40;
+        margin-bottom: 40px;
         margin-left: 35px;
         margin-top: 5px;
       }
@@ -316,28 +296,26 @@
 // landscape cellphone
 @include media-breakpoint-only(sm) {
   header.banner {
-    height: 100;
+    height: 100px;
     background-position: right;
 
     .container-brand {
       width: 100%;
-      height: 55px;
-
       // padding: 10 0 0;
 
       .brand {
         // margin-top: 8px;
 
-        svg {
-          height: 55px;
-          width: 20%;
-        }
+        // svg {
+        //   height: 55px;
+        //   width: 20%;
+        // }
       }
     }
 
     #nav-menu {
       button {
-        bottom: 10;
+        bottom: 10px;
       }
     }
   }
@@ -387,7 +365,23 @@
       // background-color: yellowgreen;
     }
 
-    .banner {
+    header.banner {
+      height: 160px;
+
+      .container-brand {
+        .brand {
+          display: block;
+          position: relative;
+
+          svg {
+            height: 65px;
+            position: absolute;
+            top: -20px;
+            width: 45%;
+          }
+        }
+      }
+
       #nav-menu {
         input[type=checkbox] {
           position: absolute;
@@ -405,6 +399,9 @@
           padding: 8px 0;
           display: inline-block;
           cursor: pointer;
+          position: absolute;
+          right: 0;
+          bottom: -15px;
 
           .fa {
             font-size: 3rem;
@@ -457,7 +454,7 @@
             a {
               color: #fff;
               font-size: 15px;
-              padding: 10 20;
+              padding: 10px 20px;
               display: block;
             }
           }
@@ -494,26 +491,26 @@
 // portrait tablet 1024x768
 @include media-breakpoint-only(md) {
   header.banner {
-    height: 220;
+    height: 220px;
 
     .container-brand {
       // height: auto;
-      padding: 10 0 0;
+      padding: 10px 0 0;
 
       .brand {
         // margin-bottom: 5em;
 
-        svg {
-          height: 90;
-          width: 30%;
-          top: 0;
-        }
+        // svg {
+        //   height: 90;
+        //   width: 30%;
+        //   top: 0;
+        // }
       }
     }
 
     #nav-menu {
       button {
-        bottom: 30;
+        bottom: 30px;
 
         .fa {
           font-size: 3.5rem;
@@ -534,7 +531,7 @@
       // background-color: blue;
 
       .main-carousel {
-        height: 500;
+        height: 500px;
 
         .flickity-viewport {
           .flickity-slider .carousel-cell {
@@ -560,19 +557,18 @@
 //desktop and landscape tablet
 @include media-breakpoint-only(lg) {
   header.banner {
-    height: 250;
+    height: 250px;
 
     .container-brand {
       // height: auto;
-      padding: 10 0 0;
+      padding: 10px 0 0;
 
       .brand {
         // margin-top: 0;
 
-        svg {
-          height: 80;
-          width: 20%;
-        }
+        // svg {
+        //   width: auto;
+        // }
       }
     }
 
@@ -581,7 +577,7 @@
       font-size: small;
 
       button {
-        bottom: 20;
+        bottom: 20px;
 
         .fa {
           font-size: 3.5rem;
@@ -619,7 +615,7 @@
 
       main {
         .main-carousel {
-          height: 340;
+          height: 340px;
         }
       }
     }
@@ -712,7 +708,7 @@
 
         main {
           .entry-content .aligncenter img {
-            max-height: 400;
+            max-height: 400px;
             width: 100%;
           }
 
