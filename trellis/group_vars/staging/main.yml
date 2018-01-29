@@ -1,1 +1,4 @@
 mysql_root_password: "{{ vault_mysql_root_password }}" # Define this variable in group_vars/staging/vault.yml
+php_display_errors: 'On'
+php_display_startup_errors: 'On'
+php_track_errors: 'On'
