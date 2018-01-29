@@ -721,58 +721,6 @@
         "homepage": "https://laravel.com"
     },
     {
-        "name": "illuminate/console",
-        "version": "v5.5.28",
-        "version_normalized": "5.5.28.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/illuminate/console.git",
-            "reference": "87c3a0941654e0bffcd6fa15bc574c855071a338"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/illuminate/console/zipball/87c3a0941654e0bffcd6fa15bc574c855071a338",
-            "reference": "87c3a0941654e0bffcd6fa15bc574c855071a338",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/contracts": "5.5.*",
-            "illuminate/support": "5.5.*",
-            "php": ">=7.0",
-            "symfony/console": "~3.3"
-        },
-        "suggest": {
-            "guzzlehttp/guzzle": "Required to use the ping methods on schedules (~6.0).",
-            "mtdowling/cron-expression": "Required to use scheduling component (~1.0).",
-            "symfony/process": "Required to use scheduling component (~3.3)."
-        },
-        "time": "2017-12-26T14:46:43+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.5-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Illuminate\\Console\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylor@laravel.com"
-            }
-        ],
-        "description": "The Illuminate Console package.",
-        "homepage": "https://laravel.com"
-    },
-    {
         "name": "illuminate/container",
         "version": "v5.5.28",
         "version_normalized": "5.5.28.0",
@@ -1659,67 +1607,6 @@
         ]
     },
     {
-        "name": "roots/sage-installer",
-        "version": "1.3.3",
-        "version_normalized": "1.3.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/roots/sage-installer.git",
-            "reference": "7603955cee7e92177e2d71cf88ec8e939ed19e9c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/roots/sage-installer/zipball/7603955cee7e92177e2d71cf88ec8e939ed19e9c",
-            "reference": "7603955cee7e92177e2d71cf88ec8e939ed19e9c",
-            "shasum": ""
-        },
-        "require": {
-            "illuminate/console": "~5.4",
-            "illuminate/filesystem": "~5.4",
-            "symfony/process": "~3.3"
-        },
-        "require-dev": {
-            "squizlabs/php_codesniffer": "~3.0"
-        },
-        "time": "2018-01-23T18:48:04+00:00",
-        "bin": [
-            "bin/sage"
-        ],
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Roots\\Sage\\Installer\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Ben Word",
-                "email": "ben@benword.com",
-                "homepage": "https://github.com/retlehs"
-            },
-            {
-                "name": "QWp6t",
-                "email": "hi@qwp6t.me",
-                "homepage": "https://github.com/qwp6t"
-            }
-        ],
-        "description": "Sage starter theme installer",
-        "keywords": [
-            "FontAwesome",
-            "bootstrap",
-            "foundation",
-            "sage",
-            "tachyons",
-            "theme",
-            "wordpress"
-        ]
-    },
-    {
         "name": "roots/sage-lib",
         "version": "9.0.0-beta.4",
         "version_normalized": "9.0.0.0-beta4",
@@ -1828,86 +1715,6 @@
         ]
     },
     {
-        "name": "squizlabs/php_codesniffer",
-        "version": "2.9.1",
-        "version_normalized": "2.9.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-            "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/dcbed1074f8244661eecddfc2a675430d8d33f62",
-            "reference": "dcbed1074f8244661eecddfc2a675430d8d33f62",
-            "shasum": ""
-        },
-        "require": {
-            "ext-simplexml": "*",
-            "ext-tokenizer": "*",
-            "ext-xmlwriter": "*",
-            "php": ">=5.1.2"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.0"
-        },
-        "time": "2017-05-22T02:43:20+00:00",
-        "bin": [
-            "scripts/phpcs",
-            "scripts/phpcbf"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "CodeSniffer.php",
-                "CodeSniffer/CLI.php",
-                "CodeSniffer/Exception.php",
-                "CodeSniffer/File.php",
-                "CodeSniffer/Fixer.php",
-                "CodeSniffer/Report.php",
-                "CodeSniffer/Reporting.php",
-                "CodeSniffer/Sniff.php",
-                "CodeSniffer/Tokens.php",
-                "CodeSniffer/Reports/",
-                "CodeSniffer/Tokenizers/",
-                "CodeSniffer/DocGenerators/",
-                "CodeSniffer/Standards/AbstractPatternSniff.php",
-                "CodeSniffer/Standards/AbstractScopeSniff.php",
-                "CodeSniffer/Standards/AbstractVariableSniff.php",
-                "CodeSniffer/Standards/IncorrectPatternException.php",
-                "CodeSniffer/Standards/Generic/Sniffs/",
-                "CodeSniffer/Standards/MySource/Sniffs/",
-                "CodeSniffer/Standards/PEAR/Sniffs/",
-                "CodeSniffer/Standards/PSR1/Sniffs/",
-                "CodeSniffer/Standards/PSR2/Sniffs/",
-                "CodeSniffer/Standards/Squiz/Sniffs/",
-                "CodeSniffer/Standards/Zend/Sniffs/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Greg Sherwood",
-                "role": "lead"
-            }
-        ],
-        "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-        "homepage": "http://www.squizlabs.com/php-codesniffer",
-        "keywords": [
-            "phpcs",
-            "standards"
-        ]
-    },
-    {
         "name": "symfony/config",
         "version": "v4.0.3",
         "version_normalized": "4.0.3.0",
@@ -1967,77 +1774,6 @@
             }
         ],
         "description": "Symfony Config Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/console",
-        "version": "v3.4.3",
-        "version_normalized": "3.4.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/console.git",
-            "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-            "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/debug": "~2.8|~3.0|~4.0",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "conflict": {
-            "symfony/dependency-injection": "<3.4",
-            "symfony/process": "<3.3"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~3.3|~4.0",
-            "symfony/dependency-injection": "~3.4|~4.0",
-            "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-            "symfony/lock": "~3.4|~4.0",
-            "symfony/process": "~3.3|~4.0"
-        },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/lock": "",
-            "symfony/process": ""
-        },
-        "time": "2018-01-03T07:37:34+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
         "homepage": "https://symfony.com"
     },
     {
@@ -2379,57 +2115,6 @@
             "portable",
             "shim"
         ]
-    },
-    {
-        "name": "symfony/process",
-        "version": "v3.4.3",
-        "version_normalized": "3.4.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/process.git",
-            "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-            "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8"
-        },
-        "time": "2018-01-03T07:37:34+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Process\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Process Component",
-        "homepage": "https://symfony.com"
     },
     {
         "name": "symfony/translation",
