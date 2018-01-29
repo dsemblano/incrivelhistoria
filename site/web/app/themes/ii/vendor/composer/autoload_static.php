@@ -10,7 +10,6 @@ class ComposerStaticInit05f0714866d53cad8543ecc8350f76b5
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'b50336562d531777993d90ca775abd88' => __DIR__ . '/..' . '/soberwp/controller/controller.php',
-        'beda72a3bff40d61ed819c75025fda66' => __DIR__ . '/..' . '/mwdelaney/sage-bootstrap4-navwalker/bootstrap4-navwalker.php',
     );
 
     public static $prefixLengthsPsr4 = array (
