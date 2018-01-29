@@ -31,8 +31,6 @@ header.banner {
       svg {
         filter: drop-shadow((-2px) -2px 5px #000);
         height: auto;
-        // width: 100%;
-        // display: block;
       }
     }
   }
@@ -40,9 +38,7 @@ header.banner {
   .nav-primary {
     @include titulos-chamadas($size: 1rem);
   }
-
   // Menu categorias
-
   #nav-menu {
     background-color: $cor-primary;
     color: white;
