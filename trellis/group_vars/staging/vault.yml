@@ -5,7 +5,7 @@ vault_mysql_root_password: "t^5&%ku&3$yU3MCn"
 vault_users:
   - name: "{{ admin_user }}"
     password: "jJ5&F@qqhGhRhF7J"
-    salt: "rch6tM9#5j2v%ckt"
+    salt: "llTR$@|6s19+^L`Vub)JMR?Zt1ylgm3.URe?xSqeajkM%/GFX`Yr!<8<4>:^C?.k"
 
 # Variables to accompany `group_vars/staging/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
@@ -14,11 +14,11 @@ vault_wordpress_sites:
     env:
       db_password: "D#T$2EZJttv!G%v@"
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "Vb&2f+ZkN%I;?rhdRF7L32aMw`$Z0!?6>dr&w_foc/^UI;N^,&`IM}nyS.a5%)%r"
-      secure_auth_key: "([4@V<Z._&a5<sjSf(xNUFtG7JAVv:jy6v^$r`i}|_|CY%a.mdbN7|iF:^d)c;H["
-      logged_in_key: "j|?[F!52n&k:)$v9?%-fpeL2AcED](?V7[YD?P!y$=__5M%=@BJWC/]{e]8@UkdM"
-      nonce_key: "O=<^an43WO:hr(Ilg|:>i0o@[-zk?$v;Qi&@0#2Qv8eLWn6,jkX7C%-*;<]v*xPL"
-      auth_salt: "*dgQm5M^bio+c9)JF`%|AoC:BU=7z)7=Vxew+kLh7ReF2/v,:Ax&&A+CvIc5wy}N"
-      secure_auth_salt: "iF=7nZ:n0%!Uyil{o1QJ_#OaqO9#Cn&*SY7Xi,TE(zoP@O4XE|iO;4FI&bbt2UHl"
-      logged_in_salt: "2r;f<&pM-BCf|cykf|TmrIiNM2+-x@][p|LD0!,[0Lh}FNu_5>0@vZ3TU!GD##JQ"
-      nonce_salt: "9o%[_@13y15l4iNki<E2BN=2X6c6Yrej.:;yGG*r17PO73ATQbB8:JAh]b}!u&Y="
+      auth_key: "8Yvk$LjVT*=%/OKWKh}rzEcy:%HV{=EsULY|*jo,73z*aQYj+0O5G0RLhFhwc8FX"
+      secure_auth_key: "9Um%6bJa,/G2s+j/M}9yU.xC@hiiB}}m@nlL.^4KJ8LCg7Z]gWr9pMJHll2uNiyI"
+      logged_in_key: "g;VGD9>y)h7XeKyOi[4&JX4)xBJ7USnRl(c^>5wi_JHNfIIyB&va=CI|c%0>lkfv"
+      nonce_key: "H*snUv5=$zn(U3vyE9d_Lszvdltm-JRygq>_r8m#;rYMqY7!bL4_-&{K,v3fhO/$"
+      auth_salt: "Pi|4)U85oWe)5lPL6H-/,>MOE0pIckQG)w#e#J2fHNP!*y`W`#fYf36IM.?-`:RK"
+      secure_auth_salt: "/.!.<EbQKX2&HQGg{Difg9uMj-g/|S?;!G@qNAIif-24[=3]Jwwv&{1RGj2NE81<"
+      logged_in_salt: "X[WkNNH}jyBb<Yz:{|QsqF7>mAMPA@|31U+IS1TyBU(*2J:u@d7jKMZVe+Qtq_6z"
+      nonce_salt: "E|n)XUwLh;A<[k,XY%4V<vd}dlFgF-m4I>axj&AO5)Qj2(U-dqCRpG$/*Lj%<<L#"
