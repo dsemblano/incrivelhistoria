@@ -23,3 +23,8 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "components/slideshow";
+@import "common/mediaqueries";
+
+// Import flickity
+@import "~flickity/dist/flickity.min.css";

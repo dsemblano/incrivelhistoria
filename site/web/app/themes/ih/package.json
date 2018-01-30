@@ -150,6 +150,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
+    "flickity": "^2.0.10",
     "font-awesome": "~4.7",
     "jquery": "1.12.4 - 3",
     "popper.js": "~1.11"

@@ -1,3 +1,4 @@
 <div class="page-header">
-  <h1>teste {!! App::title() !!}</h1>
+  <h1>{!! App::title() !!}</h1>
+  <hr />
 </div>

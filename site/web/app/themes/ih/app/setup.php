@@ -13,6 +13,7 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css?family=Muli:400,700|Open+Sans:400,400i', false, null);
 }, 100);
 
 /**
@@ -40,7 +41,9 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'secondary_navigation' => __('Secondary Navigation', 'sage'),
+        'tertiary_navigation' => __('Tertiary Navigation', 'sage')
     ]);
 
     /**
@@ -73,7 +76,7 @@ add_action('after_setup_theme', function () {
  */
 add_action('widgets_init', function () {
     $config = [
-        'before_widget' => '<section class="widget %1$s %2$s">',
+        'before_widget' => '<section id="%1$s" class="widget %1$s %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3>',
         'after_title'   => '</h3>'
@@ -87,6 +90,30 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-footer'
     ] + $config);
 });
+
+// Thumbnails images
+add_image_size('slideshow', 730, 371, true);
+add_image_size('curiosidades_large', 480, 370, true);
+add_image_size('curiosidades_small', 220, 155, true);
+add_image_size('mais', 225, 150, true);
+add_image_size('mais_extendida', 350, 155, true);
+
+// Cores para mobile browsers
+function address_mobile_address_bar() {
+  // Escolher cor
+  $color = "#c27525";
+  $meta_content = <<<HTML
+<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+<meta name="theme-color" content="$color">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="$color">
+<!--  iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+HTML;
+  echo $meta_content;
+}
+add_action('wp_head',  __NAMESPACE__ . '\\address_mobile_address_bar');
 
 /**
  * Updates the `$post` variable on each iteration of the loop.

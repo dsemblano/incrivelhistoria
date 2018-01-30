@@ -1,0 +1,200 @@
+// Base styles
+
+a {
+  // color: $titulos-cor;
+  // -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
+  // -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  // &:active {
+  //   color: $touch;
+  //   -webkit-touch-callout: $touch;
+  //   -webkit-user-select: $touch;
+  //   -khtml-user-select: $touch;
+  //   -moz-user-select: $touch;
+  //   -ms-user-select: $touch;
+  //   user-select: $touch;
+  //   background-color: $touch;
+  // }
+}
+
+p {
+  @include texto-fonte;
+}
+
+input[type="submit"] {
+  font-family: 'FontAwesome';
+}
+
+hr {
+  border-color: $cor-complem;
+  border-style: solid $cor-complem;
+  border-width: 5px 0;
+}
+
+.home,
+.sidebar-primary {
+  // background: rgba(5, 52, 82, 1);
+  // background: -moz-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  // background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5, 52, 82, 1)), color-stop(37%, rgba(5, 45, 70, 1)), color-stop(60%, rgba(4, 33, 51, 1)), color-stop(78%, rgba(0, 22, 36, 1)), color-stop(92%, rgba(0, 22, 36, 1)), color-stop(100%, rgba(0, 22, 36, 1)));
+  // background: -webkit-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  // background: -o-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  // background: -ms-linear-gradient(top, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  // background: linear-gradient(to bottom, rgba(5, 52, 82, 1) 0%, rgba(5, 45, 70, 1) 37%, rgba(4, 33, 51, 1) 60%, rgba(0, 22, 36, 1) 78%, rgba(0, 22, 36, 1) 92%, rgba(0, 22, 36, 1) 100%);
+  // filter: progid:dximagetransform.microsoft.gradient(startColorstr='#053452', endColorstr='#001624', GradientType=0);
+}
+
+body {
+  @include texto-fonte;
+
+  background-color: $bg-body;
+  // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
+  .content {
+    // @extend %border-content;
+
+    padding-top: 15px;
+
+    main {
+      overflow: hidden;
+
+      section {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// Serve para todas as páginas: categorias, tags, busca
+.sidebar-primary {
+  .content {
+    background-color: $bg-content;
+    // padding-bottom: 5em;
+
+    main {
+      h1 {
+        @include titulos($titulos-cor, $size: 2.5rem);
+      }
+    }
+  }
+}
+
+// CSS apenas home
+body.home {
+  // background-color: pink;
+
+  main {
+    // background-color: #D3D3D3;
+
+    section {
+      article {
+        margin: 15px 0;
+      }
+    }
+
+    section#curiosidades {
+      h2 {
+        @include titulos($color: $white);
+
+        background-color: $cor-complem;
+        text-indent: 20px;
+        line-height: 2em;
+      }
+
+      article {
+        position: relative;
+        // margin-bottom: 15px;
+
+        h3 {
+          @include titulos-chamadas-bold;
+          @include hover-cor($cor: $cor-complem);
+
+          color: $titulos-cor;
+          margin-top: 10px;
+        }
+
+        h4 {
+          @include titulos($titulos-cor, $size: 0.9rem);
+
+          // @extend %titulo-bg;
+
+          bottom: 0;
+          left: 0;
+          margin: 0;
+          padding: 5px 0 5px 20px;
+          position: absolute;
+          width: 100%;
+          color: $white;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    section#mais {
+      h2 {
+        @include titulos($color: $white);
+
+        background-color: $cor-complem;
+        text-align: center;
+        line-height: 2em;
+      }
+
+      article {
+        h3 {
+          @include titulos($titulos-cor, $size: 1.2rem, $weight: 700);
+          @include hover-cor($cor: $cor-complem);
+
+          margin-top: 10px;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        // width: 100%;
+      }
+
+      .mais-extensao {
+        // margin: 30px 0;
+
+        h2 {
+          @include titulos($color: $titulos-cor);
+
+          background-color: transparent;
+          display: block;
+          text-align: center;
+
+          &::after {
+            background: none;
+          }
+        }
+
+        article {
+          h3 {
+            height: 55px;
+
+            @include hover-cor($cor: $cor-complem);
+          }
+        }
+      }
+    }
+
+    span.text-center {
+      display: block;
+      margin-bottom: 3em;
+      margin-top: 3em;
+
+      a.button {
+        @include titulos-chamadas-bold($size: 2rem);
+      }
+    }
+  }
+}
