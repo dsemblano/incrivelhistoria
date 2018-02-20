@@ -30,12 +30,14 @@ footer.content-info {
       .sub-menu {
         padding-left: 1em;
 
-        a {
-          color: #fff;
+        li {
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
-        &:hover {
-          text-decoration: underline;
+        a {
+          color: #fff;
         }
       }
     }

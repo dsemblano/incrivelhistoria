@@ -15,5 +15,5 @@
   @endwhile
 
   {{-- {!! get_the_posts_navigation() !!} --}}
-  {!! get_the_posts_pagination(array('prev_text' => '« Anterior' , 'next_text' => 'Próximo »' )) !!}
+  {{-- {!! get_the_posts_pagination(array('prev_text' => '« Anterior' , 'next_text' => 'Próximo »' )) !!} --}}
 @endsection
