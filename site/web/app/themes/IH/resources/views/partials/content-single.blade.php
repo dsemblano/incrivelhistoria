@@ -11,7 +11,7 @@
   </div>
   <footer>
     {{-- {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!} --}}
-    <div class="fb-comments" data-href="https://incrivelhistoria.com.br" data-width="auto" data-numposts="10"></div>
+    <div class="fb-comments" data-width="auto" data-numposts="10"></div>
   </footer>
   {{-- @php(comments_template('/partials/comments.blade.php')) --}}
 </article>
