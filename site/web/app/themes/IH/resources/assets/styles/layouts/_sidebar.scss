@@ -1,0 +1,112 @@
+// Sidebar
+
+.sidebar {
+  // background-color: $cor-sidebar;
+
+  #livros-indicados {
+    height: 200px;
+
+    .textwidget {
+      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
+      position: relative;
+      text-align: center;
+      text-shadow: 1px 1px 5px $black;
+      text-transform: uppercase;
+      width: 100%;
+      height: 100%;
+
+      p {
+        @include titulos($color: $white, $size: 2.5rem);
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+
+      span:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  section {
+    // margin-bottom: 15px
+
+    &.widget_tag_cloud {
+      h3 {
+        @include titulos($color: $cor-primary, $size: 1.5rem);
+
+        @extend %sidebar-titulos;
+      }
+
+      .tagcloud {
+        a {
+          color: $sidebar-cor;
+
+          @include hover-cor($cor: $tag-a);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    // &.widget_execphp {
+    //   .fb-page,
+    //   .fb-page span,
+    //   .fb-page span iframe[style] {
+    //     width: 100% !important;
+    //   }
+    // }
+  }
+
+  > section {
+    // background-color: $cor-sidebar;
+    padding: 0 1em 1em;
+  }
+
+  // Mais acessadas
+  #mais-acessadas {
+    h3 {
+      @include titulos($color: $cor-primary, $size: 1.5rem);
+
+      // @extend %sidebar-titulos;
+    }
+
+    .tptn_posts {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          // background-color: green;
+          @include titulos($color: $sidebar-cor, $size: 1rem);
+
+          // border-bottom: 1px solid $border-sidebar;
+          padding: 10px 0;
+
+          .tptn_link {
+            color: $tag-a;
+
+            img {
+              // background-color: blue;
+              height: auto;
+              vertical-align: top;
+              width: 35%;
+            }
+          }
+
+          .tptn_after_thumb {
+            display: inline-block;
+            margin-left: 10px;
+            width: 60%;
+
+            @include hover-cor($cor: $tag-a);
+          }
+        }
+      }
+    }
+  }
+}

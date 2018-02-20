@@ -1,0 +1,90 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+
+  position: relative;
+
+  label {
+    @extend .form-group;
+
+    font-weight: normal;
+    width: 100%;
+
+    .search-field {
+      // @extend .form-control;
+      padding: 5px 0 5px 5px;
+      width: 100%;
+      background-clip: padding-box;
+      background-image: none;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+      color: #464a4c;
+      display: block;
+      font-size: 1rem;
+      line-height: 1.25;
+      // padding: 0.5rem 0.75rem;
+      transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+  }
+
+  .search-submit {
+    // @extend .btn;
+    // @extend .btn-secondary;
+    background-color: transparent;
+    border: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// .search-form .search-field {
+//   @extend .form-control;
+// }
+
+// .search-form .search-submit {
+//   @extend .btn;
+//   @extend .btn-secondary;
+// }
+
+.search-no-results,
+.error404 {
+  main {
+    .search-form {
+      margin-top: 30px;
+      width: 50%;
+    }
+  }
+}
+
+// Página Contato
+.contato {
+  main {
+    .wpcf7 {
+      .wpcf7-form {
+        label {
+          width: 100%;
+
+          input,
+          textarea {
+            width: 100%;
+          }
+        }
+
+        .wpcf7-submit {
+          @include titulos($color: $white, $size: 1.5rem);
+
+          background-color: $cor-complem;
+          border-color: transparent;
+          border-radius: 5px;
+          padding: 10px 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
