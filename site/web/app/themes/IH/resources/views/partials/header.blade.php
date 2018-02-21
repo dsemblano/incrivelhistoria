@@ -72,7 +72,15 @@
   </div>
     <nav id="nav-menu" class="flex-item">
       <label for="toggle-1" class="toggle-menu">
-<i class="fa fa-bars hidden-lg-up" aria-hidden="true"></i>
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <symbol id="icon-menu" viewBox="0 0 27 32">
+              <title>menu</title>
+              <path d="M27.424 24v2.272q0 0.48-0.32 0.8t-0.832 0.352h-25.12q-0.48 0-0.8-0.352t-0.352-0.8v-2.272q0-0.48 0.352-0.8t0.8-0.352h25.12q0.48 0 0.832 0.352t0.32 0.8zM27.424 14.848v2.304q0 0.448-0.32 0.8t-0.832 0.32h-25.12q-0.48 0-0.8-0.32t-0.352-0.8v-2.304q0-0.448 0.352-0.8t0.8-0.32h25.12q0.48 0 0.832 0.32t0.32 0.8zM27.424 5.728v2.272q0 0.448-0.32 0.8t-0.832 0.352h-25.12q-0.48 0-0.8-0.352t-0.352-0.8v-2.272q0-0.48 0.352-0.832t0.8-0.32h25.12q0.48 0 0.832 0.32t0.32 0.832z"></path>
+            </symbol>
+          </defs>
+        </svg>
+        <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg><span class="name">
       </label>
       <input type="checkbox" id="toggle-1">
     @if (has_nav_menu('secondary_navigation'))

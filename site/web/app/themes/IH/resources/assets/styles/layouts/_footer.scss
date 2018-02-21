@@ -61,16 +61,7 @@ footer.content-info {
         }
       }
 
-      svg {
-        display: block;
-        font-size: 3.5rem;
-        color: black;
-        margin-top: 10px;
-
-        &:hover {
-          color: #316182;
-        }
-      }
+      @include svg-fonts($display: block, $height: 2em, $size: 4rem);
     }
   }
 
