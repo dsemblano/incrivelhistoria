@@ -12,9 +12,17 @@
       h4,
       h5,
       h6,
-      article,
+      article {
+        color: $titulos-cor;
+      }
+
       a {
         color: $titulos-cor;
+
+        &:hover {
+          color: $cor-primary;
+          text-decoration: underline;
+        }
       }
 
       // #breadcrumbs {
