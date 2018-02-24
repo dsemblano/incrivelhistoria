@@ -17,7 +17,7 @@
       }
 
       a {
-        color: $cor-link;
+        color: $cor-link !important;
 
         &:hover {
           color: $cor-primary;
