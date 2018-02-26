@@ -19,9 +19,9 @@
 // @mixin titulos-chamadas-black($size: 2rem) {
 //   font: bold $size 'muliblack', sans-serif;
 // }
-@mixin texto-fonte($size: 1.0625rem, $line-height: 1.8) {
+@mixin texto-fonte($size: 1.125rem, $line-height: 1.8) {
   // font: $size 'open_sansregular', sans-serif;
-  font: $size "Open Sans", sans-serif;
+  font: $size "Open Sans", serif;
   line-height: $line-height; // 1.0625rem/1.8 "Open Sans",sans-serif
 }
 
@@ -153,6 +153,19 @@
 }
 
 // Base styles
+
+::selection {
+  text-shadow: none;
+  color: #333;
+  background: #ffffcf;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  color: #333;
+  background: #ffffcf;
+}
+
 a {
   // color: $titulos-cor;
   // -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
