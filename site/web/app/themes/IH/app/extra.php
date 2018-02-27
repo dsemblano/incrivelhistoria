@@ -46,10 +46,17 @@ function special_nav_class( $classes, $item, $args ) {
     return $classes;
 }
 
-// defer font-awesome
-// function font_awesome_defer($tag, $handle){
-//   if ( 'font-awesome' !== $handle )
-//   return $tag;
-//   return str_replace( ' src', ' defer src', $tag );
-// }
-// add_filter('script_loader_tag', 'font_awesome_defer', 10, 2);
+// defer async
+function jquery_async_defer_attribute($tag, $handle){
+  if ( 'jquery' !== $handle )
+  return $tag;
+  return str_replace( ' src', ' async defer src', $tag );
+}
+add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
+
+function top10_async_defer_attribute($tag, $handle){
+  if ( 'tptn_tracker' !== $handle )
+  return $tag;
+  return str_replace( ' src', ' async defer src', $tag );
+}
+add_filter('script_loader_tag', 'top10_async_defer_attribute', 10, 2);
