@@ -50,7 +50,7 @@ function special_nav_class( $classes, $item, $args ) {
 function jquery_async_defer_attribute($tag, $handle){
   if ( 'jquery' !== $handle )
   return $tag;
-  return str_replace( ' src', ' async defer src', $tag );
+  return str_replace( ' src', ' defer src', $tag );
 }
 add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
 
