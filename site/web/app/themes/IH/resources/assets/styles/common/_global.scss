@@ -268,6 +268,7 @@ body {
 
   background-color: $bg-body; // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
   .content {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 1px rgba(0, 0, 0, 0.2);
     // @extend %border-content;
     padding-top: 15px;
 
