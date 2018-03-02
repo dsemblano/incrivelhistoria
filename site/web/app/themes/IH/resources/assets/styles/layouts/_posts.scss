@@ -5,6 +5,11 @@
     background-color: $white;
     padding-bottom: 5em;
 
+    .figure-img,
+    .wp-caption img {
+      margin-bottom: 0;
+    }
+
     main {
       h1,
       h2,
