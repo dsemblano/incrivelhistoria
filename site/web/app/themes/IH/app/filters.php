@@ -83,6 +83,7 @@ add_filter('sage/display_sidebar', function ($display) {
       is_search(),
       is_tag(),
       is_page(),
+      is_archive(),
       is_page_template('template-custom.php')
     ]);
 
