@@ -16,25 +16,7 @@ function heateor_sss_dequeue_scripts_and_styles() {
 function heateor_sss_dequeue_javascript() {
 		add_action( 'wp_enqueue_scripts', 'heateor_sss_dequeue_scripts_and_styles' );
 }
-
 add_action( 'init', 'heateor_sss_dequeue_javascript' );
-
-
-
-// Contact Form 7
-add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
-function deregister_cf7_javascript() {
-    if ( !is_page('contato') ) {
-        wp_deregister_script( 'contact-form-7' );
-    }
-}
-
-add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
-function deregister_cf7_styles() {
-    if ( !is_page('contato') ) {
-        wp_deregister_style( 'contact-form-7' );
-    }
-}
 
 // Classe para menu page
 add_filter( 'nav_menu_css_class', 'special_nav_class', 10, 3 );
@@ -125,7 +107,36 @@ function wpb_author_info_box( $content ) {
     remove_action('wp_head', 'wp_enqueue_scripts', 1);
  
     add_action('wp_footer', 'wp_print_scripts', 5);
+    add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
+    function deregister_cf7_javascript() {
+        if ( !is_page('contato') ) {
+            wp_deregister_script( 'contact-form-7' );
+        }
+    }
+    add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
+    function deregister_cf7_styles() {
+        if ( !is_page('contato') ) {
+            wp_deregister_style( 'contact-form-7' );
+        }
+    }
     add_action('wp_footer', 'wp_enqueue_scripts', 5);
     add_action('wp_footer', 'wp_print_head_scripts', 5); 
- } 
+ }
  add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
+
+
+
+// Contact Form 7
+// add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
+// function deregister_cf7_javascript() {
+//     if ( !is_page('contato') ) {
+//         wp_deregister_script( 'contact-form-7' );
+//     }
+// }
+
+// add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
+// function deregister_cf7_styles() {
+//     if ( !is_page('contato') ) {
+//         wp_deregister_style( 'contact-form-7' );
+//     }
+// }
