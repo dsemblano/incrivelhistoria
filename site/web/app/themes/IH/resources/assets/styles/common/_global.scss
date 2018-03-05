@@ -7,49 +7,46 @@ $L: 1024px;
 
 @mixin MQ($canvas) {
   @if $canvas == S {
-    @media only screen and (min-width: $S) { @content; }
+    @media only screen and (min-width: $S) {
+      @content;
+    }
   }
 
   @else if $canvas == M {
-    @media only screen and (min-width: $M) { @content; }
+    @media only screen and (min-width: $M) {
+      @content;
+    }
   }
 
   @else if $canvas == L {
-    @media only screen and (min-width: $L) { @content; }
+    @media only screen and (min-width: $L) {
+      @content;
+    }
   }
 }
 
 @mixin titulos($color, $size: 2rem, $weight: 400) {
-  color: $color; // font: $size 'muliregular', sans-serif;
+  color: $color;
   font: $weight $size "Muli", sans-serif;
 }
 
 @mixin titulos-chamadas($size: 1rem) {
-  // font: $size 'muliregular', sans-serif;
   font: $size "Muli", sans-serif;
 }
 
 @mixin titulos-chamadas-bold($size: 2rem) {
-  // font: bold $size 'mulibold', sans-serif;
   font: bold $size "Muli", sans-serif;
 }
 
-// font-family: 'Open Sans', sans-serif;
-// font-family: 'Muli', sans-serif;
-// @mixin titulos-chamadas-black($size: 2rem) {
-//   font: bold $size 'muliblack', sans-serif;
-// }
 @mixin texto-fonte($size: 1.125rem, $line-height: 1.8) {
-  // font: $size 'open_sansregular', sans-serif;
   font: $size "Open Sans", sans-serif;
-  line-height: $line-height; // 1.0625rem/1.8 "Open Sans",sans-serif
+  line-height: $line-height;
 }
 
 @mixin hover-cor($cor) {
   transition: $transition;
 
   &:hover {
-    // color: darken($cor, 20%);
     color: darken($cor, 100%);
   }
 }
@@ -84,7 +81,7 @@ $L: 1024px;
 }
 
 %sidebar-titulos {
-  border-top: 5px solid $cor-primary; // color: $cor-primary;
+  border-top: 5px solid $cor-primary;
   padding-top: 10px;
 }
 
@@ -100,9 +97,10 @@ $L: 1024px;
   -moz-box-orient: vertical;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; // -webkit-flex-wrap: nowrap;
-  // -ms-flex-wrap: nowrap;
-  // flex-wrap: nowrap;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -173,59 +171,39 @@ $L: 1024px;
 }
 
 // Font Face
-
 @font-face {
   font-family: 'muli';
-  src: url('../fonts/muli-regular-webfont.eot');
-  src:
-    url('../fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/muli-regular-webfont.woff2') format('woff2'),
-    url('../fonts/muli-regular-webfont.woff') format('woff'),
-    url('../fonts/muli-regular-webfont.ttf') format('truetype'),
-    url('../fonts/muli-regular-webfont.svg#muliregular') format('svg');
+  src: url("../fonts/muli-regular-webfont.eot");
+  src: url("../fonts/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/muli-regular-webfont.woff2") format("woff2"), url("../fonts/muli-regular-webfont.woff") format("woff"), url("../fonts/muli-regular-webfont.ttf") format("truetype"), url("../fonts/muli-regular-webfont.svg#muliregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/opensans-regular-webfont.eot');
-  src:
-    url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-    url('../fonts/opensans-regular-webfont.woff') format('woff'),
-    url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
-    url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/opensans-italic-webfont.eot');
-  src:
-    url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
-    url('../fonts/opensans-italic-webfont.woff') format('woff'),
-    url('../fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+  src: url("../fonts/opensans-italic-webfont.eot");
+  src: url("../fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/opensans-italic-webfont.woff") format("woff"), url("../fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/opensans-bold-webfont.eot');
-  src:
-    url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-    url('../fonts/opensans-bold-webfont.woff') format('woff'),
-    url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 // Base styles
-
 ::selection {
   text-shadow: none;
   color: #333;
@@ -240,21 +218,24 @@ $L: 1024px;
 
 a {
   // color: $titulos-cor;
-  // -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
-  // -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+  -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
+  -moz-tap-highlight-color: rgba(234, 21, 21, 0);
+
   &:hover {
     text-decoration: none;
     color: inherit;
-  } // &:active {
-  //   color: $touch;
-  //   -webkit-touch-callout: $touch;
-  //   -webkit-user-select: $touch;
-  //   -khtml-user-select: $touch;
-  //   -moz-user-select: $touch;
-  //   -ms-user-select: $touch;
-  //   user-select: $touch;
-  //   background-color: $touch;
-  // }
+  }
+
+  &:active {
+    color: $touch;
+    -webkit-touch-callout: $touch;
+    -webkit-user-select: $touch;
+    -khtml-user-select: $touch;
+    -moz-user-select: $touch;
+    -ms-user-select: $touch;
+    user-select: $touch;
+    background-color: $touch;
+  }
 }
 
 p {
@@ -273,10 +254,10 @@ hr {
 
 .cd-container {
   width: 90%;
-  max-width: $M; // breakpoints inside partials > _layout.scss
+  max-width: $M;
   margin: 2em auto;
 
-  &::after { /* clearfix */
+  &::after {
     content: '';
     display: table;
     clear: both;
@@ -341,10 +322,10 @@ hr {
 body {
   @include texto-fonte;
 
-  background-color: $bg-body; // background: rgba(0, 0, 0, 0) url("../images/ricepaper-v3.png") repeat scroll 0 0;
+  background-color: $bg-body;
+
   .content {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 1px rgba(0, 0, 0, 0.2);
-    // @extend %border-content;
     padding-top: 15px;
 
     main {
@@ -359,10 +340,7 @@ body {
 
 // CSS apenas home
 body.home {
-  // background-color: pink;
-
   main {
-    // background-color: #D3D3D3;
     section {
       article {
         margin: 15px 0;
@@ -379,7 +357,8 @@ body.home {
       }
 
       article {
-        position: relative; // margin-bottom: 15px;
+        position: relative;
+
         h3 {
           @include titulos-chamadas-bold;
           @include hover-cor($cor: $cor-complem);
@@ -389,7 +368,7 @@ body.home {
         }
 
         h4 {
-          @include titulos($titulos-cor, $size: 0.9rem); // @extend %titulo-bg;
+          @include titulos($titulos-cor, $size: 0.9rem);
 
           bottom: 0;
           left: 0;
@@ -428,11 +407,10 @@ body.home {
 
       img {
         max-width: 100%;
-        height: auto; // width: 100%;
+        height: auto;
       }
 
       .mais-extensao {
-        // margin: 30px 0;
         h2 {
           @include titulos($color: $titulos-cor);
 
@@ -471,7 +449,8 @@ body.home {
 .sidebar-primary,
 .archive {
   .content {
-    background-color: $bg-content; // padding-bottom: 5em;
+    background-color: $bg-content;
+
     main {
       h1 {
         @include titulos($titulos-cor, $size: 2.5rem);

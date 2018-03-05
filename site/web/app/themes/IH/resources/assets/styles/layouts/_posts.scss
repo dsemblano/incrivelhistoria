@@ -1,5 +1,4 @@
 // Posts
-
 .single-post {
   .content {
     background-color: $white;
@@ -30,17 +29,6 @@
         }
       }
 
-      // #breadcrumbs {
-      //   @include titulos($color: $titulos-cor, $size: 0.85rem);
-
-      //   a {
-      //     &:hover {
-      //       color: $cor-primary;
-      //       text-decoration: underline;
-      //     }
-      //   }
-      // }
-
       h1 {
         @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
       }
@@ -57,7 +45,6 @@
         }
 
         p {
-          // text-align: justify;
           color: $cor-texto;
         }
 
@@ -76,7 +63,6 @@
         }
 
         strong {
-          // color: $black;
           color: $cor-texto;
           line-height: 1.8;
 
@@ -86,15 +72,6 @@
         }
 
         blockquote {
-          // &::before {
-          //   color: $quote;
-          //   content: '“';
-          //   display: block;
-          //   font: italic 400% / 1 Georgia, 'Times New Roman', serif;
-          //   height: 0;
-          //   // margin-left: 0.2em;
-          //   margin-left: 0;
-          // }
           border-left: 5px solid $cor-complem;
           margin-left: 0.5em;
 
@@ -103,7 +80,6 @@
             font-size: 1.1rem;
             font-style: italic;
             margin-left: 1em;
-            // text-align: justify;
           }
         }
 

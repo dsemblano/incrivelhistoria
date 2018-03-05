@@ -1,13 +1,11 @@
 // Sidebar
 
 .sidebar {
-  // background-color: $cor-sidebar;
-
   #livros-indicados {
     height: 200px;
 
     .textwidget {
-      background: url('../images/livrosindicados.jpg') no-repeat scroll center center / cover;
+      background: url("../images/livrosindicados.jpg") no-repeat scroll center (center / cover);
       position: relative;
       text-align: center;
       text-shadow: 1px 1px 5px $black;
@@ -31,8 +29,6 @@
   }
 
   section {
-    // margin-bottom: 15px
-
     &.widget_tag_cloud {
       h3 {
         @include titulos($color: $cor-primary, $size: 1.5rem);
@@ -52,18 +48,9 @@
         }
       }
     }
-
-    // &.widget_execphp {
-    //   .fb-page,
-    //   .fb-page span,
-    //   .fb-page span iframe[style] {
-    //     width: 100% !important;
-    //   }
-    // }
   }
 
   > section {
-    // background-color: $cor-sidebar;
     padding: 0 1em 1em;
   }
 
@@ -71,8 +58,6 @@
   #mais-acessadas {
     h3 {
       @include titulos($color: $cor-primary, $size: 1.5rem);
-
-      // @extend %sidebar-titulos;
     }
 
     .tptn_posts {
@@ -81,17 +66,14 @@
         padding: 0;
 
         li {
-          // background-color: green;
           @include titulos($color: $sidebar-cor, $size: 1rem);
 
-          // border-bottom: 1px solid $border-sidebar;
           padding: 10px 0;
 
           .tptn_link {
             color: $tag-a;
 
             img {
-              // background-color: blue;
               height: auto;
               vertical-align: top;
               width: 35%;
