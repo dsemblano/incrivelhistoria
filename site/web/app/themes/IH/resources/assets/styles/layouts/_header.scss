@@ -7,3 +7,19 @@
 
   color: #000;
 }
+
+header.banner {
+  color: $logo;
+  background: url("../images/bg.jpg") no-repeat scroll 0 (0 / cover);
+  height: 270px;
+
+  #nav-page {
+    font-weight: bold;
+    background-color: $bg-content;
+    color: $black;
+  }
+
+  .nav-primary {
+    @include titulos-chamadas($size: 1rem);
+  }
+}
