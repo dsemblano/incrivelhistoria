@@ -6,9 +6,6 @@
     ],
     "customizer": [
       "./scripts/customizer.js"
-    ],
-    "loadCSS": [
-      "./scripts/loadCSS.js"
     ]
   },
   "publicPath": "/app/themes/IH",
