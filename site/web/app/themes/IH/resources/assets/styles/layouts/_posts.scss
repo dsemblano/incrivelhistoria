@@ -46,6 +46,18 @@
 
         p {
           color: $cor-texto;
+
+          &::selection {
+            text-shadow: none;
+            color: #333;
+            background: #ffffcf;
+          }
+
+          &::-moz-selection {
+            text-shadow: none;
+            color: #333;
+            background: #ffffcf;
+          }
         }
 
         img :not(.author_bio_section) {
