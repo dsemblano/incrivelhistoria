@@ -199,6 +199,12 @@
     justify-content: center !important;
   }
 
+  .main-carousel {
+    .flickity-prev-next-button {
+      width: 15px;
+    }
+  }
+
   .container-brand {
     width: 100%;
   }
