@@ -51,6 +51,7 @@
     "wpackagist-plugin/sassy-social-share": ">=3.1",
     "wpackagist-plugin/top-10": ">=2.4.4",
     "wpackagist-plugin/widget-css-classes": ">=1.5.0",
+    "wpackagist-plugin/plugin-load-filter": ">=2.5.1",
     "roots/soil": ">=3.7.1"
   },
   "require-dev": {

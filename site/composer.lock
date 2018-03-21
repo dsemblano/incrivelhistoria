@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec45eb8dcf6b381474ef3ba87457f8df",
+    "content-hash": "c9306182552b4c7281f2c79d759bc83d",
     "packages": [
         {
             "name": "composer/installers",
@@ -450,15 +450,15 @@
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "5.0",
+            "version": "5.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/5.0"
+                "reference": "tags/5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.5.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -530,15 +530,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.1.0"
+                "reference": "tags/4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -567,6 +567,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/php-code-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/plugin-load-filter",
+            "version": "2.5.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/plugin-load-filter/",
+                "reference": "tags/2.5.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/plugin-load-filter.2.5.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/plugin-load-filter/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
@@ -670,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "6.3.1",
+            "version": "7.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/6.3.1"
+                "reference": "tags/7.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.6.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.1.zip",
                 "reference": null,
                 "shasum": null
             },

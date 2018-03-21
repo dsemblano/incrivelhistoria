@@ -112,16 +112,16 @@ function wpb_author_info_box( $content ) {
  add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
 
 //Contact Form 7
-add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
-function deregister_cf7_javascript() {
-    if ( !is_page('contato') ) {
-        wp_deregister_script( 'contact-form-7' );
-    }
-}
+// add_action( 'wp_print_scripts', 'deregister_cf7_javascript', 100 );
+// function deregister_cf7_javascript() {
+//     if ( !is_page('contato') ) {
+//         wp_deregister_script( 'contact-form-7' );
+//     }
+// }
 
-add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
-function deregister_cf7_styles() {
-    if ( !is_page('contato') ) {
-        wp_deregister_style( 'contact-form-7' );
-    }
-}
+// add_action( 'wp_print_styles', 'deregister_cf7_styles', 100 );
+// function deregister_cf7_styles() {
+//     if ( !is_page('contato') ) {
+//         wp_deregister_style( 'contact-form-7' );
+//     }
+// }
