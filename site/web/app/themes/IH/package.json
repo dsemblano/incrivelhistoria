@@ -104,7 +104,6 @@
   },
   "dependencies": {
     "bootstrap": "v4.0.0",
-    "fg-loadcss": "^2.0.1",
     "flickity": "^2.0.10",
     "font-awesome": "~4.7",
     "jquery": "^3.3.1",

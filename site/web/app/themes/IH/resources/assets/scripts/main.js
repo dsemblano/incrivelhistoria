@@ -6,7 +6,6 @@ import "./autoload/**/*"
 
 // import local dependencies
 import 'flickity/dist/flickity.pkgd.min.js';
-import 'fg-loadcss/dist/loadCSS.min.js';
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
