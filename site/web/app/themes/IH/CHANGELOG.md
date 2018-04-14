@@ -1,4 +1,9 @@
-### 9.0.0: February 7th, 2017
+### HEAD
+* Update to Boostrap 4.1.0 ([#2056](https://github.com/roots/sage/pull/2056))
+* Change inline `@php` directive to full form ([#2042](https://github.com/roots/sage/pull/2042))
+* PHP 7.1.3+ is now required ([#2037](https://github.com/roots/sage/pull/2037))
+
+### 9.0.0: February 7th, 2018
 * Update to Bootstrap 4 ([#2015](https://github.com/roots/sage/pull/2015))
 * Allow `no-console` development ([#2008](https://github.com/roots/sage/pull/2008))
 * Move variables and Bootstrap lines to autoload ([#1993](https://github.com/roots/sage/pull/1993))

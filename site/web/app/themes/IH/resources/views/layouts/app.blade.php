@@ -1,9 +1,9 @@
 <!doctype html>
-<html @php(language_attributes())>
+<html @php language_attributes() @endphp>
   @include('partials.head')
-  <body @php(body_class())>
+   <body @php body_class() @endphp>
     @include('partials.facebook')
-    @php(do_action('get_header'))
+    @php do_action('get_header') @endphp
     @include('partials.header')
     <div class="wrap container" role="document">
       <div class="content row">
@@ -18,9 +18,9 @@
         @endif
       </div>
     </div>
-    @php(do_action('get_footer'))
+    @php do_action('get_footer') @endphp
     @include('partials.footer')
-    @php(wp_footer())
+    @php wp_footer() @endphp
     @include('partials.analytics')
     <script>
       jQuery(document).ready(function($){
@@ -36,7 +36,7 @@
         //hide or show the "back to top" link
         $(window).scroll(function(){
           ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-          if( $(this).scrollTop() > offset_opacity ) { 
+          if( $(this).scrollTop() > offset_opacity ) {
             $back_to_top.addClass('cd-fade-out');
           }
         });

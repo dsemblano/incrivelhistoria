@@ -23,7 +23,7 @@ See a working example at [roots-example-project.com](https://roots-example-proje
 Make sure all dependencies have been installed before moving on:
 
 * [WordPress](https://wordpress.org/) >= 4.7
-* [PHP](https://secure.php.net/manual/en/install.php) >= 7.0 (with [`php-mbstring`](https://secure.php.net/manual/en/book.mbstring.php) enabled)
+* [PHP](https://secure.php.net/manual/en/install.php) >= 7.1.3 (with [`php-mbstring`](https://secure.php.net/manual/en/book.mbstring.php) enabled)
 * [Composer](https://getcomposer.org/download/)
 * [Node.js](http://nodejs.org/) >= 6.9.x
 * [Yarn](https://yarnpkg.com/en/docs/install)
@@ -34,6 +34,12 @@ Install Sage using Composer from your WordPress themes directory (replace `your-
 
 ```shell
 # @ app/themes/ or wp-content/themes/
+$ composer create-project roots/sage your-theme-name
+```
+
+To install the latest development version of Sage, add `dev-master` to the end of the command:
+
+```shell
 $ composer create-project roots/sage your-theme-name dev-master
 ```
 
@@ -85,9 +91,9 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
 
 ### Build commands
 
-* `yarn run start` — Compile assets when file changes are made, start Browsersync session
-* `yarn run build` — Compile and optimize the files in your assets directory
-* `yarn run build:production` — Compile assets for production
+* `yarn start` — Compile assets when file changes are made, start Browsersync session
+* `yarn build` — Compile and optimize the files in your assets directory
+* `yarn build:production` — Compile assets for production
 
 ## Documentation
 
@@ -97,6 +103,12 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
 ## Contributing
 
 Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
+
+## Gold sponsors
+
+Help support our open-source development efforts by [contributing to Sage on OpenCollective](https://opencollective.com/sage).
+
+<a href="https://kinsta.com/?kaid=OFDHAJIXUDIV"><img src="https://roots.io/app/uploads/kinsta.svg" alt="Kinsta" width="200" height="150"></a> <a href="https://k-m.com/"><img src="https://roots.io/app/uploads/km-digital.svg" alt="KM Digital" width="200" height="150"></a>
 
 ## Community
 
