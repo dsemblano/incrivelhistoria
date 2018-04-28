@@ -5,6 +5,10 @@
     .content {
       // background-color: pink;
     }
+
+    .flickity-prev-next-button {
+      width: 35px;
+    }
   }
 
   .wrap.container {
@@ -199,11 +203,9 @@
     justify-content: center !important;
   }
 
-  // .main-carousel {
-  //   .flickity-prev-next-button {
-  //     width: 15px;
-  //   }
-  // }
+  .flickity-prev-next-button {
+    width: 35px;
+  }
 
   .container-brand {
     width: 100%;
