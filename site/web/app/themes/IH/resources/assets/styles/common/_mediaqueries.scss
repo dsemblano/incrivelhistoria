@@ -217,6 +217,18 @@
     width: 100%;
   }
 
+  .single-post .content main h1 {
+    font-size: 1.5rem;
+  }
+
+  .attachment-mais_extendida.size-mais_extendida.wp-post-image {
+    width: 100% !important;
+  }
+
+  .wp-caption {
+    width: inherit !important;
+  }
+
   body.home {
     .content {
       // background-color: pink;
