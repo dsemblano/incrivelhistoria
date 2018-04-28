@@ -1147,7 +1147,6 @@
             ],
             "description": "Sage starter theme installer",
             "keywords": [
-                "FontAwesome",
                 "bootstrap",
                 "foundation",
                 "sage",

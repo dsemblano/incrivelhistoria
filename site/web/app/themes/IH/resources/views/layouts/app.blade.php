@@ -21,7 +21,6 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
-    @include('partials.analytics')
     <script>
       jQuery(document).ready(function($){
         // browser window scroll (in pixels) after which the "back to top" link is shown

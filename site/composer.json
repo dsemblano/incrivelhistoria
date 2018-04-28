@@ -52,7 +52,7 @@
     "wpackagist-plugin/top-10": ">=2.4.4",
     "wpackagist-plugin/widget-css-classes": ">=1.5.0",
     "wpackagist-plugin/plugin-load-filter": ">=2.5.1",
-    "wpackagist-plugin/instagram-feed": ">=1.8.1",
+    "wpackagist-plugin/wp-instagram-widget": ">=2.0.3",
     "roots/soil": ">=3.7.1"
   },
   "require-dev": {
