@@ -333,6 +333,28 @@
       // background-color: yellowgreen;
     }
 
+    .sidebar {
+      #instagram {
+        ul {
+          li {
+            width: 100%;
+            max-width: 100%;
+
+            img {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+
+        p.clear {
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+
     header.banner {
       height: 160px;
 
