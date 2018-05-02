@@ -610,7 +610,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.1.10",
+            "version": "3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -618,7 +618,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1517297131",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1525134994",
                 "reference": null,
                 "shasum": null
             },
@@ -690,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "7.3",
+            "version": "7.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/7.3"
+                "reference": "tags/7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.4.zip",
                 "reference": null,
                 "shasum": null
             },
