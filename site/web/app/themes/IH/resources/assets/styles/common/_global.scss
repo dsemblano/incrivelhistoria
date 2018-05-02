@@ -121,8 +121,6 @@ $L: 1024px;
 // Base styles
 a {
   // color: $titulos-cor;
-  -webkit-tap-highlight-color: rgba(234, 21, 21, 0);
-  -moz-tap-highlight-color: rgba(234, 21, 21, 0);
 
   &:hover {
     text-decoration: none;
@@ -131,11 +129,6 @@ a {
 
   &:active {
     color: $touch;
-    -webkit-touch-callout: $touch;
-    -webkit-user-select: $touch;
-    -khtml-user-select: $touch;
-    -moz-user-select: $touch;
-    -ms-user-select: $touch;
     user-select: $touch;
     background-color: $touch;
   }
@@ -179,15 +172,11 @@ hr {
   background: rgba($link, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
 
   &.cd-is-visible,
   &.cd-fade-out,
   .no-touch &:hover {
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
     transition: opacity 0.3s 0s, visibility 0s 0s;
   }
 
