@@ -5,7 +5,7 @@
 
   @if (!have_posts())
     <div class="alert alert-warning">
-      {{  __('Nenhum resultado encontrado, por favor faça uma nova busca.', 'sage') }}
+      {{ __('Nenhum resultado encontrado, por favor faça uma nova busca..', 'sage') }}
     </div>
     {!! get_search_form(false) !!}
   @endif
