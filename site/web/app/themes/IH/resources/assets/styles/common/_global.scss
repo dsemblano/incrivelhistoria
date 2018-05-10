@@ -257,7 +257,7 @@ body.home {
         }
 
         h4 {
-          @include titulos($titulos-cor, $size: 0.9rem);
+          @include titulos($titulos-cor, $size: 1.1rem);
 
           bottom: 0;
           left: 0;
