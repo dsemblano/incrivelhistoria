@@ -71,10 +71,15 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
-.sidebar-primary:not(.home, .single-post) {
+.archive,
+.search {
   article {
     border-bottom: 1px solid $border-content;
     margin-bottom: 15px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 }
 

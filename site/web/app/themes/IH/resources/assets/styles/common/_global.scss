@@ -246,6 +246,7 @@ body.home {
 
       article {
         position: relative;
+        border-bottom: none;
 
         h3 {
           @include titulos-chamadas-bold;
@@ -299,6 +300,18 @@ body.home {
       }
 
       .mais-extensao {
+        .categorias {
+          article {
+            @include hover-cor($cor: $cor-complem);
+
+            height: 235px;
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+          }
+        }
+
         h2 {
           @include titulos($color: $titulos-cor);
 
@@ -308,14 +321,6 @@ body.home {
 
           &::after {
             background: none;
-          }
-        }
-
-        article {
-          h3 {
-            height: 55px;
-
-            @include hover-cor($cor: $cor-complem);
           }
         }
       }
