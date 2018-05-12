@@ -16,19 +16,6 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 .sidebar-primary,
 .archive {
   article {
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    a {
-      color: $titulos-cor;
-    }
-
-    a {
-      @include hover-cor($cor: $cor-complem);
-    }
-
     header {
       h2 {
         @include titulos($titulos-cor, $size: 1.5rem);
@@ -38,6 +25,14 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
         @include titulos($black, $size: 0.95rem);
 
         margin-bottom: 5px;
+      }
+    }
+
+    a {
+      color: $titulos-cor;
+
+      &:hover {
+        @extend %text-underline;
       }
     }
   }

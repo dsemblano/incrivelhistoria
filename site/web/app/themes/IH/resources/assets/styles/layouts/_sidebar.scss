@@ -40,10 +40,10 @@
         a {
           color: $sidebar-cor;
 
-          @include hover-cor($cor: $tag-a);
+          @extend %text-underline;
 
           &:hover {
-            text-decoration: underline;
+            @extend %text-underline;
           }
         }
       }
@@ -170,7 +170,15 @@
             margin-left: 10px;
             width: 60%;
 
-            @include hover-cor($cor: $tag-a);
+            .tptn_date {
+              color: $sidebar-cor;
+            }
+
+            a {
+              &:hover {
+                @extend %text-underline;
+              }
+            }
           }
         }
       }

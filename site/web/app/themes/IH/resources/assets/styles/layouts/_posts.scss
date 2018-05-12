@@ -20,15 +20,6 @@
         color: $titulos-cor;
       }
 
-      a {
-        color: $cor-link !important;
-
-        &:hover {
-          color: $cor-primary;
-          text-decoration: underline;
-        }
-      }
-
       h1 {
         @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
       }
@@ -167,16 +158,19 @@
             @include titulos-chamadas;
 
             a {
-              @include hover-cor($cor: $cor-complem);
+              @extend %text-underline;
 
               .crp_thumb {
                 width: 100%;
                 height: auto;
               }
 
-              &:hover {
-                color: $cor-primary;
-                text-decoration: underline;
+              span {
+                color: black;
+              }
+
+              &:hover span {
+                @extend %text-underline;
               }
             }
 

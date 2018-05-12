@@ -5,6 +5,28 @@
   color: $black;
 }
 
+.footer-right {
+  p {
+    @include titulos-chamadas-bold($size: 1.5rem);
+
+    color: $white;
+  }
+
+  .facebook-footer {
+    margin: 1em 0;
+
+    span {
+      @include titulos($titulos-cor, $size: 1.5rem, $weight: 700);
+
+      a {
+        color: white;
+      }
+    }
+
+    @include svg-fonts($display: block, $height: 2em, $size: 4rem);
+  }
+}
+
 footer.content-info {
   background-color: $cor-primary;
   padding-top: 1.5em;
@@ -27,38 +49,15 @@ footer.content-info {
       .sub-menu {
         padding-left: 1em;
 
-        li {
+        a {
+          color: #fff;
+
           &:hover {
-            text-decoration: underline;
+            // @extend %text-underline;
+            color: black;
           }
         }
-
-        a {
-          color: #fff;
-        }
       }
-    }
-  }
-
-  .footer-right {
-    p {
-      @include titulos-chamadas-bold($size: 1.5rem);
-
-      color: $white;
-    }
-
-    .facebook-footer {
-      margin: 1em 0;
-
-      span {
-        @include titulos($titulos-cor, $size: 1.5rem, $weight: 700);
-
-        a {
-          color: #fff;
-        }
-      }
-
-      @include svg-fonts($display: block, $height: 2em, $size: 4rem);
     }
   }
 
