@@ -22,7 +22,7 @@ add_action( 'init', 'heateor_sss_dequeue_javascript' );
 add_filter( 'nav_menu_css_class', 'special_nav_class', 10, 3 );
 function special_nav_class( $classes, $item, $args ) {
     if ( ('primary_navigation' === $args->theme_location) && ('menu-page' === $args->menu_id) ) {
-        $classes[] = 'col-3';
+        $classes[] = 'col-6';
     }
 
     return $classes;
