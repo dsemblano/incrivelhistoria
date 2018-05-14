@@ -205,10 +205,22 @@
     justify-content: center !important;
   }
 
+  .flickity-button {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .flickity-button-icon {
+    fill: #fff;
+  }
+
   .flickity-prev-next-button {
     // width: 35px;
-    width: 5%;
-    height: 15%;
+    width: 30px;
+    height: 30px;
   }
 
   .main-carousel .flickity-prev-next-button {
