@@ -10,103 +10,103 @@
     }
 
     main {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
       article {
         color: $titulos-cor;
-      }
 
-      h1 {
-        @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
-      }
-
-      .entry-content {
-        .heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
-          margin: 15px 0;
+        h1 {
+          @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
         }
 
-        h2,
-        h3,
-        h4 {
-          font-size: medium;
-        }
-
-        p {
-          color: $cor-texto;
-
-          &::selection {
-            text-shadow: none;
-            color: #333;
-            background: #ffffcf;
-          }
-
-          &::-moz-selection {
-            text-shadow: none;
-            color: #333;
-            background: #ffffcf;
-          }
-
-          a {
-            @extend %text-underline-post;
-          }
-        }
-
-        img :not(.author_bio_section) {
-          margin-bottom: 0;
-          height: auto;
-          width: 100%;
-        }
-
-        figcaption {
-          background-color: $figcaption;
-          color: $white;
-          font-size: small;
-          text-align: center;
-          padding: 5px;
-        }
-
-        // strong {
-        //   color: $cor-texto;
-        //   line-height: 1.8;
-
-        //   span {
-        //     color: $black !important;
+        // header {
+        //   #breadcrumbs {
+        //     a {
+        //       @include text-underline-hover($hover: true);
+        //     }
         //   }
         // }
 
-        blockquote {
-          border-left: 5px solid $link;
-          margin-left: 0.5em;
+        .entry-content {
+          .heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
+            margin: 15px 0;
+          }
+
+          h2,
+          h3,
+          h4 {
+            font-size: medium;
+          }
 
           p {
-            color: $cor-blockquote;
-            font-size: 1.1rem;
-            font-style: italic;
-            margin-left: 1em;
+            color: $cor-texto;
+
+            &::selection {
+              text-shadow: none;
+              color: #333;
+              background: #ffffcf;
+            }
+
+            &::-moz-selection {
+              text-shadow: none;
+              color: #333;
+              background: #ffffcf;
+            }
+
+            a {
+              @extend %text-underline-post;
+            }
+          }
+
+          img :not(.author_bio_section) {
+            margin-bottom: 0;
+            height: auto;
+            width: 100%;
+          }
+
+          figcaption {
+            background-color: $figcaption;
+            color: $white;
+            font-size: small;
+            text-align: center;
+            padding: 5px;
+          }
+
+          blockquote {
+            border-left: 5px solid $link;
+            margin-left: 0.5em;
+
+            p {
+              color: $cor-blockquote;
+              font-size: 1.1rem;
+              font-style: italic;
+              margin-left: 1em;
+            }
+          }
+
+          h5,
+          h6 {
+            font-size: 0.8rem;
+
+            a {
+              @include text-underline-hover($hover: true);
+
+              color: $black;
+
+              span {
+                color: inherit !important;
+              }
+            }
+          }
+
+          h5:nth-of-type(1) {
+            border-top: 1px solid #dadada;
+            margin-top: 15px;
+            padding-top: 15px;
           }
         }
-
-        h5,
-        h6 {
-          font-size: 0.8rem;
-        }
-
-        h5:nth-of-type(1) {
-          border-top: 1px solid #dadada;
-          margin-top: 15px;
-          padding-top: 15px;
-        }
       }
 
-      footer {
+      footer.author_bio_section {
         margin-top: 35px;
-      }
-
-      .author_bio_section {
         background: none repeat scroll 0 0 #f9f9f9;
         padding: 15px;
         border: 1px solid #ccc;
@@ -146,12 +146,14 @@
       .crp_related {
         margin: 20px 0;
 
-        .crp_title {
-          display: inline-block;
-        }
-
         h3 {
           @include titulos-chamadas-bold($size: 1.5rem);
+        }
+
+        .crp_title {
+          display: inline-block;
+          color: $titulos-cor;
+          margin-top: 5px;
         }
 
         ul {
@@ -168,7 +170,7 @@
               }
 
               span {
-                @include text-underline-hover;
+                @include text-underline-hover($color: $link);
               }
             }
 
