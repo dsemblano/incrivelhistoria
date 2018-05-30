@@ -147,12 +147,13 @@
         padding: 0;
 
         li {
-          @include titulos($color: $sidebar-cor, $size: 1rem);
+          @include titulos($color: $titulos-cor, $size: 1rem);
 
           padding: 10px 0;
 
           .tptn_link {
-            color: $tag-a;
+            color: $titulos-cor;
+            margin-bottom: 5px;
 
             img {
               height: auto;

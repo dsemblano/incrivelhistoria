@@ -17,13 +17,13 @@
           @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
         }
 
-        // header {
-        //   #breadcrumbs {
-        //     a {
-        //       @include text-underline-hover($hover: true);
-        //     }
-        //   }
-        // }
+        header {
+          #breadcrumbs {
+            a {
+              @include text-underline-hover($hover: true, $color: $link);
+            }
+          }
+        }
 
         .entry-content {
           .heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
