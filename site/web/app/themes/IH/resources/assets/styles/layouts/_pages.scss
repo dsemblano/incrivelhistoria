@@ -29,11 +29,9 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
     }
 
     a {
-      color: $titulos-cor;
+      @include text-underline-hover($color: $link);
 
-      &:hover {
-        @extend %text-underline;
-      }
+      color: $titulos-cor;
     }
   }
 

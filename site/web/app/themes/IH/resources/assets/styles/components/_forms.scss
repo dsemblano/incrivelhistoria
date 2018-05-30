@@ -78,7 +78,7 @@
         .wpcf7-submit {
           @include titulos($color: $white, $size: 1.5rem);
 
-          background-color: $cor-complem;
+          background-color: $link;
           border-color: transparent;
           border-radius: 5px;
           padding: 10px 0;

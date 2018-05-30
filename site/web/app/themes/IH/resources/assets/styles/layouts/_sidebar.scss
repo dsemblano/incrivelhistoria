@@ -38,13 +38,9 @@
 
       .tagcloud {
         a {
-          color: $sidebar-cor;
+          @include text-underline-hover($hover:true, $color: $link);
 
-          @extend %text-underline;
-
-          &:hover {
-            @extend %text-underline;
-          }
+          color: $titulos-cor;
         }
       }
     }
@@ -166,18 +162,13 @@
           }
 
           .tptn_after_thumb {
-            display: inline-block;
+            display: inline-grid;
+            display: -ms-inline-grid;
             margin-left: 10px;
             width: 60%;
 
-            .tptn_date {
-              color: $sidebar-cor;
-            }
-
             a {
-              &:hover {
-                @extend %text-underline;
-              }
+              @include text-underline-hover($color: $link);
             }
           }
         }

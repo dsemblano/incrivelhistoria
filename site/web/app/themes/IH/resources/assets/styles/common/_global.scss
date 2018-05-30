@@ -60,11 +60,38 @@ $L: 1024px;
   }
 }
 
+@mixin text-underline-hover($hover:null,$color:darken($link, 15%)) {
+  &:hover {
+    @if ($hover) {
+      border-bottom: 1px dotted #ccc;
+      text-decoration: none;
+      // text-decoration: underline dotted;
+    }
+
+    @else {
+      text-decoration: none;
+    }
+
+    color: $color;
+    transition: all 0.2s ease;
+  }
+}
+
 %text-underline {
-  // box-shadow: inset 0 0 0 white, inset 0 -1px 0 black;
-  // border-bottom: 1px solid black;
   text-decoration: none;
   color: $link;
+}
+
+%text-underline-post {
+  color: $link !important;
+  text-decoration: none !important;
+
+  &:hover {
+    color: darken($link, 15%) !important;
+    transition: all 0.2s ease !important;
+    // border-bottom: 1px dotted #ccc !important;
+    text-decoration: underline dotted !important;
+  }
 }
 
 %sidebar-titulos {
@@ -109,12 +136,6 @@ $L: 1024px;
 
 // Base styles
 a {
-  // color: $titulos-cor;
-
-  &:hover {
-    @extend %text-underline;
-  }
-
   &:active {
     color: $touch;
     user-select: $touch;
@@ -127,8 +148,8 @@ p {
 }
 
 hr {
-  border-color: $cor-complem;
-  border-style: solid $cor-complem;
+  border-color: $link;
+  border-style: solid $link;
   border-width: 5px 0;
 }
 
@@ -227,7 +248,7 @@ body.home {
       h2 {
         @include titulos($color: $white);
 
-        background-color: $cor-complem;
+        background-color: $link;
         text-indent: 20px;
         line-height: 2em;
       }
@@ -237,8 +258,10 @@ body.home {
         border-bottom: none;
 
         a {
-          &:hover * {
-            @extend %text-underline;
+          p {
+            color: $titulos-cor;
+
+            @include text-underline-hover($color: $link);
           }
 
           h3 {
@@ -246,6 +269,8 @@ body.home {
 
             color: $titulos-cor;
             margin-top: 10px;
+
+            @include text-underline-hover($color: $link);
           }
 
           h4 {
@@ -262,6 +287,7 @@ body.home {
 
             &:hover {
               color: white !important;
+              text-decoration: underline dotted;
             }
           }
         }
@@ -278,19 +304,16 @@ body.home {
       h2 {
         @include titulos($color: $white);
 
-        background-color: $cor-complem;
+        background-color: $link;
         text-align: center;
         line-height: 2em;
       }
 
       article {
         a {
-          &:hover * {
-            @extend %text-underline;
-          }
-
           h3 {
             @include titulos($titulos-cor, $size: 1.2rem, $weight: 700);
+            @include text-underline-hover($color: $link);
 
             margin-top: 10px;
           }
@@ -311,9 +334,7 @@ body.home {
               border-bottom: none;
             }
 
-            &:hover {
-              @extend %text-underline;
-            }
+            @extend %text-underline;
           }
         }
 
