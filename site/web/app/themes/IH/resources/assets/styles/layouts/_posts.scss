@@ -88,7 +88,7 @@
             line-height: 25px;
 
             a {
-              @include text-underline-hover($hover: true, $color: $link);
+              @extend %text-underline-post;
 
               color: $black;
 
