@@ -125,3 +125,19 @@ function wpb_author_info_box( $content ) {
 //         wp_deregister_style( 'contact-form-7' );
 //     }
 // }
+
+function my_login_logo_one() {
+$imgpath = \App\asset_path('images/IHlogo.png');
+$img_custom = <<<HTML
+  <style type="text/css"> 
+    body.login div#login h1 a {
+    background-image:url($imgpath);
+    width: 100%;
+    padding: 0;
+    background-size: cover;
+    height: 150px;
+    } 
+  </style>
+HTML;
+echo $img_custom;
+} add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
