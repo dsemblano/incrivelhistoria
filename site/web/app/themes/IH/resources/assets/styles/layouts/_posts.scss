@@ -37,19 +37,9 @@
           }
 
           p {
+            @extend %text-selection;
+
             color: $cor-texto;
-
-            &::selection {
-              text-shadow: none;
-              color: #333;
-              background: #ffffcf;
-            }
-
-            &::-moz-selection {
-              text-shadow: none;
-              color: #333;
-              background: #ffffcf;
-            }
 
             a {
               @extend %text-underline-post;

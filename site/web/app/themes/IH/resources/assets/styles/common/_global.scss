@@ -82,6 +82,18 @@ $L: 1024px;
   color: $link;
 }
 
+%text-selection {
+  &::selection {
+    text-shadow: none;
+    background: #ffffcf;
+  }
+
+  &::-moz-selection {
+    text-shadow: none;
+    background: #ffffcf;
+  }
+}
+
 %text-underline-post {
   color: $link !important;
   text-decoration: none !important;
