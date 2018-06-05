@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a70bfd190e5ed214fe0808004d7953bc",
+    "content-hash": "5bb2b904aa4f7371a8e642c3cde25e41",
     "packages": [
         {
             "name": "composer/installers",
@@ -627,6 +627,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sassy-social-share/"
+        },
+        {
+            "name": "wpackagist-plugin/seo-redirection",
+            "version": "4.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/seo-redirection/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/seo-redirection.zip?timestamp=1528019735",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/seo-redirection/"
         },
         {
             "name": "wpackagist-plugin/taghound-media-tagger",
