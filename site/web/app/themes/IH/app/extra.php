@@ -141,3 +141,8 @@ $img_custom = <<<HTML
 HTML;
 echo $img_custom;
 } add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+function the_url( $url ) {
+  return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
