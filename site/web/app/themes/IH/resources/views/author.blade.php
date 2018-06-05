@@ -1,7 +1,3 @@
-{{--
-  Template Name: Author page Template
---}}
-
 @extends('layouts.app')
 
 @section('content')
