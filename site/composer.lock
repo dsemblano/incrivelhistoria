@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bb2b904aa4f7371a8e642c3cde25e41",
+    "content-hash": "130d9c80132037247370f31710b6d5b0",
     "packages": [
         {
             "name": "composer/installers",
@@ -570,7 +570,7 @@
         },
         {
             "name": "wpackagist-plugin/plugin-load-filter",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/plugin-load-filter/",
@@ -578,7 +578,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/plugin-load-filter.zip?timestamp=1527050412",
+                "url": "https://downloads.wordpress.org/plugin/plugin-load-filter.zip?timestamp=1528265606",
                 "reference": null,
                 "shasum": null
             },
@@ -587,6 +587,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/plugin-load-filter/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "3.2.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/3.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.2.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
@@ -627,26 +647,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sassy-social-share/"
-        },
-        {
-            "name": "wpackagist-plugin/seo-redirection",
-            "version": "4.13",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/seo-redirection/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/seo-redirection.zip?timestamp=1528019735",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/seo-redirection/"
         },
         {
             "name": "wpackagist-plugin/taghound-media-tagger",
@@ -710,15 +710,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "7.6",
+            "version": "7.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/7.6"
+                "reference": "tags/7.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -752,16 +752,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.2.3",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27"
+                "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4842476c434e375f9d3182ff7b89059583aa8b27",
-                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
+                "reference": "d86873af43b4aa9d1f39a3601cc0cfcf02b25266",
                 "shasum": ""
             },
             "require": {
@@ -799,7 +799,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-02-20T21:35:23+00:00"
+            "time": "2018-06-06T23:58:19+00:00"
         }
     ],
     "aliases": [],
