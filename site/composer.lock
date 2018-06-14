@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "130d9c80132037247370f31710b6d5b0",
+    "content-hash": "5b3307f83c7e1398063d0dda59a727b8",
     "packages": [
         {
             "name": "composer/installers",
@@ -630,7 +630,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -638,7 +638,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1526776237",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1528955158",
                 "reference": null,
                 "shasum": null
             },

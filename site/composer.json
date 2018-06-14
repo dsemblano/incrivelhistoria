@@ -53,7 +53,7 @@
     "wpackagist-plugin/widget-css-classes": ">=1.5.0",
     "wpackagist-plugin/plugin-load-filter": ">=2.5.1",
     "wpackagist-plugin/wp-instagram-widget": ">=2.0.3",
-    "wpackagist-plugin/redirection":"3.2.1",
+    "wpackagist-plugin/redirection":">=3.2.1",
     "roots/soil": ">=3.7.1"
 
   },

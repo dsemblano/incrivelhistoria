@@ -26,15 +26,16 @@
               </defs>
             </svg>
             <div class="facebook-footer">
-              <span>
+              {{-- <span>
                 <a href="https://www.facebook.com/incrivel.historia" target="_blank">
                   Nosso Facebook
                 </a>
               </span>
               <a href="https://www.facebook.com/incrivel.historia" target="_blank">
                 <svg class="icon icon-facebook-official"><use xlink:href="#icon-facebook-official"></use></svg>
-              </a>
-
+              </a> --}}
+              <span class="redes-sociais">Redes Sociais</span>
+              @include('partials.socialmedia')
             </div>
           </div>
     </div>

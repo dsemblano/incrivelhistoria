@@ -89,12 +89,17 @@ let webpackConfig = {
               },
             },
             { loader: 'resolve-url', options: { sourceMap: config.enabled.sourceMaps } },
-            { loader: 'sass', options: { sourceMap: config.enabled.sourceMaps } },
+            {
+              loader: 'sass', options: {
+                sourceMap: config.enabled.sourceMaps,
+                sourceComments: true,
+              },
+            },
           ],
         }),
       },
       {
-        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
+        test: /\.(ttf|otf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
         include: config.paths.assets,
         loader: 'url',
         options: {
@@ -103,7 +108,7 @@ let webpackConfig = {
         },
       },
       {
-        test: /\.(ttf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
+        test: /\.(ttf|otf|eot|woff2?|png|jpe?g|gif|svg|ico)$/,
         include: /node_modules/,
         loader: 'url',
         options: {

@@ -1,6 +1,10 @@
 // Sidebar
 
 .sidebar {
+  .social-icons {
+    @include svg-fonts($display: inline-block, $height: 2em, $size: 2rem);
+  }
+
   section {
     &.widget_tag_cloud {
       h3 {

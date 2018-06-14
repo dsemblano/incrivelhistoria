@@ -15,15 +15,13 @@
   .facebook-footer {
     margin: 1em 0;
 
-    span {
-      @include titulos($titulos-cor, $size: 1.5rem, $weight: 700);
+    .redes-sociais {
+      @include titulos($black, $size: 1.5rem, $weight: 700);
 
-      a {
-        color: white;
-      }
+      display: block;
     }
 
-    @include svg-fonts($display: block, $height: 2em, $size: 4rem);
+    @include svg-fonts($display: inline-block, $height: 2em, $size: 2rem);
   }
 }
 
