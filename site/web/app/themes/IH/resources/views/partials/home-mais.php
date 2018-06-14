@@ -107,7 +107,3 @@
 </span> -->
 
 </section>
-
-<?php
-  echo do_shortcode('[do_widget id=null-instagram-feed-2]');
-?>
