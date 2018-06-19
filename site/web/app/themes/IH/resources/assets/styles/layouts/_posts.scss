@@ -32,8 +32,24 @@
 
           h2,
           h3,
-          h4 {
-            font-size: medium;
+          h4,
+          h5 {
+            font-size: 1.2rem;
+          }
+
+          h6 {
+            font-size: 0.8rem;
+            line-height: 25px;
+
+            a {
+              @extend %text-underline-post;
+
+              color: $black;
+
+              span {
+                color: inherit !important;
+              }
+            }
           }
 
           p {
@@ -72,28 +88,12 @@
             }
           }
 
-          h5,
-          h6 {
-            font-size: 0.8rem;
-            line-height: 25px;
-
-            a {
-              @extend %text-underline-post;
-
-              color: $black;
-
-              span {
-                color: inherit !important;
-              }
-            }
-          }
-
-          h5:nth-of-type(1) {
-            // border-top: 1px solid #dadada;
-            margin-top: 15px;
-            padding-top: 15px;
-            font-size: 1rem;
-          }
+          // h5:nth-of-type(1) {
+          //   // border-top: 1px solid #dadada;
+          //   margin-top: 15px;
+          //   padding-top: 15px;
+          //   font-size: 1rem;
+          // }
         }
       }
 
