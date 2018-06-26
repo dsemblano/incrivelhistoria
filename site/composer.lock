@@ -530,15 +530,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.2.1"
+                "reference": "tags/4.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.2.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -590,15 +590,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.2.1",
+            "version": "3.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.2.1"
+                "reference": "tags/3.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -630,7 +630,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -638,7 +638,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1528955158",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1529319188",
                 "reference": null,
                 "shasum": null
             },
