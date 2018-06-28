@@ -262,54 +262,18 @@ body.home {
         @include titulos($color: $white);
 
         background-color: $link;
-        text-indent: 20px;
-        line-height: 2em;
+        text-align: center;
       }
 
       article {
-        position: relative;
-        border-bottom: none;
-
         a {
-          p {
-            color: $titulos-cor;
-
-            @include text-underline-hover($color: $link);
-          }
-
           h3 {
-            @include titulos-chamadas-bold;
-
-            color: $titulos-cor;
-            margin-top: 10px;
-
+            @include titulos($titulos-cor, $size: 1.2rem, $weight: 700);
             @include text-underline-hover($color: $link);
-          }
 
-          h4 {
-            @include titulos($titulos-cor, $size: 1.1rem);
-
-            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
-            bottom: 0;
-            left: 0;
-            margin: 0;
-            padding: 5px 0 5px 20px;
-            position: absolute;
-            width: 100%;
-            color: $white;
-
-            &:hover {
-              color: white !important;
-              text-decoration: underline;
-            }
+            margin-top: 10px;
           }
         }
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-        width: 100%;
       }
     }
 
