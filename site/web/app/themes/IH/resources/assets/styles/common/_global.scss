@@ -303,16 +303,10 @@ body.home {
       }
 
       .mais-extensao {
-        .categorias {
-          article {
-            height: 235px;
+        article {
+          @extend %text-underline;
 
-            &:nth-last-child(1) {
-              border-bottom: none;
-            }
-
-            @extend %text-underline;
-          }
+          height: 240px;
         }
 
         h2 {
