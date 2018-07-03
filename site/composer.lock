@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbdb3993cfe5ef2da0a95a826d74b6a2",
+    "content-hash": "de843794d82ed5456a3940d7f5496e4e",
     "packages": [
         {
             "name": "composer/installers",
@@ -747,6 +747,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wpforms-lite/"
+        },
+        {
+            "name": "wpackagist-plugin/zoho-mail",
+            "version": "1.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/zoho-mail/",
+                "reference": "tags/1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/zoho-mail/"
         }
     ],
     "packages-dev": [
