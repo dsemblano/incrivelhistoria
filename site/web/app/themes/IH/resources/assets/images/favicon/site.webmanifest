@@ -3,37 +3,37 @@
     "short_name": "Incr\u00edvel Hist\u00f3ria",
     "icons": [
         {
-            "src": "../images/favicon/android-chrome-36x36_166db583.png",
+            "src": "./android-chrome-36x36.png",
             "sizes": "36x36",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-48x48_904bfdfe.png",
+            "src": "./android-chrome-48x48.png",
             "sizes": "48x48",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-72x72_f4b11bde.png",
+            "src": "./android-chrome-72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-96x96_43bd40ed.png",
+            "src": "./android-chrome-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-144x144_0a3ab7c8.png",
+            "src": "./android-chrome-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-192x192_5090b96b.png",
+            "src": "./android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "../images/favicon/android-chrome-256x256_77b15d83.png",
+            "src": "./android-chrome-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         }
