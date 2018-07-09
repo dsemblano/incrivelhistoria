@@ -54,7 +54,8 @@
     "wpackagist-plugin/wp-instagram-widget": ">=2.0.3",
     "wpackagist-plugin/redirection":">=3.2.1",
     "wpackagist-plugin/wpforms-lite":">=1.4.7.2",
-    "wpackagist-plugin/zoho-mail":"1.1.1",
+    "wpackagist-plugin/zoho-mail":">=1.1.1",
+    "wpackagist-plugin/wp-optimize":">=2.2.4",
     "roots/soil": ">=3.7.1"
 
   },
