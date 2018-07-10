@@ -27,11 +27,11 @@
             </svg>
             <div class="facebook-footer">
               {{-- <span>
-                <a href="https://www.facebook.com/incrivel.historia" target="_blank">
+                <a href="https://www.facebook.com/incrivel.historia" target="_blank" rel="noopener">
                   Nosso Facebook
                 </a>
               </span>
-              <a href="https://www.facebook.com/incrivel.historia" target="_blank">
+              <a href="https://www.facebook.com/incrivel.historia" target="_blank" rel="noopener">
                 <svg class="icon icon-facebook-official"><use xlink:href="#icon-facebook-official"></use></svg>
               </a> --}}
               <span class="redes-sociais">Redes Sociais</span>

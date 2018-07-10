@@ -13,9 +13,9 @@
     </defs>
   </svg>
 
-  <a href="https://www.facebook.com/incrivel.historia" target="_blank">
+  <a href="https://www.facebook.com/incrivel.historia" target="_blank" rel="noopener">
     <svg class="icon icon-facebook-official"><use xlink:href="#icon-facebook-official"></use></svg>
   </a>
-  <a href="https://www.instagram.com/incrivelhistoria/" target="_blank">
+  <a href="https://www.instagram.com/incrivelhistoria/" target="_blank" rel="noopener">
     <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
   </a>
