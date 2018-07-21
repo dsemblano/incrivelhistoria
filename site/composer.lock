@@ -510,15 +510,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.2.2"
+                "reference": "tags/4.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -570,15 +570,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.3.1",
+            "version": "3.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.3.1"
+                "reference": "tags/3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -690,15 +690,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "7.7.3",
+            "version": "7.8",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/7.7.3"
+                "reference": "tags/7.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.7.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.8.zip",
                 "reference": null,
                 "shasum": null
             },
