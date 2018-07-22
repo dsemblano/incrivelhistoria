@@ -155,3 +155,21 @@ function the_url( $url ) {
   return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'the_url' );
+
+// remove yoast comments
+add_action('template_redirect', function () {
+
+    if (! class_exists('WPSEO_Frontend')) {
+        return;
+    }
+
+    $instance = WPSEO_Frontend::get_instance();
+
+    // make sure, future version of the plugin does not break our site.
+    if (! method_exists($instance, 'debug_mark')) {
+        return ;
+    }
+
+    // ok, let us remove the love letter.
+    remove_action( 'wpseo_head', array( $instance, 'debug_mark' ), 2 );
+}, 9999 );
