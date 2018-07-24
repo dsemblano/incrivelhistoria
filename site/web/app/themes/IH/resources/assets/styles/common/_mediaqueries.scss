@@ -372,6 +372,8 @@
     .sidebar {
       #instagram {
         ul {
+          display: flex;
+
           li {
             width: 100%;
             max-width: 100%;
