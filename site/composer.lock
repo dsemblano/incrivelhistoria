@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "458bba2edf92f68a6c125e52f582d246",
+    "content-hash": "d373c75041e4a7c961cb7e1094676702",
     "packages": [
         {
             "name": "composer/installers",
@@ -627,26 +627,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/sassy-social-share/"
-        },
-        {
-            "name": "wpackagist-plugin/taghound-media-tagger",
-            "version": "2.0.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/taghound-media-tagger/",
-                "reference": "tags/2.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/taghound-media-tagger.2.0.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/taghound-media-tagger/"
         },
         {
             "name": "wpackagist-plugin/top-10",

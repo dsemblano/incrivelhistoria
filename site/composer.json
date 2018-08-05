@@ -42,7 +42,6 @@
     "wpackagist-plugin/regenerate-thumbnails": ">=2.2.6",
     "wpackagist-plugin/default-featured-image": ">=1.6.1",
     "wpackagist-plugin/php-code-widget": ">=2.3",
-    "wpackagist-plugin/taghound-media-tagger": ">=1.2.0",
     "wpackagist-plugin/wordpress-seo": ">=4.9",
     "wpackagist-plugin/ewww-image-optimizer":  ">=3.4.1",
     "wpackagist-plugin/database-browser": ">=1.4",
