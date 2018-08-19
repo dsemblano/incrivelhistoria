@@ -55,6 +55,7 @@
     "wpackagist-plugin/wpforms-lite":">=1.4.7.2",
     "wpackagist-plugin/zoho-mail":">=1.1.1",
     "wpackagist-plugin/wp-optimize":">=2.2.4",
+    "wpackagist-plugin/wps-hide-login":">=1.4.3",
     "roots/soil": ">=3.7.1"
 
   },
