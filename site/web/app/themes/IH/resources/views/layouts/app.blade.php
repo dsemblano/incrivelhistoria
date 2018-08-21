@@ -9,7 +9,9 @@
       <div class="content row">
         <main class="main col-12 col-sm-8 col-md-12 col-lg-8">
           @yield('content')
+          @if (! is_404())
           {!! get_the_posts_pagination(array('prev_text' => '« Anterior' , 'next_text' => 'Próximo »' )) !!}
+          @endif
         </main>
         @if (App\display_sidebar())
           <aside id="sidebar" class="sidebar col-12 col-sm-4 col-md-12 col-lg-4">
