@@ -346,3 +346,22 @@ body.home {
     }
   }
 }
+
+.error404 {
+  main {
+    .alert {
+      // background-color: red;
+
+      img {
+        max-width: 100%;
+        margin-top: 10px;
+        // -webkit-filter: sepia(1);
+        // filter: sepia(1);
+      }
+
+      .search-form {
+        width: 100%;
+      }
+    }
+  }
+}
