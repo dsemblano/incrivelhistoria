@@ -12,6 +12,4 @@
       {!! get_search_form(false) !!}
     </div>
   {{-- @endif --}}
-
-  {!! get_the_posts_navigation() !!}
 @endsection
