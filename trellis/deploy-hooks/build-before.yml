@@ -5,7 +5,7 @@
 # An example for themes built with Sage 8 can be found at: https://git.io/vdgUt
 #
 # Uncomment the lines below and replace `sage` with your theme folder
-
+#
 ---
  - name: Install npm dependencies
    command: yarn

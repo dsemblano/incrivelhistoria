@@ -14,9 +14,9 @@ except ImportError:
     from ansible.utils.display import Display
     display = Display()
 
-#if version_info[0] > 2:
-#    raise AnsibleError(('Trellis does not yet support Python {}.{}.{}. \n'
-#        'Please use Python 2.7.').format(version_info[0], version_info[1], version_info[2]))
+if version_info[0] > 2:
+    raise AnsibleError(('Trellis does not yet support Python {}.{}.{}. \n'
+        'Please use Python 2.7.').format(version_info[0], version_info[1], version_info[2]))
 
 version_requirement = '2.4.0.0'
 version_tested_max = '2.5.3'

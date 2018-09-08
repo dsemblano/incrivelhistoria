@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fa789e583734a6f78d67f0c1aa2e5eb",
+    "content-hash": "28e837236e1c4a2377a1d98837736272",
     "packages": [
         {
             "name": "composer/installers",
@@ -342,6 +342,48 @@
             "time": "2017-08-14T01:36:41+00:00"
         },
         {
+            "name": "roots/wp-config",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/wp-config.git",
+                "reference": "37c38230796119fb487fa03346ab0706ce6d4962"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/wp-config/zipball/37c38230796119fb487fa03346ab0706ce6d4962",
+                "reference": "37c38230796119fb487fa03346ab0706ce6d4962",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.7",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Roots\\WPConfig\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Austin Pray",
+                    "email": "austin@austinpray.com"
+                }
+            ],
+            "description": "Collect configuration values and safely define() them",
+            "time": "2018-08-10T14:18:38+00:00"
+        },
+        {
             "name": "roots/wp-password-bcrypt",
             "version": "1.0.0",
             "source": {
@@ -510,15 +552,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.3.1"
+                "reference": "tags/4.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.3.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -610,7 +652,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.2.4",
+            "version": "3.2.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -618,7 +660,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1533961877",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1534856190",
                 "reference": null,
                 "shasum": null
             },
@@ -670,15 +712,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "8.0",
+            "version": "8.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/8.0"
+                "reference": "tags/8.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -730,15 +772,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.4.7.2",
+            "version": "1.4.8.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.4.7.2"
+                "reference": "tags/1.4.8.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.4.7.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.4.8.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -770,15 +812,15 @@
         },
         {
             "name": "wpackagist-plugin/zoho-mail",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zoho-mail/",
-                "reference": "tags/1.1.1"
+                "reference": "tags/1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.1.2.zip",
                 "reference": null,
                 "shasum": null
             },

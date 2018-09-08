@@ -39,6 +39,7 @@
     "johnpbloch/wordpress": "4.9.8",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
+    "roots/wp-config": "1.0.0",
     "wpackagist-plugin/regenerate-thumbnails": ">=2.2.6",
     "wpackagist-plugin/default-featured-image": ">=1.6.1",
     "wpackagist-plugin/php-code-widget": ">=2.3",
