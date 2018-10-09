@@ -6,7 +6,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
     .page-header {
       hr {
         border-color: $color;
-        border-style: solid $color;
+        // border-style: solid $color;
         border-width: 5px 0;
       }
     }
