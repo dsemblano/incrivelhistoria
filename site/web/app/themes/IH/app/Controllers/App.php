@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
@@ -20,12 +20,13 @@ class App extends Controller
             return __('Latest Posts', 'sage');
         }
         if (is_archive()) {
-            if (is_author()) {
-                return get_the_author_meta('display_name');
-            } else {
-                return single_term_title();
-            }
-        }
+          if (is_author()) {
+              return get_the_author_meta('display_name');
+          } else {
+              // return get_the_archive_title();
+              return single_term_title();
+          }
+      }
         if (is_search()) {
             // return sprintf(__('Search Results for %s', 'sage'), get_search_query());
             return sprintf(__('Resultados da busca por %s', 'sage'), get_search_query());

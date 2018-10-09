@@ -58,7 +58,7 @@ add_filter('template_include', function ($template) {
 }, PHP_INT_MAX);
 
 /**
- * Tell WordPress how to find the compiled path of comments.blade.php
+ * Render comments.blade.php
  */
 add_filter('comments_template', function ($comments_template) {
     $comments_template = str_replace(
@@ -66,36 +66,47 @@ add_filter('comments_template', function ($comments_template) {
         '',
         $comments_template
     );
-    return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
-}, 100);
 
+    $data = collect(get_body_class())->reduce(function ($data, $class) use ($comments_template) {
+        return apply_filters("sage/template/{$class}/data", $data, $comments_template);
+    }, []);
+
+    $theme_template = locate_template(["views/{$comments_template}", $comments_template]);
+
+    if ($theme_template) {
+        echo template($theme_template, $data);
+        return get_stylesheet_directory().'/index.php';
+    }
+
+    return $comments_template;
+}, 100);
 
 // Mostrando sidebar - by Daniel Semblano
 add_filter('sage/display_sidebar', function ($display) {
-    static $display;
+  static $display;
 
-    isset($display) || $display = in_array(true, [
-      // The sidebar will be displayed if any of the following return true
-      is_single(),
-      is_404(),
-      is_front_page(),
-      is_category(),
-      is_page('categorias'),
-      is_search(),
-      is_tag(),
-      is_page(),
-      is_archive(),
-      is_page_template('template-custom.php')
-    ]);
+  isset($display) || $display = in_array(true, [
+    // The sidebar will be displayed if any of the following return true
+    is_single(),
+    is_404(),
+    is_front_page(),
+    is_category(),
+    is_page('categorias'),
+    is_search(),
+    is_tag(),
+    is_page(),
+    is_archive(),
+    is_page_template('template-custom.php')
+  ]);
 
-    return $display;
+  return $display;
 });
 
 // Custom search form
 add_filter('get_search_form', function(){
-  $form = '';
-  // echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
-  $path = get_template_directory(). '/views/partials/searchform.blade.php';
-  echo template(realpath($path), []);
-  return $form;
+$form = '';
+// echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
+$path = get_template_directory(). '/views/partials/searchform.blade.php';
+echo template(realpath($path), []);
+return $form;
 });
