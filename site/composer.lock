@@ -692,15 +692,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "8.3",
+            "version": "8.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/8.3"
+                "reference": "tags/8.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -792,15 +792,15 @@
         },
         {
             "name": "wpackagist-plugin/zoho-mail",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/zoho-mail/",
-                "reference": "tags/1.2.2"
+                "reference": "tags/1.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
