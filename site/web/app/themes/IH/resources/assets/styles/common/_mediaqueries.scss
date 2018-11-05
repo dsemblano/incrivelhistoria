@@ -183,6 +183,12 @@
 
 //Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-down(xs) {
+  body.home {
+    .content {
+      background-color: pink !important;
+    }
+  }
+
   body.home main section#curiosidades h2 {
     line-height: 35px;
     // padding-left: 20px;
@@ -245,10 +251,9 @@
     width: inherit !important;
   }
 
-  body.home {
-    .content {
-      // background-color: pink;
-    }
+  .hustle-modal article p,
+  .hustle-modal .hustle-modal-message p {
+    padding: 0 30px 15px 30px !important;
   }
 }
 
@@ -610,6 +615,19 @@
     .content {
       // background-color: orange;
     }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  // modal email Hustler
+  .hustle-modal .hustle-modal-title {
+    font: 600 23px/27px "Open Sans", Arial, sans-serif !important;
+  }
+
+  .hustle-modal article p,
+  .hustle-modal .hustle-modal-message p {
+    text-align: center;
+    font: 400 20px/25px "Roboto", Arial, sans-serif !important;
   }
 }
 
