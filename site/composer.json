@@ -56,7 +56,6 @@
     "wpackagist-plugin/zoho-mail":">=1.1.1",
     "wpackagist-plugin/wp-optimize":">=2.2.4",
     "wpackagist-plugin/wps-hide-login":">=1.4.3",
-    "wpackagist-plugin/icegram":">=1.10.24",
     "wpackagist-plugin/wordpress-popup":">=6.0.5",
     "roots/soil": ">=3.7.1"
 

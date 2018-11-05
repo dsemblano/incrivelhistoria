@@ -251,9 +251,19 @@
     width: inherit !important;
   }
 
+  // modal
+  .hustle-modal .hustle-modal-title {
+    margin: 10px 0 0 0 !important;
+  }
+
   .hustle-modal article p,
   .hustle-modal .hustle-modal-message p {
     padding: 0 30px 15px 30px !important;
+    text-align: center;
+  }
+
+  .hustle-modal-two .hustle-modal-body .hustle-modal-content section article .hustle-modal-article {
+    overflow: visible !important;
   }
 }
 
@@ -627,7 +637,7 @@
   .hustle-modal article p,
   .hustle-modal .hustle-modal-message p {
     text-align: center;
-    font: 400 20px/25px "Roboto", Arial, sans-serif !important;
+    font: 400 17px/25px "Roboto", Arial, sans-serif !important;
   }
 }
 

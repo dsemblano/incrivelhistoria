@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7a999fe42e9c3e0e3cefd374a43bb81",
+    "content-hash": "212ab46bb305fce110da10d3ca0ac2cb",
     "packages": [
         {
             "name": "composer/installers",
@@ -571,26 +571,6 @@
             "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
-            "name": "wpackagist-plugin/icegram",
-            "version": "1.10.24",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/icegram/",
-                "reference": "tags/1.10.24"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/icegram.1.10.24.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/icegram/"
-        },
-        {
             "name": "wpackagist-plugin/plugin-load-filter",
             "version": "3.0.4",
             "source": {
@@ -612,15 +592,15 @@
         },
         {
             "name": "wpackagist-plugin/redirection",
-            "version": "3.6",
+            "version": "3.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/3.6"
+                "reference": "tags/3.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.3.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -672,15 +652,15 @@
         },
         {
             "name": "wpackagist-plugin/top-10",
-            "version": "2.5.6",
+            "version": "2.5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/top-10/",
-                "reference": "tags/2.5.6"
+                "reference": "tags/2.5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/top-10.2.5.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/top-10.2.5.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -855,6 +835,17 @@
         {
             "name": "roave/security-advisories",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Roave/SecurityAdvisories.git",
+                "reference": "74a42b8d8d9f9cd672be58e7d1c65094da4ae971"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/74a42b8d8d9f9cd672be58e7d1c65094da4ae971",
+                "reference": "74a42b8d8d9f9cd672be58e7d1c65094da4ae971",
+                "shasum": ""
+            },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.12",
