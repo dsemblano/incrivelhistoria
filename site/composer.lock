@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fc80c18029b735cb395a485d16f06b5",
+    "content-hash": "6e1fb991c9e3d82e0c688e36a62d283a",
     "packages": [
         {
             "name": "composer/installers",
@@ -511,26 +511,6 @@
             "homepage": "https://wordpress.org/plugins/contextual-related-posts/"
         },
         {
-            "name": "wpackagist-plugin/database-browser",
-            "version": "1.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/database-browser/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/database-browser.zip?timestamp=1485727892",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/database-browser/"
-        },
-        {
             "name": "wpackagist-plugin/default-featured-image",
             "version": "1.6.1",
             "source": {
@@ -771,26 +751,6 @@
             "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
         },
         {
-            "name": "wpackagist-plugin/wp-optimize",
-            "version": "2.2.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-optimize/",
-                "reference": "tags/2.2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.2.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-optimize/"
-        },
-        {
             "name": "wpackagist-plugin/wpforms-lite",
             "version": "1.4.9",
             "source": {
@@ -829,26 +789,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wps-hide-login/"
-        },
-        {
-            "name": "wpackagist-plugin/zoho-mail",
-            "version": "1.2.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/zoho-mail/",
-                "reference": "tags/1.2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/zoho-mail.1.2.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/zoho-mail/"
         }
     ],
     "packages-dev": [
