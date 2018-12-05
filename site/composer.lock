@@ -532,15 +532,15 @@
         },
         {
             "name": "wpackagist-plugin/ewww-image-optimizer",
-            "version": "4.5.1",
+            "version": "4.5.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
-                "reference": "tags/4.5.1"
+                "reference": "tags/4.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.4.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -612,7 +612,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.2.8",
+            "version": "3.2.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -620,7 +620,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1541457354",
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1543298792",
                 "reference": null,
                 "shasum": null
             },
@@ -732,15 +732,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.3.3",
+            "version": "1.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.3.3"
+                "reference": "tags/1.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.3.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -752,15 +752,15 @@
         },
         {
             "name": "wpackagist-plugin/wpforms-lite",
-            "version": "1.4.9",
+            "version": "1.5.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wpforms-lite/",
-                "reference": "tags/1.4.9"
+                "reference": "tags/1.5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/wpforms-lite.1.5.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -772,15 +772,15 @@
         },
         {
             "name": "wpackagist-plugin/wps-hide-login",
-            "version": "1.5",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wps-hide-login/",
-                "reference": "tags/1.5"
+                "reference": "tags/1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.1.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -798,12 +798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "bee20c60c1f77b2d51c1a49f51e70378c9e47be8"
+                "reference": "6acf968142215f1614f5909aa006b2bf1ec45cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/bee20c60c1f77b2d51c1a49f51e70378c9e47be8",
-                "reference": "bee20c60c1f77b2d51c1a49f51e70378c9e47be8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6acf968142215f1614f5909aa006b2bf1ec45cb1",
+                "reference": "6acf968142215f1614f5909aa006b2bf1ec45cb1",
                 "shasum": ""
             },
             "conflict": {
@@ -934,7 +934,7 @@
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "tecnickcom/tcpdf": "<6.2.22",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "theonedemon/phpwhois": "<=4.2.5",
                 "titon/framework": ">=0,<9.9.99",
                 "truckersmp/phpwhois": "<=4.3.1",
@@ -991,7 +991,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-11-26T13:50:48+00:00"
+            "time": "2018-11-27T12:50:30+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
