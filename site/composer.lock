@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e1fb991c9e3d82e0c688e36a62d283a",
+    "content-hash": "4623675d7a8800c6dfc400848bd64675",
     "packages": [
         {
             "name": "composer/installers",
@@ -709,6 +709,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-disable",
+            "version": "1.5.21",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-disable/",
+                "reference": "tags/1.5.21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-disable.1.5.21.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-disable/"
         },
         {
             "name": "wpackagist-plugin/wp-instagram-widget",

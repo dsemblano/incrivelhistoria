@@ -109,12 +109,19 @@ function wpb_author_info_box( $content ) {
   // Allow HTML in author bio section 
   remove_filter('pre_user_description', 'wp_filter_kses');
 
-  add_action( 'wp_print_styles',     'my_deregister_styles', 100 );
+  // function my_deregister_styles() {
+  //   //wp_deregister_style( 'amethyst-dashicons-style' ); 
+  //   wp_deregister_style( 'dashicons' );
+  // }
 
-  function my_deregister_styles() {
-    //wp_deregister_style( 'amethyst-dashicons-style' ); 
-    wp_deregister_style( 'dashicons' );
-  }
+// remove dashicons
+// function wpdocs_dequeue_dashicon() {
+// 	if (current_user_can( 'update_core' )) {
+// 	    return;
+// 	}
+// 	wp_deregister_style('dashicons');
+// }
+// add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
 
   //
 //   function remove_head_scripts() {
