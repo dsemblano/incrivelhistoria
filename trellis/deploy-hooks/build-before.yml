@@ -6,10 +6,10 @@
 #
 # Uncomment the lines below and replace `sage` with your theme folder
 #
----
+ ---
  - name: Install npm dependencies
    command: yarn
-   connection: local
+   delegate_to: localhost
    args:
      chdir: "{{ project_local_path }}/web/app/themes/IH"
 
@@ -20,7 +20,7 @@
 
  - name: Compile assets for production
    command: yarn build:production
-   connection: local
+   delegate_to: localhost
    args:
      chdir: "{{ project_local_path }}/web/app/themes/IH"
 

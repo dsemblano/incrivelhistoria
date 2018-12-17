@@ -1,4 +1,11 @@
 ### HEAD
+* Allow overriding rollback variables ([#1047](https://github.com/roots/trellis/pull/1047))
+* Require Vagrant >= 2.1.0 ([#1046](https://github.com/roots/trellis/pull/1046))
+* Bump Ansible `version_tested_max` to 2.7.5 ([#1045](https://github.com/roots/trellis/pull/1045))
+* Add Vagrant `ssh-config` to `~/.ssh/config` on `vagrant up` ([#1042](https://github.com/roots/trellis/pull/1042))
+* [BREAKING] Add Ubuntu 18.04 support and default to it ([#992](https://github.com/roots/trellis/pull/992))
+* Python 3 support ([#1031](https://github.com/roots/trellis/pull/1031))
+* Allow customizing Nginx `worker_connections` ([#1021](https://github.com/roots/trellis/pull/1021))
 * Update wp-cli to 2.0.1 ([#1019](https://github.com/roots/trellis/pull/1019))
 * [BREAKING] Update wp-cli to 2.0.0 and verify its PGP signature ([#1014](https://github.com/roots/trellis/pull/1014))
 * Deploy: Remove obsoleted `git` remote checking ([#999](https://github.com/roots/trellis/pull/999))
