@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5107158d5c0f1d2ac68b55a25743c5ed",
+    "content-hash": "5d5fc2303ae0a4c32080c00a2d92c242",
     "packages": [
         {
             "name": "composer/installers",
@@ -457,6 +457,26 @@
             "time": "2018-07-29T20:33:41+00:00"
         },
         {
+            "name": "wpackagist-plugin/a3-lazy-load",
+            "version": "1.9.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/a3-lazy-load/",
+                "reference": "tags/1.9.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/a3-lazy-load.1.9.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/a3-lazy-load/"
+        },
+        {
             "name": "wpackagist-plugin/contextual-related-posts",
             "version": "2.5.0",
             "source": {
@@ -678,15 +698,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "9.2.1",
+            "version": "9.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/9.2.1"
+                "reference": "tags/9.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.3.zip",
                 "reference": null,
                 "shasum": null
             },
