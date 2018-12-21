@@ -2,10 +2,11 @@
 import 'jquery';
 
 // Import everything from autoload
-import "./autoload/**/*"
+import "./autoload/**/*.*"
 
 // import local dependencies
 import 'flickity/dist/flickity.pkgd.min.js';
+// import 'thirdplugins/jquery.lazyloadxt.extend.js';
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';

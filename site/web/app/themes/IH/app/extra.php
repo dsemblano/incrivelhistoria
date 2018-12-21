@@ -28,13 +28,21 @@ function special_nav_class( $classes, $item, $args ) {
     return $classes;
 }
 
+// print handler names
 // add_action('wp_print_scripts', 'wsds_detect_enqueued_scripts');
-
 // function wsds_detect_enqueued_scripts() {
 //     global $wp_scripts;
 //     foreach ($wp_scripts->queue as $handle) :
 //         echo "AQUI: ". $handle . ' | ';
 //     endforeach;
+// }
+
+// add_filter( 'script_loader_tag', 'cameronjonesweb_add_script_handle', 10, 3 );
+// function cameronjonesweb_add_script_handle( $tag, $handle, $src ) {
+// 	return str_replace( '<script', sprintf(
+// 		'<script data-handle="%1$s"',
+// 		esc_attr( $handle )
+// 	), $tag );
 // }
 
 // defer async
@@ -147,6 +155,17 @@ function wpb_author_info_box( $content ) {
 //     if ( !is_page('contato') ) {
 //         wp_deregister_style( 'contact-form-7' );
 //     }
+// }
+
+// lazy load plugins desregistrando pois os js já estão no main.js
+// add_action( 'wp_print_scripts', 'deregister_tptn_tracker_javascript', 100 );
+//   function deregister_tptn_tracker_javascript() {
+// wp_deregister_script( 'tptn_tracker' );
+// }
+
+// add_action( 'wp_print_styles', 'deregister_lazyloadxt_styles', 100 );
+// function deregister_lazyloadxt_styles() {
+//   wp_deregister_style( 'jquery-lazyloadxt-spinner-css' );
 // }
 
 function my_login_logo_one() {
