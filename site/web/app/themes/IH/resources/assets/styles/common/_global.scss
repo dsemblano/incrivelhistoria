@@ -369,3 +369,9 @@ body.home {
 .hustle-modal .hustle-modal-title {
   text-align: center;
 }
+
+.lazy-hidden,
+.entry img.lazy-hidden,
+img.thumbnail.lazy-hidden {
+  background-image: url(../images/loading.gif) !important;
+}
