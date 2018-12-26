@@ -14,7 +14,7 @@ function heateor_sss_dequeue_scripts_and_styles() {
 }
 
 function heateor_sss_dequeue_javascript() {
-		add_action( 'wp_enqueue_scripts', 'heateor_sss_dequeue_scripts_and_styles' );
+		add_action( 'wp_enqueue_scripts', 'heateor_sss_dequeue_scripts_and_styles', 999 );
 }
 add_action( 'init', 'heateor_sss_dequeue_javascript' );
 
@@ -46,19 +46,19 @@ function special_nav_class( $classes, $item, $args ) {
 // }
 
 // defer async
-function jquery_async_defer_attribute($tag, $handle){
-  if ( 'jquery' !== $handle )
-  return $tag;
-  return str_replace( ' src', ' defer src', $tag );
-}
-add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
+// function jquery_async_defer_attribute($tag, $handle){
+//   if ( 'jquery' !== $handle )
+//   return $tag;
+//   return str_replace( ' src', ' defer src', $tag );
+// }
+// add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
 
-function top10_async_defer_attribute($tag, $handle){
-  if ( 'tptn_tracker' !== $handle )
-  return $tag;
-  return str_replace( ' src', ' async defer src', $tag );
-}
-add_filter('script_loader_tag', 'top10_async_defer_attribute', 10, 2);
+// function top10_async_defer_attribute($tag, $handle){
+//   if ( 'tptn_tracker' !== $handle )
+//   return $tag;
+//   return str_replace( ' src', ' async defer src', $tag );
+// }
+// add_filter('script_loader_tag', 'top10_async_defer_attribute', 10, 2);
 
 function wpb_author_info_box( $content ) {
  
@@ -206,3 +206,26 @@ add_action('template_redirect', function () {
     // ok, let us remove the love letter.
     remove_action( 'wpseo_head', array( $instance, 'debug_mark' ), 2 );
 }, 9999 );
+
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+//Remove JQuery migrate
+function remove_jquery_migrate($scripts)
+{
+    if (!is_admin() && isset($scripts->registered['jquery'])) {
+        $script = $scripts->registered['jquery'];
+        
+        if ($script->deps) { // Check whether the script has any dependencies
+            $script->deps = array_diff($script->deps, array(
+                'jquery-migrate'
+            ));
+        }
+    }
+}
+
+add_action('wp_default_scripts', 'remove_jquery_migrate');
