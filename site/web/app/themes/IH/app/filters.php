@@ -117,26 +117,23 @@ return $form;
 
  //echo env('WP_ENV');
 
-if (env('WP_ENV') === 'development') {
-  add_filter('style_loader_tag', function ($html, $handle, $href) {
-      if (is_admin()) {
-          return $html;
-      }
+add_filter('style_loader_tag', function ($html, $handle, $href) {
+    if (is_admin()) {
+        return $html;
+    }
 
-      $dom = new \DOMDocument();
-      $dom->loadHTML($html);
-      $tag = $dom->getElementById($handle . '-css');
-      $tag->setAttribute('rel', 'preload');
-      $tag->setAttribute('as', 'style');
-      $tag->setAttribute('onload', "this.onload=null;this.rel='stylesheet'");
-      $tag->removeAttribute('type');
-      $html = $dom->saveHTML($tag);
+    $dom = new \DOMDocument();
+    $dom->loadHTML($html);
+    $tag = $dom->getElementById($handle . '-css');
+    $tag->setAttribute('rel', 'preload');
+    $tag->setAttribute('as', 'style');
+    $tag->setAttribute('onload', "this.onload=null;this.rel='stylesheet'");
+    $tag->removeAttribute('type');
+    $html = $dom->saveHTML($tag);
 
-      return $html;
-  }, 999, 3);
-}
+    return $html;
+}, 999, 3);
 
-if (env('WP_ENV') === 'development') {
   add_action('wp_head', function () {
       $preload_script = get_theme_file_path() . '/resources/assets/scripts/cssrelpreload.js';
 
@@ -144,12 +141,10 @@ if (env('WP_ENV') === 'development') {
           echo '<script>' . file_get_contents($preload_script) . '</script>';
       }
   }, 101);
-}
 
 /**
  * Inject critical assets in head as early as possible
  */
-if (env('WP_ENV') === 'development') {
   add_action('wp_head', function () {
     $critical_CSS = asset_path('styles/critical.css');
 
@@ -157,7 +152,6 @@ if (env('WP_ENV') === 'development') {
         echo '<style>' . file_get_contents($critical_CSS) . '</style>';
     }
   }, 1);
-}
 
 // REMOVE WP EMOJI
 remove_action('wp_head', 'print_emoji_detection_script', 7);
