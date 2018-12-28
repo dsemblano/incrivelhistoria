@@ -16,6 +16,7 @@ function heateor_sss_dequeue_scripts_and_styles() {
 function heateor_sss_dequeue_javascript() {
 		add_action( 'wp_enqueue_scripts', 'heateor_sss_dequeue_scripts_and_styles', 999 );
 }
+
 add_action( 'init', 'heateor_sss_dequeue_javascript' );
 
 // Classe para menu page
@@ -229,3 +230,15 @@ function remove_jquery_migrate($scripts)
 }
 
 add_action('wp_default_scripts', 'remove_jquery_migrate');
+
+//Disable gutenberg style in Front
+function wps_deregister_styles() {
+  wp_dequeue_style( 'wp-block-library' );
+}
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+
+// Disable wp-embed.js
+function my_deregister_scripts(){
+  wp_deregister_script( 'wp-embed' );
+}
+add_action( 'wp_footer', 'my_deregister_scripts' );
