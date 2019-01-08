@@ -10,7 +10,9 @@
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php echo (App\featured_image_url('mais_extendida')); ?>
+            <?php //echo (App\featured_image_url('mais_extendida'));
+            the_post_thumbnail('mais_extendida');
+            ?>
           <h3><?php the_title(); ?></h3>
         </a>
       </article>
@@ -29,7 +31,9 @@
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php echo (App\featured_image_url('mais_extendida')); ?>
+            <?php //echo (App\featured_image_url('mais_extendida')); 
+            the_post_thumbnail('mais_extendida');
+            ?>
           <h3><?php the_title(); ?></h3>
         </a>
       </article>
@@ -52,7 +56,9 @@
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php echo (App\featured_image_url('mais_extendida')); ?>
+            <?php //echo (App\featured_image_url('mais_extendida')); 
+            the_post_thumbnail('mais_extendida');
+            ?>
           <h3><?php the_title(); ?></h3>
         </a>
       </article>
@@ -71,7 +77,9 @@
   ?>
     <article>
       <a href="<?php the_permalink(); ?>">
-          <?php echo (App\featured_image_url('mais_extendida')); ?>
+          <?php //echo (App\featured_image_url('mais_extendida')); 
+          the_post_thumbnail('mais_extendida');
+          ?>
         <h3><?php the_title(); ?></h3>
       </a>
     </article>

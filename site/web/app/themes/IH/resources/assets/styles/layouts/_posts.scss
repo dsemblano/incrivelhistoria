@@ -10,6 +10,47 @@
     }
 
     main {
+      .crp_related {
+        margin: 20px 0;
+
+        h3 {
+          @include titulos-chamadas-bold($size: 1.5rem);
+        }
+
+        .crp_title {
+          display: inline-block;
+          color: $titulos-cor;
+          margin-top: 5px;
+        }
+
+        ul {
+          list-style: outside none none;
+          padding: 0;
+
+          li {
+            @include titulos-chamadas;
+
+            a {
+              .crp_thumb {
+                width: 100%;
+                height: auto;
+              }
+
+              span {
+                @include text-underline-hover($color: $link);
+              }
+            }
+
+            width: 75%;
+            margin-bottom: 10px;
+
+            &:nth-child(3n+3) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
       article {
         color: $titulos-cor;
 
@@ -17,17 +58,19 @@
           @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
         }
 
-        header {
-          #breadcrumbs {
-            a {
-              @include text-underline-hover($hover: true, $color: $link);
-            }
-          }
-        }
-
         .entry-content {
           .heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
             margin: 15px 0;
+          }
+
+          p {
+            @extend %text-selection;
+
+            color: $cor-texto;
+
+            a {
+              @extend %text-underline-post;
+            }
           }
 
           h2,
@@ -50,15 +93,13 @@
                 color: inherit !important;
               }
             }
-          }
 
-          p {
-            @extend %text-selection;
-
-            color: $cor-texto;
-
-            a {
-              @extend %text-underline-post;
+            header {
+              #breadcrumbs {
+                a {
+                  @include text-underline-hover($hover: true, $color: $link);
+                }
+              }
             }
           }
 
@@ -131,47 +172,6 @@
           p {
             padding: 0;
             font-size: inherit;
-          }
-        }
-      }
-
-      .crp_related {
-        margin: 20px 0;
-
-        h3 {
-          @include titulos-chamadas-bold($size: 1.5rem);
-        }
-
-        .crp_title {
-          display: inline-block;
-          color: $titulos-cor;
-          margin-top: 5px;
-        }
-
-        ul {
-          list-style: outside none none;
-          padding: 0;
-
-          li {
-            @include titulos-chamadas;
-
-            a {
-              .crp_thumb {
-                width: 100%;
-                height: auto;
-              }
-
-              span {
-                @include text-underline-hover($color: $link);
-              }
-            }
-
-            width: 75%;
-            margin-bottom: 10px;
-
-            &:nth-child(3n+3) {
-              margin-right: 0;
-            }
           }
         }
       }

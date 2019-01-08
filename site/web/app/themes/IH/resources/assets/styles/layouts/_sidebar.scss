@@ -33,6 +33,46 @@
     padding: 0 1em 1em;
   }
 
+  // Mais acessadas
+  #mais-acessadas {
+    h3 {
+      @include titulos($color: $cor-primary, $size: 1.5rem);
+
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        // @include titulos($color: $titulos-cor, $size: 1rem);
+
+        margin-bottom: 10px;
+
+        .tptn_link {
+          color: $titulos-cor;
+
+          img {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+
+        .tptn_after_thumb {
+          display: inline-grid;
+          display: -ms-inline-grid;
+          margin-left: 10px;
+          width: 60%;
+
+          // a {
+          //   @include text-underline-hover($color: $link);
+          // }
+        }
+      }
+    }
+  }
+
   #instagram {
     h3 {
       margin-bottom: 15px;
@@ -114,46 +154,6 @@
         &:hover {
           filter: alpha(opacity=85);
           opacity: 0.85;
-        }
-      }
-    }
-  }
-
-  // Mais acessadas
-  #mais-acessadas {
-    h3 {
-      @include titulos($color: $cor-primary, $size: 1.5rem);
-
-      margin-bottom: 15px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        // @include titulos($color: $titulos-cor, $size: 1rem);
-
-        margin-bottom: 10px;
-
-        .tptn_link {
-          color: $titulos-cor;
-
-          img {
-            max-width: 100%;
-            width: 100%;
-          }
-        }
-
-        .tptn_after_thumb {
-          display: inline-grid;
-          display: -ms-inline-grid;
-          margin-left: 10px;
-          width: 60%;
-
-          a {
-            @include text-underline-hover($color: $link);
-          }
         }
       }
     }

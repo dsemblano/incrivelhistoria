@@ -47,6 +47,15 @@ collect([
  * Render page using Blade
  */
 add_filter('template_include', function ($template) {
+    collect(['get_header', 'wp_head'])->each(function ($tag) {
+        ob_start();
+        do_action($tag);
+        $output = ob_get_clean();
+        remove_all_actions($tag);
+        add_action($tag, function () use ($output) {
+            echo $output;
+        });
+    });
     $data = collect(get_body_class())->reduce(function ($data, $class) use ($template) {
         return apply_filters("sage/template/{$class}/data", $data, $template);
     }, []);
@@ -117,55 +126,55 @@ return $form;
 
  //echo env('WP_ENV');
 
-add_filter('style_loader_tag', function ($html, $handle, $href) {
-    if (is_admin()) {
-        return $html;
-    }
-
-    $dom = new \DOMDocument();
-    $dom->loadHTML($html);
-    $tag = $dom->getElementById($handle . '-css');
-    $tag->setAttribute('rel', 'preload');
-    $tag->setAttribute('as', 'style');
-    $tag->setAttribute('onload', "this.onload=null;this.rel='stylesheet'");
-    $tag->removeAttribute('type');
-    $html = $dom->saveHTML($tag);
-
-    return $html;
-}, 999, 3);
-
-  add_action('wp_head', function () {
-      $preload_script = get_theme_file_path() . '/resources/assets/scripts/cssrelpreload.js';
-
-      if (fopen($preload_script, 'r')) {
-          echo '<script>' . file_get_contents($preload_script) . '</script>';
-      }
-  }, 101);
+// add_filter('style_loader_tag', function ($html, $handle, $href) {
+//     if (is_admin()) {
+//         return $html;
+//     }
+//
+//     $dom = new \DOMDocument();
+//     $dom->loadHTML($html);
+//     $tag = $dom->getElementById($handle . '-css');
+//     $tag->setAttribute('rel', 'preload');
+//     $tag->setAttribute('as', 'style');
+//     $tag->setAttribute('onload', "this.onload=null;this.rel='stylesheet'");
+//     $tag->removeAttribute('type');
+//     $html = $dom->saveHTML($tag);
+//
+//     return $html;
+// }, 999, 3);
+//
+//   add_action('wp_head', function () {
+//       $preload_script = get_theme_file_path() . '/resources/assets/scripts/cssrelpreload.js';
+//
+//       if (fopen($preload_script, 'r')) {
+//           echo '<script>' . file_get_contents($preload_script) . '</script>';
+//       }
+//   }, 101);
 
 /**
  * Inject critical assets in head as early as possible
  */
-  add_action('wp_head', function () {
-    $critical_CSS = asset_path('styles/critical.css');
-
-    if (fopen($critical_CSS, 'r')) {
-        echo '<style>' . file_get_contents($critical_CSS) . '</style>';
-    }
-  }, 1);
-
-
-  /**
- * Use Lozad (lazy loading) for attachments/featured images
- */
-add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
-  // Bail on admin
-  if (is_admin()) {
-      return $attr;
-  }
-
-  $attr['data-src'] = $attr['src'];
-  $attr['class'] .= ' lozad';
-  unset($attr['src']);
-
-  return $attr;
-}, 10, 2);
+//   add_action('wp_head', function () {
+//     $critical_CSS = asset_path('styles/critical.css');
+//
+//     if (fopen($critical_CSS, 'r')) {
+//         echo '<style>' . file_get_contents($critical_CSS) . '</style>';
+//     }
+//   }, 1);
+//
+//
+//   /**
+//  * Use Lozad (lazy loading) for attachments/featured images
+//  */
+// add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
+//   Bail on admin
+//   if (is_admin()) {
+//       return $attr;
+//   }
+//
+//   $attr['data-src'] = $attr['src'];
+//   $attr['class'] .= ' lozad';
+//   unset($attr['src']);
+//
+//   return $attr;
+// }, 10, 2);

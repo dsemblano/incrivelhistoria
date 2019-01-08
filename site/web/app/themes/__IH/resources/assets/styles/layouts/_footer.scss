@@ -1,0 +1,69 @@
+// Footer
+.sitemap-footer > li > a {
+  @include titulos-chamadas-bold($size: 1rem);
+
+  color: $black;
+}
+
+.footer-right {
+  p {
+    @include titulos-chamadas-bold($size: 1.5rem);
+
+    color: $white;
+  }
+
+  .facebook-footer {
+    margin: 1em 0;
+
+    .redes-sociais {
+      @include titulos($black, $size: 1.5rem, $weight: 700);
+
+      display: block;
+    }
+
+    @include svg-fonts($display: inline-block, $height: 2em, $size: 2rem);
+  }
+}
+
+footer.content-info {
+  background-color: $cor-primary;
+  padding-top: 1.5em;
+
+  .sitemap-footer > li {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: top;
+    line-height: 20px;
+  }
+
+  .sitemap-footer {
+    @include titulos-chamadas;
+
+    li {
+      list-style: none;
+      margin: 10px 0;
+      white-space: nowrap;
+
+      .sub-menu {
+        padding-left: 1em;
+
+        a {
+          color: #fff;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .container-fluid.copyright {
+    @include titulos-chamadas-bold($size: 1.2rem);
+
+    background-color: $white;
+    color: $black;
+    line-height: 3em;
+    text-align: center;
+  }
+}

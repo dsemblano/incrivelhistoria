@@ -1,0 +1,73 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+// Variables
+
+// Colors
+$instagram-orange: #e95950;
+$link: #c27525;
+$brand-primary: #084a60;
+$logo: #fff;
+$cor-primary: #188cb3; // azul
+$cor-sidebar: #c9dae1; // azul claro
+// $titulos-cor: #171f44;
+$titulos-cor: #484848;
+// #484848
+$white: #fff;
+$black: #000;
+$quote: #999;
+$touch: #c9dae1;
+// $titulo-bg: rgba(0, 0, 0, 0.5);
+// $titulo-bg-hover: rgba(0, 0, 0, 0.8);
+$gradient-bg: rgba(10, 47, 73, 1);
+$bg-content: #f7f7f7;
+$bg-body: #ececec;
+$bg-mais: #d4ddda;
+$border-content: #dadada;
+$border-sidebar: #a3bac1;
+// $cor-texto: #263238;
+$cor-texto: #444;
+$cor-blockquote: #757575;
+// figcaption
+$figcaption: #3b3b3b;
+//cor categorias historia brasil
+$cat-histbrasil: #9bf046;
+$cat-colonia: #96e078;
+$cat-imperio: #7fb747;
+$cat-republica: #4c8216;
+//cor categorias periodos
+$cat-periodos: #ffd88d;
+$cat-idantiga: #deb058;
+$cat-idmedia: #b58a37;
+$cat-idmoderna: #976115;
+$cat-idcontemp: #5b3b0e;
+//cor categorias artes
+$cat-artes: #ff210a;
+$cat-cinema: #e7543c;
+$cat-musica: #eb7a68;
+$cat-liter: #f86d57;
+//cor biografias
+$cat-bio: #6657f8;
+$cat-dirhum: #0f2886;
+$cat-curios: #083c17;
+// cor guerras
+$cor-guerras: #000;
+$cor-armas: #37353a;
+$cor-batalhas: #6e6e76;
+$cor-massacres: #8e8e9a;
+$cor-1guerra: #b2b3b8;
+$cor-2guerra: #d0cfd5;
+//cor mais
+$cat-mais: #9004cb;
+$cor-livros: #ef23d0;
+$cor-papeis: #c11aa8;
+$cor-crime: #30014f;
+$cor-outras: #9004cb;

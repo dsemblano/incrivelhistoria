@@ -2,7 +2,7 @@
 import 'jquery';
 
 // Import everything from autoload
-import "./autoload/**/*"
+import './autoload/**/*'
 
 // import local dependencies
 import 'flickity/dist/flickity.pkgd.min.js';

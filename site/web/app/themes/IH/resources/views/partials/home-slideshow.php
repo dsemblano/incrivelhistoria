@@ -4,8 +4,8 @@
         <?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
             <div class="carousel-cell">
                 <a href="<?php the_permalink(); ?>">
-                    <?php //the_post_thumbnail('slideshow2'); ?>
-                    <?php echo (App\featured_image_url('slideshow')); ?>
+                    <?php the_post_thumbnail('slideshow'); ?>
+                    <?php //echo (App\featured_image_url('curiosidades_large')); ?>
                     <header>
                       <h2><?php the_title(); ?></h2>
                       <?php

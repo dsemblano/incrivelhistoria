@@ -7,7 +7,9 @@
   @endphp
     <li>
       <a href="<?php the_permalink(); ?>">
-        <?php echo (App\featured_image_url('top10')); ?>
+        <?php //echo (App\featured_image_url('top10')); 
+        the_post_thumbnail('top10');
+        ?>
       </a>
     </li>
   @php

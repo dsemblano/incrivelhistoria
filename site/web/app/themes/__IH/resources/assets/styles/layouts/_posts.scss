@@ -1,0 +1,180 @@
+// Posts
+.single-post {
+  .content {
+    background-color: $white;
+    padding-bottom: 5em;
+
+    .figure-img,
+    .wp-caption img {
+      margin-bottom: 0;
+    }
+
+    main {
+      article {
+        color: $titulos-cor;
+
+        h1 {
+          @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
+        }
+
+        header {
+          #breadcrumbs {
+            a {
+              @include text-underline-hover($hover: true, $color: $link);
+            }
+          }
+        }
+
+        .entry-content {
+          .heateor_sss_sharing_container.heateor_sss_horizontal_sharing {
+            margin: 15px 0;
+          }
+
+          h2,
+          h3,
+          h4,
+          h5 {
+            font-size: 1.2rem;
+          }
+
+          h6 {
+            font-size: 0.8rem;
+            line-height: 25px;
+
+            a {
+              @extend %text-underline-post;
+
+              color: $black;
+
+              span {
+                color: inherit !important;
+              }
+            }
+          }
+
+          p {
+            @extend %text-selection;
+
+            color: $cor-texto;
+
+            a {
+              @extend %text-underline-post;
+            }
+          }
+
+          img :not(.author_bio_section) {
+            margin-bottom: 0;
+            height: auto;
+            width: 100%;
+          }
+
+          figcaption {
+            background-color: $figcaption;
+            color: $white;
+            font-size: small;
+            text-align: center;
+            padding: 5px;
+          }
+
+          blockquote {
+            border-left: 5px solid $link;
+            margin-left: 0.5em;
+
+            p {
+              color: $cor-blockquote;
+              font-size: 1.1rem;
+              font-style: italic;
+              margin-left: 1em;
+            }
+          }
+
+          // h5:nth-of-type(1) {
+          //   // border-top: 1px solid #dadada;
+          //   margin-top: 15px;
+          //   padding-top: 15px;
+          //   font-size: 1rem;
+          // }
+        }
+      }
+
+      footer.author_bio_section {
+        margin-top: 35px;
+        background: none repeat scroll 0 0 #f9f9f9;
+        padding: 15px;
+        border: 1px solid #ccc;
+
+        .author_name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .author_details {
+          font-size: 1rem;
+          margin-top: 20px;
+          padding: 0 15px 0 0;
+
+          figure {
+            margin: 0;
+
+            img :not(#facebook_author) {
+              border-radius: 50%;
+              width: 100%;
+              height: auto;
+            }
+
+            #facebook_author {
+              width: 35%;
+              margin: 10px 0 0 0;
+            }
+          }
+
+          p {
+            padding: 0;
+            font-size: inherit;
+          }
+        }
+      }
+
+      .crp_related {
+        margin: 20px 0;
+
+        h3 {
+          @include titulos-chamadas-bold($size: 1.5rem);
+        }
+
+        .crp_title {
+          display: inline-block;
+          color: $titulos-cor;
+          margin-top: 5px;
+        }
+
+        ul {
+          list-style: outside none none;
+          padding: 0;
+
+          li {
+            @include titulos-chamadas;
+
+            a {
+              .crp_thumb {
+                width: 100%;
+                height: auto;
+              }
+
+              span {
+                @include text-underline-hover($color: $link);
+              }
+            }
+
+            width: 75%;
+            margin-bottom: 10px;
+
+            &:nth-child(3n+3) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

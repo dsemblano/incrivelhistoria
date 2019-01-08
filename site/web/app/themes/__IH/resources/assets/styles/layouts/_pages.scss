@@ -1,0 +1,110 @@
+// Pages
+$cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-media, $cat-idmedia), (idade-moderna, $cat-idmoderna), (idade-contemporanea, $cat-idcontemp), (historia-do-brasil, $cat-histbrasil), (colonia, $cat-colonia), (imperio, $cat-imperio), $cat-republica, (republica, $cat-artes), (direitos-humanos, $cat-cinema), (musica, $cat-musica), (literatura, $cat-liter), (biografias, $cat-bio), (direitos-humanos, $cat-dirhum), (curiosidades, $cat-curios), (guerras, $cor-guerras), (armas-historicas, $cor-armas), (batalhas-historicas, $cor-batalhas), (massacres-e-genocidios, $cor-massacres), (primeira-guerra-mundial, $cor-1guerra), (segunda-guerra-mundial, $cor-2guerra), (livros-indicados, $cor-livros), (papeis-de-parede, $cor-papeis), (crime-organizado, $cor-crime), (mais, $cat-mais), (outros, $cat-mais), (arqueologia, $cat-mais), (arquitetura, $cat-mais), (atualidades, $cat-mais), (esportes, $cat-mais), (imagens, $cat-mais);
+
+@each $hr-category, $color in $cores-hr {
+  .category-#{$hr-category} {
+    .page-header {
+      hr {
+        border-color: $color;
+        // border-style: solid $color;
+        border-width: 5px 0;
+      }
+    }
+  }
+}
+
+.sidebar-primary,
+.archive {
+  article {
+    header {
+      h2 {
+        @include titulos($titulos-cor, $size: 1.5rem);
+      }
+
+      p {
+        @include titulos($black, $size: 0.95rem);
+
+        margin-bottom: 5px;
+      }
+    }
+
+    a {
+      @include text-underline-hover($color: $link);
+
+      color: $titulos-cor;
+    }
+  }
+
+  .pagination {
+    color: #188cb3;
+    margin: 3em auto;
+
+    h2 {
+      color: inherit;
+    }
+
+    .nav-links {
+      color: inherit;
+      margin: 0 auto;
+
+      a {
+        color: inherit;
+      }
+
+      .page-numbers:not(.prev):not(.next) {
+        border-right: 1px solid $cor-primary;
+        padding: 0 10px 0 5px;
+      }
+
+      .current {
+        font-size: large;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .author-page {
+    color: $cor-texto;
+
+    .author-facebook {
+      display: block;
+      margin-top: 10px;
+
+      img {
+        width: 5%;
+      }
+    }
+
+    .author-description {
+      @extend %text-selection;
+
+      border-bottom: 1px solid #dadada;
+      padding-bottom: 35px;
+      margin-top: 15px;
+    }
+
+    .author-posts {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.archive,
+.search {
+  article {
+    border-bottom: 1px solid $border-content;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+.page {
+  main {
+    section {
+      @include titulos($black);
+    }
+  }
+}
