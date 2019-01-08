@@ -6,8 +6,7 @@ import './autoload/**/*'
 
 // import local dependencies
 import 'flickity/dist/flickity.pkgd.min.js';
-//import 'fg-loadcss/dist/cssrelpreload.min.js';
-// import 'thirdplugins/jquery.lazyloadxt.extend.js';
+// import 'fg-loadcss/dist/cssrelpreload.min.js';
 import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
