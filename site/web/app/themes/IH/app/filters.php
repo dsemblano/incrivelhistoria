@@ -123,18 +123,18 @@ return $form;
 /**
  * Use Lozad (lazy loading) for attachments/featured images
  */
-add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
-  // Bail on admin
-  if (is_admin()) {
-      return $attr;
-  }
+// add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
+//   // Bail on admin
+//   if (is_admin()) {
+//       return $attr;
+//   }
 
-  $attr['data-src'] = $attr['src'];
-  $attr['class'] .= ' lozad';
-  unset($attr['src']);
+//   $attr['data-src'] = $attr['src'];
+//   $attr['class'] .= ' lozad';
+//   unset($attr['src']);
 
-  return $attr;
-}, 10, 2);
+//   return $attr;
+// }, 10, 2);
 
 
 /**
@@ -169,16 +169,15 @@ add_filter('wp_get_attachment_image_attributes', function ($attr, $attachment) {
 // }, 101);
 
 //Critical CSS
-add_action('wp_head', function () {
-  if (is_front_page()) {
-      $critical_CSS = asset_path('styles/critical-home.css');
-  } elseif (is_singular()) {
-      $critical_CSS = asset_path('styles/critical-singular.css');
-  } else {
-      $critical_CSS = asset_path('styles/critical-archive.css');
-  }
-
-  if (fopen($critical_CSS, 'r')) {
-      echo '<style>' . file_get_contents($critical_CSS) . '</style>';
-  }
-}, 1);
+// add_action('wp_head', function () {
+//   if (is_front_page()) {
+//       $critical_CSS = asset_path('styles/critical-home.css');
+//   } elseif (is_singular()) {
+//       $critical_CSS = asset_path('styles/critical-singular.css');
+//   } else {
+//       $critical_CSS = asset_path('styles/critical-archive.css');
+//   }
+//   if (fopen($critical_CSS, 'r')) {
+//       echo '<style>' . file_get_contents($critical_CSS) . '</style>';
+//   }
+// }, 1);

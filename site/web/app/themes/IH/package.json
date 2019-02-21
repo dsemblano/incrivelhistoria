@@ -1,6 +1,6 @@
 {
   "name": "sage",
-  "version": "9.0.7",
+  "version": "9.0.9",
   "author": "Roots <team@roots.io>",
   "homepage": "https://roots.io/sage/",
   "private": true,
@@ -51,10 +51,8 @@
     "eslint-loader": "~1.9",
     "eslint-plugin-import": "~2.14.0",
     "extract-text-webpack-plugin": "~3.0.2",
-    "fg-loadcss": "^2.1.0",
     "file-loader": "^1.1.6",
     "friendly-errors-webpack-plugin": "^1.6.1",
-    "html-critical-webpack-plugin": "1.1.0",
     "imagemin-mozjpeg": "~7.0.0",
     "imagemin-webpack-plugin": "~2.2.0",
     "import-glob": "~1.5",
@@ -78,10 +76,9 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
-    "bootstrap": "v4.2.1",
-    "flickity": "^2.1.2",
+    "bootstrap": "v4.3.1",
+    "flickity": "^2.2.0",
     "jquery": "^3.3.1",
-    "lozad": "^1.7.0",
-    "popper.js": "^1.14.6"
+    "popper.js": "^1.14.7"
   }
 }
