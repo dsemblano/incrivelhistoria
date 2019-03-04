@@ -2,7 +2,7 @@
 /*
   Plugin Name: plugin load filter [plf-filter]
   Description: Dynamically activated only plugins that you have selected in each page. [Note] plf-filter has been automatically installed / deleted by Activate / Deactivate of "load filter plugin".
-  Version: 3.0.3
+  Version: 3.1.0
   Plugin URI: http://celtislab.net/wp_plugin_load_filter
   Author: enomoto@celtislab
   Author URI: http://celtislab.net/
@@ -315,17 +315,22 @@ class Plf_filter {
             }
             $keys = array();
             //汎用urlを優先する
-            foreach (array( 'amp', 'url_1', 'url_2', 'url_3' ) as $key) {
+            //foreach (array( 'amp', 'url_1', 'url_2', 'url_3' ) as $key) {
+            foreach (array( 'amp' ) as $key) {
                 if(! empty($filter['urlkey'][$key])){
                     $keys[$key] = $filter['urlkey'][$key];
                 }
             }
+            $ar_key = (!empty($filter['urlkeylist']))? array_filter( array_map("trim", explode(PHP_EOL, $filter['urlkeylist']))) : array();
+            foreach ($ar_key as $key) {
+                $keys[$key] = $key;
+            }                
             $keys['wp-json'] = 'wp-json';
             $keys['heartbeat'] = 'admin-ajax';
             $keys['admin-ajax'] = 'admin-ajax';
             
             foreach ($keys as $key => $kwd) {
-                if( preg_match("#(/|&|\.|\?){$kwd}(/|&|=|\.|$)#u", $_SERVER['REQUEST_URI'])) {
+                if( preg_match("#(/|&|\.|\?|=){$kwd}(/|&|\.|\?|=|$)#u", $_SERVER['REQUEST_URI'])) {
                     if($key === 'heartbeat'){
                         if ( empty($_REQUEST['action']) || $_REQUEST['action'] !== 'heartbeat' ){
                             continue;
@@ -343,7 +348,7 @@ class Plf_filter {
                     break;
                 }
             }
-            if($urlkey !== false){
+            if($urlkey !== false && is_string($urlkey)){
                 $us_value  = ($option === 'active_sitewide_plugins')? array_keys( (array)$value ) : maybe_unserialize( $value );
                 $new_value = array();
                 foreach ( $us_value as $item ) {
@@ -548,7 +553,7 @@ class Plf_filter {
                                             $type = ($fmt === 'standard' || $fmt == false)? 'post' : "post-$fmt";
                                         }
                                     }
-                                    if($type !== false && !empty($filter['group'][$type]['plugins'])){
+                                    if(!empty($type) && is_string($type) && !empty($filter['group'][$type]['plugins'])){
                                         if(in_array($p_key, array_map("trim", explode(',', $filter['group'][$type]['plugins']))))
                                             $unload = false;
                                         else {

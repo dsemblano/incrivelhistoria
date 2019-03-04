@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e75173a8ea6cea179ecd9e88c79f46f5",
+    "content-hash": "3c52229d4ac6e53d11dc61497c64112a",
     "packages": [
         {
             "name": "composer/installers",
@@ -587,16 +587,34 @@
             "homepage": "https://wordpress.org/plugins/plugin-load-filter/"
         },
         {
-            "name": "wpackagist-plugin/redirection",
-            "version": "4.0",
+            "name": "wpackagist-plugin/popup-maker",
+            "version": "1.8.3",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/redirection/",
-                "reference": "tags/4.0"
+                "url": "https://plugins.svn.wordpress.org/popup-maker/",
+                "reference": "tags/1.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/redirection.4.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.8.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/popup-maker/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "4.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.4.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -624,7 +642,7 @@
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",
-            "version": "3.2.14",
+            "version": "3.2.17",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sassy-social-share/",
@@ -632,7 +650,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1551190905"
+                "url": "https://downloads.wordpress.org/plugin/sassy-social-share.zip?timestamp=1551433753"
             },
             "require": {
                 "composer/installers": "~1.0"

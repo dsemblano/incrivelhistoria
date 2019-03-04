@@ -1,5 +1,16 @@
 <?php
 
+// Retirando css pop-up maker já que é carregado pelo Sage
+function popupmaker_dequeue_style() {
+  wp_dequeue_style('popup-maker-site');
+}
+
+function action_popupmaker_dequeue_style() {
+  add_action('wp_enqueue_scripts', 'popupmaker_dequeue_style', 999);
+}
+
+add_action( 'init', 'action_popupmaker_dequeue_style' );
+
 // Retirar css e js da home do pĺugin sassy-social-share
 function heateor_sss_dequeue_scripts_and_styles() {
 	if ( ! is_single() ) {
