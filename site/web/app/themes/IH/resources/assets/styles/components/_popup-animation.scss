@@ -286,6 +286,7 @@ html.pum-open.pum-open-overlay-disabled.pum-open-scrollable .pum-overlay.pum-act
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 33px;
 }
 
 .pum-form--loading {
@@ -407,6 +408,7 @@ html.pum-open.pum-open-overlay-disabled.pum-open-scrollable .pum-overlay.pum-act
 
 .pum-form--layout-inline .pum-form__field {
   margin: 0;
+  height: auto;
 }
 
 .pum-form--layout-block .pum-form__field,
@@ -423,6 +425,7 @@ html.pum-open.pum-open-overlay-disabled.pum-open-scrollable .pum-overlay.pum-act
   margin-bottom: 5px;
   font-size: 14px;
   padding: 10px 8px;
+  height: 100%;
 }
 
 .pum-sub-form {
