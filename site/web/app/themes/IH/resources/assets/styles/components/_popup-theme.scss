@@ -1,6 +1,7 @@
 /* Popup Theme 13839: Light Box */
 .pum-theme-lightbox {
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1999999999;
   // z-index: 1999999999;
 }
 
@@ -11,6 +12,7 @@
   // border: 8px solid #000;
   box-shadow: 10px 10px 7px 5px rgba(0, 0, 0, 0.75);
   background-color: #414141;
+  // height: 100%;
 }
 
 .pum-title,
@@ -81,7 +83,7 @@
     padding: 0 14px;
     margin: 0;
     transition: none 0s ease 0s;
-    height: 33px;
+    // height: 33px;
     width: 100%;
   }
 }
@@ -116,10 +118,10 @@
   }
 }
 
-.pum-form__field--email {
-  width: 65%;
-}
+// .pum-form__field--email {
+//   width: 65%;
+// }
 
-.pum-form__field--submit {
-  width: 30%;
-}
+// .pum-form__field--submit {
+//   width: 30%;
+// }
