@@ -192,12 +192,27 @@
   .pum-container.pum-responsive.pum-position-fixed {
     position: fixed;
   }
+
+  // .popmake-content {
+  //   background-color: green;
+  // }
 }
 
 @media only screen and (max-width: 1024px) {
   .pum-container.pum-responsive.pum-position-fixed {
     position: absolute;
   }
+
+  .pum-container.pum-responsive img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // .popmake-content {
+  //   background-color: yellow;
+  // }
 }
 
 .pum-container.custom-position {
