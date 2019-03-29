@@ -28,13 +28,12 @@
     @endphp
 
     @if ( $query->have_posts() )
-    <div class="page-header category-{{ $category->slug }}">
+    <div class="page-header">
       <h2>
         <a class="header-link" href={{ esc_url(get_category_link($category->cat_ID)) }}>
           {{ $category->name }}:
         </a>
       </h2>
-      <hr />
     </div>
     <section id="{{ $category->slug }}-page" class="category-parent row">
         @while ( $query->have_posts() )

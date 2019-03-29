@@ -13,16 +13,6 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
-@each $hr-category, $color in $cores-hr {
-  .category-#{$hr-category} {
-    hr {
-      border-color: $color;
-      // border-style: solid $color;
-      border-width: 5px 0;
-    }
-  }
-}
-
 .page-template-template-allcategories {
   .header-link {
     -webkit-transition: all 0.2s ease-out;
@@ -42,6 +32,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
 
   section {
     margin-bottom: 15px;
+    border-bottom: 1px solid $border-content;
   }
 }
 

@@ -1,4 +1,4 @@
-<article @php post_class('row no-gutters') @endphp>
+<article {{ post_class('row no-gutters') }}>
   <figure class="col-sm">
     <a href="{{ get_permalink() }}">{{ the_post_thumbnail('mais_extendida') }}</a>
   </figure>
