@@ -27,17 +27,18 @@
       $subcategories = get_categories( $args2 );
     @endphp
 
-    <ul>
-      @if ( $query->have_posts() )
-      <div class="page-header {{ $category->slug }}">
-        <a href={{ esc_url(get_category_link($category->cat_ID)) }}>
-          <h2>{{ $category->name }}:</h2>
+    @if ( $query->have_posts() )
+    <div class="page-header category-{{ $category->slug }}">
+      <h2>
+        <a class="header-link" href={{ esc_url(get_category_link($category->cat_ID)) }}>
+          {{ $category->name }}:
         </a>
-        <hr />
-      </div>
+      </h2>
+      <hr />
+    </div>
+    <section id="{{ $category->slug }}-page" class="category-parent row">
         @while ( $query->have_posts() )
         @php $query->the_post() @endphp
-
           {{-- Sub categorias --}}
           @foreach ($subcategories as $subcategory)
             @php
@@ -53,15 +54,28 @@
             @while ( $query_subcategory->have_posts() )
             @php $query_subcategory->the_post() @endphp
               {{-- <h3>{{ $category->name }}:</h3> --}}
-              <a href={{ esc_url(get_category_link($subcategory->cat_ID)) }}>
-                <h3> {{ $subcategory->cat_name }}</h3>
-              </a>
-              @include('partials.content')
+              <article {{ post_class('col-sm') }} >
+                <h3>
+                  <a class="header-link" href={{ esc_url(get_category_link($subcategory->cat_ID)) }}>
+                    {{ $subcategory->cat_name }}
+                  </a>
+                </h3>
+                <figure>
+                    <a class="header-link" href={{ esc_url(get_category_link($subcategory->cat_ID)) }}>
+                      {{ the_post_thumbnail('curiosidades_small') }}
+                    </a>
+                </figure>
+                {{-- <h4 class="entry-title">
+                  <a class="header-link" href="{{ get_permalink() }}">
+                    {{ get_the_title() }}
+                  </a>
+                </h4> --}}
+                </article>
             @endwhile
           {{-- fim loop subcategorias --}}
           @endforeach
         @endwhile
-      @endif
-    </ul>
+    </section>
+    @endif
   @endforeach
 @endsection

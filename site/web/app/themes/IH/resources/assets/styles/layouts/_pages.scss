@@ -13,6 +13,38 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-idantiga), (idade-medi
   }
 }
 
+@each $hr-category, $color in $cores-hr {
+  .category-#{$hr-category} {
+    hr {
+      border-color: $color;
+      // border-style: solid $color;
+      border-width: 5px 0;
+    }
+  }
+}
+
+.page-template-template-allcategories {
+  .header-link {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    padding: 10px 0;
+    color: $titulos-cor;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2da2c5), to(#2da2c5));
+    background-image: linear-gradient(#2da2c5, #2da2c5);
+    background-repeat: no-repeat;
+    background-size: 100% 1.5px;
+    background-position: center bottom 20%;
+    background-origin: padding-box;
+    text-shadow: 3px 0 #f6f3f2, 2px 0 #f6f3f2, 1px 0 #f6f3f2, -1px 0 #f6f3f2, -2px 0 #f6f3f2, -3px 0 #f6f3f2;
+    position: static;
+  }
+
+  section {
+    margin-bottom: 15px;
+  }
+}
+
 .sidebar-primary,
 .archive {
   article {
