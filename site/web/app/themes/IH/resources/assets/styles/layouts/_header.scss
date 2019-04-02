@@ -15,11 +15,6 @@ body {
   }
 }
 
-.sidebar #mais-acessadas h3 {
-  border-top: 5px solid #188cb3;
-  padding-top: 10px;
-}
-
 header.banner {
   color: #fff;
   background: url("../images/bg.jpg") no-repeat scroll 0 (0 / cover);
@@ -100,8 +95,8 @@ header.banner {
 }
 
 #nav-menu {
-  background-color: #188cb3;
-  color: #fff;
+  background-color: $cor-primary;
+  color: $white;
   height: 35px;
   z-index: 9998;
 
@@ -131,7 +126,7 @@ header.banner {
           white-space: nowrap;
 
           &:hover {
-            background-color: #137c9f;
+            background-color: $hover-menu;
           }
         }
       }
@@ -139,7 +134,7 @@ header.banner {
       &:hover .sub-menu {
         display: block;
         z-index: 9999;
-        background-color: #188cb3;
+        background-color: $cor-primary;
       }
 
       a {

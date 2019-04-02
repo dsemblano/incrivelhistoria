@@ -108,7 +108,7 @@ $L: 1024px;
 }
 
 %sidebar-titulos {
-  border-top: 5px solid $cor-primary;
+  border-top: 5px solid $cor-sidebar;
   padding-top: 10px;
 }
 
@@ -161,7 +161,7 @@ p {
 }
 
 hr {
-  border-color: $link;
+  border-color: $hr;
   // border-style: solid $link;
   border-width: 5px 0;
 }
@@ -262,7 +262,7 @@ body.home {
       h2 {
         @include titulos($color: $white);
 
-        background-color: $link;
+        background-color: $brand-primary;
         text-align: center;
       }
 

@@ -11,47 +11,53 @@ $navbar-light-toggler-icon-bg: none;
 
 // Variables
 
-// Colors
+// Main colors
+$brand-primary: #705834;
+$brand-secundary: #345570; // cor complementar da cor primária
+$hover-menu: #58738a; // shade da secundária
+$complementary: #f2af29; // cor complementar da secundária
+//other colors
 $instagram-orange: #e95950;
 // $link: #c27525;
-$link: rgba(10, 47, 73, 1);
-$brand-primary: #084a60;
+$link: $brand-primary;
+$hr: #ad343e;
+// $brand-primary: #084a60;
 $logo: #fff;
-$cor-primary: #188cb3; // azul
-$cor-sidebar: #c9dae1; // azul claro
+$cor-primary: $brand-secundary; // azul
+$cor-sidebar: $brand-secundary; // azul claro
+$cor-titulo-sidebar: $brand-secundary;
+$titulos-cor: #484848; // ou #484848
+$cor-texto: #484848; // ou #484848
+// $cor-sidebar: #c9dae1; // azul claro
 // $titulos-cor: #171f44;
-$titulos-cor: #484848;
 // #484848
 $white: #fff;
 $black: #000;
 $quote: #999;
 $touch: #c9dae1;
-// $titulo-bg: rgba(0, 0, 0, 0.5);
-// $titulo-bg-hover: rgba(0, 0, 0, 0.8);
-$gradient-bg: rgba(10, 47, 73, 1);
 $bg-content: #f7f7f7;
 $bg-body: #ececec;
 $bg-mais: #d4ddda;
 $border-content: #dadada;
 $border-sidebar: #a3bac1;
 // $cor-texto: #263238;
-$cor-texto: #444;
 $cor-blockquote: #757575;
 // figcaption
 $figcaption: #3b3b3b;
+
 //cor categorias historia brasil
-$cat-histbrasil: #9bf046;
+$cat-histbrasil: $complementary;
 $cat-colonia: #96e078;
 $cat-imperio: #7fb747;
 $cat-republica: #4c8216;
 //cor categorias periodos
-$cat-periodos: #ffd88d;
+$cat-periodos: #dc7445;
 $cat-idantiga: #deb058;
 $cat-idmedia: #b58a37;
 $cat-idmoderna: #976115;
 $cat-idcontemp: #5b3b0e;
 //cor categorias artes
-$cat-artes: #ff210a;
+$cat-artes: #ad343e;
 $cat-cinema: #e7543c;
 $cat-musica: #eb7a68;
 $cat-liter: #f86d57;
