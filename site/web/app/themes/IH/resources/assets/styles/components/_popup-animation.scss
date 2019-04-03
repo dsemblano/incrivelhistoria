@@ -75,7 +75,7 @@
   max-height: none;
   max-width: none;
   min-height: 0;
-  min-width: 0;
+  // min-width: 0;
   overflow: visible;
   position: static;
   right: auto;
@@ -231,7 +231,7 @@
   line-height: 1;
   position: absolute;
   cursor: pointer;
-  min-width: 1em;
+  // min-width: 1em;
   z-index: 2;
   background-color: transparent;
 }
