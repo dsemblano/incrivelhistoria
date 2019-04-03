@@ -16,11 +16,19 @@ $brand-primary: #705834;
 $brand-secundary: #345570; // cor complementar da cor primária
 $hover-menu: #58738a; // shade da secundária
 $complementary: #f2af29; // cor complementar da secundária
+
+// Paleta
+// $color1: rgba(112, 88, 52, 1);
+// $color2: rgba(173, 52, 62, 1);
+// $color3: rgba(242, 175, 41, 1);
+// $color4: rgba(0, 0, 0, 1);
+// $color5: rgba(52, 85, 112, 1);
+
 //other colors
 $instagram-orange: #e95950;
 // $link: #c27525;
 $link: $brand-primary;
-$hr: #ad343e;
+$hr: #d25c6a;
 // $brand-primary: #084a60;
 $logo: #fff;
 $cor-primary: $brand-secundary; // azul
@@ -36,7 +44,8 @@ $black: #000;
 $quote: #999;
 $touch: #c9dae1;
 $bg-content: #f7f7f7;
-$bg-body: #ececec;
+// $bg-body: #ececec;
+$bg-body: #e5e5df;
 $bg-mais: #d4ddda;
 $border-content: #dadada;
 $border-sidebar: #a3bac1;
@@ -47,34 +56,25 @@ $figcaption: #3b3b3b;
 
 //cor categorias historia brasil
 $cat-histbrasil: $complementary;
-$cat-colonia: #96e078;
-$cat-imperio: #7fb747;
-$cat-republica: #4c8216;
 //cor categorias periodos
-$cat-periodos: #dc7445;
-$cat-idantiga: #deb058;
-$cat-idmedia: #b58a37;
-$cat-idmoderna: #976115;
-$cat-idcontemp: #5b3b0e;
+$cat-periodos: #2e8894;
 //cor categorias artes
-$cat-artes: #ad343e;
-$cat-cinema: #e7543c;
-$cat-musica: #eb7a68;
-$cat-liter: #f86d57;
+$cat-artes: #5d7d66;
 //cor biografias
-$cat-bio: #6657f8;
-$cat-dirhum: #0f2886;
+$cat-bio: #bba046;
 $cat-curios: #083c17;
 // cor guerras
-$cor-guerras: #000;
-$cor-armas: #37353a;
-$cor-batalhas: #6e6e76;
-$cor-massacres: #8e8e9a;
-$cor-1guerra: #b2b3b8;
-$cor-2guerra: #d0cfd5;
-//cor mais
-$cat-mais: #9004cb;
-$cor-livros: #ef23d0;
-$cor-papeis: #c11aa8;
-$cor-crime: #30014f;
-$cor-outras: #9004cb;
+$cor-guerras: #bba046;
+// cor personalidades
+$cor-personalidades:#907eae;
+// cor crime
+$cor-crime: #000;
+// cor direitos
+$cat-dirhum: #4298c5;
+// outros
+$cat-outros: #f7d4a3;
+// //cor mais
+// $cat-mais: #59aaa1;
+// $cor-livros: #ef23d0;
+// $cor-papeis: #c11aa8;
+// $cor-outras: #9004cb;
