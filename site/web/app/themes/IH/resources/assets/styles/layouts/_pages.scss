@@ -56,7 +56,7 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-periodos), (idade-medi
       p {
         @include titulos($titulos-cor, $size: 0.95rem);
 
-        margin-bottom: 5px;
+        margin-bottom: 1em;
       }
     }
 

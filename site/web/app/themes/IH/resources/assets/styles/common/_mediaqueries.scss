@@ -11,6 +11,12 @@
   //   width: inherit;
   // }
 
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
   %titulo-materia {
     font-size: 2rem;
   }

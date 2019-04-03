@@ -39,7 +39,7 @@ $L: 1024px;
   font: bold $size "Muli", sans-serif;
 }
 
-@mixin texto-fonte($size: 1.125rem, $line-height: 1.8) {
+@mixin texto-fonte($size: 1rem, $line-height: 25.6px) {
   font: $size "Open Sans", sans-serif;
   line-height: $line-height;
 }
@@ -396,8 +396,11 @@ body {
   }
 }
 
-html,
-body {
-  position: relative;
-  overflow-x: hidden;
+b,
+strong {
+  color: $titulos-cor;
+
+  span {
+    color: $titulos-cor !important;
+  }
 }

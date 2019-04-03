@@ -56,6 +56,9 @@
 
         h1 {
           @include titulos($color: $titulos-cor, $size: 2.5rem, $weight: 700);
+
+          line-height: 1.2;
+          margin-bottom: 1em;
         }
 
         .entry-content {
