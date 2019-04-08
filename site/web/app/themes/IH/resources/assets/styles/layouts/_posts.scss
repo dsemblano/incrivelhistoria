@@ -36,9 +36,9 @@
                 height: auto;
               }
 
-              span {
-                @include text-underline-hover($color: $link);
-              }
+              // span {
+              //   @include text-underline-hover($color: $link);
+              // }
             }
 
             width: 75%;
@@ -76,6 +76,15 @@
             }
           }
 
+          b,
+          strong {
+            color: $titulos-cor;
+
+            span {
+              color: $titulos-cor !important;
+            }
+          }
+
           h2,
           h3,
           h4,
@@ -90,11 +99,11 @@
             a {
               @extend %text-underline-post;
 
-              color: $black;
+              color: $titulos-cor;
 
-              span {
-                color: inherit !important;
-              }
+              // span {
+              //   color: inherit !important;
+              // }
             }
 
             header {

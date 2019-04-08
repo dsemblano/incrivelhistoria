@@ -395,12 +395,3 @@ body {
     }
   }
 }
-
-b,
-strong {
-  color: $titulos-cor;
-
-  span {
-    color: $titulos-cor !important;
-  }
-}
