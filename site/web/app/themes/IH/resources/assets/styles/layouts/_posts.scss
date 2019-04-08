@@ -70,6 +70,7 @@
             @extend %text-selection;
 
             color: $cor-texto;
+            margin: 0 0 20px;
 
             a {
               @extend %text-underline-post;

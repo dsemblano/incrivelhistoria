@@ -24,7 +24,7 @@ header.banner {
 
   #nav-page {
     font-weight: 700;
-    background-color: #f7f7f7;
+    background-color: $bg-content;
     color: #000;
   }
 
@@ -101,7 +101,7 @@ header.banner {
   z-index: 9998;
 
   ul {
-    padding: 0;
+    padding: 5px 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
