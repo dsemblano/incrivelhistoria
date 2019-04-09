@@ -649,15 +649,93 @@
 
 // CSS print
 @media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+    font-family: serif !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm;
+
+    p {
+      widows: 3;
+      orphans: 3;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      page-break-after: avoid;
+    }
+
+    body {
+      counter-reset: chapternum;
+
+      &:last-child {
+        page-break-after: auto;
+      }
+    }
+  }
+
   html,
   body {
-    height: 99%;
+    // height: 100%;
+
+    a:not(.btn) {
+      text-decoration: none;
+    }
+
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+    }
+
+    main::after {
+      content: "Copyright incrivelhistoria.com.br";
+      display: block;
+      text-align: center;
+    }
+
+    header.banner {
+      height: 160px;
+      display: block !important;
+
+      .d-none.d-print-block {
+        border-bottom: 2px solid #363636;
+        width: 100%;
+        font-size: 20pt;
+        // margin: 1em 0 0 0.5em;
+        padding: 0 0 20pt 10pt;
+        display: block !important;
+
+        img {
+          width: 10%;
+        }
+
+        span {
+          margin-left: 5px;
+          font-size: 0.8rem;
+          margin-top: 10px;
+          // display: inline-block;
+        }
+      }
+    }
   }
 
   nav,
   .crp_related,
   .heateorSssClear,
   .heateor_sss_sharing_container.heateor_sss_horizontal_sharing,
+  .pum-container,
+  .brand,
   aside,
   video,
   audio,
@@ -667,28 +745,25 @@
     display: none !important;
   }
 
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important;
-  }
-
   body {
-    font: 12pt Georgia, "Times New Roman", Times, serif;
+    font: 14pt Georgia, "Times New Roman", Times, serif !important;
     margin: 0 !important;
     padding: 0 !important;
-    color: #000;
+    color: #000 !important;
+    display: block !important;
 
-    header.banner .container-brand .brand.visible-print-inline-block {
-      span {
-        margin-top: 15px;
-        display: inline-block;
+    .content main {
+      h1 {
+        font-size: larger !important;
+      }
+
+      article {
+        column-width: 17em;
+        column-gap: 3em;
       }
     }
 
-    .content main .entry-content blockquote {
+    .entry-content blockquote {
       border-right: 0 none;
       border-top: 0 none;
       border-bottom: 0 none;
@@ -735,28 +810,35 @@
     }
   }
 
-  @page {
-    size: A4 portrait;
-    margin: 1.5cm;
+  p.byline.author.vcard,
+  span.breadcrumb_last {
+    font-size: 9pt;
+  }
 
-    p {
-      widows: 3;
-      orphans: 3;
-    }
+  .single-post .content main article h1 {
+    font-size: 18pt !important;
+  }
 
-    h1,
+  .single-post .content main article .entry-content p,
+  .single-post .content main article .entry-content blockquote p {
+    font-size: 14pt;
+  }
+
+  .single-post .content main article .entry-content p a,
+  .single-post .content main article .entry-content h6 a {
+    color: unset !important;
+  }
+
+  .single-post .content main article .entry-content {
     h2,
     h3,
     h4,
     h5 {
-      page-break-after: avoid;
-    }
+      font-size: 14pt;
+      color: #000 !important;
 
-    body {
-      counter-reset: chapternum;
-
-      &:last-child {
-        page-break-after: auto;
+      span {
+        color: #000 !important;
       }
     }
   }

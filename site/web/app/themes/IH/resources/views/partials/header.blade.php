@@ -15,16 +15,16 @@
     </div>
 
   </nav>
-  
+
   <div class="container container-brand flex-item">
-    <div class="d-none d-print-block">
-      <img src="@asset('images/brand_print.png')" alt="Incrível História logo impressão" />
-      {{ get_bloginfo('name', 'display') }} 
+    <div class="d-none d-print-block row">
+      <img class="col-12" src="@asset('images/brand_print.png')" alt="Incrível História logo impressão" />
+      {{ get_bloginfo('name', 'display') }}
       <br />
-      <span>https://incrivelhistoria.com.br - Todos os direitos reservados </span>
+      <span class="col-12">https://incrivelhistoria.com.br - © Todos os direitos reservados </span>
     </div>
       <a class="brand" href="{{ home_url('/') }}">
-        
+
         {{-- {{ get_bloginfo('name', 'display') }} --}}
         {{-- <img src="@asset('images/logo.svg')" alt="Incrível História" /> --}}
         <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 400 150.64896" xml:space="preserve" width="315" height="130.64896">
