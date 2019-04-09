@@ -21,10 +21,10 @@
           font: 400 1.8rem Muli, sans-serif;
           // @extend %titulo-bg;
           // background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 1) 35%, rgba(47, 72, 88, 0.7483368347338936) 100%);
+          background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3897934173669467) 80%);
 
           &:hover {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 35%, rgba(47, 72, 88, 0.7483368347338936) 80%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.7959558823529411) 80%);
           }
 
           bottom: 0;
