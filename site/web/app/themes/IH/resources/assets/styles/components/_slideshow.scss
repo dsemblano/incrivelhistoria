@@ -16,12 +16,15 @@
         cursor: grab;
 
         header {
+          // @include titulos($color: $white);
           color: #fff;
-          font: 400 2rem Muli, sans-serif;
-          background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+          font: 400 1.8rem Muli, sans-serif;
+          // @extend %titulo-bg;
+          // background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 1) 35%, rgba(47, 72, 88, 0.7483368347338936) 100%);
 
           &:hover {
-            background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 35%, rgba(47, 72, 88, 0.7483368347338936) 80%);
           }
 
           bottom: 0;
@@ -32,28 +35,25 @@
           padding: 5px 0 20px 20px;
 
           h2 {
-            font: bold 2rem "Muli", sans-serif;
-            padding: 0;
-            margin: 0;
+            // @include titulos-chamadas-bold;
+            // font: bold 2rem "Muli", sans-serif;
+            font-weight: bold;
+            // padding: 0;
+            // margin: 0;
             position: relative;
-            top: 30%;
+            top: 60%;
           }
 
           p {
+            // @include titulos-chamadas;
             font: 1rem "Muli", sans-serif;
             margin-top: 5px;
             position: relative;
-            top: 30%;
+            top: 60%;
           }
         }
       }
     }
-  }
-
-  .flickity-prev-next-button {
-    top: 67%;
-    width: 30px;
-    height: 30px;
   }
 
   .dot-is-selected {
