@@ -36,6 +36,10 @@ $cor-sidebar: $brand-secundary; // azul claro
 $cor-titulo-sidebar: $brand-secundary;
 $titulos-cor: #2e2e2e; // ou #484848
 $cor-texto: #333; // ou #484848
+$first-gradient: rgb(0, 0, 0);
+$gradient: 0deg, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0.85) 45%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0.40379901960784315) 100%;
+$gradient-hover: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.7959558823529411) 80%);
+$filter:progid:dximagetransform.microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 // $cor-sidebar: #c9dae1; // azul claro
 // $titulos-cor: #171f44;
 // #484848
@@ -44,7 +48,7 @@ $black: #000;
 $quote: #999;
 $touch: #c9dae1;
 // $bg-content: #f7f7f7;
-$bg-content: #ffff;
+$bg-content: #fff;
 // $bg-body: #ececec;
 $bg-body: #e5e5df;
 $bg-mais: #d4ddda;
@@ -67,7 +71,7 @@ $cat-curios: #083c17;
 // cor guerras
 $cor-guerras: #bba046;
 // cor personalidades
-$cor-personalidades:#907eae;
+$cor-personalidades: #907eae;
 // cor crime
 $cor-crime: #000;
 // cor direitos

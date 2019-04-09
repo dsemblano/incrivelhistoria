@@ -8,31 +8,34 @@
     }
 
     .flickity-slider .carousel-cell {
-      width: 100%;
       height: 100%;
       list-style: none;
+      width: 100%;
 
       a {
         cursor: grab;
 
         header {
           // @include titulos($color: $white);
-          color: #fff;
-          font: 400 1.8rem Muli, sans-serif;
           // @extend %titulo-bg;
           // background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.3897934173669467) 80%);
-
-          &:hover {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.7959558823529411) 80%);
-          }
-
+          background: $first-gradient;
+          background: -moz-linear-gradient($gradient);
+          background: -webkit-linear-gradient($gradient);
+          background: linear-gradient($gradient);
           bottom: 0;
+          color: $white;
+          filter: $filter;
+          font: 400 1.8rem Muli, sans-serif;
+          height: 100%;
           left: 0;
+          padding: 5px 0 20px 20px;
           position: absolute;
           width: 100%;
-          height: 100%;
-          padding: 5px 0 20px 20px;
+
+          &:hover {
+            background: $gradient-hover;
+          }
 
           h2 {
             // @include titulos-chamadas-bold;
@@ -46,7 +49,7 @@
 
           p {
             // @include titulos-chamadas;
-            font: 1rem "Muli", sans-serif;
+            font: 1rem Muli, sans-serif;
             margin-top: 5px;
             position: relative;
             top: 60%;
@@ -57,6 +60,6 @@
   }
 
   .dot-is-selected {
-    background-color: #fff;
+    background-color: $white;
   }
 }
