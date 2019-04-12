@@ -44,16 +44,17 @@ $L: 1024px;
   line-height: $line-height;
 }
 
-@mixin svg-fonts($display: inline-block, $height: 3em, $size: 0.7rem) {
+@mixin svg-fonts($display: inline-block) {
   .icon {
     display: $display;
     width: 1em;
-    height: $height;
+    height: 1.5em;
     stroke-width: 0;
     stroke: currentColor;
     fill: black;
-    font-size: $size;
-    margin-right: 10px;
+    font-size: 1em;
+    position: relative;
+    bottom: 7px;
   }
 
   .icon-search-1 {

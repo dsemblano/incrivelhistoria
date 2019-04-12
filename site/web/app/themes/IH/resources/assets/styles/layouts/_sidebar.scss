@@ -2,7 +2,7 @@
 
 .sidebar {
   .social-icons {
-    @include svg-fonts($display: inline-block, $height: 2em, $size: 2rem);
+    @include svg-fonts($display: inline-block);
   }
 
   section {
