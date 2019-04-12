@@ -1,6 +1,13 @@
 // Media Queries
 // Resoluções abaixo de desktop
 @include media-breakpoint-down(lg) {
+  .search-form .search-submit .icon {
+    width: 1em;
+    height: 1.5em;
+    font-size: 1em;
+    bottom: 7px;
+  }
+
   body .wrap .content {
     padding: 15px 0 0 0;
   }
