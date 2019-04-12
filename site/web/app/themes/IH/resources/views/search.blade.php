@@ -7,7 +7,7 @@
     <div class="alert alert-warning">
       {{ __('Nenhum resultado encontrado, por favor faça uma nova busca..', 'sage') }}
     </div>
-    {!! get_search_form(false) !!}
+    {{-- {!! get_search_form(false) !!} --}}
   @endif
 
   @while(have_posts()) @php the_post() @endphp
