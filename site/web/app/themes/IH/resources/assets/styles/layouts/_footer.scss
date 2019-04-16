@@ -16,7 +16,7 @@
     margin: 1em 0;
 
     .redes-sociais {
-      @include titulos($black, $size: 1.5rem, $weight: 700);
+      @include titulos($white, $size: 1.5rem, $weight: 700);
 
       display: block;
     }
