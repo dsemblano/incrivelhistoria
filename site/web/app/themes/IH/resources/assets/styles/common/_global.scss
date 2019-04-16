@@ -44,14 +44,14 @@ $L: 1024px;
   line-height: $line-height;
 }
 
-@mixin svg-fonts($display: inline-block) {
+@mixin svg-fonts($display: inline-block, $fill: $white) {
   .icon {
     display: $display;
     width: 1em;
     height: 1.5em;
     stroke-width: 0;
     stroke: currentColor;
-    fill: $white;
+    fill: $fill;
     font-size: 1em;
     position: relative;
     bottom: 0;

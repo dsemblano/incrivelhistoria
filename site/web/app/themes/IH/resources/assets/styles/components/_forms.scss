@@ -34,7 +34,7 @@
     position: absolute;
     right: 0;
 
-    @include svg-fonts($display: block);
+    @include svg-fonts($display: block,  $fill: $black);
 
     &:hover {
       cursor: pointer;
