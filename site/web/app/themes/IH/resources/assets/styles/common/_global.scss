@@ -44,7 +44,7 @@ $L: 1024px;
   line-height: $line-height;
 }
 
-@mixin svg-fonts($display: inline-block, $fill: $white) {
+@mixin svg-fonts($display: inline-block, $fill: $white, $font-size: 1rem, $margin-right: 0) {
   .icon {
     display: $display;
     width: 1em;
@@ -52,9 +52,10 @@ $L: 1024px;
     stroke-width: 0;
     stroke: currentColor;
     fill: $fill;
-    font-size: 1em;
+    font-size: $font-size;
     position: relative;
     bottom: 0;
+    margin-right: $margin-right;
   }
 
   .icon-search-1 {

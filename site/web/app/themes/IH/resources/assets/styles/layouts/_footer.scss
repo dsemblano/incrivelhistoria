@@ -21,7 +21,7 @@
       display: block;
     }
 
-    @include svg-fonts($display: inline-block);
+    @include svg-fonts($display: inline-block, $font-size: 2rem, $margin-right: 15px);
   }
 }
 
