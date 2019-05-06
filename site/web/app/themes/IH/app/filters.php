@@ -92,9 +92,9 @@ add_filter('comments_template', function ($comments_template) {
 
 // Mostrando sidebar - by Daniel Semblano
 add_filter('sage/display_sidebar', function ($display) {
-  static $display;
+    static $display;
 
-  isset($display) || $display = in_array(true, [
+    isset($display) || $display = in_array(true, [
     // The sidebar will be displayed if any of the following return true
     is_single(),
     is_404(),
@@ -106,18 +106,18 @@ add_filter('sage/display_sidebar', function ($display) {
     is_page(),
     is_archive(),
     is_page_template('template-custom.php')
-  ]);
+    ]);
 
-  return $display;
+    return $display;
 });
 
 // Custom search form
-add_filter('get_search_form', function(){
-$form = '';
-// echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
-$path = get_template_directory(). '/views/partials/searchform.blade.php';
-echo template(realpath($path), []);
-return $form;
+add_filter('get_search_form', function () {
+    $form = '';
+    // echo template(realpath(config('dir.template') . '/views/partials/searchform.blade.php'), []);
+    $path = get_template_directory(). '/views/partials/searchform.blade.php';
+    echo template(realpath($path), []);
+    return $form;
 });
 
 /**

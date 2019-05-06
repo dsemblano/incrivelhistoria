@@ -103,10 +103,11 @@ add_image_size('mais_extendida', 350, 155, true);
 add_image_size('top10', 325, 155, true);
 
 // Cores para mobile browsers
-function address_mobile_address_bar() {
-  // Escolher cor
-  $color = "#c27525";
-  $meta_content = <<<HTML
+function address_mobile_address_bar()
+{
+    // Escolher cor
+    $color = "#c27525";
+    $meta_content = <<<HTML
 <!-- Chrome, Firefox OS, Opera and Vivaldi -->
 <meta name="theme-color" content="$color">
 <!-- Windows Phone -->
@@ -115,9 +116,9 @@ function address_mobile_address_bar() {
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 HTML;
-  echo $meta_content;
+    echo $meta_content;
 }
-add_action('wp_head',  __NAMESPACE__ . '\\address_mobile_address_bar');
+add_action('wp_head', __NAMESPACE__ . '\\address_mobile_address_bar');
 
 /**
  * Updates the `$post` variable on each iteration of the loop.

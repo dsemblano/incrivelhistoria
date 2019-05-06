@@ -63,9 +63,9 @@ class Autoloader
         $this->loadPlugins();
     }
 
-   /**
-    * Run some checks then autoload our plugins.
-    */
+    /**
+     * Run some checks then autoload our plugins.
+     */
     public function loadPlugins()
     {
         $this->checkCache();

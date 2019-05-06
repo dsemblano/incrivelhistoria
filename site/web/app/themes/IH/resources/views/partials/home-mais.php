@@ -19,19 +19,19 @@
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
       <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
       <?php endif; ?>
     </section>
 
     <section id="direitos-humanos" class="col-sm categorias">
       <h2>Direitos Humanos</h2>
     <?php
-      $args = new WP_Query( array( 'category_name' => 'direitos-humanos', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
-      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+      $args = new WP_Query(array( 'category_name' => 'direitos-humanos', 'orderby' => 'rand', 'posts_per_page'=>3 ));
+      if ($args->have_posts()): while ($args->have_posts()) : $args->the_post();
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php //echo (App\featured_image_url('mais_extendida')); 
+            <?php //echo (App\featured_image_url('mais_extendida'));
             the_post_thumbnail('mais_extendida');
             ?>
           <h3><?php the_title(); ?></h3>
@@ -40,7 +40,7 @@
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
       <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
       <?php endif; ?>
     </section>
 </div>
@@ -51,12 +51,12 @@
   <section id="batalhas-historicas" class="col-sm">
       <h2>Batalhas Históricas</h2>
     <?php
-      $args = new WP_Query( array( 'category_name' => 'batalhas-historicas', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
-      if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+      $args = new WP_Query(array( 'category_name' => 'batalhas-historicas', 'orderby' => 'rand', 'posts_per_page'=>3 ));
+      if ($args->have_posts()): while ($args->have_posts()) : $args->the_post();
     ?>
       <article>
         <a href="<?php the_permalink(); ?>">
-            <?php //echo (App\featured_image_url('mais_extendida')); 
+            <?php //echo (App\featured_image_url('mais_extendida'));
             the_post_thumbnail('mais_extendida');
             ?>
           <h3><?php the_title(); ?></h3>
@@ -65,19 +65,19 @@
     <?php endwhile; ?>
     <?php wp_reset_postdata(); ?>
       <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
       <?php endif; ?>
     </section>
 
   <section id="crime-organizado" class="col-sm">
     <h2>Crime Organizado</h2>
   <?php
-    $args = new WP_Query( array( 'category_name' => 'crime-organizado', 'orderby' => 'rand', 'posts_per_page'=>3 ) );
-    if ( $args->have_posts() ): while ( $args->have_posts() ) : $args->the_post();
+    $args = new WP_Query(array( 'category_name' => 'crime-organizado', 'orderby' => 'rand', 'posts_per_page'=>3 ));
+    if ($args->have_posts()): while ($args->have_posts()) : $args->the_post();
   ?>
     <article>
       <a href="<?php the_permalink(); ?>">
-          <?php //echo (App\featured_image_url('mais_extendida')); 
+          <?php //echo (App\featured_image_url('mais_extendida'));
           the_post_thumbnail('mais_extendida');
           ?>
         <h3><?php the_title(); ?></h3>
@@ -86,7 +86,7 @@
   <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>
     <?php else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
     <?php endif; ?>
   </section>
 </div>
