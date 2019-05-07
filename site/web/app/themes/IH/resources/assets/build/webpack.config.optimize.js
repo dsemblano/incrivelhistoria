@@ -42,11 +42,15 @@ module.exports = {
       ]),
       whitelist: [ // Only if you need it!
         'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
-        'crp_related', 'crp_related ul', 'crp_thumb',
+        'figcaption', 'crp_related', 'crp_related ul', 'crp_thumb',
         'instagram-pics', 'author_bio_section',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
-      whitelistPatternsChildren:[/^pum/, /fb_iframe_widget_fluid_desktop$/],
+      whitelistPatternsChildren:[
+        /^pum/,
+        /fb_iframe_widget_fluid_desktop$/,
+        /single-post$/,
+      ],
     }),
   ],
 };

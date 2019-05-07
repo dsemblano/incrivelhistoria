@@ -124,11 +124,20 @@
             }
           }
 
-          img :not(.author_bio_section) {
-            margin-bottom: 0;
-            height: auto;
-            width: 100%;
+          figure {
+            width: inherit !important;
+
+            img {
+              height: auto;
+              width: 100%;
+            }
           }
+
+          // img :not(.author_bio_section) {
+          //   margin-bottom: 0;
+          //   height: auto;
+          //   width: 100%;
+          // }
 
           figcaption {
             background-color: $figcaption;
