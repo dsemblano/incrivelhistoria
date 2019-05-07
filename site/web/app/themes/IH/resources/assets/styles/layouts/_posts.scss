@@ -36,24 +36,15 @@
           li {
             @include titulos-chamadas;
 
+            margin-bottom: 10px;
+
             a {
               color: inherit;
 
-              .crp_thumb {
+              img.crp_thumb.crp_featured {
                 width: 100%;
                 height: auto;
               }
-
-              // span {
-              //   @include text-underline-hover($color: $link);
-              // }
-            }
-
-            width: 75%;
-            margin-bottom: 10px;
-
-            &:nth-child(3n+3) {
-              margin-right: 0;
             }
           }
         }
@@ -121,15 +112,6 @@
                   @include text-underline-hover($hover: true, $color: $link);
                 }
               }
-            }
-          }
-
-          figure {
-            width: inherit !important;
-
-            img {
-              height: auto;
-              width: 100%;
             }
           }
 

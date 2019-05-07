@@ -9,7 +9,6 @@
       <a href="{{ home_url('/') }}">
         <img id="notfound" src="@asset('images/notfound.jpg')" alt="404 página não encontrada" title="Ir para a Home" />
       </a>
-      {!! get_search_form(false) !!}
     </div>
   {{-- @endif --}}
 @endsection

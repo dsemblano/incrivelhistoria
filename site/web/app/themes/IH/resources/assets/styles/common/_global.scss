@@ -231,6 +231,15 @@ hr {
   }
 }
 
+figure {
+  width: inherit !important;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 // CSS apenas home
 body.home {
   main {
@@ -335,11 +344,10 @@ body.home {
     .alert {
       // background-color: red;
 
-      #notfound {
-        max-width: 100%;
-        margin-top: 10px;
-        // -webkit-filter: sepia(1);
-        // filter: sepia(1);
+      img#notfound {
+        height: auto;
+        width: 100%;
+        margin: 15px 0 15px 0;
       }
 
       .search-form {
