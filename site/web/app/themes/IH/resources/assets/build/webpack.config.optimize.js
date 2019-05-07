@@ -38,7 +38,14 @@ module.exports = {
         'app/**/*.php',
         'resources/views/**/*.php',
         'resources/assets/scripts/**/*.js',
+        'node_modules/flickity/**/**/*.js',
       ]),
+      whitelist: [ // Only if you need it!
+        'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
+        'crp_related', 'crp_related ul', 'crp_thumb',
+        'instagram-pics', 'author_bio_section', 'archive', 'sidebar-primary',
+        'pagination', 'nav-links', 'page-numbers', 'current',
+      ],
     }),
   ],
 };

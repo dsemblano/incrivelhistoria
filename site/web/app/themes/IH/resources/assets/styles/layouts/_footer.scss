@@ -1,5 +1,5 @@
 // Footer
-.sitemap-footer > li > a {
+.sitemap-footer > .menu-item > a {
   @include titulos-chamadas-bold($size: 1rem);
 
   color: $white;
@@ -29,7 +29,7 @@ footer.content-info {
   background-color: $cor-primary;
   padding-top: 1.5em;
 
-  .sitemap-footer > li {
+  .sitemap-footer > .menu-item {
     display: inline-block;
     margin-right: 1em;
     vertical-align: top;
@@ -39,7 +39,7 @@ footer.content-info {
   .sitemap-footer {
     @include titulos-chamadas;
 
-    li {
+    .menu-item {
       list-style: none;
       margin: 10px 0;
       white-space: nowrap;

@@ -1,38 +1,18 @@
 // Sidebar
 
 .sidebar {
-  .social-icons {
-    @include svg-fonts($display: inline-block);
-  }
-
   section {
-    &.widget_tag_cloud {
-      h3 {
-        @include titulos($color: $cor-titulo-sidebar, $size: 1.5rem);
-
-        @extend %sidebar-titulos;
-      }
-
-      .tagcloud {
-        line-height: 1.6;
-
-        a {
-          @include text-underline-hover($hover:true, $color: $link);
-
-          color: $cor-texto;
-        }
-      }
-    }
-  }
-
-  .widget_media_image {
-    img {
-      width: 100%;
-    }
-  }
-
-  > section {
     margin: 0 0 1.25em 0;
+
+    .widget_media_image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .social-icons {
+      @include svg-fonts($display: inline-block);
+    }
   }
 
   // Mais acessadas
@@ -59,6 +39,24 @@
           max-width: 100%;
           width: 100%;
         }
+      }
+    }
+  }
+
+  #tags {
+    h3 {
+      @include titulos($color: $cor-titulo-sidebar, $size: 1.5rem);
+
+      @extend %sidebar-titulos;
+    }
+
+    .tagcloud {
+      line-height: 1.6;
+
+      a {
+        @include text-underline-hover($hover: true, $color: $link);
+
+        color: $cor-texto;
       }
     }
   }
@@ -139,11 +137,6 @@
           width: 30px;
           // height: 30px;
           margin-right: 10px;
-        }
-
-        &:hover {
-          filter: alpha(opacity=85);
-          opacity: 0.85;
         }
       }
     }

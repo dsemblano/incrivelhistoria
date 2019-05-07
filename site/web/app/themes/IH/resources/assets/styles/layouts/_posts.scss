@@ -37,6 +37,8 @@
             @include titulos-chamadas;
 
             a {
+              color: inherit;
+
               .crp_thumb {
                 width: 100%;
                 height: auto;
@@ -157,7 +159,7 @@
         }
       }
 
-      footer.author_bio_section {
+      .author_bio_section {
         margin-top: 35px;
         background: none repeat scroll 0 0 #f9f9f9;
         padding: 15px;
