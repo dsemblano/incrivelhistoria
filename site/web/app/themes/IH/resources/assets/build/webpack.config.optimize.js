@@ -13,7 +13,7 @@ module.exports = {
     new ImageminPlugin({
       optipng: { optimizationLevel: 2 },
       gifsicle: { optimizationLevel: 3 },
-      pngquant: { quality: '65-90', speed: 4 },
+      pngquant: { quality: '64-90', speed: 4 },
       svgo: {
         plugins: [
           { removeUnknownsAndDefaults: false },
@@ -21,7 +21,7 @@ module.exports = {
           { removeViewBox: false },
         ],
       },
-      plugins: [imageminMozjpeg({ quality: 75 })],
+      plugins: [imageminMozjpeg({ quality: 74 })],
       disable: (config.enabled.watcher),
     }),
     new UglifyJsPlugin({
