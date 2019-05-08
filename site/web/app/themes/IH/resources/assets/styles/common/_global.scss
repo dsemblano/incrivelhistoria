@@ -234,7 +234,7 @@ hr {
 figure {
   width: inherit !important;
 
-  img {
+  img:not(.size-full) {
     height: auto;
     width: 100%;
   }

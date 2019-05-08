@@ -42,7 +42,7 @@ module.exports = {
       ]),
       whitelist: [ // Only if you need it!
         'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
-        'figcaption', 'blockquote',
+        'figcaption', 'blockquote', 'alignright',
         'instagram-pics', 'author_bio_section',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
