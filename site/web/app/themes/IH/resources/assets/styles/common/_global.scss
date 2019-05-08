@@ -235,7 +235,7 @@ hr {
   }
 }
 
-figure {
+figure:not(.wp-caption) {
   width: inherit !important;
 
   img:not(.size-full) {
