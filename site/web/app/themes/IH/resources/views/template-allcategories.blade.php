@@ -28,10 +28,10 @@
     @endphp
 
     @if ( $query->have_posts() )
-    <div class="page-header">
+    <div class="page-header-allcategories">
       <h2>
         <a class="header-link" href={{ esc_url(get_category_link($category->cat_ID)) }}>
-          {{ $category->name }}:
+          {{ $category->name }}
         </a>
       </h2>
     </div>
@@ -53,7 +53,7 @@
             @while ( $query_subcategory->have_posts() )
             @php $query_subcategory->the_post() @endphp
               {{-- <h3>{{ $category->name }}:</h3> --}}
-              <article {{ post_class('col-sm') }} >
+              <article {{ post_class('col-6 col-sm-4') }} >
                 <h3>
                   <a class="header-link" href={{ esc_url(get_category_link($subcategory->cat_ID)) }}>
                     {{ $subcategory->cat_name }}

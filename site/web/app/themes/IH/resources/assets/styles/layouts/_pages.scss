@@ -1,8 +1,34 @@
 // Pages
 
-$cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-periodos), (idade-media, $cat-periodos), (idade-moderna, $cat-periodos), (idade-contemporanea, $cat-periodos), (historia-do-brasil, $cat-histbrasil), (colonia, $cat-histbrasil), (imperio, $cat-histbrasil), (republica, $cat-histbrasil), (cinema, $cat-artes), (musica, $cat-artes), (literatura, $cat-artes), (biografias, $cor-personalidades), (direitos-humanos, $cat-dirhum), (curiosidades, $cat-curios), (guerras, $cor-guerras), (armas-historicas, $cor-guerras), (batalhas-historicas, $cor-guerras), (massacres-e-genocidios, $cor-guerras), (primeira-guerra-mundial, $cor-guerras), (segunda-guerra-mundial, $cor-guerras), (crime-organizado, $cor-crime), (personalidades, $cor-personalidades), (criminosos, $cor-personalidades), (fotografos, $cor-personalidades), (artes, $cat-artes);
+$cores-hr: (periodos, $cat-periodos),
+  (idade-antiga, $cat-periodos),
+  (idade-media, $cat-periodos),
+  (idade-moderna, $cat-periodos),
+  (idade-contemporanea, $cat-periodos),
+  (historia-do-brasil, $cat-histbrasil),
+  (colonia, $cat-histbrasil),
+  (imperio, $cat-histbrasil),
+  (republica, $cat-histbrasil),
+  (cinema, $cat-artes),
+  (musica, $cat-artes),
+  (literatura, $cat-artes),
+  (biografias, $cor-personalidades),
+  (direitos-humanos, $cat-dirhum),
+  (curiosidades, $cat-curios),
+  (guerras, $cor-guerras),
+  (armas-historicas, $cor-guerras),
+  (batalhas-historicas, $cor-guerras),
+  (massacres-e-genocidios, $cor-guerras),
+  (primeira-guerra-mundial, $cor-guerras),
+  (segunda-guerra-mundial, $cor-guerras),
+  (crime-organizado, $cor-crime),
+  (personalidades, $cor-personalidades),
+  (criminosos, $cor-personalidades),
+  (fotografos, $cor-personalidades),
+  (artes, $cat-artes);
 
-@each $hr-category, $color in $cores-hr {
+@each $hr-category,
+  $color in $cores-hr {
   .category-#{$hr-category} {
     .page-header {
       hr {
@@ -14,34 +40,48 @@ $cores-hr: (periodos, $cat-periodos), (idade-antiga, $cat-periodos), (idade-medi
   }
 }
 
-.page-header {
-  hr {
-    border-color: $cat-outros;
-    // border-style: solid $color;
-    border-width: 5px 0;
-  }
-}
+// .page-header {
+//   hr {
+//     border-color: $cat-outros;
+//     // border-style: solid $color;
+//     border-width: 5px 0;
+//   }
+// }
 
 .page-template-template-allcategories {
-  .header-link {
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    text-decoration: none;
-    padding: 10px 0;
-    color: $titulos-cor;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2da2c5), to(#2da2c5));
-    background-image: linear-gradient(#2da2c5, #2da2c5);
-    background-repeat: no-repeat;
-    background-size: 100% 1.5px;
-    background-position: center bottom 20%;
-    background-origin: padding-box;
-    text-shadow: 3px 0 #f6f3f2, 2px 0 #f6f3f2, 1px 0 #f6f3f2, -1px 0 #f6f3f2, -2px 0 #f6f3f2, -3px 0 #f6f3f2;
-    position: static;
-  }
+  main {
+    h2 {
+      font-size: 1.5rem;
+    }
 
-  section {
-    margin-bottom: 15px;
-    border-bottom: 1px solid $border-content;
+    h3 {
+      font-size: 1rem;
+    }
+
+    .header-link {
+      text-decoration: none;
+      padding: 10px 0;
+      color: $titulos-cor;
+
+      &:hover {
+        // -webkit-transition: all 0.2s ease-out;
+        // transition: all 0.2s ease-out;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#2da2c5), to(#2da2c5));
+        background-image: linear-gradient(#2da2c5, #2da2c5);
+        background-repeat: no-repeat;
+        background-size: 100% 1.5px;
+        background-position: center bottom 20%;
+        background-origin: padding-box;
+        text-shadow: 3px 0 #f6f3f2, 2px 0 #f6f3f2, 1px 0 #f6f3f2, -1px 0 #f6f3f2, -2px 0 #f6f3f2, -3px 0 #f6f3f2;
+        position: static;
+        color: $link;
+      }
+    }
+
+    section {
+      margin-bottom: 15px;
+      border-bottom: 1px solid $border-content;
+    }
   }
 }
 

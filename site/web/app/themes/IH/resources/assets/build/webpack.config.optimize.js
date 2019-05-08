@@ -51,6 +51,7 @@ module.exports = {
         /^menu-categorias-menu/,
         /^crp_related/,
         /^error404/,
+        /^page-template-template-allcategories/,
         /^fb_iframe_widget_fluid_desktop/,
       ],
     }),

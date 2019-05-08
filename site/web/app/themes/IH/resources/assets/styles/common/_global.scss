@@ -76,7 +76,7 @@ $L: 1024px;
     }
 
     color: $color;
-    transition: all 0.2s ease;
+    // transition: all 0.2s ease;
   }
 }
 
@@ -103,7 +103,7 @@ $L: 1024px;
 
   &:hover {
     color: darken($link, 15%) !important;
-    transition: all 0.2s ease !important;
+    // transition: all 0.2s ease !important;
     // border-bottom: 1px dotted #ccc !important;
     text-decoration: underline dotted !important;
   }
