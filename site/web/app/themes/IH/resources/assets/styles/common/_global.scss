@@ -121,6 +121,7 @@ $L: 1024px;
   font-family: "muli";
   src: url("../fonts/muli-regular-webfont.eot");
   src: url("../fonts/muli-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/muli-regular-webfont.woff2") format("woff2"), url("../fonts/muli-regular-webfont.woff") format("woff"), url("../fonts/muli-regular-webfont.ttf") format("truetype"), url("../fonts/muli-regular-webfont.svg#muliregular") format("svg");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -129,6 +130,7 @@ $L: 1024px;
   font-family: "open_sans";
   src: url("../fonts/opensans-regular-webfont.eot");
   src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
@@ -137,6 +139,7 @@ $L: 1024px;
   font-family: "open_sans";
   src: url("../fonts/opensans-italic-webfont.eot");
   src: url("../fonts/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/opensans-italic-webfont.woff") format("woff"), url("../fonts/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-display: swap;
   font-weight: normal;
   font-style: italic;
 }
@@ -145,6 +148,7 @@ $L: 1024px;
   font-family: "open_sans";
   src: url("../fonts/opensans-bold-webfont.eot");
   src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-display: swap;
   font-weight: bold;
   font-style: normal;
 }
