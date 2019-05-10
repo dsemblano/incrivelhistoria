@@ -43,7 +43,7 @@ module.exports = {
       whitelist: [ // Only if you need it!
         'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
         'figcaption', 'blockquote', 'alignright', 'aligncenter', 'alignleft',
-        'instagram-pics', 'author_bio_section',
+        'instagram-pics', 'author_bio_section', 'heateor_sss_sharing_container',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
       whitelistPatternsChildren:[
@@ -53,6 +53,7 @@ module.exports = {
         /^error404/,
         /^page-template-template-allcategories/,
         /^fb_iframe_widget_fluid_desktop/,
+        /^wp-caption/,
       ],
     }),
   ],
