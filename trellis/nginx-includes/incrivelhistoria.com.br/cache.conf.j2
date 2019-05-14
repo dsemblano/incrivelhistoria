@@ -20,7 +20,7 @@ location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|mp4|ogg|ogv|webm|htc)$ {
   expires 30d;
   access_log off;
   gzip_vary on;
-  add_header Cache-Control "public, max-age=2629000";
+  add_header Cache-Control "public, max-age=31536000";
 }
 
 # Media: svgz files are already compressed.
