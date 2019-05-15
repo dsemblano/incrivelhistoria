@@ -4,10 +4,10 @@
   <div class="row">
     <?php
         $args = new WP_Query(array( 'category_name' => 'curiosidades', 'orderby' => 'rand', 'posts_per_page'=>4 ));
-        if ($args->have_posts()): while ($args->have_posts()) : $args->the_post();
+        if ($args->have_posts()) : while ($args->have_posts()) : $args->the_post();
     ?>
 
-    <article class="col-sm-6">
+    <article class="col-12 col-sm-6">
       <a href="<?php the_permalink(); ?>">
           <?php //echo (App\featured_image_url('mais_extendida'));
             the_post_thumbnail('mais_extendida');

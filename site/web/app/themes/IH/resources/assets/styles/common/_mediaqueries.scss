@@ -297,16 +297,16 @@
 
   body.home .content {
     main {
-      section {
-        padding: 0;
+      // section {
+      //   padding: 0;
 
-        // article {
-        //   h3,
-        //   p {
-        //     @extend %margin-left;
-        //   }
-        // }
-      }
+      //   article {
+      //     h3,
+      //     p {
+      //       @extend %margin-left;
+      //     }
+      //   }
+      // }
 
       section#mais .mais-extensao section:last-child {
         margin-top: 20px;
