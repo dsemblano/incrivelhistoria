@@ -150,7 +150,7 @@ $cores-hr: (periodos, $cat-periodos),
     .author-description {
       @extend %text-selection;
 
-      border-bottom: 1px solid #dadada;
+      border-bottom: $border-solid;
       padding-bottom: 35px;
       margin-top: 15px;
     }

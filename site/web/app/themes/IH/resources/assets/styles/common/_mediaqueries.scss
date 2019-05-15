@@ -14,6 +14,89 @@
   }
 
   body.home {
+
+    // single
+    .single-post {
+      .author_bio_section {
+        .author_details {
+          p,
+          a {
+            padding: 10px 0 0 15px !important;
+          }
+
+          figure {
+            #facebook_author {
+              width: 15% !important;
+            }
+
+            img {
+              display: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      .main-carousel {
+        height: 220px;
+
+        .flickity-slider .carousel-cell {
+          header {
+            p {
+              @extend %titulo-excerpt;
+            }
+
+            h2 {
+              @extend %titulo-materiamenor;
+            }
+          }
+        }
+      }
+
+      // end section carrousel
+      #curiosidades,
+      #mais {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+
+        .mais-extensao {
+          article {
+            height: auto;
+
+            img {
+              width: 100%;
+            }
+
+            h3,
+            h4 {
+              @extend %titulo-materiamenor;
+
+              font-weight: lighter;
+            }
+
+            p {
+              @extend %titulo-excerpt;
+            }
+          }
+
+          article:first-child h3 {
+            @extend %titulo-materiamenor;
+          }
+
+          h2 {
+            font-size: 1.7rem;
+          }
+        }
+      }
+
+      figure.aligncenter {
+        display: inline;
+      }
+    }
+
     .content {
       // background-color: pink;
     }
@@ -87,80 +170,6 @@
 
       .navbar-toggleable-md {
         background-color: transparent !important;
-      }
-    }
-  }
-
-  // single
-  .single-post {
-    .author_bio_section {
-      .author_details {
-        p,
-        a {
-          padding: 10px 0 0 15px !important;
-        }
-
-        figure {
-          #facebook_author {
-            width: 15% !important;
-          }
-
-          img {
-            display: inherit;
-          }
-        }
-      }
-    }
-  }
-
-  .home {
-    main {
-      .main-carousel {
-        height: 220px;
-
-        .flickity-slider .carousel-cell {
-          header {
-            p {
-              @extend %titulo-excerpt;
-            }
-
-            h2 {
-              @extend %titulo-materiamenor;
-            }
-          }
-        }
-      }
-
-      // end section carrousel
-      section#curiosidades,
-      section#mais {
-        h2 {
-          font-size: 1.5rem;
-          margin-bottom: 0;
-        }
-
-        article {
-          img {
-            width: 100%;
-          }
-
-          h3,
-          h4 {
-            @extend %titulo-materiamenor;
-          }
-
-          p {
-            @extend %titulo-excerpt;
-          }
-        }
-
-        article:first-child h3 {
-          @extend %titulo-materiamenor;
-        }
-      }
-
-      figure.aligncenter {
-        display: inline;
       }
     }
   }
@@ -309,7 +318,23 @@
       // }
 
       section#mais .mais-extensao section:last-child {
-        margin-top: 20px;
+        margin: 15px 0 15px 0;
+        border-bottom: $border-solid;
+        border-top: $border-solid;
+
+        h2 {
+          padding-top: 10px;
+        }
+      }
+
+      .mais-extensao {
+        &:last-child {
+          margin-bottom: 20px;
+        }
+
+        section#direitos-humanos {
+          border-bottom: none !important;
+        }
       }
 
       // section#mais .mais-extensao article h3 {
