@@ -165,7 +165,8 @@ $cores-hr: (periodos, $cat-periodos),
 .search {
   article {
     border-bottom: 1px solid $border-content;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 
     &:last-of-type {
       border-bottom: none;
