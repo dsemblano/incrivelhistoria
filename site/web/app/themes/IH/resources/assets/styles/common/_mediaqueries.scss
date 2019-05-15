@@ -300,23 +300,23 @@
       section {
         padding: 0;
 
-        article {
-          h3,
-          p {
-            @extend %margin-left;
-          }
-        }
+        // article {
+        //   h3,
+        //   p {
+        //     @extend %margin-left;
+        //   }
+        // }
       }
 
       section#mais .mais-extensao section:last-child {
         margin-top: 20px;
       }
 
-      section#mais .mais-extensao article h3 {
-        margin-bottom: 40px;
-        margin-left: 35px;
-        margin-top: 5px;
-      }
+      // section#mais .mais-extensao article h3 {
+      //   margin-bottom: 40px;
+      //   margin-left: 35px;
+      //   margin-top: 5px;
+      // }
     }
   }
 
