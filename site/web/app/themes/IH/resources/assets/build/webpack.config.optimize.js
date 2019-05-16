@@ -5,6 +5,7 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const glob = require('glob-all');
 const PurgecssPlugin = require('purgecss-webpack-plugin');
+const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 
 const config = require('./config');
 
@@ -55,6 +56,28 @@ module.exports = {
         /^fb_iframe_widget_fluid_desktop/,
         /^wp-caption/,
       ],
+    }),
+    new HtmlCriticalWebpackPlugin({
+      base: config.paths.dist,
+      src: config.devUrl,
+      dest: "styles/critical-home.css",
+      ignore: ["@font-face", /url\(/],
+      inline: false,
+      minify: true,
+      extract: false,
+      dimensions: [
+        {
+          height: 375,
+          width: 565,
+        },
+        {
+          height: 1080,
+          width: 1920,
+        },
+      ],
+      penthouse: {
+        blockJSRequests: false,
+      },
     }),
   ],
 };
