@@ -60,7 +60,7 @@ module.exports = {
     new HtmlCriticalWebpackPlugin({
       base: config.paths.dist,
       src: config.devUrl,
-      dest: "styles/critical-home.css",
+      dest: "styles/critical.css",
       ignore: ["@font-face", /url\(/],
       inline: false,
       minify: true,
