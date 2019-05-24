@@ -1,3 +1,17 @@
+### 1.12.6: 2019-05-21
+
+* Update to WordPress 5.2.1 (#436)
+
+### 1.12.5: 2019-05-14
+
+* Disable WordPress' built-in fatal error handler on development (#432)
+
+### 1.12.4: 2019-05-07
+
+* Update to WordPress 5.2 (#432)
+* Configure WP-CLI wp server webroot (#427)
+* Fix issue with bedrock_autoloader option (#386)
+
 ### 1.12.3: 2019-03-13
 
 * Update to WordPress 5.1.1 ([#426](https://github.com/roots/bedrock/pull/426))
