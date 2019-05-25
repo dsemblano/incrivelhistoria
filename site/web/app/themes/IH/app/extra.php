@@ -47,28 +47,41 @@ function special_nav_class($classes, $item, $args)
 
 // print handler names
 // add_action('wp_print_scripts', 'wsds_detect_enqueued_scripts');
-// function wsds_detect_enqueued_scripts() {
+// function wsds_detect_enqueued_scripts()
+// {
 //     global $wp_scripts;
 //     foreach ($wp_scripts->queue as $handle) :
 //         echo "AQUI: ". $handle . ' | ';
 //     endforeach;
 // }
 
-// add_filter( 'script_loader_tag', 'cameronjonesweb_add_script_handle', 10, 3 );
-// function cameronjonesweb_add_script_handle( $tag, $handle, $src ) {
-// 	return str_replace( '<script', sprintf(
-// 		'<script data-handle="%1$s"',
-// 		esc_attr( $handle )
-// 	), $tag );
+// add_filter('script_loader_tag', 'cameronjonesweb_add_script_handle', 10, 3);
+// function cameronjonesweb_add_script_handle($tag, $handle, $src)
+// {
+//     return str_replace('<script', sprintf(
+//         '<script data-handle="%1$s"',
+//         esc_attr($handle)
+//     ), $tag);
 // }
 
+add_filter('script_loader_tag', 'cameronjonesweb_add_script_handle', 10, 3);
+function cameronjonesweb_add_script_handle($tag, $handle, $src)
+{
+    return str_replace('<script', sprintf(
+        '<script',
+        esc_attr($handle)
+    ), $tag);
+}
+
 // defer async
-// function jquery_async_defer_attribute($tag, $handle){
-//   if ( 'jquery' !== $handle )
-//   return $tag;
-//   return str_replace( ' src', ' defer src', $tag );
-// }
-// add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
+function jquery_async_defer_attribute($tag, $handle)
+{
+    if ('jquery-core' !== $handle) {
+        return $tag;
+    }
+    return str_replace(' src', ' defer src', $tag);
+}
+add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
 
 // function top10_async_defer_attribute($tag, $handle){
 //   if ( 'tptn_tracker' !== $handle )
