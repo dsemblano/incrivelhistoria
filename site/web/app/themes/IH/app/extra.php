@@ -79,7 +79,7 @@ function jquery_async_defer_attribute($tag, $handle)
     if ('jquery-core' !== $handle) {
         return $tag;
     }
-    return str_replace(' src', ' defer src', $tag);
+    return str_replace(' src', ' async src', $tag);
 }
 add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
 
