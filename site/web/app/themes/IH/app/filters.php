@@ -135,3 +135,45 @@ add_action('wp_head', function () {
         echo '<style>' . file_get_contents($critical_CSS) . '</style>';
     }
 }, 1);
+
+// Preload - Async load CSS
+
+// If Firefox
+
+// function ifFirefox()
+// {
+//     if (isset($_SERVER['HTTP_USER_AGENT'])) {
+//         $agent = $_SERVER['HTTP_USER_AGENT'];
+//         if (strlen(strstr($agent, 'Firefox')) > 0) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// }
+
+add_filter('style_loader_tag', function ($html, $handle, $href) {
+    if (is_admin()) {
+        return $html;
+    }
+
+    $dom = new \DOMDocument();
+    $dom->loadHTML($html);
+    $tag = $dom->getElementById($handle . '-css');
+    $tag->setAttribute('rel', 'preload');
+    $tag->setAttribute('as', 'style');
+    $tag->setAttribute('onload', "this.onload=null;this.rel='stylesheet'");
+    $tag->removeAttribute('type');
+    $html = $dom->saveHTML($tag);
+
+    return $html;
+}, 999, 3);
+
+// Preload - loadcss header
+add_action('wp_head', function () {
+    $preload_script = get_theme_file_path() . '/resources/assets/scripts/cssrelpreload.js';
+
+    if (fopen($preload_script, 'r')) {
+        echo '<script>' . file_get_contents($preload_script) . '</script>';
+    }
+}, 101);
