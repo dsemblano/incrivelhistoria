@@ -45,6 +45,8 @@ module.exports = {
         'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
         'figcaption', 'blockquote', 'alignright', 'aligncenter', 'alignleft',
         'instagram-pics', 'author_bio_section', 'heateor_sss_sharing_container',
+        'heateorSssWhatsappBackground', 'heateorSssSMSBackground',
+        'heateor_sss_horizontal_sharing',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
       whitelistPatternsChildren:[
