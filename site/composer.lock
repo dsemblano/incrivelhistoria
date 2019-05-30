@@ -712,15 +712,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.2.1",
+            "version": "11.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.2.1"
+                "reference": "tags/11.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.2.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
