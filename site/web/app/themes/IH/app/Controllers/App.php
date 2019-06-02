@@ -37,4 +37,15 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public function popularPost()
+    {
+        $array = [
+            'posts_per_page' => 5,
+            'meta_key' => 'wpb_post_views_count',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC',
+        ];
+        return $query = new \WP_Query($array);
+    }
 }
