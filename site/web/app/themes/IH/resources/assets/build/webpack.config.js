@@ -1,5 +1,6 @@
 'use strict'; // eslint-disable-line
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const CleanPlugin = require('clean-webpack-plugin');
@@ -193,6 +194,12 @@ if (config.enabled.optimize) {
 
 if (config.env.production) {
   webpackConfig.plugins.push(new webpack.NoEmitOnErrorsPlugin());
+}
+
+if (config.bundleAnalyze) {
+  webpackConfig.plugins.push(
+    new BundleAnalyzerPlugin()
+  );
 }
 
 if (config.enabled.cacheBusting) {

@@ -1,26 +1,27 @@
 //Mixins
-$S: 480px;
-$M: 768px;
-$L: 1024px;
+$small-mq: 480px;
+$medium-mq: 768px;
+$large-mq: 1024px;
 
 // media queries
 
 // Mixins
-@mixin MQ($canvas) {
-  @if $canvas == S {
-    @media only screen and (min-width: $S) {
+// top-arrow
+@mixin top-arrow-mq($canvas) {
+  @if $canvas==small-mq {
+    @media only screen and (min-width: $small-mq) {
       @content;
     }
   }
 
-  @else if $canvas == M {
-    @media only screen and (min-width: $M) {
+  @else if $canvas==medium-mq {
+    @media only screen and (min-width: $medium-mq) {
       @content;
     }
   }
 
-  @else if $canvas == L {
-    @media only screen and (min-width: $L) {
+  @else if $canvas==large-mq {
+    @media only screen and (min-width: $large-mq) {
       @content;
     }
   }
@@ -63,7 +64,7 @@ $L: 1024px;
   }
 }
 
-@mixin text-underline-hover($hover:null,$color:darken($link, 15%)) {
+@mixin text-underline-hover($hover:null, $color:darken($link, 15%)) {
   &:hover {
     @if ($hover) {
       border-bottom: 1px dotted #ccc;
@@ -174,7 +175,7 @@ hr {
 
 .cd-container {
   width: 90%;
-  max-width: $M;
+  max-width: $medium-mq;
   margin: 2em auto;
 
   &::after {
@@ -184,6 +185,7 @@ hr {
   }
 }
 
+// top-arrow
 .cd-top {
   display: inline-block;
   height: 40px;
@@ -208,12 +210,14 @@ hr {
     transition: opacity 0.3s 0s, visibility 0s 0s;
   }
 
-  &.cd-is-visible { /* the button becomes visible */
+  &.cd-is-visible {
+    /* the button becomes visible */
     visibility: visible;
     opacity: 1;
   }
 
-  &.cd-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  &.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
     opacity: 0.5;
   }
 
@@ -222,12 +226,12 @@ hr {
     opacity: 1;
   }
 
-  @include MQ(M) {
+  @include top-arrow-mq(medium-mq) {
     right: 20px;
     bottom: 20px;
   }
 
-  @include MQ(L) {
+  @include top-arrow-mq(large-mq) {
     height: 60px;
     width: 60px;
     right: 30px;

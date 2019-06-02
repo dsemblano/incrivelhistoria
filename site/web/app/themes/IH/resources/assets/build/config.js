@@ -28,6 +28,7 @@ const config = merge({
     watcher: !!argv.watch,
   },
   watch: [],
+  bundleAnalyze: !!(argv.env && argv.env.analyze),
 }, userConfig);
 
 module.exports = merge(config, {
