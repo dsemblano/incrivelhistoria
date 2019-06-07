@@ -10,6 +10,5 @@
     @include('partials.content-page')
     @include('partials.home-slideshow')
     @include('partials.home-curiosidadeselistas')
-    @include('partials.home-mais')
   @endwhile
 @endsection
