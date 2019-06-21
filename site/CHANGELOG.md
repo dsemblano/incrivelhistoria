@@ -1,16 +1,24 @@
+### 1.12.7: 2019-06-19
+
+* Update to WordPress 5.2.2 ([#444](https://github.com/roots/bedrock/pull/444))
+* Bump `oscarotero/env` ([#443](https://github.com/roots/bedrock/pull/443))
+* Bump `vlucas/phpdotenv` ([#442](https://github.com/roots/bedrock/pull/442))
+* Bump `squizlabs/php_codesniffer` ([#441](https://github.com/roots/bedrock/pull/441))
+* Remove unnecessary static variables ([#437](https://github.com/roots/bedrock/pull/437))
+
 ### 1.12.6: 2019-05-21
 
-* Update to WordPress 5.2.1 (#436)
+* Update to WordPress 5.2.1 ([#436](https://github.com/roots/bedrock/pull/436))
 
 ### 1.12.5: 2019-05-14
 
-* Disable WordPress' built-in fatal error handler on development (#432)
+* Disable WordPress' built-in fatal error handler on development ([#432](https://github.com/roots/bedrock/pull/434))
 
 ### 1.12.4: 2019-05-07
 
-* Update to WordPress 5.2 (#432)
-* Configure WP-CLI wp server webroot (#427)
-* Fix issue with bedrock_autoloader option (#386)
+* Update to WordPress 5.2 ([#432](https://github.com/roots/bedrock/pull/432))
+* Configure WP-CLI `wp server` webroot ([#427](https://github.com/roots/bedrock/pull/427))
+* Fix issue with `bedrock_autoloader` option ([#386](https://github.com/roots/bedrock/pull/386))
 
 ### 1.12.3: 2019-03-13
 
