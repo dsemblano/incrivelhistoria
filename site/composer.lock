@@ -640,15 +640,15 @@
         },
         {
             "name": "wpackagist-plugin/popup-maker",
-            "version": "1.8.6",
+            "version": "1.8.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/popup-maker/",
-                "reference": "tags/1.8.6"
+                "reference": "tags/1.8.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.8.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/popup-maker.1.8.10.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -730,15 +730,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.5",
+            "version": "11.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.5"
+                "reference": "tags/11.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.6.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -766,15 +766,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.4.2"
+                "reference": "tags/1.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.4.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.5.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
