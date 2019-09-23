@@ -2,6 +2,7 @@
 /**
  * Configuration overrides for WP_ENV === 'staging'
  */
+
 use Roots\WPConfig\Config;
 
 /**
