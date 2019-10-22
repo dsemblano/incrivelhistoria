@@ -54,6 +54,6 @@
       });
     </script>
     <a href="#0" class="cd-top">Top</a>
-    {{-- @include('partials.yesirads') --}}
+    @include('partials.yesirads')
   </body>
 </html>
