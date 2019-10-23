@@ -303,3 +303,13 @@ function wpb_track_post_views($post_id)
     wpb_set_post_views($post_id);
 }
 add_action('wp_head', 'wpb_track_post_views');
+
+//removing WP version
+remove_action('wp_head', 'wp_generator');
+
+// removing WP version from RSS
+function remove_wp_version_rss()
+{
+    return'';
+}
+add_filter('the_generator', 'remove_wp_version_rss');
