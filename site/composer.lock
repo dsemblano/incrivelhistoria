@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a1801e59e28909efad0a7e2b61e1af5f",
+    "content-hash": "81928a92b2d5ace7afddfc867c5ed173",
     "packages": [
         {
             "name": "composer/installers",
@@ -273,16 +273,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.3",
+            "version": "5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.3"
+                "reference": "5.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.3",
-                "reference": "5.3"
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.3.2",
+                "reference": "5.3.2"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -306,7 +306,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-11-12T20:34:22+00:00"
+            "time": "2019-12-18T22:19:57+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
