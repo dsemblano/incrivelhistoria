@@ -1,8 +1,18 @@
 ### HEAD
+* Switch to official Nginx Ubuntu package ([#1208](https://github.com/roots/trellis/pull/1208))
+
+### 1.5.0: August 5th, 2020
+* Improve Nginx reloading for failed Let's Encrypt certificates ([#1207](https://github.com/roots/trellis/pull/1207))
+* Add support for Lets Encrypt contact emails ([#1206](https://github.com/roots/trellis/pull/1206))
+* Support branch variable for deploys ([#1204](https://github.com/roots/trellis/pull/1204))
+* Removes ID from Lets Encrypt bundled certificate and make filename stable ([#834](https://github.com/roots/trellis/pull/834))
+* Make Fail2ban settings extensible ([#1177](https://github.com/roots/trellis/pull/1177))
+* Improve ip_whitelist in development ([#1183](https://github.com/roots/trellis/pull/1183))
 * Support Ansible 2.9 ([#1169](https://github.com/roots/trellis/pull/1169))
 * [BREAKING] Remove `nginx_includes_deprecated` feature ([#1173](https://github.com/roots/trellis/pull/1173))
 * Bump Ansible version_tested_max to 2.8.10 ([#1167](https://github.com/roots/trellis/pull/1167))
 * Bump Ansible requirement to 2.8.0 ([#1147](https://github.com/roots/trellis/pull/1147))
+* Update CircleCI Config ([#1184](https://github.com/roots/trellis/pull/1184))
 
 ### 1.4.0: April 2nd, 2020
 * Update PHP to 7.4 ([#1164](https://github.com/roots/trellis/pull/1164))
