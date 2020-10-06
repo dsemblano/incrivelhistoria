@@ -41,6 +41,7 @@
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/regenerate-thumbnails": ">=2.2.6",
     "wpackagist-plugin/wordpress-seo": ">=4.9",
+    "wpackagist-plugin/seo-by-rank-math":">=1.0.48.2",
     "wpackagist-plugin/contextual-related-posts": ">=2.4.1",
     "wpackagist-plugin/sassy-social-share": ">=3.1",
     "wpackagist-plugin/widget-css-classes": ">=1.5.0",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cac114672d0bcbe4461791a1ee258a0b",
+    "content-hash": "3699076db4bd3e384ee97f358f192a77",
     "packages": [
         {
             "name": "composer/installers",
@@ -874,6 +874,24 @@
             "homepage": "https://wordpress.org/plugins/sassy-social-share/"
         },
         {
+            "name": "wpackagist-plugin/seo-by-rank-math",
+            "version": "1.0.48.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/seo-by-rank-math/",
+                "reference": "tags/1.0.48.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/seo-by-rank-math.1.0.48.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/seo-by-rank-math/"
+        },
+        {
             "name": "wpackagist-plugin/widget-css-classes",
             "version": "1.5.4",
             "source": {
@@ -965,15 +983,15 @@
         },
         {
             "name": "wpackagist-plugin/wps-hide-login",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wps-hide-login/",
-                "reference": "tags/1.5.6"
+                "reference": "tags/1.5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.1.5.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.1.5.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
