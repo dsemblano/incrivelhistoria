@@ -1,8 +1,6 @@
 <article @php post_class() @endphp>
   <header>
-    @if ( function_exists('yoast_breadcrumb') )
-      {!! yoast_breadcrumb('<p id="breadcrumbs">','</p>', false)  !!}
-    @endif
+    @include('partials/breadcrumbs')
     <h1 class="entry-title">{{ get_the_title() }}</h1>
     @include('partials/entry-meta')
   </header>
