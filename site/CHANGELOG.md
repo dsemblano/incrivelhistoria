@@ -1,3 +1,25 @@
+### 1.15.1: 2020-12-08
+
+* chore(deps): Bump roots/wordpress from 5.5.3 to 5.6 ([#567](https://github.com/roots/bedrock/pull/567))
+
+### 1.15.0: 2020-12-04
+
+* chore(deps): Bump roots/bedrock-autoloader from 1.0.3 to 1.0.4 ([#564](https://github.com/roots/bedrock/pull/564))
+* Upgrade to vlucas/phpdotenv:5.2 ([#563](https://github.com/roots/bedrock/pull/563))
+* chore(deps-dev): Bump squizlabs/php_codesniffer from 3.5.6 to 3.5.8 ([#550](https://github.com/roots/bedrock/pull/550))
+
+### 1.14.4: 2020-11-13
+
+* chore(deps): Bump roots/wordpress from 5.5.1 to 5.5.3 ([#556](https://github.com/roots/bedrock/pull/556))
+
+### 1.14.3: 2020-10-28
+
+* Bump `roots/wordpress-core-installer` for Composer 2 compatibility([#552](https://github.com/roots/bedrock/pull/552))
+
+### 1.14.2: 2020-09-04
+
+* chore(deps): Bump roots/wordpress from 5.5 to 5.5.1 ([#545](https://github.com/roots/bedrock/pull/545))
+
 ### 1.14.1: 2020-08-11
 
 * chore(deps): Bump roots/wordpress from 5.4.1 to 5.5 ([#542](https://github.com/roots/bedrock/pull/542))
@@ -15,7 +37,6 @@
 ### 1.13.5: 2020-05-11
 
 * chore(deps): Bump roots/wordpress from 5.4 to 5.4.1 ([#517](https://github.com/roots/bedrock/pull/517))
-
 
 ### 1.13.4: 2020-04-24
 
