@@ -2,31 +2,71 @@
 # This file is distributed under the same license as the Themes - Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-11-30 16:02:13+0000\n"
+"PO-Revision-Date: 2020-04-01 11:59:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: pt_BR\n"
 "Project-Id-Version: Themes - Twenty Fifteen\n"
 
-#. Description of the plugin/theme
+#. Description of the theme
 msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
 msgstr "Nosso tema padrão 2015 é simples, focado em blogs e desenhado para maior clareza. A tipografia simples e direta do Twenty Fifteen é legível em uma ampla variedade de tamanhos de telas e adequada a vários idiomas. Desenvolvemos o design utilizando uma abordagem mobile-first, ou seja, seu conteúdo é o centro das atenções, não importando se seus visitantes acessam via smartphone, tablet, laptop ou um computador desktop."
 
-#. Theme Name of the plugin/theme
+#. Theme Name of the theme
 msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
 
-#. translators: %s: post title
+#: functions.php:246
+msgid "Light Blue"
+msgstr "Azul claro"
+
+#: functions.php:241
+msgid "Bright Blue"
+msgstr "Azul brilhante"
+
+#: functions.php:236
+msgid "Blue Gray"
+msgstr "Cinza azulado"
+
+#: functions.php:226
+msgid "Dark Purple"
+msgstr "Roxo escuro"
+
+#: functions.php:221
+msgid "Light Pink"
+msgstr "Rosa claro"
+
+#: functions.php:216
+msgid "Medium Pink"
+msgstr "Rosa médio"
+
+#: functions.php:211
+msgid "Dark Brown"
+msgstr "Castanho escuro"
+
+#: functions.php:201
+msgid "White"
+msgstr "Branco"
+
+#: functions.php:196
+msgid "Light Gray"
+msgstr "Cinza claro"
+
+#: functions.php:191
+msgid "Dark Gray"
+msgstr "Cinza escuro"
+
+#. translators: %s: Post title.
 #: comments.php:31
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
 msgstr "Um comentário em &ldquo;%s&rdquo;"
 
-#. translators: %s: post title
-#: inc/template-tags.php:130
+#. translators: %s: Post title.
+#: inc/template-tags.php:132
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Deixe um comentário <span class=\"screen-reader-text\"> em %s</span>"
 
@@ -46,50 +86,51 @@ msgstr "Próximo post:"
 msgid "Next"
 msgstr "Seguinte"
 
-#: search.php:18
+#. translators: %s: Search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Resultados da busca por: %s"
 
-#: inc/template-tags.php:120
+#: inc/template-tags.php:122
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Tamanho completo"
 
-#: inc/template-tags.php:108
+#: inc/template-tags.php:110
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Tags"
 
-#: inc/template-tags.php:99
+#: inc/template-tags.php:101
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Categorias"
 
-#: inc/template-tags.php:95 inc/template-tags.php:104
+#: inc/template-tags.php:97 inc/template-tags.php:106
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:89
+#: inc/template-tags.php:91
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Autor"
 
-#: inc/template-tags.php:79
+#: inc/template-tags.php:81
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Publicado em"
 
-#: inc/template-tags.php:56
+#: inc/template-tags.php:58
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Formato"
 
-#: inc/template-tags.php:49
+#: inc/template-tags.php:51
 msgid "Featured"
 msgstr "Destacado"
 
-#: inc/template-tags.php:30
+#: inc/template-tags.php:31
 msgid "Newer Comments"
 msgstr "Comentários mais recentes"
 
@@ -101,47 +142,48 @@ msgstr "Comentários mais antigos"
 msgid "Comment navigation"
 msgstr "Navegação de comentários"
 
-#: inc/customizer.php:226
+#: inc/customizer.php:239
 msgid "Blue"
 msgstr "Azul"
 
-#: inc/customizer.php:215
+#: functions.php:231 inc/customizer.php:228
 msgid "Purple"
 msgstr "Roxo"
 
-#: inc/customizer.php:204
+#: inc/customizer.php:217
 msgid "Pink"
 msgstr "Rosa"
 
-#: inc/customizer.php:193
+#: functions.php:206 inc/customizer.php:206
 msgid "Yellow"
 msgstr "Amarelo"
 
-#: inc/customizer.php:182
+#: inc/customizer.php:195
 msgid "Dark"
 msgstr "Escuro"
 
-#: inc/customizer.php:171
+#: inc/customizer.php:184
 msgid "Default"
 msgstr "Padrão"
 
-#: inc/customizer.php:93
+#: inc/customizer.php:103
 msgid "Header and Sidebar Background Color"
 msgstr "Cor de fundo do cabeçalho e barra lateral"
 
-#: inc/customizer.php:72 inc/customizer.php:94 inc/customizer.php:101
+#: inc/customizer.php:79 inc/customizer.php:104 inc/customizer.php:111
 msgid "Applied to the header on small screens and the sidebar on wide screens."
 msgstr "Aplicado ao cabeçalho em telas pequenas e à barra lateral em telas widescreen."
 
-#: inc/customizer.php:71
+#: inc/customizer.php:78
 msgid "Header and Sidebar Text Color"
 msgstr "Cor do texto do cabeçalho e da barra lateral"
 
-#: inc/customizer.php:51
+#: inc/customizer.php:55
 msgid "Base Color Scheme"
 msgstr "Paleta de cores base"
 
-#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:38 inc/back-compat.php:50 inc/back-compat.php:67
 msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
 msgstr "O Twenty Fifteen necessita do WordPress versão 4.1 no mínimo. Sua versão é %s. Atualize e tente novamente."
 
@@ -158,59 +200,47 @@ msgstr "Próxima imagem"
 msgid "Previous Image"
 msgstr "Imagem anterior"
 
-#: header.php:49
+#: header.php:50
 msgid "Menu and widgets"
 msgstr "Menu e widgets"
 
-#: header.php:26
+#: header.php:27
 msgid "Skip to content"
 msgstr "Pular para o conteúdo"
 
-#: functions.php:312
+#: functions.php:403
 msgid "collapse child menu"
 msgstr "fechar submenu"
 
-#: functions.php:311
+#: functions.php:402
 msgid "expand child menu"
 msgstr "expandir submenu"
 
-#. Translators: To add an additional character subset specific to your
-#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
-#. 'vietnamese'. Do not translate into your own language.
-#: functions.php:238
+#: functions.php:322
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "sem subconjunto"
 
-#. Translators: If there are characters in your language that are not supported
-#. by Inconsolata, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:230
+#: functions.php:314
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "ativa"
 
-#. Translators: If there are characters in your language that are not supported
-#. by Noto Serif, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:222
+#: functions.php:306
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "ativa"
 
-#. Translators: If there are characters in your language that are not supported
-#. by Noto Sans, translate this to 'off'. Do not translate into your own
-#. language.
-#: functions.php:214
+#: functions.php:298
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "ativa"
 
-#: functions.php:187
+#: functions.php:271
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Adicione widgets aqui para que apareçam em sua barra lateral."
 
-#: functions.php:185
+#: functions.php:269
 msgid "Widget Area"
 msgstr "Área de widgets"
 
@@ -222,43 +252,39 @@ msgstr "Menu de links sociais"
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: footer.php:31
+#. translators: %s: WordPress
+#: footer.php:33
 msgid "Proudly powered by %s"
 msgstr "Orgulhosamente mantido com %s"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 2.0)  #-#-#-#-#
-#. Author URI of the plugin/theme
-#: footer.php:30
-msgid "https://wordpress.org/"
-msgstr "https://br.wordpress.org/"
-
-#: content-none.php:31
+#: content-none.php:36
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Parece que não foi possível encontrar o que você está buscando. Talvez fazer uma pesquisa possa ajudar."
 
-#: content-none.php:26
+#: content-none.php:31
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Nada foi encontrado com os termos da sua pesquisa. Tente novamente com algumas palavras-chaves diferentes."
 
-#: content-none.php:22
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+#. translators: %s: Post editor URL.
+#: content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "Pronto para publicar seu primeiro post? <a href=\"%s\">Comece aqui</a>."
 
 #: content-none.php:15
 msgid "Nothing Found"
 msgstr "Nada encontrado"
 
-#: content-link.php:60 content-page.php:37 content-search.php:28
-#: content-search.php:33 content.php:61 image.php:74
+#: content-link.php:60 content.php:61 image.php:74 content-search.php:28
+#: content-search.php:33 content-page.php:37
 msgid "Edit"
 msgstr "Editar"
 
-#: content-link.php:39 content-page.php:26 content.php:41 image.php:61
+#: content-link.php:39 content.php:41 image.php:61 content-page.php:26
 msgid "Pages:"
 msgstr "Páginas:"
 
-#. translators: %s: Name of current post
-#: content-link.php:32 content.php:34 inc/template-tags.php:249
+#. translators: %s: Post title.
+#: content-link.php:32 content.php:34 inc/template-tags.php:252
 msgid "Continue reading %s"
 msgstr "Continuar lendo %s"
 
@@ -266,7 +292,7 @@ msgstr "Continuar lendo %s"
 msgid "Comments are closed."
 msgstr "Os comentários estão fechados."
 
-#. translators: 1: number of comments, 2: post title
+#. translators: 1: Number of comments, 2: Post title.
 #: comments.php:35
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -274,7 +300,8 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s comentário em &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s comentários em &ldquo;%2$s&rdquo;"
 
-#: author-bio.php:34
+#. translators: %s: Author display name.
+#: author-bio.php:36
 msgid "View all posts by %s"
 msgstr "Ver todos os posts de %s"
 
@@ -282,16 +309,16 @@ msgstr "Ver todos os posts de %s"
 msgid "Published by"
 msgstr "Publicado por"
 
-#: archive.php:53 content-link.php:43 content-page.php:30 content.php:45
-#: image.php:65 index.php:50 search.php:43
+#: content-link.php:43 index.php:50 content.php:45 archive.php:53 search.php:48
+#: image.php:65 content-page.php:30
 msgid "Page"
 msgstr "Página"
 
-#: archive.php:52 index.php:49 search.php:42
+#: index.php:49 archive.php:52 search.php:47
 msgid "Next page"
 msgstr "Próxima página"
 
-#: archive.php:51 index.php:48 search.php:41
+#: index.php:48 archive.php:51 search.php:46
 msgid "Previous page"
 msgstr "Página anterior"
 
@@ -303,10 +330,15 @@ msgstr "Parece que nada foi encontrado neste endereço. Que tal tentar fazer uma
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ops! Essa página não pode ser encontrada."
 
-#. Author of the plugin/theme
+#. Author of the theme
 msgid "the WordPress team"
 msgstr "a equipe do WordPress"
 
-#. Theme URI of the plugin/theme
+#. Theme URI of the theme
 msgid "https://wordpress.org/themes/twentyfifteen/"
 msgstr "https://wordpress.org/themes/twentyfifteen/"
+
+#. Author URI of the theme
+#: footer.php:30
+msgid "https://wordpress.org/"
+msgstr "https://br.wordpress.org/"
