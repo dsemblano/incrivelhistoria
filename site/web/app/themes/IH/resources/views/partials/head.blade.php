@@ -22,6 +22,7 @@
   <meta property="fb:pages" content="184365508715047" />
   @include('partials.analytics')
   @include('partials.adsense')
+  @include('partials.lomadee')
   {{-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>  --}}
   @php wp_head() @endphp
 </head>
