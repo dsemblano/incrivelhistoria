@@ -20,7 +20,7 @@
   <meta name="msapplication-TileImage" content="@asset('images/favicon/mstile-144x144.png')">
   <meta name="theme-color" content="#ffffff">
   <meta property="fb:pages" content="184365508715047" />
-  @include('partials.analytics')
+  @include('partials.gtags')
   @include('partials.adsense')
   @include('partials.lomadee')
   {{-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>  --}}
