@@ -252,19 +252,6 @@ figure:not(.wp-caption) {
 body.home {
   main {
     section {
-      #banner-carousel {
-        max-width: 100%;
-        width: 100%;
-
-        figure {
-          width: 100% !important;
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-
       article {
         margin: 15px 0;
       }
@@ -332,6 +319,19 @@ body.home {
           &::after {
             background: none;
           }
+        }
+      }
+    }
+
+    #banner-carousel {
+      max-width: 100%;
+      width: 100%;
+
+      figure {
+        width: 100% !important;
+
+        img {
+          width: 100%;
         }
       }
     }
