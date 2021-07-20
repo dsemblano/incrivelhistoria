@@ -89,6 +89,10 @@ add_action('widgets_init', function () {
         'id'            => 'sidebar-primary'
     ] + $config);
     register_sidebar([
+        'name'          => __('Carousel', 'sage'),
+        'id'            => 'sidebar-carousel'
+    ] + $config);
+    register_sidebar([
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);

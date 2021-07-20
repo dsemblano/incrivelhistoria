@@ -9,6 +9,7 @@
     {{-- @include('partials.page-header') --}}
     @include('partials.content-page')
     @include('partials.home-slideshow')
+    @include('partials.home-bannercarousel')
     @include('partials.home-curiosidadeselistas')
   @endwhile
 @endsection
