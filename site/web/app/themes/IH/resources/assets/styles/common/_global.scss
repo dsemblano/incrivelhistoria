@@ -257,6 +257,19 @@ body.home {
       }
     }
 
+    .widget_media_image {
+      max-width: 100%;
+      width: 100%;
+
+      figure {
+        width: 100% !important;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
     #curiosidades {
       h2 {
         @include titulos($color: $white);
@@ -319,19 +332,6 @@ body.home {
           &::after {
             background: none;
           }
-        }
-      }
-    }
-
-    .widget_media_image {
-      max-width: 100%;
-      width: 100%;
-
-      figure {
-        width: 100% !important;
-
-        img {
-          width: 100%;
         }
       }
     }
