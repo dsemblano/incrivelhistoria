@@ -46,7 +46,7 @@ module.exports = {
         'figcaption', 'blockquote', 'alignright', 'aligncenter', 'alignleft',
         'instagram-pics', 'author_bio_section', 'heateor_sss_sharing_container',
         'heateorSssWhatsappBackground', 'heateorSssSMSBackground',
-        'heateor_sss_horizontal_sharing',
+        'heateor_sss_horizontal_sharing', 'widget_media_image',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
       whitelistPatternsChildren:[
