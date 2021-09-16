@@ -74,14 +74,14 @@ function cameronjonesweb_add_script_handle($tag, $handle, $src)
 }
 
 // defer async
-function jquery_async_defer_attribute($tag, $handle)
-{
-    if ('jquery-core' !== $handle) {
-        return $tag;
-    }
-    return str_replace(' src', ' async src', $tag);
-}
-add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
+// function jquery_async_defer_attribute($tag, $handle)
+// {
+//     if ('jquery-core' !== $handle) {
+//         return $tag;
+//     }
+//     return str_replace(' src', ' async src', $tag);
+// }
+// add_filter('script_loader_tag', 'jquery_async_defer_attribute', 10, 2);
 
 // function top10_async_defer_attribute($tag, $handle){
 //   if ( 'tptn_tracker' !== $handle )
@@ -221,21 +221,21 @@ function the_url($url)
 add_filter('login_headerurl', 'the_url');
 
 // remove yoast comments
-add_action('template_redirect', function () {
-    if (! class_exists('WPSEO_Frontend')) {
-        return;
-    }
+// add_action('template_redirect', function () {
+//     if (! class_exists('WPSEO_Frontend')) {
+//         return;
+//     }
 
-    $instance = WPSEO_Frontend::get_instance();
+//     $instance = WPSEO_Frontend::get_instance();
 
-    // make sure, future version of the plugin does not break our site.
-    if (! method_exists($instance, 'debug_mark')) {
-        return ;
-    }
+//     // make sure, future version of the plugin does not break our site.
+//     if (! method_exists($instance, 'debug_mark')) {
+//         return ;
+//     }
 
-    // ok, let us remove the love letter.
-    remove_action('wpseo_head', array( $instance, 'debug_mark' ), 2);
-}, 9999);
+//     // ok, let us remove the love letter.
+//     remove_action('wpseo_head', array( $instance, 'debug_mark' ), 2);
+// }, 9999);
 
 // REMOVE WP EMOJI
 remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -261,11 +261,11 @@ function remove_jquery_migrate($scripts)
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
 //Disable gutenberg style in Front
-function wps_deregister_styles()
-{
-    wp_dequeue_style('wp-block-library');
-}
-add_action('wp_print_styles', 'wps_deregister_styles', 100);
+// function wps_deregister_styles()
+// {
+//     wp_dequeue_style('wp-block-library');
+// }
+// add_action('wp_print_styles', 'wps_deregister_styles', 100);
 
 // Disable wp-embed.js
 function my_deregister_scripts()
