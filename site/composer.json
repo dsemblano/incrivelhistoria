@@ -48,7 +48,6 @@
     "wpackagist-plugin/wpforms-lite":">=1.4.7.2",
     "wpackagist-plugin/wps-hide-login":">=1.5.1",
     "wpackagist-plugin/wp-mail-smtp":">=1.3.3",
-    "wpackagist-plugin/classic-editor":">=1.3",
     "wpackagist-plugin/popup-maker":">=1.8.3",
     "wpackagist-plugin/wp-dbmanager":">=2.80.3",
     "wpackagist-plugin/code-widget":">=1.0.14",
