@@ -148,6 +148,10 @@
           //   font-size: 1rem;
           // }
         }
+
+        .wp-block-embed__wrapper iframe {
+          width: 100%;
+        }
       }
 
       .author_bio_section {
