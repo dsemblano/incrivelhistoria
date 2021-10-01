@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "795b0770c019ba47bc22f919f1b70547",
+    "content-hash": "58d4beeaed8eab9346bdbcbad14a8cad",
     "packages": [
         {
             "name": "composer/installers",
@@ -1122,24 +1122,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
-        },
-        {
-            "name": "wpackagist-plugin/responsive-menu",
-            "version": "4.1.4",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/responsive-menu/",
-                "reference": "tags/4.1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/responsive-menu.4.1.4.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0 || ~2.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/responsive-menu/"
         },
         {
             "name": "wpackagist-plugin/sassy-social-share",

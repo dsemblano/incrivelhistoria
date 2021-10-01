@@ -121,20 +121,20 @@ add_filter('get_search_form', function () {
 });
 
 // Inject critical assets in head as early as possible
-add_action('wp_head', function () {
-    // if (is_front_page()) {
-    //     $critical_CSS = asset_path('styles/critical-home.css');
-    // } elseif (is_single()) {
-    //     $critical_CSS = asset_path('styles/critical-singular.css');
-    // } else {
-    //     $critical_CSS = asset_path('styles/critical-archive.css');
-    // }
-    $critical_CSS = asset_path('styles/critical.css');
+// add_action('wp_head', function () {
+//     // if (is_front_page()) {
+//     //     $critical_CSS = asset_path('styles/critical-home.css');
+//     // } elseif (is_single()) {
+//     //     $critical_CSS = asset_path('styles/critical-singular.css');
+//     // } else {
+//     //     $critical_CSS = asset_path('styles/critical-archive.css');
+//     // }
+//     $critical_CSS = asset_path('styles/critical.css');
 
-    if (fopen($critical_CSS, 'r')) {
-        echo '<style>' . file_get_contents($critical_CSS) . '</style>';
-    }
-}, 1);
+//     if (fopen($critical_CSS, 'r')) {
+//         echo '<style>' . file_get_contents($critical_CSS) . '</style>';
+//     }
+// }, 1);
 
 // Preload - Async load CSS
 
