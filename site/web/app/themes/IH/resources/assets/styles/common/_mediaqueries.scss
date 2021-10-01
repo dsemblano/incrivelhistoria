@@ -137,43 +137,43 @@
   header.banner {
     background: url("../images/bg_mobile.jpg") no-repeat scroll 0 (0 / cover);
 
-    #nav-menu {
-      background-color: transparent;
-      position: relative;
+    // #nav-menu {
+    //   background-color: transparent;
+    //   position: relative;
 
-      button {
-        border: 0 none;
-        font-size: 1.7rem;
-        position: absolute;
-        bottom: 25px;
+    //   button {
+    //     border: 0 none;
+    //     font-size: 1.7rem;
+    //     position: absolute;
+    //     bottom: 25px;
 
-        .fa {
-          font-size: 2.5rem;
-        }
-      }
+    //     .fa {
+    //       font-size: 2.5rem;
+    //     }
+    //   }
 
-      .dropdown-menu {
-        display: block;
-      }
+    //   .dropdown-menu {
+    //     display: block;
+    //   }
 
-      #menu-categorias-menu {
-        background-color: $cor-primary;
-        width: 100%;
-      }
+    //   #menu-categorias-menu {
+    //     background-color: $cor-primary;
+    //     width: 100%;
+    //   }
 
-      .collapse.show,
-      .collapsing {
-        z-index: 999;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 15px;
-      }
+    //   .collapse.show,
+    //   .collapsing {
+    //     z-index: 999;
+    //     position: absolute;
+    //     width: 100%;
+    //     left: 0;
+    //     top: 15px;
+    //   }
 
-      .navbar-toggleable-md {
-        background-color: transparent !important;
-      }
-    }
+    //   .navbar-toggleable-md {
+    //     background-color: transparent !important;
+    //   }
+    // }
   }
 
   aside.sidebar {
@@ -563,22 +563,22 @@
       padding: 10px 0 0;
     }
 
-    #nav-menu {
-      button {
-        bottom: 30px;
+    // #nav-menu {
+    //   button {
+    //     bottom: 30px;
 
-        .fa {
-          font-size: 3.5rem;
-        }
-      }
+    //     .fa {
+    //       font-size: 3.5rem;
+    //     }
+    //   }
 
-      .collapsing,
-      .collapse {
-        position: absolute;
-        right: 0;
-        width: 100%;
-      }
-    }
+    //   .collapsing,
+    //   .collapse {
+    //     position: absolute;
+    //     right: 0;
+    //     width: 100%;
+    //   }
+    // }
   }
 
   body.home {
