@@ -72,7 +72,7 @@
   </div>
     <nav id="nav-menu" class="flex-item">
       {{-- {!! do_shortcode('[rmp_menu id="17442"]') !!} --}}
-      <label for="toggle-1" class="toggle-menu">
+      {{-- <label for="toggle-1" class="toggle-menu">
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <symbol id="icon-menu" viewBox="0 0 27 32">
@@ -83,7 +83,7 @@
         </svg>
         <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg><span class="name">
       </label>
-      <input type="checkbox" id="toggle-1">
+      <input type="checkbox" id="toggle-1"> --}}
     @if (has_nav_menu('secondary_navigation'))
       {!! wp_nav_menu(['menu' => 'secondary', 'theme_location' => 'secondary_navigation', 'menu_class' => 'menu first container']) !!}
     @endif
