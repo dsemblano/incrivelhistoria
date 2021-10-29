@@ -56,5 +56,6 @@
     <a href="#0" class="cd-top">Top</a>
     {{-- @include('partials.yesirads') --}}
     @include('partials.bet365')
+    @include('partials.edugram')
   </body>
 </html>
