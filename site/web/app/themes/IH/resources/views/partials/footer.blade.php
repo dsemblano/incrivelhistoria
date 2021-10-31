@@ -44,4 +44,5 @@
   <div class="container-fluid copyright">
     Todos os direitos reservados
   </div>
+  @include('partials.toparrow')
 </footer>
