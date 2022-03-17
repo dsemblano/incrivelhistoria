@@ -1,0 +1,13 @@
+/*
+Theme Name: Tijolo tema backup wordpress (não usar)
+Theme URI: https://tijolocwb.com.br
+Description: A child theme for Twenty Twenty.
+Author: Daniel Semblano
+Author URI: https://danielsemblano.com
+Template: twentytwenty
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+@import url("../../..//wp/wp-content/themes/twentytwenty/style.css");
+  

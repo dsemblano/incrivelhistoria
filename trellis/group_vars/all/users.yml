@@ -7,16 +7,18 @@ users:
     groups:
       - "{{ web_group }}"
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/id_rsa.pub', errors='ignore') }}"
+      - "{{ lookup('file', '~/.ssh/id_ed25519.pub', errors='ignore') }}"
       - https://github.com/dsemblano.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
-      - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/id_rsa.pub', errors='ignore') }}"
+      - "{{ lookup('file', '~/.ssh/id_ed25519.pub', errors='ignore') }}"
       - https://github.com/dsemblano.keys
 
 web_user: web
 web_group: www-data
 web_sudoers:
-  - "/usr/sbin/service php7.4-fpm *"
+  - "/usr/sbin/service php{{ php_version }}-fpm *"
