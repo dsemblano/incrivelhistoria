@@ -43,6 +43,12 @@ class App extends Controller
         $array = [
             'posts_per_page' => 5,
             'meta_key' => 'wpb_post_views_count',
+            'date_query' => array(
+                array(
+                    'year' => date( 'Y' ),
+                    'week' => date( 'W' ),
+                ),
+            ),
             'orderby' => 'meta_value_num',
             'order' => 'DESC',
         ];
