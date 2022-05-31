@@ -1,0 +1,1 @@
+<script src='https://api.nobeta.com.br/nobetaads&id=incrivelhistoria.inter'> </script>

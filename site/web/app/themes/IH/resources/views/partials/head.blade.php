@@ -23,6 +23,7 @@
   @include('partials.gtags')
   @include('partials.adsense')
   @include('partials.lomadee')
+  @include('partials.nobeta')
   {{-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>  --}}
   @php wp_head() @endphp
 </head>
