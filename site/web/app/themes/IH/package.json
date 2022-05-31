@@ -83,7 +83,7 @@
   "dependencies": {
     "bootstrap": "v4.3.1",
     "flickity": "^2.2.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "penthouse": "^2.3.3",
     "popper.js": "^1.14.7",
     "webpack-bundle-analyzer": "^4.4.0"
