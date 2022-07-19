@@ -405,3 +405,14 @@ body {
     }
   }
 }
+
+// Popular posts plugin
+ul.wpp-list {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  li a {
+    color: inherit;
+  }
+}
