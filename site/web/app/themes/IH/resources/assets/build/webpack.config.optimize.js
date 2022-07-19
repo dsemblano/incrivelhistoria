@@ -45,7 +45,7 @@ module.exports = {
         'tags', 'tagcloud', 'menu-item', 'sub-menu', 'single-post',
         'figcaption', 'blockquote', 'alignright', 'aligncenter', 'alignleft',
         'instagram-pics', 'author_bio_section', 'heateor_sss_sharing_container',
-        'heateorSssWhatsappBackground', 'heateorSssSMSBackground', 'wpp-list',
+        'heateorSssWhatsappBackground', 'heateorSssSMSBackground', 'wpp-list', 'wpp-post-title',
         'heateor_sss_horizontal_sharing', 'widget_media_image',
         'pagination', 'nav-links', 'page-numbers', 'current',
       ],
