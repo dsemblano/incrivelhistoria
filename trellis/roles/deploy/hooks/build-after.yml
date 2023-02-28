@@ -14,7 +14,7 @@
     command: config
     arguments: --auth http-basic.{{ item.hostname | quote }} {{ item.username | quote }} {{ item.password | default("") | quote }}
     working_dir: "{{ deploy_helper.new_release_path }}"
-  no_log: true
+  no_log: false
   changed_when: false
   when:
     - item.hostname is defined and item.hostname != ""
@@ -28,7 +28,7 @@
     command: config
     arguments: --auth bitbucket-oauth.{{ item.hostname | quote }} {{ item.consumer_key | quote }} {{ item.consumer_secret | quote }}
     working_dir: "{{ deploy_helper.new_release_path }}"
-  no_log: true
+  no_log: false
   changed_when: false
   when:
     - item.hostname is defined and item.hostname != ""
@@ -43,7 +43,7 @@
     command: config
     arguments: --auth {{ item.type | quote }}.{{ item.hostname | quote }} {{ item.token | quote }}
     working_dir: "{{ deploy_helper.new_release_path }}"
-  no_log: true
+  no_log: false
   changed_when: false
   when:
     - item.hostname is defined and item.hostname != ""

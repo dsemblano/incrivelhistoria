@@ -55,6 +55,6 @@
     set_fact:
       ansible_become_pass: "{% raw %}{% for user in vault_users | default([]) if user.name == ansible_user %}{{ user.password | default('') }}{% endfor %}{% endraw %}"
     when: ansible_user != 'root' and not cli_ask_become_pass | default(false) and ansible_become_pass is not defined
-    no_log: true
+    no_log: false
 
   when: dynamic_user | default(true)

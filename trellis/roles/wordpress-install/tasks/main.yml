@@ -20,7 +20,7 @@
   vars:
     site: "{{ site.key }}"
     working_dir: "{{ www_root }}/{{ site.key }}/{{ site.value.current_path | default('current') }}/"
-  no_log: true
+  no_log: false
   loop: "{{ wordpress_sites | dict2items }}"
   loop_control:
     loop_var: site
