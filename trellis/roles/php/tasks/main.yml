@@ -10,18 +10,14 @@
     state: "{{ item.value }}"
     cache_valid_time: "{{ apt_cache_valid_time }}"
     install_recommends: no
-  with_dict: "{{ php_extensions }}"
+  loop: "{{ php_extensions | dict2items }}"
+  loop_control:
+    label: "{{ item.key }}"
 
 - name: Ensure correct PHP version selected
   community.general.alternatives:
     name: php
     path: /usr/bin/php{{ php_version }}
-
-- name: Start php fpm service
-  service:
-    name: "php{{ php_version }}-fpm"
-    state: started
-    enabled: true
 
 - name: Find existing php fpm services
   find:
@@ -39,6 +35,12 @@
   loop_control:
     label: "{{ item.path | basename }}"
   notify: reload php-fpm
+
+- name: Start php fpm service
+  service:
+    name: "php{{ php_version }}-fpm"
+    state: started
+    enabled: true
 
 - name: Copy PHP-FPM configuration file
   template:
