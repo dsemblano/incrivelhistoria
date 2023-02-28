@@ -1,1 +1,1 @@
-<script src='https://api.nobeta.com.br/nobetaads&id=incrivelhistoria.inter'> </script>
+<script src='https://www.nobeta.com.br/ads.txt?utm_campaign=cs_ativacao_-_atualizacao_adstxt_v3-2023_-_base_kadu_fev_2023&utm_medium=email&utm_source=RD+Station'> </script>
