@@ -1,4 +1,5 @@
 #contato@nobeta.com.br
+google.com, pub-4293030634290716, DIRECT, fe8c47fec0942fa0
 google.com, pub-7782545053471182, RESELLER, f08c47fec0942fa0 #adxnobeta
 google.com, pub-6305837203541982, RESELLER, f08c47fec0942fa0 #adsensenobeta
 advertising.com, 27019, RESELLER #VeVideonobeta
