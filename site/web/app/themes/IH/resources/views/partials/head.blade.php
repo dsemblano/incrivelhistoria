@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta property="fb:pages" content="184365508715047" />
   @include('partials.gtaghead')
-  @include('partials.gtags')
+  {{-- @include('partials.gtags') --}}
   @include('partials.adsense')
   @include('partials.lomadee')
   @include('partials.nobeta')
