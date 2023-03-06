@@ -25,7 +25,7 @@
     @include('partials.footer')
     @php wp_footer() @endphp
     {{-- @include('partials.yesirads') --}}
-    @include('partials.bet365')
+    {{-- @include('partials.bet365') --}}
     {{-- @include('partials.edugram') --}}
   </body>
 </html>
