@@ -22,7 +22,7 @@
   <meta property="fb:pages" content="184365508715047" />
   @include('partials.gtaghead')
   {{-- @include('partials.gtags') --}}
-  {{-- @include('partials.adsense') --}}
+  @include('partials.adsense')
   {{-- @include('partials.lomadee') --}}
   {{-- @include('partials.nobeta') --}}
   {{-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>  --}}
